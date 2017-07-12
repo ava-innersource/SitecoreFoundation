@@ -1,12 +1,10 @@
 #Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+Welcome to Sitecore Foundation, our development accelerator for Sitecore. Used on servaral large projects, this has a collection of common features that will solve many common requirements.
+
+Sitecore Foundation has been completely refactored to leverage Helix Principles. 
 
 #Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+TODO: Detailed Envrionment Setup Instructions.
 
 #Build and Test
 TODO: Describe and show how to build your code and run the tests. 
