@@ -1,0 +1,14 @@
+﻿---
+ID: "2b5725ef-04ee-4726-a955-9a97807fb8df"
+Parent: "bad713a2-ecfa-4546-bf2b-5b1c0bbda1ae"
+Template: "6c0b22df-5248-48e8-8a59-85669e61db94"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Mercer/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160622T150858Z

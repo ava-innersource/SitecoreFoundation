@@ -1,0 +1,25 @@
+﻿---
+ID: "baff7077-4100-44a3-b3da-e717a33f7f2c"
+Parent: "0670aa4c-ad51-4a26-845e-59de66f7e5a8"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/SF/Feature/FoundationComponents/Component Placeholders/ButtonGroup
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: ButtonGroup
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{B07F4792-CA0D-4DBA-8840-FA0F6783CFA5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150525T214628

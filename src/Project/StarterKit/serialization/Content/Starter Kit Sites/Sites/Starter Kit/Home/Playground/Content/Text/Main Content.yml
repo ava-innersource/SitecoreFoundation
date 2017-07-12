@@ -1,0 +1,26 @@
+﻿---
+ID: "ac68ec61-1a0b-40b8-b4b8-c46441e04f57"
+Parent: "b7013308-2713-4ce9-a8e6-d95a5b374ce9"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Content/Text/Main Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151006T232310
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <h1>Take It for a Test Drive.</h1>
+        <p>We want you to try out the framework. Feel free to log in to Sitecore and add pages underneath this page. Add and Configure Components as you see fit. Connect with us on Yammer if you have any issues.</p><ul>
+        </ul>
+        <p><img alt="Picture3" _languageinserted="true" src="~/media/417C7FDC25214AD18394D8B3DB930471.ashx?la=en&amp;h=1125&amp;w=1487" style="height: 1125px; width: 1487px;"><br>
+        </p>

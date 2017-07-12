@@ -1,0 +1,14 @@
+﻿---
+ID: "ed5cae81-58fd-4336-a7ac-72ff46043bc0"
+Parent: "b9e995f1-d5a3-475a-8582-4fb2820227a3"
+Template: "cd055acb-8a99-48e0-9e7d-449405c44d4b"
+Path: /sitecore/system/Data Exchange/Foundation File System Tenant/Pipeline Batches
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T211935Z

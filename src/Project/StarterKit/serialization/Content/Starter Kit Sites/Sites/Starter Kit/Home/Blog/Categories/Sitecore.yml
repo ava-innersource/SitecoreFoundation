@@ -1,0 +1,23 @@
+﻿---
+ID: "ba98f9c4-e599-4e43-8a58-4b4f5bfc43c7"
+Parent: "ba8a3363-d2f8-4237-b443-c8a046b98af2"
+Template: "7cbe821d-7607-4c67-9c0b-3d0e039c0ab2"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Blog/Categories/Sitecore
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160726T134603
+    - ID: "25e2ef68-b6e5-4422-b915-cc8c7d5bb8b0"
+      Hint: GooglePlusName
+      Value: Sitecore
+    - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
+      Hint: OpenGraphTitle
+      Value: Sitecore
+    - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
+      Hint: TwitterTitle
+      Value: Sitecore

@@ -1,0 +1,21 @@
+﻿---
+ID: "370c9091-6e86-4ff8-8210-7138eca7283c"
+Parent: "33e83976-db3f-4d53-8399-71d365f1cfdf"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Shared Content/Text/English Only
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150607T024213Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: <h4>This only exists in English</h4>

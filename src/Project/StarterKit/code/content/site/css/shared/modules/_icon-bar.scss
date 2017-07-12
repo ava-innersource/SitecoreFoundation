@@ -1,0 +1,11 @@
+﻿@import "../base/_colors";
+
+.icon-bar {
+	background-color: $color3;
+	color: $color5;
+	text-transform: uppercase;
+
+	> a:hover {
+		background-color: $color4;
+	}
+}

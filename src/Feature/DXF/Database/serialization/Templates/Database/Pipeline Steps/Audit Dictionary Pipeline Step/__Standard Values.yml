@@ -1,0 +1,24 @@
+﻿---
+ID: "ff1ea141-3ebe-4e8d-9eb2-12a440e7ce48"
+Parent: "fecb92c7-27c7-4376-946e-1983853cb276"
+Template: "fecb92c7-27c7-4376-946e-1983853cb276"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/Database/Pipeline Steps/Audit Dictionary Pipeline Step/__Standard Values
+DB: master
+SharedFields:
+- ID: "3c7f78cc-0c5c-4076-80ef-9a49fda5ff96"
+  Hint: ConverterType
+  Value: SF.DXF.Feature.Database.AuditDictionaryStepConverter, SF.DXF.Feature.Database
+- ID: "a83a2eb2-bfa1-4d3f-9f17-0cc6c9a91c42"
+  Hint: ProcessorType
+  Value: SF.DXF.Feature.Database.AuditDictionaryStepProcessor, SF.DXF.Feature.Database
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0e4fcdb6-4cfc-470b-a521-4d3ded31756d"
+      Hint: Context
+      Value: Pipeline Context Source
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170428T190922Z

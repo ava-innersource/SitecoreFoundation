@@ -1,0 +1,25 @@
+﻿---
+ID: "27318561-5685-413f-a055-3542d32055ee"
+Parent: "a8f34e61-3fdb-4185-a013-a4310468766e"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/SF/Feature/OwlCarousel/Component Placeholders/OwlCarouselItems
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: CarouselItems
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 250
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{8C89A9AB-F936-4072-9CFC-77E4C0216316}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150510T205746

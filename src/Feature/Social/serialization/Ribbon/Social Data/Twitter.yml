@@ -1,0 +1,47 @@
+﻿---
+ID: "0b2054e6-f9a7-499d-8ab7-5dd08cdae37a"
+Parent: "7667e3fc-b757-4c82-bfd2-66c6709215e5"
+Template: "1db34c92-03b0-4475-9a39-da14e4d9d8fc"
+Path: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Properties/Social Data/Twitter
+DB: core
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "d47ed548-84d5-4622-9886-5cc164727507"
+  Hint: Icon
+  Value: Business/32x32/message.png
+- ID: "dbbf9ee3-c30e-4456-a81f-ed8c2e8df91b"
+  Hint: Click
+  Value: "webedit:fieldeditor(command={70C4EED5-D4CD-4D7D-9763-80C42504F5E7},fields=TwitterTitle|TwitterDescription|TwitterPublisherHandle|TwitterAuthorHandle|TwitterImage|TwitterCardType)"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          id="{28D7AA23-A9A3-4ABC-9DE6-AA717F6177CD}"
+          par="Id=LargeButton1&amp;Click=trigger%3abutton%3aclick&amp;Command=LaunchFieldEditor&amp;PageCodeScriptFileName=%2fComponents%2fExperienceEditor%2fFieldEditor%2fLaunchFieldEditor.js&amp;AccessKey=TwitterTitle%7cTwitterDescription%7cTwitterPublisherHandle%7cTwitterAuthorHandle%7cTwitterImage%7cTwitterCardType"
+          uid="{07287984-1B95-4CF9-BC47-635D11BE214F}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151001T211326
+    - ID: "4df6da21-e745-444c-956e-1d4a96ab8821"
+      Hint: Header
+      Value: Twitter
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a1a31a93-c4a0-4396-b629-67c33001a3cf"
+      Hint: Tooltip
+      Value: Edit Twitter Data

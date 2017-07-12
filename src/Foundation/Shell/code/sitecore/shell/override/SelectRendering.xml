@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<control xmlns:def="Definition" xmlns="http://schemas.sitecore.net/Visual-Studio-Intellisense">
+  <Sitecore.Shell.Applications.Dialogs.SelectRendering>
+    <FormDialog ID="Dialog" Icon="Core/32x32/open_document.png" Header="Open Item"
+      Text="Select the item that you wish to open. Then click the Open button." OKButton="Open">
+      <Stylesheet Src="SelectItemWithThumbnails.css" DeviceDependant="true" />
+      <CodeBeside Type="SF.Foundation.Shell.TabbedRenderingSelector.TabbedRenderingForm,  SF.Foundation.Shell"/>
+
+      <DataContext ID="DataContext" Root="/"/>
+
+      <GridPanel Width="100%" Height="100%">
+
+        <GridPanel Width="100%" Height="100%" Columns="3" GridPanel.Height="100%" Style="table-layout:fixed">
+
+          <Scrollbox Width="100%" ID="TreeviewContainer" Height="100%" Class="scScrollbox scFixSize scFixSize4" Background="white" Padding="0px" GridPanel.Width="200px" GridPanel.Height="100%">
+            <TreeviewEx ID="Treeview" DataContext="DataContext" ShowRoot="true" Click="Treeview_Click" ContextMenu='Treeview.GetContextMenu("contextmenu")' />
+          </Scrollbox>
+
+          <VSplitter ID="TreeSplitter" GridPanel.Class="scThinSplitter" GridPanel.Style="height:0;" Target="left" />
+          <Scrollbox ID="Renderings" Width="100%" Height="100%" Class="scScrollbox scFixSize scFixSize4" Background="white" Padding="0px" ></Scrollbox>
+          <Tabstrip ID="Tabs" Width="100%" Height="100%" GridPanel.Height="100%" ></Tabstrip>
+        </GridPanel>
+
+        <Border ID="PlaceHolderNameBorder" Visible="false" style="padding:12px 0px 0px 0px">
+          <GridPanel Columns="3" Width="100%">
+            <Literal Text="Add to Placeholder: " GridPanel.NoWrap="true" />
+            <Space Width="4" />
+            <Edit ID="PlaceholderName" Name="PlaceholderName" GridPanel.Width="100%" class="scQuirksBoxModel" Width="100%" />
+          </GridPanel>
+        </Border>
+
+      </GridPanel>
+
+      <Border ID="OpenPropertiesBorder" def:placeholder="Buttons" Visible="false" style="padding:0px 0px 8px 0px">
+        <Checkbox ID="OpenProperties" Header="Open the Properties dialog box immediately." />
+      </Border>
+    </FormDialog>
+  </Sitecore.Shell.Applications.Dialogs.SelectRendering>
+</control>

@@ -1,0 +1,18 @@
+﻿---
+ID: "81fa105d-b886-44cc-9658-069fd97c0fe7"
+Parent: "cbc11fde-bb35-4e23-b12d-ee093e147d29"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/SitecoreProvider/Pipeline Steps/Enroll Contact in Engagement Plan Pipeline Step/Endpoints
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170125T191511Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

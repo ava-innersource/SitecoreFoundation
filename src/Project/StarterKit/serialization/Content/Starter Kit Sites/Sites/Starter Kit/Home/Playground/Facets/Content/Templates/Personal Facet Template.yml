@@ -1,0 +1,17 @@
+﻿---
+ID: "8fe8d749-c7b1-43e1-a331-052613dc9175"
+Parent: "7eda5c2a-7e57-4268-a4eb-362ad7f723b7"
+Template: "aa343bbd-3952-4951-8480-2204508fc3ca"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Facets/Content/Templates/Personal Facet Template
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161209T222337Z
+    - ID: "74bd07f6-747a-42d3-99e9-44e2ad599365"
+      Hint: Content
+      Value: "<div>Facet Below</div><div>{{Personal.FirstName}}</div><div>Preferred: {{Emails.Preferred}}</div>"

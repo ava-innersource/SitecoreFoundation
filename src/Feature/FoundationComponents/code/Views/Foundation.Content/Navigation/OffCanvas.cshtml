@@ -1,0 +1,102 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+@using SF.Foundation.CommonComponents
+
+@{
+    bool rightAligned = Html.GetCheckboxRenderingParameterValue("RightAligned");    
+    string titleAlignment = Html.GetRenderingParameter("TitleAlignment");
+    string menuIcon = Html.GetRenderingParameter("MenuIcon");
+    string containerClass = "off-canvas-wrap";
+    if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+    {
+        containerClass = "off-canvas-wrap-page-editor";
+    }
+}
+
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+    <div  @Html.GetContainerTagAttributes(containerClass)>
+        <section class="main-section">
+          @Html.Sitecore().DynamicPlaceholder("Column1")
+        </section>
+
+        <nav class="tab-bar">
+            @if (!rightAligned)
+              {
+                  <section class="left-small">
+                    <a class="left-off-canvas-toggle @menuIcon" href="#"><span></span></a>
+                  </section>
+              }
+
+              <section class="@titleAlignment tab-bar-section">
+                <span class="title">@Html.Sitecore().Field("Title")</span>
+              </section>
+      
+            @if (rightAligned)
+              {
+                  <section class="right-small">
+                    <a class="right-off-canvas-toggle @menuIcon" href="#"><span></span></a>
+                  </section>
+              }
+        </nav>
+        <aside class="left-off-canvas-menu-pageEditor">
+          <ul class="off-canvas-list">
+            @Html.Sitecore().DynamicPlaceholder("ListItems")
+          </ul>
+        </aside>
+    </div>
+}
+else
+{
+<div  @Html.GetContainerTagAttributes(containerClass) data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+
+        
+      @if (!rightAligned)
+      {
+          <section class="left-small">
+            <a class="left-off-canvas-toggle @menuIcon" href="#"><span></span></a>
+          </section>
+      }
+
+      <section class="@titleAlignment tab-bar-section">
+        <span class="title">@Html.Sitecore().Field("Title")</span>
+      </section>
+      
+    @if (rightAligned)
+      {
+          <section class="right-small">
+            <a class="right-off-canvas-toggle @menuIcon" href="#"><span></span></a>
+          </section>
+      }
+
+    </nav>
+
+     @if (!rightAligned)
+      {
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            @Html.Sitecore().DynamicPlaceholder("ListItems")
+          </ul>
+        </aside>
+       }
+      else
+      {
+          <aside class="right-off-canvas-menu">
+          <ul class="off-canvas-list">
+             @Html.Sitecore().DynamicPlaceholder("ListItems")
+          </ul>
+        </aside>   
+     }
+    <section class="main-section">
+      @Html.Sitecore().DynamicPlaceholder("Column1")
+    </section>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+}

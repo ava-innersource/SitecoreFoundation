@@ -1,0 +1,31 @@
+﻿---
+ID: "2673fea7-a79d-4640-86a3-347df21040d0"
+Parent: "ec844f5f-e459-484a-9d2b-3d2f6ebafb1e"
+Template: "944d1a17-3c28-446d-8f54-ab3eaccd288f"
+Path: /sitecore/system/Data Exchange/Foundation Database Tenant/Pipelines/Read Database Records from Database Query Pipeline/Query Database Pipeline Step
+DB: master
+SharedFields:
+- ID: "4a3c6be9-4aa5-47da-a5a6-45a8eb570f75"
+  Hint: EndpointFrom
+  Value: "{38BEF636-B4E9-4CDA-8960-E8909C8098A2}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0f53a451-6bda-4219-a07a-0ba0df45d951"
+      Hint: Query
+      Value: |
+        SELECT TOP 50 [ProductKey]
+              ,[ProductLabel]
+              ,[ProductName]
+              ,[ProductDescription]
+              ,[ColorName]
+              ,[Size]
+              ,[Weight]
+              ,[WeightUnitMeasureID]
+              
+          FROM [ContosoRetailDW].[dbo].[DimProduct]
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T034656Z

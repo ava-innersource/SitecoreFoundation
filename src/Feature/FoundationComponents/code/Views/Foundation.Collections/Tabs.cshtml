@@ -1,0 +1,54 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+@using SF.Foundation.CommonComponents
+
+@model RenderingModel
+@{
+    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+    sb.Append("");
+    
+    var containerClass = sb.ToString().Trim();
+
+    string tabCss = "tabs";
+    if (Html.GetCheckboxRenderingParameterValue("IsVertical"))
+    {
+        tabCss = "tabs vertical";
+    }
+
+    string deepLinking = "";
+    if (Html.GetCheckboxRenderingParameterValue("DeepLinkingEnabled"))
+    {
+        deepLinking = "deep_linking:true;";
+    }
+
+    string disableScroll = "";
+    if (Html.GetCheckboxRenderingParameterValue("ScrollDisabled"))
+    {
+        disableScroll = "scroll_to_content:false;";
+    }
+
+    string dataOptions = "";
+    if (!string.IsNullOrEmpty(deepLinking) || !string.IsNullOrEmpty(disableScroll))
+    {
+        dataOptions = string.Format(@"data-options=""{0}{1}""", deepLinking, disableScroll);
+    }
+}
+
+@using (Html.ComponentContainer("tabs-container"))
+{
+    <ul class="@tabCss" data-tab role="tablist" @dataOptions>
+    </ul>
+    
+     if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+     {
+          @Html.Sitecore().DynamicPlaceholder("TabItems")
+     }
+    else
+     {
+        <div class="tabs-content">
+            @Html.Sitecore().DynamicPlaceholder("TabItems")
+        </div>
+    }
+}

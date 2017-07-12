@@ -1,0 +1,26 @@
+﻿---
+ID: "02f8e072-0ec0-4275-bb93-687d93d73bb4"
+Parent: "d5b9afa4-31eb-4561-ab5a-e9deef9019e0"
+Template: "d5b9afa4-31eb-4561-ab5a-e9deef9019e0"
+Path: /sitecore/templates/SF/Foundation/Resources/Design/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: People/32x32/brush1.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150718T215833
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "e85a4ab5-f545-4a7a-85fc-b55fb8c9e6e6"
+      Hint: Minify
+      Type: Checkbox
+      Value: 1

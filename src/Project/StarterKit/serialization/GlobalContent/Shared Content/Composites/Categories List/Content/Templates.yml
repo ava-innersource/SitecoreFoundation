@@ -1,0 +1,14 @@
+﻿---
+ID: "11b653b2-cb11-4226-80f0-72ca858aa2bb"
+Parent: "707debd2-ebfa-4bce-a253-60f6527a64ef"
+Template: "52085dde-d6b5-41ad-ab1a-8d3dc19480a0"
+Path: /sitecore/content/Global/Shared Content/Composites/Categories List/Content/Templates
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160726T135631

@@ -1,0 +1,13 @@
+﻿@import "../layout/breakpoints";
+
+#header {
+	background: #fff;
+	border-bottom: 2px solid #E9E5DB;
+	margin-bottom: 0;
+}
+
+@media (min-width: $small) {
+	#header {
+		margin-bottom: 1.5em;
+	}
+}

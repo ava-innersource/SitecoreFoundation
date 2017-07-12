@@ -1,0 +1,27 @@
+﻿---
+ID: "517a1b40-09e5-4fe6-8a27-e2b62c9276b1"
+Parent: "a6027c22-d1ce-4b51-97ca-4dd11cd22292"
+Template: "a6027c22-d1ce-4b51-97ca-4dd11cd22292"
+Path: /sitecore/templates/SF/Feature/Social/Interface Templates/_PageFacebookSettings/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140912T104809
+    - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
+      Hint: OpenGraphTitle
+      Value: $name
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "80b4e805-53bd-4073-bb6c-3223668efb08"
+      Hint: OpenGraphType
+      Value: 
+    - ID: "d193fdbc-f88a-4bec-beb6-d74448cbfe39"
+      Hint: OpenGraphUrl
+      Value: $current

@@ -1,0 +1,18 @@
+﻿---
+ID: "e92a047d-615d-4a9a-8c7d-6a64f3ce63b6"
+Parent: "7654a64b-bc67-4b96-88a1-f2fca94a04e0"
+Template: "713398d7-366f-4122-a7c0-8bc9ac235df7"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Component Guide/Content/Images/carousel image 3
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151025T053820
+    - ID: "549ab079-3a2d-4099-a79f-4d4b6342e69d"
+      Hint: Image
+      Value: |
+        <image mediaid="{C6CF7910-E72E-4673-8E47-777C2B8FF3C8}" />

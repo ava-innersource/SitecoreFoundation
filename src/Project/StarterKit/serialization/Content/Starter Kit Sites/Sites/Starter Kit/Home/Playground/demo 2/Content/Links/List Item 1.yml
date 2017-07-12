@@ -1,0 +1,14 @@
+﻿---
+ID: "27e9eab0-a583-4d52-b39c-571ac0b129b2"
+Parent: "72690090-b888-4e20-b49e-28dd0adccaed"
+Template: "64b741d1-04f6-4f5d-ad66-e70ff4f62174"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/demo 2/Content/Links/List Item 1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170404T205955Z

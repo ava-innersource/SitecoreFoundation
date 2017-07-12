@@ -1,0 +1,25 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+@using SF.Foundation.CommonComponents
+
+@{
+    string style = Html.GetRenderingParameter("Style");
+    string category = Html.GetRenderingParameter("Category");
+
+    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+    sb.Append("label");
+    if (!string.IsNullOrEmpty(style))
+    {
+        sb.Append(" ").Append(style);
+    }
+    if (!string.IsNullOrEmpty(category))
+    {
+        sb.Append(" ").Append(category);
+    }
+}
+
+<span @Html.GetContainerTagAttributes(sb.ToString())>
+    @Html.Sitecore().Field("Content")
+</span>

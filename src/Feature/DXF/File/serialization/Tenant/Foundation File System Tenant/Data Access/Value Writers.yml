@@ -1,0 +1,14 @@
+﻿---
+ID: "6732372a-c519-423b-958b-74eca65239e4"
+Parent: "3ceab937-6f59-441d-9edc-4753129e0df1"
+Template: "ece3b896-d26f-4adf-b2c6-343f4f41a4fd"
+Path: /sitecore/system/Data Exchange/Foundation File System Tenant/Data Access/Value Writers
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T211935Z

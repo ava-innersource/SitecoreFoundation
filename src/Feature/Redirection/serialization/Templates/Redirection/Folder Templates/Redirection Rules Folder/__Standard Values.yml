@@ -1,0 +1,29 @@
+﻿---
+ID: "65380b42-0b71-438b-8d7f-38dab2d46b80"
+Parent: "b44c1112-8aa2-4bf5-9899-9840665db5bd"
+Template: "b44c1112-8aa2-4bf5-9899-9840665db5bd"
+Path: /sitecore/templates/SF/Feature/Redirection/Folder Templates/Redirection Rules Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Business/32x32/address_book3.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {B44C1112-8AA2-4BF5-9899-9840665DB5BD}
+    {1F06BEF9-BD5E-44D4-BB1F-B7D08EBBDF57}
+    {B7A94ED3-EF81-4465-9138-6FB30999F5C7}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150731T094914
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

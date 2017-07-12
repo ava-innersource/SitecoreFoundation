@@ -1,0 +1,14 @@
+﻿---
+ID: "35fb6e71-06b1-4f91-8784-b937e930cd14"
+Parent: "6aac0b30-7b0c-4a88-a6c5-85b0b3530778"
+Template: "6aac0b30-7b0c-4a88-a6c5-85b0b3530778"
+Path: /sitecore/templates/SF/Foundation/CommonComponents/RenderingParameters/ContainerRenderingParameters/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150509T160917

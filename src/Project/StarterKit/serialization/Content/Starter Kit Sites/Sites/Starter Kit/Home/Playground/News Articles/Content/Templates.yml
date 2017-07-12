@@ -1,0 +1,14 @@
+﻿---
+ID: "d2784bdf-af47-4770-8bcd-8c8bcf9ca2c7"
+Parent: "f15ae942-6ce7-47f8-9540-0a561002a169"
+Template: "52085dde-d6b5-41ad-ab1a-8d3dc19480a0"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/News Articles/Content/Templates
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151115T113245

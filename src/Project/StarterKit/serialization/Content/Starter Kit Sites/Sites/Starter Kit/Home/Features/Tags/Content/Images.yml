@@ -1,0 +1,14 @@
+﻿---
+ID: "50906b57-846c-4e3c-acc6-f0a03faa32b8"
+Parent: "d0eacf0b-1288-4209-90b8-67a1e21f75b1"
+Template: "52085dde-d6b5-41ad-ab1a-8d3dc19480a0"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/Tags/Content/Images
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151006T222630

@@ -1,0 +1,46 @@
+﻿---
+ID: "4f7b200b-9985-4455-9876-6f5cbf254ab6"
+Parent: "296efe5a-1837-41d6-90c9-49f933b332a2"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: /sitecore/media library/SF/Feature/FoundationComponents/Full Width
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "~/media/4F7B200B9985445598766F5CBF254AB6.ashx?h=16&thn=1&w=16"
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 493
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "984be602-c5fa-45fa-9551-e97686377b0d"
+  Value: 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
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1790
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 493 x 271
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 271
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150510T090657
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Full Width

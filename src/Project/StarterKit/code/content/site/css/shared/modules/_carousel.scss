@@ -1,0 +1,150 @@
+﻿@import "../base/_colors";
+@import "../layout/_breakpoints";
+
+.carousel {
+	margin-left: -0.9375rem;
+	margin-right: -0.9375rem;
+
+	h1, h2 {
+		color: $color1;
+		font-size: 1.7em;
+	}
+
+	h2 {
+		font-size: 1em;
+	}
+
+	.slide {
+		position: relative;
+	}
+
+	.slide-contents {
+		background-color: $hero-background-color;
+		padding: 0 0.9375rem 1.3em;
+	}
+
+	.slide-text {
+		color: $color1;
+		padding: 10px 0 20px;
+	}
+
+	.button-link {
+		line-height: 1.6em;
+		padding: inherit 0;
+	}
+
+	.button.primary {
+		background-image: url(../../img/arrow-more.png);
+		background-position: right 49%;
+		background-repeat: no-repeat;
+		margin-bottom: 0;
+		padding: 15px 30px 15px 15px;
+	}
+
+	&.slick-slider {
+		margin-bottom: 0;
+	}
+
+	.slick-prev:before, .slick-next:before {
+		color: #999;
+	}
+
+	.slick-dots {
+		display: none !important;
+	}
+
+	.slick-prev, .slick-next {
+		background-image: url(../../img/carousel-arrows.png);
+		height: 39px;
+		top: 31px;
+		width: 39px;
+
+		&:before {
+			content: "";
+		}
+	}
+
+	.slick-prev {
+		left: 20px;
+		right: inherit;
+	}
+
+	.slick-next {
+		background-position: right 0;
+		left: 70px;
+		right: inherit;
+	}
+
+	@media (min-width: $small) {
+		.button-link {
+			margin: 0 20px 0 0;
+		}
+	}
+
+	@media (min-width: $medium) {
+		margin-left: 0;
+		margin-right: 0;
+
+		h1 {
+			font-size: 2.5em;
+		}
+
+		h2 {
+			font-size: 1.5em;
+		}
+
+		.slide-contents {
+			background-color: transparent;
+			left: 20px;
+			position: absolute;
+			bottom: 10px;
+		}
+
+		.slide-text {
+			max-width: 450px;
+		}
+
+		.slick-dots {
+			bottom: 0;
+			display: block !important;
+			height: 35px;
+			right: 20px;
+			text-align: right;
+
+			li {
+				button {
+					background-color: #fff;
+					border-radius: 10px;
+					border: 2px solid #fff;
+					height: 15px;
+					padding: 0;
+					width: 15px;
+
+					&:before {
+						content: "";
+					}
+				}
+
+				&.slick-active {
+					button {
+						background-color: $color3;
+					}
+				}
+			}
+		}
+
+		.slick-prev, .slick-next {
+			top: 31px;
+		}
+
+		.slick-prev {
+			left: inherit;
+			right: 72px;
+		}
+
+		.slick-next {
+			left: inherit;
+			right: 23px;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+﻿---
+ID: "690c3472-fab4-4dd8-97a1-bab5b84a718f"
+Parent: "b2f66d7a-6dd7-4eed-8c6a-c6598a25d82a"
+Template: "5596de8f-21b7-44ec-a697-cee18e39878f"
+Path: /sitecore/system/Data Exchange/Foundation Contact Import Tenant/Data Access/Value Accessor Sets/Providers/Sitecore/xDB Contact Value Accessor Set/Title
+DB: master
+SharedFields:
+- ID: "4590ac03-3834-4b50-a43a-3008dd07fbc7"
+  Hint: ContactFacetName
+  Value: Personal
+- ID: "f46dd0f6-6399-48fe-9656-657e01e39de4"
+  Hint: PropertyName
+  Value: Title
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T215238Z

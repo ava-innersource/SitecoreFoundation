@@ -1,0 +1,14 @@
+﻿---
+ID: "a62afca9-bb7a-42c6-9ab4-c0588cae7d3d"
+Parent: "84b045a4-4cf2-4f40-96c7-cf86d458d4cf"
+Template: "6c0b22df-5248-48e8-8a59-85669e61db94"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Language Fallback Testing/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170524T212052Z

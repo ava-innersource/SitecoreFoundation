@@ -1,0 +1,18 @@
+﻿---
+ID: "d00eb843-f6b5-4c77-b448-3381837cdb4b"
+Parent: "9c5c61b0-d05f-4721-95ea-1d37ec52b78d"
+Template: "64b741d1-04f6-4f5d-ad66-e70ff4f62174"
+Path: /sitecore/content/Global/Shared Content/Links/Components
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150606T142717
+    - ID: "89ae30d4-6d7a-4be6-89e9-5e44244928c4"
+      Hint: Link
+      Value: |
+        <link id="{D4A030DC-1327-4D72-8E29-152585E07BB1}" querystring="" target="" text="Components" url="/Starter Kit Sites/Sites/Starter Kit/Home/Component Guide" linktype="internal" />

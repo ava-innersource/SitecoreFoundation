@@ -1,0 +1,10 @@
+﻿---
+ID: "9e99769d-b373-446d-8e86-f6a2563feaf3"
+Parent: "2de4bc4d-ec72-4aea-bef9-39601b01181b"
+Template: "10d7c460-7f24-4e2c-95d3-59cc0bd45741"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Shared Content/Recipes/Turkey
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1

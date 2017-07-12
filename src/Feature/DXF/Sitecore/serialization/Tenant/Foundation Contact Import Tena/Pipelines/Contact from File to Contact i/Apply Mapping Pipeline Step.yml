@@ -1,0 +1,21 @@
+﻿---
+ID: "055a6faf-682c-4ca0-bd3b-2cf1da81b4ef"
+Parent: "be4ec94a-0897-4bcb-887f-fa32f65a6071"
+Template: "8e726575-35cf-48a0-b2c9-00c30d16f2d9"
+Path: /sitecore/system/Data Exchange/Foundation Contact Import Tenant/Pipelines/Contact from File to Contact in xDB Pipeline/Apply Mapping Pipeline Step
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "cb970e4d-aa7c-4ad1-8984-59bf01163d08"
+  Hint: MappingSet
+  Value: "{7C9EB72E-87AE-4673-B18C-F29373E0CD3F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T221216Z

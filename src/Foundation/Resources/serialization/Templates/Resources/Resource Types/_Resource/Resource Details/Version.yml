@@ -1,0 +1,21 @@
+﻿---
+ID: "4d7740a6-6828-4552-8ba9-a7155dbb067b"
+Parent: "d8e5180e-2bbd-444f-b317-e6253e1b6623"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/SF/Foundation/Resources/Resource Types/_Resource/Resource Details/Version
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150817T145800

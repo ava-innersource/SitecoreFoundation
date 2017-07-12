@@ -1,0 +1,22 @@
+﻿---
+ID: "156eab11-0318-4b96-8de6-cd0cdfe35645"
+Parent: "3bd1c595-73ff-4927-b380-4d625d87e635"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Component Guide/Content/Text/Text Description
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151025T035002
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        The Text Component allows content authors to type or edit HTML using the standard Sitecore Rich Text Editor. The most versatile component, this can be used to create markup not supported by the standard components. This paragraph itself is written within a text component. Standard Rendering parameters allow content authors to add additional "show/hide" options and specify container classes and div ID's, making it easy to target css to a particular instance of this component.<br><br>

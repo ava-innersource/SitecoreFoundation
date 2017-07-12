@@ -1,0 +1,24 @@
+﻿---
+ID: "e87e62f6-3127-4df6-9ad5-4d43b45d4a5c"
+Parent: "185813d4-12d6-460d-9bc6-f7acedddc925"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/SF/Feature/Redirection/Rule Templates/Redirect Url/Settings/Goal
+DB: master
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: /sitecore/system/Marketing Control Panel/Goals
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Droptree
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170302T185327Z

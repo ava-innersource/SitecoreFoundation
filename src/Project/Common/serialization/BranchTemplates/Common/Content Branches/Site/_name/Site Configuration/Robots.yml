@@ -1,0 +1,18 @@
+﻿---
+ID: "278155f2-0e47-4b57-a036-42d739346bcc"
+Parent: "7b882b7f-eac7-488c-baa0-414231133203"
+Template: "1f1b4108-8325-44c2-89fb-ab6746a666b4"
+Path: /sitecore/templates/Branches/SF/Project/Common/Content Branches/Site/$name/Site Configuration/Robots
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150509T213701

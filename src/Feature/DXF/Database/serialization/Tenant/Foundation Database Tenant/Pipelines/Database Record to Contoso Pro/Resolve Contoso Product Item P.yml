@@ -1,0 +1,39 @@
+﻿---
+ID: "5bfbe06a-7d14-4a52-a57c-46b0f06edd9c"
+Parent: "79d9aaf7-9881-42a3-8eb1-0a8b2cdbaf89"
+Template: "d44ae29c-d708-4b3f-b04c-99e7f9288720"
+Path: /sitecore/system/Data Exchange/Foundation Database Tenant/Pipelines/Database Record to Contoso Product Item Sync Pipeline/Resolve Contoso Product Item Pipeline Step
+DB: master
+SharedFields:
+- ID: "010e5d89-6409-4fbc-843b-ceb84c8ed3bb"
+  Hint: IdentifierObjectLocation
+  Value: Pipeline Context Source
+- ID: "21875be1-ad41-4541-88cf-7e47551bb6ac"
+  Hint: ItemNameValueAccessor
+  Value: "{FF242DDD-149E-4480-BB14-0D0446DE9238}"
+- ID: "3798a7e3-61ff-4ba3-b8ba-f5cba2929517"
+  Hint: TemplateForNewItem
+  Value: "{B4CB2D63-D308-46C3-89BC-E05A97D7C3BB}"
+- ID: "4ce9ed44-bc7f-44e5-886d-97d9a6890faa"
+  Hint: IdentifierValueAccessor
+  Value: "{9CC3AE1D-AB80-4A76-85A8-0732A6047CBB}"
+- ID: "5c061c42-ff86-4f43-b5ad-831dc03dc77d"
+  Hint: ResolvedObjectLocation
+  Value: Pipeline Context Target
+- ID: "922e98e7-be62-4a67-8273-551f2e8c8bfe"
+  Hint: EndpointFrom
+  Value: "{416CF2A0-07EC-4FD8-B298-02C9CAB3A905}"
+- ID: "d922ea57-bce2-4457-bc60-5fcaafa36707"
+  Hint: ParentForItem
+  Value: "{7BCD7063-BFF4-4C35-A83B-720F813F5723}"
+- ID: "e074292d-0467-443c-a1b5-cbd5e5162813"
+  Hint: MatchingFieldValueAccessor
+  Value: "{DB32184B-60A2-49EF-8252-6890B667B856}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T034023Z

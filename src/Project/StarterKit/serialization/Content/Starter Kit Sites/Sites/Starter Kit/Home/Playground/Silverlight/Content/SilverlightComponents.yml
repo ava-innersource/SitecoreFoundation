@@ -1,0 +1,14 @@
+﻿---
+ID: "d7fe64d4-89f0-4e93-a991-b59a5bb3e76f"
+Parent: "85cb338f-c59c-4db7-a50c-17001af3e0cc"
+Template: "52085dde-d6b5-41ad-ab1a-8d3dc19480a0"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Silverlight/Content/SilverlightComponents
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170222T201945Z

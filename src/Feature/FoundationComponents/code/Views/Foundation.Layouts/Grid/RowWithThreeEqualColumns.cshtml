@@ -1,0 +1,42 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+
+@model RenderingModel
+
+@{
+    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+    if (Html.GetCheckboxRenderingParameterValue("StackOnSmall"))
+    {
+        sb.Append("small-12 ");
+    }
+    else
+    {
+        sb.Append("small-4 ");
+    }
+    if (Html.GetCheckboxRenderingParameterValue("StackOnMedium"))
+    {
+        sb.Append("medium-12 ");
+    }
+    else
+    {
+        sb.Append("medium-4 ");
+    }
+
+    var stackAttributes = sb.ToString().Trim();
+}
+
+
+@using (Html.ComponentContainer("row container-3col"))
+{
+    <div class="large-4 @stackAttributes columns">
+        @Html.Sitecore().DynamicPlaceholder("Column1")
+    </div>
+    <div class="large-4 @stackAttributes columns">
+        @Html.Sitecore().DynamicPlaceholder("Column2")
+    </div>
+    <div class="large-4 @stackAttributes columns">
+        @Html.Sitecore().DynamicPlaceholder("Column3")
+    </div>
+}

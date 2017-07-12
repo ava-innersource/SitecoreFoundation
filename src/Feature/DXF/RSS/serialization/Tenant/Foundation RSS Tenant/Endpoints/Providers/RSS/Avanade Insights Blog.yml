@@ -1,0 +1,17 @@
+﻿---
+ID: "00a7cda0-581b-49cb-86fa-dd1d77d47caf"
+Parent: "35501b6f-82f8-42d9-b6de-b672937bec68"
+Template: "a13400b4-f0c2-47ed-8135-a697b7e72293"
+Path: /sitecore/system/Data Exchange/Foundation RSS Tenant/Endpoints/Providers/RSS/Avanade Insights Blog
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T040429Z
+    - ID: "f8784658-faf7-4815-aeed-a048092335bb"
+      Hint: Feed Url
+      Value: "http://blog.avanade.com/avanade-insights/feed/"

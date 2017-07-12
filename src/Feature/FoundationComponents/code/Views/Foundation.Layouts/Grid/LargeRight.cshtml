@@ -1,0 +1,46 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+
+@model RenderingModel
+
+@{
+    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+    string leftCol = string.Empty;
+    string rightCol = string.Empty;
+    if (Html.GetCheckboxRenderingParameterValue("StackOnSmall"))
+    {
+        sb.Append("small-12 ");
+    }
+    else
+    {
+        leftCol = "small-3";
+        rightCol = "small-9";
+    }
+    if (Html.GetCheckboxRenderingParameterValue("StackOnMedium"))
+    {
+        sb.Append("medium-12 ");
+    }
+    else
+    {
+        leftCol += " medium-3";
+        rightCol += " medium-9";
+    }
+
+    leftCol = leftCol.Trim();
+    rightCol = rightCol.Trim();
+    
+    var stackAttributes = sb.ToString().Trim();
+}
+
+
+@using (Html.ComponentContainer("row container-largeRight"))
+{
+    <div class="large-3 @stackAttributes @leftCol columns">
+        @Html.Sitecore().DynamicPlaceholder("Column1")
+    </div>
+    <div class="large-9 @stackAttributes @rightCol columns">
+        @Html.Sitecore().DynamicPlaceholder("Column2")
+    </div>
+}

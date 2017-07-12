@@ -1,0 +1,10 @@
+﻿---
+ID: "0738eb41-ce05-449e-9965-42c5ef521d86"
+Parent: "01a022fd-3393-49b4-bdfb-6f7018002208"
+Template: "54e37166-a3a1-4bed-bfcb-3ae7d3c7ec06"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Shared Content/News/Another Test with Std Values set
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1

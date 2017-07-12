@@ -1,0 +1,14 @@
+﻿---
+ID: "dc93c137-aa0e-4810-aa88-e69ff07680af"
+Parent: "8aeafc65-5b1e-4eb0-89a0-20018400ed3f"
+Template: "a53e7d14-49e1-4271-af55-47f65aeec5ca"
+Path: /sitecore/content/Starter Kit Sites/Shared Content/Composites
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151107T234813

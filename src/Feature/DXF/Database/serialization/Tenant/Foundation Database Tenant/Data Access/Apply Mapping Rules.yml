@@ -1,0 +1,14 @@
+﻿---
+ID: "946c2e25-990a-4fe3-866a-46cb737623c7"
+Parent: "42d3eebd-4a27-4c03-bfce-684570a2babc"
+Template: "50c776f4-3bd4-44a0-a802-eb384a443dad"
+Path: /sitecore/system/Data Exchange/Foundation Database Tenant/Data Access/Apply Mapping Rules
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T023453Z

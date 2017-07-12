@@ -1,0 +1,18 @@
+﻿---
+ID: "6f613649-2a88-4028-94cb-0eb36cef9c7b"
+Parent: "c559aa17-221a-4374-a6b6-58b5dde38364"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/SitecoreProvider/Data Access/Static Value Accessor/Settings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170126T211015Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

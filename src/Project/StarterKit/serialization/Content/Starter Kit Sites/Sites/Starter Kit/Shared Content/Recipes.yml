@@ -1,0 +1,19 @@
+﻿---
+ID: "2de4bc4d-ec72-4aea-bef9-39601b01181b"
+Parent: "086130c3-b3d8-4080-bbd5-e0abe183fe99"
+Template: "57ab960e-72ea-4ddb-be73-9c994bf1bc24"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Shared Content/Recipes
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{10D7C460-7F24-4E2C-95D3-59CC0BD45741}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161020T195000Z

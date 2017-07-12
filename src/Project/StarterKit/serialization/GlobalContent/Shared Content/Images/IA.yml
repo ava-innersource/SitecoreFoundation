@@ -1,0 +1,21 @@
+﻿---
+ID: "12460234-9b16-43cb-bb50-3c5c8b9d7bc3"
+Parent: "fe0e799c-629e-4dd8-9e24-142462098d79"
+Template: "713398d7-366f-4122-a7c0-8bc9ac235df7"
+Path: /sitecore/content/Global/Shared Content/Images/IA
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151003T222919
+    - ID: "3f587316-405d-4e2e-90af-dfef50b981ca"
+      Hint: Caption
+      Value: Sample Information Architecture
+    - ID: "549ab079-3a2d-4099-a79f-4d4b6342e69d"
+      Hint: Image
+      Value: |
+        <image mediaid="{605A9AAD-5AE8-4AF3-9F4A-8D710883EE1F}" ></image>

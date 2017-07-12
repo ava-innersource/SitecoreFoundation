@@ -1,0 +1,21 @@
+﻿---
+ID: "7c33c2d5-7d75-4932-b97c-ed041b953bf2"
+Parent: "a1b12f7d-3594-4f30-b9d2-7e5e8500e39b"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Component Guide/Content/Headings/Sample H1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151025T041919
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: "This is the largest Header - H1 tag"

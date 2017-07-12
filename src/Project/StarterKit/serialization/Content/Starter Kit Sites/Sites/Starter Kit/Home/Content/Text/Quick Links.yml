@@ -1,0 +1,24 @@
+﻿---
+ID: "30b50cb5-d81e-4bc6-9949-d79b08db91c6"
+Parent: "ebade0ad-7cfd-4193-b7a0-a831e3f87064"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Content/Text/Quick Links
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150606T221639
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <a href="~/link.aspx?_id=87989F2C667D4436B65C175BDC703CEB&amp;_z=z" class="button primary small">SEO</a>
+        <a href="~/link.aspx?_id=0AE5BDE1F85D4A348CD2E6329BC0F6A0&amp;_z=z" class="button primary small">Tags</a>
+        <a href="~/link.aspx?_id=9E090C2F2D694B94AEA4DFCB71D10E91&amp;_z=z" class="button primary small">Language</a>

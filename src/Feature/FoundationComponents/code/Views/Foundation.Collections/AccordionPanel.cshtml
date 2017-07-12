@@ -1,0 +1,24 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+@using SF.Foundation.CommonComponents
+
+@model RenderingModel
+
+@{
+    string renderingID = "r" + RenderingContext.Current.Rendering.UniqueId.ToString("N");
+
+    string activeCSS = "";
+    if (Html.GetCheckboxRenderingParameterValue("IsActive"))
+    {
+        activeCSS = "active";
+    }
+}
+
+<li @Html.GetContainerTagAttributes("accordion-navigation")>
+    <a href="#@renderingID" role="tab" id="@renderingID-heading" aria-controls="@renderingID">@Html.Sitecore().Field("Title")</a>
+    <div id="@renderingID" class="content @activeCSS" role="tabpanel" aria-labelledby="@renderingID-heading">
+       @Html.Sitecore().DynamicPlaceholder("Column1")
+    </div>
+ </li>

@@ -1,0 +1,123 @@
+﻿---
+ID: "0755610c-8298-45ce-b480-b1a2b8687bfa"
+Parent: "b0124b54-c0ea-42f0-9b0a-26e6e02eb52d"
+Template: "195731e3-8313-4dcb-b910-2d3a465a4625"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/SlickCaroursel
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{E5E073A5-C986-4C7D-A6B6-2AE34BE74785}"
+              p:before="r[@uid='{19ACA52A-2A7E-40FB-BF32-AF07A3B04D07}']"
+              s:ds="{3ADABE69-FEAF-42A7-A091-F90015BF5F29}"
+              s:id="{A7540328-E131-4273-808C-C59F49BB9FFF}"
+              s:ph="/Middle Area/Column1_69d4af77-1290-4bbf-8aba-9bf3c62380db/CarouselItems_40b78e29-0715-4a21-b8f1-e6dbc138461a/Column1_2481a15a-0f88-4485-872a-bbc232d5ab05" />
+            <r
+              uid="{19ACA52A-2A7E-40FB-BF32-AF07A3B04D07}"
+              p:before="r[@uid='{22951427-FD56-4E72-88B7-4A57CF02F60B}']"
+              s:ds="{9821EEAB-EBB5-4FFE-9F7F-4FFDBEB3FCE0}"
+              s:id="{A7540328-E131-4273-808C-C59F49BB9FFF}"
+              s:ph="/Middle Area/Column1_69d4af77-1290-4bbf-8aba-9bf3c62380db/CarouselItems_40b78e29-0715-4a21-b8f1-e6dbc138461a/Column1_22951427-fd56-4e72-88b7-4a57cf02f60b" />
+            <r
+              uid="{22951427-FD56-4E72-88B7-4A57CF02F60B}"
+              p:before="r[@uid='{2481A15A-0F88-4485-872A-BBC232D5AB05}']"
+              s:id="{8C89A9AB-F936-4072-9CFC-77E4C0216316}"
+              s:ph="/Middle Area/Column1_69d4af77-1290-4bbf-8aba-9bf3c62380db/CarouselItems_40b78e29-0715-4a21-b8f1-e6dbc138461a" />
+            <r
+              uid="{2481A15A-0F88-4485-872A-BBC232D5AB05}"
+              p:before="r[@uid='{BEB9B9E0-3FBE-42FC-ABD9-E77C27CA64F7}']"
+              s:id="{8C89A9AB-F936-4072-9CFC-77E4C0216316}"
+              s:ph="/Middle Area/Column1_69d4af77-1290-4bbf-8aba-9bf3c62380db/CarouselItems_40b78e29-0715-4a21-b8f1-e6dbc138461a" />
+            <r
+              uid="{BEB9B9E0-3FBE-42FC-ABD9-E77C27CA64F7}"
+              p:before="r[@uid='{3CDE4573-75E0-4FF3-BAB3-C6E6E6640A05}']"
+              s:ds="{BA5C93F8-286F-4604-8E25-78AB508DD4CA}"
+              s:id="{21EBEA6F-188D-441A-BEF9-6C02188B145D}"
+              s:ph="/Middle Area/Column1_69d4af77-1290-4bbf-8aba-9bf3c62380db/Column1_40b78e29-0715-4a21-b8f1-e6dbc138461a" />
+            <r
+              uid="{3CDE4573-75E0-4FF3-BAB3-C6E6E6640A05}"
+              p:before="r[@uid='{4F68339C-B40C-468C-A8D0-9E2FE7F2B5CE}']"
+              s:ds="{12460234-9B16-43CB-BB50-3C5C8B9D7BC3}"
+              s:id="{21EBEA6F-188D-441A-BEF9-6C02188B145D}"
+              s:ph="/Middle Area/Column1_69d4af77-1290-4bbf-8aba-9bf3c62380db/Column1_40b78e29-0715-4a21-b8f1-e6dbc138461a" />
+            <r
+              uid="{4F68339C-B40C-468C-A8D0-9E2FE7F2B5CE}"
+              p:before="r[@uid='{40B78E29-0715-4A21-B8F1-E6DBC138461A}']"
+              s:ds="{09976B66-F160-4760-9E46-1C6641ABA2C1}"
+              s:id="{21EBEA6F-188D-441A-BEF9-6C02188B145D}"
+              s:ph="/Middle Area/Column1_69d4af77-1290-4bbf-8aba-9bf3c62380db/Column1_40b78e29-0715-4a21-b8f1-e6dbc138461a" />
+            <r
+              uid="{40B78E29-0715-4A21-B8F1-E6DBC138461A}"
+              p:before="r[@uid='{A934919C-82DC-4B28-AFCD-4D0EBFB067AF}']"
+              s:ds=""
+              s:id="{67430B9D-B5DF-4B48-8926-8A9A4107263D}"
+              s:par="Display Single Item=1&amp;Accessibility&amp;Desktop Resolution&amp;Desktop Items&amp;Small Desktop Resolution&amp;Small Desktop Items&amp;Tablet Resolution&amp;Tablet Items&amp;Tablet Small Resolution&amp;Tablet Small Items&amp;Mobile Resolution&amp;Mobile Items&amp;Items Scale Up&amp;Arrows=1&amp;Append Arrows&amp;Append Dots&amp;Previous Arrow&amp;Next Arrow&amp;Center Mode&amp;Center Padding&amp;CSS Ease&amp;Show Dots=1&amp;Dots Class&amp;Draggable=1&amp;Fade&amp;Focus on Select&amp;Easing&amp;Edge Friction&amp;Initial Slide&amp;Rows&amp;Slide&amp;Slides per Row&amp;Slides To Show&amp;Slides To Scroll&amp;CSS&amp;Transform&amp;Variable Width&amp;Vertical&amp;Vertical Swipe&amp;zIndex&amp;Pagination=1&amp;Show Pagination Numbers&amp;Pagination Speed&amp;Scroll Per Page&amp;Navigation&amp;Previous Text&amp;Next Text&amp;Custom Paging&amp;Auto Play=1&amp;Auto Play Speed=2000&amp;Stop on Hover=1&amp;Rewind Nav=1&amp;Transition Style&amp;Auto Height=1&amp;Add Class Active&amp;AdaptiveHeight&amp;Infinite=1&amp;Navigation For Class&amp;Lazy Load&amp;Mobile First&amp;Pause on Focus&amp;Pause on Hover=1&amp;Pause on Dots Hover=1&amp;Respond To&amp;Responsive&amp;Animation Speed&amp;Swipe&amp;Swipe To Slide&amp;Touch Move&amp;Touch Threshold&amp;Right To Left&amp;Wait For Animation&amp;ID&amp;class&amp;ShowForSmallOnly&amp;ShowForMediumUp&amp;ShowForMediumOnly&amp;ShowForLargeUp&amp;ShowForLargeOnly&amp;ShowForXLargeUp&amp;ShowForXLargeOnly&amp;ShowForXXLargeUp&amp;HideForSmallOnly&amp;HideForMediumUp&amp;HideForMeidumOnly&amp;HideForLargeUp&amp;HideForLargeOnly&amp;HideForXLargeUp&amp;HideForXLargeOnly&amp;HideForXXLargeUp&amp;ShowForLandscape&amp;ShowForPortrait&amp;ShowForTouch&amp;HideForTouch&amp;ShowForPrint&amp;HideForPrint"
+              s:ph="/Middle Area/Column1_69d4af77-1290-4bbf-8aba-9bf3c62380db" />
+            <r
+              uid="{A934919C-82DC-4B28-AFCD-4D0EBFB067AF}"
+              p:before="r[@uid='{9B6785AA-9003-4A22-AEDF-72CCEDF0C754}']"
+              s:ds="{12460234-9B16-43CB-BB50-3C5C8B9D7BC3}"
+              s:id="{21EBEA6F-188D-441A-BEF9-6C02188B145D}"
+              s:ph="/Middle Area/Column1_69d4af77-1290-4bbf-8aba-9bf3c62380db/CarouselItems_39db1972-a6f4-42ef-8d8a-1c83b38d254f/Column1_45c616fa-8490-44fa-8f44-f0171bffabfc" />
+            <r
+              uid="{9B6785AA-9003-4A22-AEDF-72CCEDF0C754}"
+              p:before="r[@uid='{5EEB0B95-CB1A-490D-B283-5B4FD32254C2}']"
+              s:ds="{BA5C93F8-286F-4604-8E25-78AB508DD4CA}"
+              s:id="{21EBEA6F-188D-441A-BEF9-6C02188B145D}"
+              s:ph="/Middle Area/Column1_69d4af77-1290-4bbf-8aba-9bf3c62380db/CarouselItems_39db1972-a6f4-42ef-8d8a-1c83b38d254f/Column1_5eeb0b95-cb1a-490d-b283-5b4fd32254c2" />
+            <r
+              uid="{5EEB0B95-CB1A-490D-B283-5B4FD32254C2}"
+              p:before="r[@uid='{45C616FA-8490-44FA-8F44-F0171BFFABFC}']"
+              s:id="{8C89A9AB-F936-4072-9CFC-77E4C0216316}"
+              s:ph="/Middle Area/Column1_69d4af77-1290-4bbf-8aba-9bf3c62380db/CarouselItems_39db1972-a6f4-42ef-8d8a-1c83b38d254f" />
+            <r
+              uid="{45C616FA-8490-44FA-8F44-F0171BFFABFC}"
+              p:before="r[@uid='{7698248D-0E4A-4B07-AC99-2078D86A4E79}']"
+              s:id="{8C89A9AB-F936-4072-9CFC-77E4C0216316}"
+              s:ph="/Middle Area/Column1_69d4af77-1290-4bbf-8aba-9bf3c62380db/CarouselItems_39db1972-a6f4-42ef-8d8a-1c83b38d254f" />
+            <r
+              uid="{7698248D-0E4A-4B07-AC99-2078D86A4E79}"
+              p:before="r[@uid='{69D4AF77-1290-4BBF-8ABA-9BF3C62380DB}']"
+              s:id="{8C89A9AB-F936-4072-9CFC-77E4C0216316}"
+              s:ph="/Middle Area/Column1_69d4af77-1290-4bbf-8aba-9bf3c62380db/CarouselItems_08700119-e02a-4f20-aaba-3fce8d065893" />
+            <r
+              uid="{69D4AF77-1290-4BBF-8ABA-9BF3C62380DB}"
+              p:before="r[@uid='{296294FA-AB36-4F1E-B667-CCCDCC2BF215}']"
+              s:id="{F6E1983C-3451-45F8-A239-5540AB97DD5B}"
+              s:ph="Middle Area" />
+            <r
+              uid="{9F29D419-958A-4DFE-A2DE-9C56DC0A8591}"
+              s:par="RootItem={71B87E08-09C7-4E7D-8A0A-07F2FD2BFF24}&amp;IncludeRootItem&amp;DisplayNameField&amp;MaxDepth=3&amp;IncludeBackLink&amp;BackLinkText=Back&amp;RightAligned&amp;IncludeParentLinkInSubmenu&amp;ID&amp;class&amp;ShowForSmallOnly&amp;ShowForMediumUp&amp;ShowForMediumOnly&amp;ShowForLargeUp&amp;ShowForLargeOnly&amp;ShowForXLargeUp&amp;ShowForXLargeOnly&amp;ShowForXXLargeUp&amp;HideForSmallOnly&amp;HideForMediumUp&amp;HideForMeidumOnly&amp;HideForLargeUp&amp;HideForLargeOnly&amp;HideForXLargeUp&amp;HideForXLargeOnly&amp;HideForXXLargeUp&amp;ShowForLandscape&amp;ShowForPortrait&amp;ShowForTouch&amp;HideForTouch&amp;ShowForPrint&amp;HideForPrint" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160617T151232Z
+    - ID: "25e2ef68-b6e5-4422-b915-cc8c7d5bb8b0"
+      Hint: GooglePlusName
+      Value: SlickCaroursel
+    - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
+      Hint: OpenGraphTitle
+      Value: SlickCaroursel
+    - ID: "96f5b29c-d4d5-4941-a3fe-5b52244a9a55"
+      Hint: PageScripts
+      Type: Treelist
+      Value: 
+    - ID: "d4d04742-63a3-4e00-8533-eb6e17ece948"
+      Hint: PageStyles
+      Type: Treelist
+      Value: 
+    - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
+      Hint: TwitterTitle
+      Value: SlickCaroursel

@@ -1,0 +1,21 @@
+﻿---
+ID: "8ef87538-044c-4d79-8356-87a0f83f8ebc"
+Parent: "91a98b32-5acb-4205-9c8c-fb6ea26ee673"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/LogOut/Content/Text/Log Out Message
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160125T224152
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: You are now Logged Off.

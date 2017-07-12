@@ -1,0 +1,18 @@
+﻿---
+ID: "38acc83b-bc60-42a9-9101-cc982ef00133"
+Parent: "277f1530-c46b-4fd2-b925-7654d266b8ca"
+Template: "64b741d1-04f6-4f5d-ad66-e70ff4f62174"
+Path: "/sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Component Guide/Content/Links/Inline List - Link 5"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150920T122736
+    - ID: "89ae30d4-6d7a-4be6-89e9-5e44244928c4"
+      Hint: Link
+      Value: |
+        <link linktype="external" text="Link 5" url="http://#" anchor="" target="" />

@@ -1,0 +1,32 @@
+﻿---
+ID: "c3135c7c-8d8a-4c31-bdba-e82a9af1acfa"
+Parent: "db662edf-5965-4848-ad14-ba6bf0d55d1e"
+Template: "1ab4f9ad-b004-413c-8924-3e07143a614b"
+Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/Video Settings
+DB: core
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: people/32x32/film.png
+- ID: "4431914a-c40b-437c-8add-d2ed12cc8cc3"
+  Hint: Icon
+  Value: people/32x32/film.png
+- ID: "cf738220-908d-4c3f-9482-32e625daf13c"
+  Hint: Fields
+  Value: mp4|webm|ogg|AutoPlay|Preload|Poster|Loop|Width|Height|CenterBigPlayButton|NotSupportedMessage|AdditionalSetupOptions
+Languages:
+- Language: en
+  Fields:
+  - ID: "5f0812af-d370-4292-afee-f26a39b7406d"
+    Hint: Tooltip
+    Value: Video Settings
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150913T101315
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

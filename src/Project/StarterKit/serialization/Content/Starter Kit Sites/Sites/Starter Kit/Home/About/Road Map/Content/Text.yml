@@ -1,0 +1,14 @@
+﻿---
+ID: "e4fd9cb2-ed0e-4fc7-ae78-2fd877d3a998"
+Parent: "afe6e224-bc99-4031-8395-f9a4f9ae8165"
+Template: "52085dde-d6b5-41ad-ab1a-8d3dc19480a0"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/About/Road Map/Content/Text
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151006T232946

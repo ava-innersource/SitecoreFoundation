@@ -1,0 +1,18 @@
+﻿---
+ID: "0fe9f3e9-64f7-44cd-8481-bcd2564df537"
+Parent: "905bb80c-ba30-4642-98df-a70e2eecd6fd"
+Template: "58bfe90b-200d-4acb-8c2e-78bd9057387d"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Video Tracking/Content/Videos/Video
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "07bde6da-e330-4b92-bbf1-f841e691fa50"
+      Hint: mp4
+      Value: |
+        <link text="" linktype="internal" class="" title="" target="" querystring="" id="{B2050CA6-88D8-4EDE-8859-F30D55A6FBC9}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160621T203025Z

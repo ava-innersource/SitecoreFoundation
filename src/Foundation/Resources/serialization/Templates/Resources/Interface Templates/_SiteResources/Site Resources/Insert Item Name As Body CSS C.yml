@@ -1,0 +1,21 @@
+﻿---
+ID: "835aa9e2-9f18-4bed-b927-f4446723b5ac"
+Parent: "88ad20bc-780c-41f3-8e2d-159efae2efe6"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/SF/Foundation/Resources/Interface Templates/_SiteResources/Site Resources/Insert Item Name As Body CSS Class
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Checkbox
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151221T162411

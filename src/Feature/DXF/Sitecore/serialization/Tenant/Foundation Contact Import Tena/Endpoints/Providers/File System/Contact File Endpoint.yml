@@ -1,0 +1,19 @@
+﻿---
+ID: "1640b66d-97eb-463e-898c-9b8393484c6b"
+Parent: "319d561d-f0f0-4e43-8449-e0d9a133dd28"
+Template: "567c60a0-a45c-4508-8332-ce727e80760b"
+Path: /sitecore/system/Data Exchange/Foundation Contact Import Tenant/Endpoints/Providers/File System/Contact File Endpoint
+DB: master
+SharedFields:
+- ID: "90f48c67-f9ba-416a-8c81-3df26cfd6731"
+  Hint: Path
+  Value: |
+    c:\ASF\Release\Release_8_2\Source\Foundation\Avanade.SC.Integration\SampleData\ContactsFile\contacts.dat
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T214511Z

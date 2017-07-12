@@ -1,0 +1,53 @@
+﻿---
+ID: "dac8b29c-5cd8-4650-aa09-3c9115bd2648"
+Parent: "9e4bd2e6-5f1a-4ac7-b038-3a0c67b1d74c"
+Template: "195731e3-8313-4dcb-b910-2d3a465a4625"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Json
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{561F061F-448A-4771-A2F1-EAA997515A80}"
+              p:before="r[@uid='{18D01474-D2AE-4B3E-821A-66C8BE1A4CEF}']"
+              s:ds="{C7FC21EF-3F04-4A63-8052-3B10C62EFAA8}"
+              s:id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+              s:ph="/Middle Area/Column1_48f3d855-292b-444b-b124-5e25e9fce33e/HandlebarTemplates_18d01474-d2ae-4b3e-821a-66c8be1a4cef" />
+            <r
+              uid="{18D01474-D2AE-4B3E-821A-66C8BE1A4CEF}"
+              p:before="r[@uid='{48F3D855-292B-444B-B124-5E25E9FCE33E}']"
+              s:ds="{386B01C0-D9A1-4F68-A12F-DD2F5F81269E}"
+              s:id="{3390D758-A398-48EB-84C6-05B576D41A45}"
+              s:ph="/Middle Area/Column1_48f3d855-292b-444b-b124-5e25e9fce33e" />
+            <r
+              uid="{48F3D855-292B-444B-B124-5E25E9FCE33E}"
+              p:before="r[@uid='{296294FA-AB36-4F1E-B667-CCCDCC2BF215}']"
+              s:id="{F6E1983C-3451-45F8-A239-5540AB97DD5B}"
+              s:ph="Middle Area" />
+            <r
+              uid="{9F29D419-958A-4DFE-A2DE-9C56DC0A8591}"
+              s:par="RootItem={71B87E08-09C7-4E7D-8A0A-07F2FD2BFF24}&amp;IncludeRootItem&amp;DisplayNameField&amp;MaxDepth=3&amp;IncludeBackLink&amp;BackLinkText=Back&amp;RightAligned&amp;IncludeParentLinkInSubmenu&amp;ID&amp;class&amp;ShowForSmallOnly&amp;ShowForMediumUp&amp;ShowForMediumOnly&amp;ShowForLargeUp&amp;ShowForLargeOnly&amp;ShowForXLargeUp&amp;ShowForXLargeOnly&amp;ShowForXXLargeUp&amp;HideForSmallOnly&amp;HideForMediumUp&amp;HideForMeidumOnly&amp;HideForLargeUp&amp;HideForLargeOnly&amp;HideForXLargeUp&amp;HideForXLargeOnly&amp;HideForXXLargeUp&amp;ShowForLandscape&amp;ShowForPortrait&amp;ShowForTouch&amp;HideForTouch&amp;ShowForPrint&amp;HideForPrint" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160914T214500Z
+    - ID: "25e2ef68-b6e5-4422-b915-cc8c7d5bb8b0"
+      Hint: GooglePlusName
+      Value: Json
+    - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
+      Hint: OpenGraphTitle
+      Value: Json
+    - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
+      Hint: TwitterTitle
+      Value: Json

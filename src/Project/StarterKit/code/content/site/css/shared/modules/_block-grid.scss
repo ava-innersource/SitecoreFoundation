@@ -1,0 +1,13 @@
+﻿@import "../base/_colors";
+@import "../base/_fonts";
+
+#block-grid {
+    ul {
+
+        li > img {
+            width: 100%;
+            height: auto;
+        }
+
+    }
+}

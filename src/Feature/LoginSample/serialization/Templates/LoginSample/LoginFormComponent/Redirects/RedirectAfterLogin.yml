@@ -1,0 +1,21 @@
+﻿---
+ID: "535ff8d3-f096-4b03-83e4-e6f5b0209a10"
+Parent: "c60da919-5cc7-4c06-bc82-aaf56c2d8a80"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/SF/Feature/LoginSample/LoginFormComponent/Redirects/RedirectAfterLogin
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: General Link
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151227T145803

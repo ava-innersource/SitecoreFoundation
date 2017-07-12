@@ -1,0 +1,37 @@
+﻿---
+ID: "64166641-3d3d-4676-ae4c-f50953882657"
+Parent: "ebade0ad-7cfd-4193-b7a0-a831e3f87064"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Content/Text/Slide 3
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150606T225041
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <img alt="" src="/content/site/img/banner3.jpg" />
+        <div class="slide-contents">
+        <div class="slide-text">
+        <h1>More than Just a <br />
+        UI Framework</h1>
+        <h2>A Powerful Multi Site Configuration Driven Framework.</h2>
+        </div>
+        <div class="arrow-box arrow-box-zip-code">
+        <div class="arrow-box-inner">
+        <div class="clearfix">
+        <a href="~/link.aspx?_id=B0124B54C0EA42F09B0A26E6E02EB52D&_z=z" class="button button-link text-left">Click here to view the details</a> 
+        <a href="~/link.aspx?_id=B0124B54C0EA42F09B0A26E6E02EB52D&_z=z" class="button primary">More</a> 
+        </div>
+        </div>
+        </div>
+        </div>

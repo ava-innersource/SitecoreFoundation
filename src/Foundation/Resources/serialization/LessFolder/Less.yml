@@ -1,0 +1,18 @@
+﻿---
+ID: "11a48060-f893-4bef-ba9c-0a673b534045"
+Parent: "86435d31-1ae6-4f8e-99fc-3d0483641199"
+Template: "93f12097-a62d-49eb-9696-526e278da522"
+Path: /sitecore/content/Global/Less
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151119T173012

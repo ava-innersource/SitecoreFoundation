@@ -1,0 +1,37 @@
+﻿@import "../base/_colors";
+@import "../base/_fonts";
+
+#footer {
+	background-color: $color3;
+	margin-top: 2em;
+	padding: 2em 0;
+
+	.logo {
+		max-width: 75%;
+		opacity: .5;
+	}
+
+	.columns {
+		color: $color5;
+	}
+
+	.copyright {
+		color: $color5;
+		display: block;
+		margin-top: 2em;
+	}
+
+	.social {
+		float: right;
+
+		li {
+			list-style-type: none;
+			float: left;
+			margin-left: 20px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}

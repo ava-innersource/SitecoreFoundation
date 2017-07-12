@@ -1,0 +1,28 @@
+﻿---
+ID: "5ee2141a-1c1a-45dd-9eb6-4e3aa54ce7cc"
+Parent: "1c7cbb97-485d-4540-9d41-f3a3f90ed85c"
+Template: "1c7cbb97-485d-4540-9d41-f3a3f90ed85c"
+Path: /sitecore/templates/SF/Feature/Handlebars/Component Templates/HandlebarCollectionContainer/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1c2ede9f-6da2-498a-b922-5d7a9150124f"
+      Hint: Enable Pagination
+      Type: Checkbox
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151113T134822
+    - ID: "5db357fa-0dba-4347-b70b-5eb20ae353f6"
+      Hint: Items Per Page
+      Value: 10
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "ff85b312-222e-4188-8eab-67b98e63cab2"
+      Hint: Querystring Parameter
+      Value: page

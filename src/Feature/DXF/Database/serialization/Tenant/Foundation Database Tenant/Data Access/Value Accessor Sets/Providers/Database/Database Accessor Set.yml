@@ -1,0 +1,14 @@
+﻿---
+ID: "fa462d33-968c-485c-be42-6081d2e5b031"
+Parent: "1f4c53af-ecf9-4fb2-9f12-aa0de38c4b01"
+Template: "85da7eb6-7f14-40b8-ba1d-5029c426b99c"
+Path: /sitecore/system/Data Exchange/Foundation Database Tenant/Data Access/Value Accessor Sets/Providers/Database/Database Accessor Set
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T023751Z

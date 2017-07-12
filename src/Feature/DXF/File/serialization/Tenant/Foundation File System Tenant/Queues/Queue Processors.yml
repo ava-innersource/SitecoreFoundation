@@ -1,0 +1,14 @@
+﻿---
+ID: "fbf742b7-7e31-4ed2-b553-9ca8dabb932d"
+Parent: "585e2b8f-7958-47ca-b5fe-a147f6710714"
+Template: "7b75be5c-d34b-4d25-a3ac-d2c268c26a65"
+Path: /sitecore/system/Data Exchange/Foundation File System Tenant/Queues/Queue Processors
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T211936Z

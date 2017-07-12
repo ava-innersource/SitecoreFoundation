@@ -1,0 +1,26 @@
+﻿---
+ID: "6f3f77fc-88ba-49ea-b72e-380938878c3f"
+Parent: "51f491f4-32ec-4e2a-86dc-a9169d81d10f"
+Template: "51f491f4-32ec-4e2a-86dc-a9169d81d10f"
+Path: /sitecore/templates/SF/Feature/SlickCarousel/Rendering Parameters/SlickCarouselParameters/__Standard Values
+DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150512T232405
+    - ID: "a34a0407-4c5d-4827-b95a-6b2db1cd43ac"
+      Hint: Display Single Item
+      Type: Checkbox
+      Value: 1
+    - ID: "b73da97f-6ce9-4c1e-90d0-0ae5466a66a6"
+      Hint: Rewind Nav
+      Type: Checkbox
+      Value: 1

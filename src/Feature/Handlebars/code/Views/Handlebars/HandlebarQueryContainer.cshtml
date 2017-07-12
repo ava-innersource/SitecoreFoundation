@@ -1,0 +1,249 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+@using SF.Foundation.CommonComponents
+@using SF.Feature.Handlebars
+@using Sitecore.ContentSearch.Linq;
+@using Sitecore.Data.Fields;
+@using Sitecore.ContentSearch.SearchTypes;
+@using Sitecore.ContentSearch.Linq.Utilities;
+
+@model RenderingModel
+
+@{
+    List<Sitecore.Data.Items.Item> items = new List<Sitecore.Data.Items.Item>();
+    Sitecore.Data.Items.Item container = Model.Item;
+
+    string rootFolderId = container.Fields["Search Root"].Value;
+    var rootFolder = Sitecore.Context.Database.GetItem(rootFolderId);
+
+    string searchQuery = container.Fields["Free Text Query"].Value;
+    
+    var baseTemplateFld = (MultilistField)container.Fields["Base Template"];
+    var baseTemplates = baseTemplateFld.GetItems();
+
+    var fieldFiltersFld = (NameValueListField)container.Fields["Field Filters"];
+    var fieldFilters = fieldFiltersFld.NameValues;    
+
+    var queryParam = container.Fields["Query Parameter"].Value;
+    queryParam = string.IsNullOrEmpty(queryParam) ? "q" : queryParam;
+    var additionalSearch = HttpContext.Current.Request.QueryString[queryParam];
+
+    var indexNameOverride = container.Fields["Index Name Override"].Value;
+
+    var orderByField = container.Fields["Order By Field"].Value;
+    bool orderByAscending = container.Fields["Order By Direction"].Value.ToLower() == "ascending";
+
+    Sitecore.ContentSearch.ISearchIndex index = null;
+    if (!string.IsNullOrEmpty(indexNameOverride))
+    {
+        //Overriden Index Name
+        index = Sitecore.ContentSearch.ContentSearchManager.GetIndex(indexNameOverride);
+    }
+    else
+    {
+        //Use context of root Item to get index
+        if (rootFolder != null)
+        { 
+            var tempItem = (Sitecore.ContentSearch.SitecoreIndexableItem)rootFolder;
+            index = Sitecore.ContentSearch.ContentSearchManager.GetIndex(tempItem);
+        }
+    }
+
+    if (index != null)
+    { 
+        using (var context = index.CreateSearchContext())
+        {
+            var rootPath = rootFolder.Paths.Path;
+            var predicate = Sitecore.ContentSearch.Linq.Utilities.PredicateBuilder.True<Sitecore.ContentSearch.SearchTypes.SearchResultItem>();
+            
+            //ensure item falls under root item
+            predicate = Sitecore.ContentSearch.Linq.Utilities.PredicateBuilder.And(predicate, item => item.Path.StartsWith(rootPath));
+
+            if (!string.IsNullOrEmpty(searchQuery))
+            {
+                predicate = Sitecore.ContentSearch.Linq.Utilities.PredicateBuilder.And(predicate, item => item.Content.Contains(searchQuery));
+            }
+
+            if (baseTemplates.Length > 0)
+            {
+                var innerPredicate = Sitecore.ContentSearch.Linq.Utilities.PredicateBuilder.False<SearchResultItem>();
+                foreach(var template in baseTemplates)
+                {
+                    innerPredicate = Sitecore.ContentSearch.Linq.Utilities.PredicateBuilder.Or(innerPredicate, item => item.TemplateId == template.ID);                
+                }
+                predicate = Sitecore.ContentSearch.Linq.Utilities.PredicateBuilder.And(predicate, innerPredicate);
+            }
+            
+            foreach(string key in fieldFilters.Keys)
+            {
+                string filterValue = HttpUtility.UrlDecode(fieldFilters[key]);
+
+                if (filterValue.StartsWith("!"))
+                {
+                    filterValue = filterValue.Replace("!", "");
+                    predicate = Sitecore.ContentSearch.Linq.Utilities.PredicateBuilder.And(predicate, item => item[key] != filterValue);
+                }
+                else
+                {
+                    if (filterValue.StartsWith("$"))
+                    {
+                        var pageItem = Sitecore.Context.Item;
+                        var pageIDFormat1 = pageItem.ID.Guid.ToString();
+                        var pageIDFormat2 = pageIDFormat1.Replace("-","");
+
+                        if (filterValue == "$ID")
+                        {
+                            predicate = Sitecore.ContentSearch.Linq.Utilities.PredicateBuilder.And(predicate, item => item[key] == pageIDFormat1 || item[key] == pageIDFormat2);
+                        }
+                        else
+                        {
+                            filterValue = filterValue.Replace("$", "");
+                            if (pageItem.HasField(filterValue) && !string.IsNullOrEmpty(pageItem.Fields[filterValue].Value))
+                            {
+                                filterValue = pageItem.Fields[filterValue].Value;
+                                predicate = Sitecore.ContentSearch.Linq.Utilities.PredicateBuilder.And(predicate, item => item[key] == filterValue);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (filterValue.Length > 30 && filterValue.Length < 40)
+                        {
+                            Guid possibleGuid = Guid.Empty;
+                            if (Guid.TryParse(filterValue, out possibleGuid))
+                            {
+                                //Sometimes Guid's get stored in Lucene index with and without dashes.
+                                var possibleFormat1 = possibleGuid.ToString();
+                                var possibleFormat2 = possibleFormat1.Replace("-", "");
+                                predicate = Sitecore.ContentSearch.Linq.Utilities.PredicateBuilder.And(predicate, item => item[key] == possibleFormat1 || item[key] == possibleFormat2);
+                            }
+                            else
+                            {
+                                predicate = Sitecore.ContentSearch.Linq.Utilities.PredicateBuilder.And(predicate, item => item[key] == filterValue);
+                            }
+                        }
+                        else
+                        { 
+                            predicate = Sitecore.ContentSearch.Linq.Utilities.PredicateBuilder.And(predicate, item => item[key] == filterValue);
+                        }
+                    }
+                }
+                
+            }
+            
+            if (!string.IsNullOrEmpty(additionalSearch))
+            {
+                predicate = Sitecore.ContentSearch.Linq.Utilities.PredicateBuilder.And(predicate, item => item.Content.Contains(additionalSearch));
+            }
+
+            var query = context.GetQueryable<Sitecore.ContentSearch.SearchTypes.SearchResultItem>().Where(predicate);
+            
+            if (!string.IsNullOrEmpty(orderByField))
+            {
+                if (orderByAscending)
+                {
+                    query = query.OrderBy(item => item[orderByField]);  
+                }
+                else
+                {
+                    query = query.OrderByDescending(item => item[orderByField]);
+                }
+                
+            }
+            
+            var results = query.GetResults();
+            foreach (var result in results.Hits)
+            {
+                var item = result.Document.GetItem();
+                items.Add(item);
+            }
+        }
+    }
+    
+    
+    
+
+    bool enablePagination = ((Sitecore.Data.Fields.CheckboxField)container.Fields["Enable Pagination"]).Checked;
+    int itemsPerPage = 10;
+    int.TryParse(container.Fields["Items Per Page"].Value, out itemsPerPage);
+    string queryStringParam = container.Fields["Querystring Parameter"].Value;
+    int currentPage = 1;
+    int.TryParse(HttpContext.Current.Request.QueryString[queryStringParam], out currentPage);
+    currentPage = currentPage < 1 ? 1 : currentPage;
+
+    int originalCount = items.Count;
+
+    int numPages = Convert.ToInt32(Math.Ceiling((double) ((double)items.Count / (double)itemsPerPage)));
+    
+    if (enablePagination)
+    {
+        int skipItems = (currentPage - 1) * itemsPerPage;
+        items = items.Skip(skipItems).Take(itemsPerPage).ToList();
+    }
+
+    HandlebarManager.SetupContainer(items);
+
+    string currentUrl = HttpContext.Current.Request.Url.PathAndQuery;
+
+    currentUrl = currentUrl.Replace(queryStringParam + "=" + currentPage, "");
+    if (currentUrl.IndexOf("?") > -1)
+    {
+        if (!currentUrl.EndsWith("?") && !currentUrl.EndsWith("&"))
+        {
+            currentUrl = currentUrl + "&";
+        }
+    }
+    else
+    {
+        currentUrl = currentUrl + "?";        
+    }
+}
+
+@using (Html.ComponentContainer("HandlebarContainer"))
+{
+    if (Sitecore.Context.PageMode.IsExperienceEditorEditing && items.Count == 0)
+    {
+        <div>No Items Found to bind to.</div>
+    }
+    
+    @Html.Sitecore().DynamicPlaceholder("HandlebarTemplates")
+
+
+    if (enablePagination && numPages > 1)
+    {
+        <ul class="pagination">
+            @if (currentPage == 1)
+            { 
+                <li class="arrow unavailable"><a href="@(currentUrl)@(queryStringParam)=1">&laquo;</a></li>
+            }
+            else
+            {
+                <li class="arrow unavailable"><a href="@(currentUrl)@(queryStringParam)=@(currentPage-1)">&laquo;</a></li>
+            }
+
+            @for (int pageIndex = 1; pageIndex <= numPages; pageIndex++ )
+            {
+                if (pageIndex == currentPage)
+                {
+                    <li class="current"><a href="@(currentUrl)@(queryStringParam)=@pageIndex">@pageIndex</a></li>
+                }
+                else
+                {
+                    <li><a href="@(currentUrl)@(queryStringParam)=@pageIndex">@pageIndex</a></li>
+                }
+                
+            }
+
+            @if (currentPage == numPages)
+            {
+                <li class="arrow unavailable"><a href="@(currentUrl)@(queryStringParam)=@numPages">&raquo;</a></li>
+            }
+            else
+            {
+                <li class="arrow unavailable"><a href="@(currentUrl)@(queryStringParam)=@(currentPage + 1)">&raquo;</a></li>
+            }
+        </ul>
+    }
+}

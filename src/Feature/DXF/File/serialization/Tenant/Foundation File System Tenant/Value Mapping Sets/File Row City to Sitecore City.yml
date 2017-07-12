@@ -1,0 +1,14 @@
+﻿---
+ID: "f9553932-bc03-42f8-bf79-60bafba526df"
+Parent: "b3e5bdaf-fec4-4215-918e-2c32c94a1fb5"
+Template: "9748075a-268b-4bd4-8444-c6898b12d502"
+Path: /sitecore/system/Data Exchange/Foundation File System Tenant/Value Mapping Sets/File Row City to Sitecore City Item
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T213030Z

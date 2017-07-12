@@ -1,0 +1,32 @@
+﻿---
+ID: "c2c869f2-c7d2-44ca-9992-82d91e41cd21"
+Parent: "a9c0faa3-09e5-45cc-8512-64607fb3f62e"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/SF/Feature/Social/Interface Templates/_PageSocialSettings
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {A6027C22-D1CE-4B51-97CA-4DD11CD22292}
+    {24CCAC4B-FE44-440F-8D03-55C68D9DAA1E}
+    {8BCB97B2-9F97-445F-BDEC-6B28FF2AECFB}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 350
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{5E1040D4-E7B3-47C0-B35B-18F869BCDB10}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170703T025620Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

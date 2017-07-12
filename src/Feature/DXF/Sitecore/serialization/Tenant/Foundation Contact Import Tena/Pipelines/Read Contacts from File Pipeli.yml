@@ -1,0 +1,14 @@
+﻿---
+ID: "67601c0d-8a7e-4232-a49f-18cbe016139d"
+Parent: "e0ae19e0-2c47-4931-b069-053298538d23"
+Template: "2dc9c843-b841-483c-bb9b-ae0c9386404c"
+Path: /sitecore/system/Data Exchange/Foundation Contact Import Tenant/Pipelines/Read Contacts from File Pipeline
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T220838Z

@@ -1,0 +1,70 @@
+﻿---
+ID: "9e4bd2e6-5f1a-4ac7-b038-3a0c67b1d74c"
+Parent: "71b87e08-09c7-4e7d-8a0a-07f2fd2bff24"
+Template: "195731e3-8313-4dcb-b910-2d3a465a4625"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Playground Admin|pe|+item:read|pd|+item:read|ar|sitecore\Restricted Role|pe|!*|pd|!*|
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{D116F27B-6DB0-458F-9D19-E5419714410C}"
+          p:before="r[@uid='{094567E7-D47B-4A22-BCE8-A38750D0ECDE}']"
+          s:ds="{EAC3D98C-4C1A-4EC5-8687-B129AAAC826B}"
+          s:id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+          s:ph="/Middle Area/Column1_1d937612-27d8-4608-9dfa-98fe7d5162a8/HandlebarTemplates_380e87e0-89a4-47d2-8bcd-7500788ce9b5" />
+        <r
+          uid="{094567E7-D47B-4A22-BCE8-A38750D0ECDE}"
+          p:before="r[@uid='{7A35BF32-106F-4B2D-9CEB-F0676A59153D}']"
+          s:ds="{EAC3D98C-4C1A-4EC5-8687-B129AAAC826B}"
+          s:id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+          s:ph="/Middle Area/Column1_1d937612-27d8-4608-9dfa-98fe7d5162a8/HandlebarTemplates_f17590a8-306c-4ea3-8679-8e0a9d9adfd1" />
+        <r
+          uid="{7A35BF32-106F-4B2D-9CEB-F0676A59153D}"
+          p:before="r[@uid='{1D937612-27D8-4608-9DFA-98FE7D5162A8}']"
+          s:ds="{AC68EC61-1A0B-40B8-B4B8-C46441E04F57}"
+          s:id="{A7540328-E131-4273-808C-C59F49BB9FFF}"
+          s:ph="/Middle Area/Column1_1d937612-27d8-4608-9dfa-98fe7d5162a8" />
+        <r
+          uid="{1D937612-27D8-4608-9DFA-98FE7D5162A8}"
+          p:before="r[@uid='{296294FA-AB36-4F1E-B667-CCCDCC2BF215}']"
+          s:id="{F6E1983C-3451-45F8-A239-5540AB97DD5B}"
+          s:ph="Middle Area" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151003T213900
+    - ID: "25e2ef68-b6e5-4422-b915-cc8c7d5bb8b0"
+      Hint: GooglePlusName
+      Value: Playground
+    - ID: "2bf4b4a8-e779-4723-8ce1-f060e646b14f"
+      Hint: Images
+      Type: Treelist
+      Value: |
+        {37E88EC7-34E8-4BB2-B5E1-8C9C831D6DD8}
+        {113F3266-CA8A-4A25-AAE8-156D23F98692}
+    - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
+      Hint: OpenGraphTitle
+      Value: Playground
+    - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
+      Hint: TwitterTitle
+      Value: Playground

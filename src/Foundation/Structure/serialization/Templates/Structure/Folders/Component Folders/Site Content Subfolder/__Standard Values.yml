@@ -1,0 +1,22 @@
+﻿---
+ID: "c30a7627-522d-4af8-ad39-a6f1a45c4772"
+Parent: "57ab960e-72ea-4ddb-be73-9c994bf1bc24"
+Template: "57ab960e-72ea-4ddb-be73-9c994bf1bc24"
+Path: /sitecore/templates/SF/Foundation/Structure/Folders/Component Folders/Site Content Subfolder/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: applications/32x32/folder2_blue.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150509T203000
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

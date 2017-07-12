@@ -1,0 +1,14 @@
+﻿---
+ID: "9afc5c7d-8e7c-44de-989f-3fc04966df16"
+Parent: "2ed7bf7d-a8b7-4f61-947d-9231e79eae82"
+Template: "3b733538-8556-4554-8277-46c96dd13808"
+Path: /sitecore/system/Data Exchange/Foundation Contact Import Tenant/Queues/Queue Processors/Providers
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T214438Z

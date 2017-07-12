@@ -1,0 +1,14 @@
+﻿---
+ID: "6eb49d0f-b780-435c-b2dc-1388067b79b6"
+Parent: "e326352e-369e-455f-ac13-c9986f8683fe"
+Template: "e326352e-369e-455f-ac13-c9986f8683fe"
+Path: /sitecore/templates/SF/Feature/FoundationComponents/Rendering Parameters/FoundationParameters/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150509T160917

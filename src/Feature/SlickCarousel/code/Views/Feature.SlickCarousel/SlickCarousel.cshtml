@@ -1,0 +1,312 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Extensions
+@using SF.Foundation.CommonComponents
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+
+@model RenderingModel
+
+@{
+    string containerClass = "slick-carousel";
+
+    if (Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+        //Has no styles defined.
+        containerClass = "slick-carousel-page-Editor";
+    }
+
+    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+
+    sb.Append("{");
+
+    if (Html.GetCheckboxRenderingParameterValue("Display Single Item"))
+    {
+        sb.Append(@"""slidesToShow"":1,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Infinite"))
+    {
+        sb.Append(@"""infinite"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Accessibility"))
+    {
+        sb.Append(@"""accessibility"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("AdaptiveHeight"))
+    {
+        sb.Append(@"""adaptiveHeight"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Auto Play"))
+    {
+        sb.Append(@"""autoplay"":true,");
+    }
+
+    var speed = Html.GetRenderingParameter("Auto Play Speed");
+    if (!String.IsNullOrEmpty(speed))
+    {
+        sb.Append(@"""autoplaySpeed"":").Append(speed).Append(",");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Arrows"))
+    {
+        sb.Append(@"""arrows"":true,");
+    }
+
+    var navForClass = Html.GetRenderingParameter("Navigation For Class");
+    if (!String.IsNullOrEmpty(navForClass))
+    {
+        sb.Append(@"""asNavFor"":").Append(navForClass).Append(",");
+    }
+
+    var appendArrows = Html.GetRenderingParameter("Append Arrows");
+    if (!String.IsNullOrEmpty(appendArrows))
+    {
+        sb.Append(@"""appendArrows"":").Append(appendArrows).Append(",");
+    }
+
+    var appendDots = Html.GetRenderingParameter("Append Dots");
+    if (!String.IsNullOrEmpty(appendDots))
+    {
+        sb.Append(@"""appendDots"":").Append(appendDots).Append(",");
+    }
+
+    var prevArrow = Html.GetRenderingParameter("Previous Arrow");
+    if (!String.IsNullOrEmpty(prevArrow))
+    {
+        sb.Append(@"""prevArrow"":").Append(prevArrow).Append(",");
+    }
+    
+    var nextArrow = Html.GetRenderingParameter("Next Arrow");
+    if (!String.IsNullOrEmpty(nextArrow))
+    {
+        sb.Append(@"""nextArrow"":").Append(nextArrow).Append(",");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Center Mode"))
+    {
+        sb.Append(@"""centerMode"":true,");
+    }
+
+    var centerPadding = Html.GetRenderingParameter("Center Padding");
+    if (!String.IsNullOrEmpty(centerPadding))
+    {
+        sb.Append(@"""centerPadding"":").Append(centerPadding).Append(",");
+    }
+
+    var cssEase = Html.GetRenderingParameter("CSS Ease");
+    if (!String.IsNullOrEmpty(cssEase))
+    {
+        sb.Append(@"""cssEase"":").Append(cssEase).Append(",");
+    }
+
+    var customPaging = Html.GetRenderingParameter("Custom Paging");
+    if (!String.IsNullOrEmpty(customPaging))
+    {
+        sb.Append(@"""cssEase"":").Append(customPaging).Append(",");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Show Dots"))
+    {
+        sb.Append(@"""dots"":true,");
+    }
+
+    var dotsClass = Html.GetRenderingParameter("Dots Class");
+    if (!String.IsNullOrEmpty(dotsClass))
+    {
+        sb.Append(@"""dotsClass"":").Append(dotsClass).Append(",");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Draggable"))
+    {
+        sb.Append(@"""draggable"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Fade"))
+    {
+        sb.Append(@"""fade"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Focus on Select"))
+    {
+        sb.Append(@"""focusOnSelect"":true,");
+    }
+
+    var easing = Html.GetRenderingParameter("Easing");
+    if (!String.IsNullOrEmpty(easing))
+    {
+        sb.Append(@"""easing"":").Append(easing).Append(",");
+    }
+
+    var edgeFriction = Html.GetRenderingParameter("Edge Friction");
+    if (!String.IsNullOrEmpty(edgeFriction))
+    {
+        sb.Append(@"""edgeFriction"":").Append(edgeFriction).Append(",");
+    }
+
+    var initialSlide = Html.GetRenderingParameter("Initial Slide");
+    if (!String.IsNullOrEmpty(initialSlide))
+    {
+        sb.Append(@"""initialSlide"":").Append(initialSlide).Append(",");
+    }
+
+    var lazyLoad = Html.GetRenderingParameter("Lazy Load");
+    if (!String.IsNullOrEmpty(lazyLoad))
+    {
+        sb.Append(@"""lazyLoad"":").Append(lazyLoad).Append(",");
+    }
+    
+    if (Html.GetCheckboxRenderingParameterValue("Mobile First"))
+    {
+        sb.Append(@"""Mobile First"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Pause on Focus"))
+    {
+        sb.Append(@"""pauseOnFocus"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Pause on Hover"))
+    {
+        sb.Append(@"""pauseOnHover"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Pause on Dots Hover"))
+    {
+        sb.Append(@"""pauseOnDotsHover"":true,");
+    }
+
+    var respondTo = Html.GetRenderingParameter("Respond To");
+    if (!String.IsNullOrEmpty(respondTo))
+    {
+        sb.Append(@"""respondTo"":").Append(respondTo).Append(",");
+    }
+
+    var responsive = Html.GetRenderingParameter("Responsive");
+    if (!String.IsNullOrEmpty(responsive))
+    {
+        sb.Append(@"""responsive"":").Append(responsive).Append(",");
+    }
+
+    var rows = Html.GetRenderingParameter("Rows");
+    if (!String.IsNullOrEmpty(rows))
+    {
+        sb.Append(@"""rows"":").Append(rows).Append(",");
+    }
+
+    var slide = Html.GetRenderingParameter("Slide");
+    if (!String.IsNullOrEmpty(slide))
+    {
+        sb.Append(@"""slide"":").Append(slide).Append(",");
+    }
+
+    var slidesPerRow = Html.GetRenderingParameter("Slides per Row");
+    if (!String.IsNullOrEmpty(slidesPerRow))
+    {
+        sb.Append(@"""slidesPerRow"":").Append(slidesPerRow).Append(",");
+    }
+
+    var slidesToShow = Html.GetRenderingParameter("Slides To Show");
+    if (!String.IsNullOrEmpty(slidesToShow))
+    {
+        sb.Append(@"""slidesToShow"":").Append(slidesToShow).Append(",");
+    }
+
+    var slidesToScroll = Html.GetRenderingParameter("Slides To Scroll");
+    if (!String.IsNullOrEmpty(slidesToScroll))
+    {
+        sb.Append(@"""slidesToScroll"":").Append(slidesToScroll).Append(",");
+    }
+
+    var animationSpeed = Html.GetRenderingParameter("Animation Speed");
+    if (!String.IsNullOrEmpty(animationSpeed))
+    {
+        sb.Append(@"""speed"":").Append(animationSpeed).Append(",");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Swipe"))
+    {
+        sb.Append(@"""swipe"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Swipe To Slide"))
+    {
+        sb.Append(@"""swipeToSlide"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Touch Move"))
+    {
+        sb.Append(@"""touchMove"":true,");
+    }
+
+    var touchThreshold = Html.GetRenderingParameter("Touch Threshold");
+    if (!String.IsNullOrEmpty(touchThreshold))
+    {
+        sb.Append(@"""touchThreshold"":").Append(touchThreshold).Append(",");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("CSS"))
+    {
+        sb.Append(@"""useCSS"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Transform"))
+    {
+        sb.Append(@"""useTransform"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Variable Width"))
+    {
+        sb.Append(@"""variableWidth"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Vertical"))
+    {
+        sb.Append(@"""vertical"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Vertical Swipe"))
+    {
+        sb.Append(@"""verticalSwiping"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Vertical Swipe"))
+    {
+        sb.Append(@"""verticalSwiping"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Right To Left"))
+    {
+        sb.Append(@"""rtl"":true,");
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("Wait For Animation"))
+    {
+        sb.Append(@"""waitForAnimate"":true,");
+    }
+
+    var zIndex = Html.GetRenderingParameter("zIndex");
+    if (!String.IsNullOrEmpty(zIndex))
+    {
+        sb.Append(@"""zIndex"":").Append(zIndex).Append(",");
+    }
+
+    
+    if (sb.Length > 2)
+    {
+        //removes last comma
+        sb.Length -= 1;
+    }
+
+    sb.Append("}");
+    
+    var dataOptions = sb.ToString();
+
+}
+
+<div @Html.GetContainerTagAttributes(containerClass) data-slick='@dataOptions'>
+    @Html.Sitecore().DynamicPlaceholder("SlickCarouselItems")
+</div>

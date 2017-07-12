@@ -1,0 +1,18 @@
+﻿---
+ID: "2b506075-45a0-4d65-aa38-e491f377aacc"
+Parent: "713398d7-366f-4122-a7c0-8bc9ac235df7"
+Template: "713398d7-366f-4122-a7c0-8bc9ac235df7"
+Path: /sitecore/templates/SF/Foundation/CommonComponents/ComponentTemplates/ImageComponent/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150511T222006
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

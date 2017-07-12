@@ -1,0 +1,23 @@
+﻿---
+ID: "6310b9cb-0596-45ba-8019-35fcc5ee7e70"
+Parent: "3cfbacfb-4c0a-47c9-82f3-bdfb2ece26fb"
+Template: "bb2fa1cc-8875-4384-96db-839234722609"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Blog/2016/07/26/22/43/Latest Post
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160726T224307
+    - ID: "25e2ef68-b6e5-4422-b915-cc8c7d5bb8b0"
+      Hint: GooglePlusName
+      Value: Latest Post
+    - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
+      Hint: OpenGraphTitle
+      Value: Latest Post
+    - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
+      Hint: TwitterTitle
+      Value: Latest Post

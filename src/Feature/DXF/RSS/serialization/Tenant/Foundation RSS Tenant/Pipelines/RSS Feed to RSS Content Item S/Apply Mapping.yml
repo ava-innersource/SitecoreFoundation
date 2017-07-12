@@ -1,0 +1,21 @@
+﻿---
+ID: "1aaeed64-1499-40f9-b920-b80968af4913"
+Parent: "069c7304-b02d-4df5-921e-dcd6e3126723"
+Template: "8e726575-35cf-48a0-b2c9-00c30d16f2d9"
+Path: /sitecore/system/Data Exchange/Foundation RSS Tenant/Pipelines/RSS Feed to RSS Content Item Sync Pipeline/Apply Mapping
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+- ID: "cb970e4d-aa7c-4ad1-8984-59bf01163d08"
+  Hint: MappingSet
+  Value: "{E5D744D9-2448-46B0-8B33-FE0AA70CDFC5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T042233Z

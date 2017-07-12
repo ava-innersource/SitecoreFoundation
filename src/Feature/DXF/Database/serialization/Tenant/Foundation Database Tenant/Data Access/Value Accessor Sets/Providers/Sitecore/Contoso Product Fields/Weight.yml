@@ -1,0 +1,21 @@
+﻿---
+ID: "03883024-9c7f-497f-b7b1-c62c82d9ef93"
+Parent: "c5de8e2e-b88a-4332-af5a-f5ca490a662d"
+Template: "6f7375cc-9942-4e30-8c63-95281b69c65f"
+Path: /sitecore/system/Data Exchange/Foundation Database Tenant/Data Access/Value Accessor Sets/Providers/Sitecore/Contoso Product Fields/Weight
+DB: master
+SharedFields:
+- ID: "a011c1d5-1c40-4420-8592-d0ce0306e0dd"
+  Hint: Field
+  Value: "{EB8E92AE-FA0B-4FA0-B1CA-CE1DD991CBCF}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 700
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T033351Z

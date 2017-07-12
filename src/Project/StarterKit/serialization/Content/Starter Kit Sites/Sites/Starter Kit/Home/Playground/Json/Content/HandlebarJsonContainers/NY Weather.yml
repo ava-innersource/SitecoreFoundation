@@ -1,0 +1,18 @@
+﻿---
+ID: "386b01c0-d9a1-4f68-a12f-dd2f5f81269e"
+Parent: "9d536e7b-a823-49d7-be55-0efd61d0a8c3"
+Template: "7429be64-f183-4748-9c2c-6a01d9c63a06"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Json/Content/HandlebarJsonContainers/NY Weather
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160914T214541Z
+    - ID: "869a1247-3ecc-4038-bd83-445b8c1d13be"
+      Hint: Url
+      Value: |
+        <link linktype="external" url="https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20%28select%20woeid%20from%20geo.places%281%29%20where%20text%3D%22New%20York%2C%20NY%22%29&amp;format=json&amp;env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys" anchor="" target="" />

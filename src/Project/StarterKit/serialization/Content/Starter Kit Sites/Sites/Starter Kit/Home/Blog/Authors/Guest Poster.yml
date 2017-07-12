@@ -1,0 +1,23 @@
+﻿---
+ID: "e2944cdc-ca18-4dd6-aa5b-835259d96c9b"
+Parent: "eb982568-3045-4610-bab2-28219b300cae"
+Template: "96bf5a9d-1b8e-418a-a07b-e09965367f85"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Blog/Authors/Guest Poster
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160726T133928
+    - ID: "25e2ef68-b6e5-4422-b915-cc8c7d5bb8b0"
+      Hint: GooglePlusName
+      Value: Guest Poster
+    - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
+      Hint: OpenGraphTitle
+      Value: Guest Poster
+    - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
+      Hint: TwitterTitle
+      Value: Guest Poster

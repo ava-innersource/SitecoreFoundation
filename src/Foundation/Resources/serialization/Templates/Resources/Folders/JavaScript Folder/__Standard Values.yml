@@ -1,0 +1,28 @@
+﻿---
+ID: "8ac0c807-205d-4e9a-8211-5286cdb3c086"
+Parent: "f1c2c653-990b-459a-b627-d6bd8c84d6d0"
+Template: "f1c2c653-990b-459a-b627-d6bd8c84d6d0"
+Path: /sitecore/templates/SF/Foundation/Resources/Folders/JavaScript Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Software/32x32/text_code_javascript.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {722EC325-CC44-4687-ADBD-4EA415502F88}
+    {F1C2C653-990B-459A-B627-D6BD8C84D6D0}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150509T210306
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

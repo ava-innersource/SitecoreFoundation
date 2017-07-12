@@ -1,0 +1,14 @@
+﻿---
+ID: "905bb80c-ba30-4642-98df-a70e2eecd6fd"
+Parent: "b3c48cfb-d3bb-4c99-9e96-66ef314b2236"
+Template: "52085dde-d6b5-41ad-ab1a-8d3dc19480a0"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Video Tracking/Content/Videos
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160621T203021Z

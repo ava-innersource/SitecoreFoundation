@@ -1,0 +1,36 @@
+﻿---
+ID: "4eb242cf-fdee-4996-b86f-957f05681f57"
+Parent: "5b9f4583-bbd8-4b70-a45d-cc752a4fede8"
+Template: "5b9f4583-bbd8-4b70-a45d-cc752a4fede8"
+Path: /sitecore/templates/SF/Project/Common/Configuration Templates/Site Configuration/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/gears.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {1F1B4108-8325-44C2-89FB-AB6746A666B4}
+    {2D8DCE92-5BDE-48C6-A17A-6669D8DF0461}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140911T112619
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "835aa9e2-9f18-4bed-b927-f4446723b5ac"
+      Hint: Insert Item Name As Body CSS Class
+      Type: Checkbox
+      Value: 1
+    - ID: "d5e2ae75-9bbb-4e26-bdf2-fd3934e921ba"
+      Hint: Minify
+      Type: Checkbox
+      Value: 1

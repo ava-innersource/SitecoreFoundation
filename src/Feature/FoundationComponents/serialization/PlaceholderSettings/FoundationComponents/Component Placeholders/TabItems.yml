@@ -1,0 +1,22 @@
+﻿---
+ID: "b2a060f6-667e-4b61-9dbd-2690b0ccf63b"
+Parent: "0670aa4c-ad51-4a26-845e-59de66f7e5a8"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/SF/Feature/FoundationComponents/Component Placeholders/TabItems
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: TabItems
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{C3566A4C-6AA4-4FEF-AD47-23358BD0C3E4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150913T220210

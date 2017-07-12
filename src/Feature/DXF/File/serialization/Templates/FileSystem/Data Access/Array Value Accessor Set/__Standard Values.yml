@@ -1,0 +1,19 @@
+﻿---
+ID: "437912f8-8b33-4c00-a688-75647c238cdf"
+Parent: "0127e5b6-3a8a-4159-8f52-889cb926aa80"
+Template: "0127e5b6-3a8a-4159-8f52-889cb926aa80"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/FileSystem/Data Access/Array Value Accessor Set/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{EB32248F-BA1E-430D-A739-FE1A556CD15D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T210903Z

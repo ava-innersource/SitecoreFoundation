@@ -1,0 +1,14 @@
+﻿---
+ID: "562acdab-0534-43ba-a676-6c28eca4a13e"
+Parent: "2729aadb-9727-459c-b782-26bd1d6fdcab"
+Template: "74e14e38-169c-4189-8ebe-b4f7b3d4c95c"
+Path: /sitecore/system/Data Exchange/Foundation RSS Tenant/Data Access/Value Readers/Common
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161110T212827Z

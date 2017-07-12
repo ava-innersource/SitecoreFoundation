@@ -1,0 +1,14 @@
+﻿---
+ID: "8c092e58-fddc-428a-8a27-3bb5da3bdb0b"
+Parent: "76f68af4-8565-4305-a8a4-58f411d8ecb4"
+Template: "4fc8aeda-c181-471e-bb9a-5ff6407fc99c"
+Path: /sitecore/system/Data Exchange/Foundation RSS Tenant/Data Access/Value Accessors/Common
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161110T212827Z

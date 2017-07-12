@@ -1,0 +1,36 @@
+﻿---
+ID: "a52f3c20-859b-497b-bfa3-a3a977e6153f"
+Parent: "a5f09275-a89c-437f-b8e8-cc3321f90446"
+Template: "075c4fbd-f54e-4e6d-bd54-d49bda0913d8"
+Path: /sitecore/system/Data Exchange/Foundation RSS Tenant/Pipeline Batches/RSS Feed to RSS Content Item Sync Pipeline Batch
+DB: master
+SharedFields:
+- ID: "47f8050d-6eee-423f-a9f0-3dc34948c365"
+  Hint: LastRunCompleted
+  Type: Checkbox
+  Value: 1
+- ID: "6a2b2cbb-4338-4814-a8a9-9fecbb90456a"
+  Hint: LastRunFinished
+  Value: 20170531T212628Z
+- ID: "83e6292f-a00e-463d-a1c6-0fc25bc0fbad"
+  Hint: Messages
+  Value: |
+    5/31/2017 9:26:26 PM	INFO	http://blog.avanade.com/avanade-insights/feed/ was loaded. (pipeline step: Read RSS Feed, endpoint: Avanade Insights Blog)
+    5/31/2017 9:26:28 PM	INFO	10 elements were iterated. (pipeline: Read RSS Feed Pipeline, pipeline step: Iterate RSS articles and Run Pipeline)
+    5/31/2017 9:26:28 PM	INFO	About to Start Publish
+    5/31/2017 9:26:28 PM	INFO	Publish Started for RSS Content
+- ID: "9061beea-df25-4b2b-a698-3f5b4e867d18"
+  Hint: Pipelines
+  Type: Treelist
+  Value: "{54A0FAE4-AF0F-4E01-8D64-24B8B3477E16}"
+- ID: "985ba535-0f3e-4da8-a768-a469026de9db"
+  Hint: RequestedAt
+  Value: 20170531T212623Z
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T042733Z

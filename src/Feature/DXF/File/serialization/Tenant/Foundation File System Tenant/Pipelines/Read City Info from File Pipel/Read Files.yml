@@ -1,0 +1,21 @@
+﻿---
+ID: "fc0b2f46-ce1c-43c3-a33d-6df1c82f3a34"
+Parent: "d5aa27c8-5871-458b-9ade-6fb3304d068f"
+Template: "996e3ce6-bf02-4816-b0b9-97fac13c8a97"
+Path: /sitecore/system/Data Exchange/Foundation File System Tenant/Pipelines/Read City Info from File Pipeline/Read Files
+DB: master
+SharedFields:
+- ID: "8d482e87-b4c8-41f2-b402-3301a3a57f63"
+  Hint: EndpointFrom
+  Value: "{4F04B77F-5943-48CC-8A7B-49B4A28FBB2F}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T214052Z

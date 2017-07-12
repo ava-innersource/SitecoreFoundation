@@ -1,0 +1,9 @@
+{
+  "generator-helix": {
+    "promptValues": {
+      "sourceFolder": "src",
+      "target": "v4.6",
+      "VendorPrefix": ""
+    }
+  }
+}

@@ -1,0 +1,21 @@
+﻿---
+ID: "030e0007-e7f6-47f5-8264-053c8bdb84bf"
+Parent: "f36df0c3-0e09-4015-928e-bdca9b5bf2ba"
+Template: "f36df0c3-0e09-4015-928e-bdca9b5bf2ba"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/Database/Data Access/Dictionary Accessor/__Standard Values
+DB: master
+SharedFields:
+- ID: "3c7f78cc-0c5c-4076-80ef-9a49fda5ff96"
+  Hint: ConverterType
+  Value: SF.DXF.Feature.Database.DictionaryAccessorConverter, SF.DXF.Feature.Database
+- ID: "9f7f4afa-efb5-4067-a7c8-5f036bdba235"
+  Hint: Key
+  Value: $name
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T022432Z

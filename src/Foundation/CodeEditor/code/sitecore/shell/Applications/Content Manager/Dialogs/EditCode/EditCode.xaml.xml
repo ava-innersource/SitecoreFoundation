@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xamlControls 
+  xmlns:x="http://www.sitecore.net/xaml"
+  xmlns:ajax="http://www.sitecore.net/ajax"
+  xmlns:rest="http://www.sitecore.net/rest"
+  xmlns:javascript="http://www.sitecore.net/javascript"
+  xmlns:r="http://www.sitecore.net/renderings"
+  xmlns:xmlcontrol="http://www.sitecore.net/xmlcontrols"
+  xmlns:p="http://schemas.sitecore.net/Visual-Studio-Intellisense"
+  xmlns:asp="http://www.sitecore.net/microsoft/webcontrols"
+  xmlns:html="http://www.sitecore.net/microsoft/htmlcontrols"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  
+  <Sitecore.SharedSource.Shell.Applications.ContentEditor.Dialogs.EditCode x:inherits="Sitecore.SharedSource.Shell.Applications.ContentEditor.Dialogs.EditCode.EditCodePage,Sitecore.SharedSource.CodeEditor">
+    <Sitecore.SharedSource.Controls.CodePage Overflow="hidden" Header="Edit Code" Text="Click accept to use the modified text." Icon="Software/32x32/text_code_line.png" OKButton="Accept" CancelButton="Reject" runat="server">
+
+      <AjaxScriptManager runat="server"/>
+      <ContinuationManager runat="server" />
+
+      <Stylesheet runat="server" Src="Content Manager.css" DeviceDependant="true" x:placeholder="Stylesheets" />
+      <Stylesheet runat="server" Src="Dialogs.css" DeviceDependant="true" x:placeholder="Stylesheets"/>
+      <Stylesheet Key="EditCode" runat="server">
+        .scRibbon {
+        padding:0px;
+        }
+
+        .scDialogContentContainer {
+          padding: 0;
+        }
+
+        .scButton {
+          height: auto;
+        }
+
+      </Stylesheet>
+      <Script src="/sitecore/shell/Controls/Lib/jQuery/jQuery.noconflict.js" runat="server" />
+      <Script src="/sitecore/shell/Controls/Lib/ace/ace.js" runat="server" />
+      <Script src="/sitecore/shell/Controls/Lib/js-beautify/beautify.js" runat="server" />
+      <Script src="/sitecore/shell/Controls/Lib/js-beautify/beautify-css.js" runat="server" />
+      <Script src="/sitecore/shell/Controls/Lib/js-beautify/beautify-html.js" runat="server" />
+      <Script src="/sitecore/shell/Applications/Content Manager/Dialogs/EditCode/EditCode.js" runat="server" />
+
+      <input type="hidden" id="scActiveRibbonStrip" name="scActiveRibbonStrip" />
+
+      <GridPanel Width="100%" Height="100%" Style="table-layout:fixed" runat="server">
+
+        <Border GridPanel.Height="100%" Height="100%" runat="server">
+          <asp:TextBox ID="Code" runat="server" TextMode="MultiLine" />
+        </Border>
+
+        <Button runat="server" ID="OK" Width="76px" Height="23px" KeyCode="13" Margin="0px 0px 0px 4px" Click="OK_Click" x:placeholder="DialogButtons">
+          <Literal runat="server" Text="Accept"/>
+        </Button>
+
+        <Button runat="server" ID="Cancel" Width="76px" Height="23px" KeyCode="27" Margin="0px 0px 0px 4px" Click="Cancel_Click" x:placeholder="DialogButtons">
+          <Literal runat="server" Text="Reject"/>
+        </Button>
+
+      </GridPanel>
+
+    </Sitecore.SharedSource.Controls.CodePage>
+  </Sitecore.SharedSource.Shell.Applications.ContentEditor.Dialogs.EditCode>
+
+</xamlControls>
+                           

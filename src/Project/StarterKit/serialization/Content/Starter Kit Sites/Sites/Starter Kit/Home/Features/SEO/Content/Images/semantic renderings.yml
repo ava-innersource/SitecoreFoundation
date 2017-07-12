@@ -1,0 +1,21 @@
+﻿---
+ID: "e22ceab7-6206-4809-a27a-04e260a9cde5"
+Parent: "83c50b62-e947-460b-addf-d46ad92a5a1e"
+Template: "713398d7-366f-4122-a7c0-8bc9ac235df7"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/SEO/Content/Images/semantic renderings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151009T020244Z
+    - ID: "3f587316-405d-4e2e-90af-dfef50b981ca"
+      Hint: Caption
+      Value: Semantic Components
+    - ID: "549ab079-3a2d-4099-a79f-4d4b6342e69d"
+      Hint: Image
+      Value: |
+        <image mediaid="{A62A8179-C3B4-4693-84D7-8F8B9F71A1E9}" ></image>

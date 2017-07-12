@@ -1,0 +1,14 @@
+﻿---
+ID: "3a167696-e36c-407d-b723-7bf667242c76"
+Parent: "7fdc2898-bd61-4968-8e9a-4c39c8d923f4"
+Template: "5a4644f5-4886-4fd7-84fe-1d0c56fbc3b3"
+Path: /sitecore/system/Data Exchange/Foundation RSS Tenant/Endpoints
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161110T212827Z

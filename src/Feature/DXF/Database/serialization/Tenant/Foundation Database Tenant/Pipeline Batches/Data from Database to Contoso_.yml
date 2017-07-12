@@ -1,0 +1,183 @@
+﻿---
+ID: "e3d158da-27e7-45cf-a44b-21ad6777b8bf"
+Parent: "af41786f-6edc-47e3-9e30-a0c5ae0029bc"
+Template: "075c4fbd-f54e-4e6d-bd54-d49bda0913d8"
+Path: /sitecore/system/Data Exchange/Foundation Database Tenant/Pipeline Batches/Data from Database to Contoso Product Pipeline Batch
+DB: master
+SharedFields:
+- ID: "47f8050d-6eee-423f-a9f0-3dc34948c365"
+  Hint: LastRunCompleted
+  Type: Checkbox
+  Value: 1
+- ID: "6a2b2cbb-4338-4814-a8a9-9fecbb90456a"
+  Hint: LastRunFinished
+  Value: 20170428T201141Z
+- ID: "83e6292f-a00e-463d-a1c6-0fc25bc0fbad"
+  Hint: Messages
+  Value: |
+    4/28/2017 8:11:37 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[1],[ProductLabel]:[0101001],[ProductName]:[Contoso 512MB MP3 Player E51 Silver],[ProductDescription]:[512MB USB driver plays MP3 and WMA],[ColorName]:[Silver],[Size]:[2.2 x 1.8 x 4 ],[Weight]:[4.8],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:37 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[2],[ProductLabel]:[0101002],[ProductName]:[Contoso 512MB MP3 Player E51 Blue],[ProductDescription]:[512MB USB driver plays MP3 and WMA],[ColorName]:[Blue],[Size]:[2.2 x 1.8 x 4 ],[Weight]:[4.1],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:37 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[3],[ProductLabel]:[0101003],[ProductName]:[Contoso 1G MP3 Player E100 White],[ProductDescription]:[1GB flash memory and USB driver plays MP3 and WMA],[ColorName]:[White],[Size]:[2.2  x 2.2  x 4 ],[Weight]:[4.5],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:37 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[4],[ProductLabel]:[0101004],[ProductName]:[Contoso 2G MP3 Player E200 Silver],[ProductDescription]:[2GB flash memory, LCD display, plays MP3 and WMA],[ColorName]:[Silver],[Size]:[2.2  x 2.2  x 4 ],[Weight]:[4.5],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:37 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[5],[ProductLabel]:[0101005],[ProductName]:[Contoso 2G MP3 Player E200 Red],[ProductDescription]:[2GB flash memory, LCD display, plays MP3 and WMA],[ColorName]:[Red],[Size]:[3.7 x 0.6 x 2.2],[Weight]:[2.4],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:37 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[6],[ProductLabel]:[0101006],[ProductName]:[Contoso 2G MP3 Player E200 Black],[ProductDescription]:[2GB flash memory, LCD display, plays MP3 and WMA],[ColorName]:[Black],[Size]:[1.6 x 0.4 x 3.7],[Weight]:[8.8],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:37 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[7],[ProductLabel]:[0101007],[ProductName]:[Contoso 2G MP3 Player E200 Blue],[ProductDescription]:[2GB flash memory, LCD display, plays MP3 and WMA],[ColorName]:[Blue],[Size]:[2.2 x 1.5 x 0.6 ],[Weight]:[2.1],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:37 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[8],[ProductLabel]:[0101008],[ProductName]:[Contoso 4G MP3 Player E400 Silver],[ProductDescription]:[4GB flash memory and FM Radio, LCD Display with 7-Color Backlight, plays MP3 and WMA],[ColorName]:[Silver],[Size]:[0.8 x 3.6 x 1.1],[Weight]:[5.6],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:37 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[9],[ProductLabel]:[0101009],[ProductName]:[Contoso 4G MP3 Player E400 Black],[ProductDescription]:[4GB flash memory and FM Radio, LCD Display with 7-Color Backlight, plays MP3 and WMA],[ColorName]:[Black],[Size]:[3.1 x 1.9 x 0.3],[Weight]:[2.1],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:38 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[10],[ProductLabel]:[0101010],[ProductName]:[Contoso 4G MP3 Player E400 Green],[ProductDescription]:[4GB flash memory and FM Radio, LCD Display with 7-Color Backlight, plays MP3 and WMA],[ColorName]:[Green],[Size]:[2.3 x 0.3 x 4],[Weight]:[11],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:38 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[11],[ProductLabel]:[0101011],[ProductName]:[Contoso 4G MP3 Player E400 Orange],[ProductDescription]:[4GB flash memory and FM Radio, LCD Display with 7-Color Backlight, plays MP3 and WMA],[ColorName]:[Orange],[Size]:[2.2 x 0.6 x 1.4],[Weight]:[14.1],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:38 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[12],[ProductLabel]:[0101012],[ProductName]:[Contoso 4GB Flash MP3 Player E401 Blue],[ProductDescription]:[1.8'' color LCD, play MP3, WMA and Video MTV, and share JPG],[ColorName]:[Blue],[Size]:[0.8 x 3.6 x 1.1],[Weight]:[7.4],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:38 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[13],[ProductLabel]:[0101013],[ProductName]:[Contoso 4GB Flash MP3 Player E401 Black],[ProductDescription]:[1.8'' color LCD, play MP3, WMA and Video MTV, and share JPG],[ColorName]:[Black],[Size]:[1.7 x 3.5 x 0.5],[Weight]:[2.6],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:38 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[14],[ProductLabel]:[0101014],[ProductName]:[Contoso 4GB Flash MP3 Player E401 Silver],[ProductDescription]:[1.8'' color LCD, play MP3, WMA and Video MTV, and share JPG],[ColorName]:[Silver],[Size]:[0.4 x 1.6 x 3.6],[Weight]:[8],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:38 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[15],[ProductLabel]:[0101015],[ProductName]:[Contoso 4GB Flash MP3 Player E401 White],[ProductDescription]:[1.8'' color LCD, play MP3, WMA and Video MTV, and share JPG],[ColorName]:[White],[Size]:[3.26 x 2.16 x .44],[Weight]:[2.1],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:38 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[16],[ProductLabel]:[0101016],[ProductName]:[Contoso 8GB Super-Slim MP3/Video Player M800 White],[ProductDescription]:[2" color LCD, Touchpad, Plays music, video, photos and text],[ColorName]:[White],[Size]:[3.8 x 0.6 x 2.2],[Weight]:[11],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:38 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[17],[ProductLabel]:[0101017],[ProductName]:[Contoso 8GB Super-Slim MP3/Video Player M800 Red],[ProductDescription]:[2" color LCD, Touchpad, Plays music, video, photos and text],[ColorName]:[Red],[Size]:[3.8 x 0.6 x 2.2],[Weight]:[11],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:38 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[18],[ProductLabel]:[0101018],[ProductName]:[Contoso 8GB Super-Slim MP3/Video Player M800 Green],[ProductDescription]:[2" color LCD, Touchpad, Plays music, video, photos and text],[ColorName]:[Green],[Size]:[3.1 x 1.9 x 0.3],[Weight]:[2.1],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:38 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[19],[ProductLabel]:[0101019],[ProductName]:[Contoso 8GB Super-Slim MP3/Video Player M800 Pink],[ProductDescription]:[2" color LCD, Touchpad, Plays music, video, photos and text],[ColorName]:[Pink],[Size]:[1.4 x 5 x 7],[Weight]:[5.9],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:38 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[20],[ProductLabel]:[0101020],[ProductName]:[Contoso 8GB MP3 Player new model M820 Black],[ProductDescription]:[2'' LCD with blue-white LED, 320x240-pixel, plays music, video, photos and text, display JPEG, BMP, GIF, TIFF and PNG  ],[ColorName]:[Black],[Size]:[5.5 x 1.7 x 5.3],[Weight]:[1],[WeightUnitMeasureID]:[pounds],
+    
+    4/28/2017 8:11:38 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[21],[ProductLabel]:[0101021],[ProductName]:[Contoso 8GB MP3 Player new model M820 Blue],[ProductDescription]:[2'' LCD with blue-white LED, 320x240-pixel, plays music, video, photos and text, display JPEG, BMP, GIF, TIFF and PNG  ],[ColorName]:[Blue],[Size]:[2.2 x 1.4 x 0.6],[Weight]:[10.6],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:39 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[22],[ProductLabel]:[0101022],[ProductName]:[Contoso 8GB MP3 Player new model M820 Yellow],[ProductDescription]:[2'' LCD with blue-white LED, 320x240-pixel, plays music, video, photos and text, display JPEG, BMP, GIF, TIFF and PNG  ],[ColorName]:[Yellow],[Size]:[2.2 x 1.4 x 0.6],[Weight]:[1],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:39 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[23],[ProductLabel]:[0101023],[ProductName]:[Contoso 8GB MP3 Player new model M820 White],[ProductDescription]:[2'' LCD with blue-white LED, 320x240-pixel, plays music, video, photos and text, display JPEG, BMP, GIF, TIFF and PNG  ],[ColorName]:[White],[Size]:[3.5 x 1.7 x 0.5],[Weight]:[2.6],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:39 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[24],[ProductLabel]:[0101024],[ProductName]:[Contoso 16GB Mp5 Player M1600 Blue],[ProductDescription]:[3" 16:9 TFT Touch screen, 16GB flash memory, plays AVI/RM/RMVB/FLV],[ColorName]:[Blue],[Size]:[3.8 x 0.6 x 2.2],[Weight]:[11],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:39 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[25],[ProductLabel]:[0101025],[ProductName]:[Contoso 16GB Mp5 Player M1600 Black],[ProductDescription]:[3" 16:9 TFT Touch screen, 16GB flash memory, plays AVI/RM/RMVB/FLV],[ColorName]:[Black],[Size]:[1.4 x 5 x 7],[Weight]:[5.9],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:39 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[26],[ProductLabel]:[0101026],[ProductName]:[Contoso 16GB Mp5 Player M1600 Green],[ProductDescription]:[3" 16:9 TFT Touch screen, 16GB flash memory, plays AVI/RM/RMVB/FLV],[ColorName]:[Green],[Size]:[0.6 x 1.5 x 2.2],[Weight]:[14.1],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:39 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[27],[ProductLabel]:[0101027],[ProductName]:[Contoso 16GB Mp5 Player M1600 White],[ProductDescription]:[3" 16:9 TFT Touch screen, 16GB flash memory, plays AVI/RM/RMVB/FLV],[ColorName]:[White],[Size]:[2.2 x 1.4 x 0.6],[Weight]:[8],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:39 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[28],[ProductLabel]:[0101028],[ProductName]:[Contoso 16GB Mp5 Player M1600 Red],[ProductDescription]:[3" 16:9 TFT Touch screen, 16GB flash memory, plays AVI/RM/RMVB/FLV],[ColorName]:[Red],[Size]:[1.2 x 0.8 x 2.8],[Weight]:[2],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:39 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[29],[ProductLabel]:[0101029],[ProductName]:[Contoso 32GB Video MP3 Player M3200 White],[ProductDescription]:[4.3'' Touch screen, 32GB flash memory, beyond 30 hours battery life],[ColorName]:[White],[Size]:[1 x 1.6 x 3.7],[Weight]:[1.2],[WeightUnitMeasureID]:[pounds],
+    
+    4/28/2017 8:11:39 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[30],[ProductLabel]:[0101030],[ProductName]:[Contoso 32GB Video MP3 Player M3200 Red],[ProductDescription]:[4.3'' Touch screen, 32GB flash memory, beyond 30 hours battery life],[ColorName]:[Red],[Size]:[2.2 x 1.5 x 0.6],[Weight]:[2.1],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:39 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[31],[ProductLabel]:[0101031],[ProductName]:[Contoso 32GB Video MP3 Player M3200 Orange],[ProductDescription]:[4.3'' Touch screen, 32GB flash memory, beyond 30 hours battery life],[ColorName]:[Orange],[Size]:[2.6 x 2.5 x 0.6],[Weight]:[1.2],[WeightUnitMeasureID]:[pounds],
+    
+    4/28/2017 8:11:39 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[32],[ProductLabel]:[0101032],[ProductName]:[Contoso 32GB Video MP3 Player M3200 Pink],[ProductDescription]:[4.3'' Touch screen, 32GB flash memory, beyond 30 hours battery life],[ColorName]:[Pink],[Size]:[0.7 x 3.6 x 2.8],[Weight]:[8.8],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:39 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[33],[ProductLabel]:[0101033],[ProductName]:[Contoso 32GB Video MP3 Player M3200 Black],[ProductDescription]:[4.3'' Touch screen, 32GB flash memory, beyond 30 hours battery life],[ColorName]:[Black],[Size]:[2.8 x 1.6 x 0.2],[Weight]:[10.1],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:40 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[34],[ProductLabel]:[0101034],[ProductName]:[Contoso 4GB Portable MP3 Player M450 Black],[ProductDescription]:[4GB built in memory, USB driver and earphone, play MP3, WMA],[ColorName]:[Black],[Size]:[1.07 x 1.62 x 0.41],[Weight]:[0.55],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:40 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[35],[ProductLabel]:[0101035],[ProductName]:[Contoso 4GB Portable MP3 Player M450 White],[ProductDescription]:[4GB built in memory, USB driver and earphone, play MP3, WMA],[ColorName]:[White],[Size]:[9.2 x 7 x 1.8],[Weight]:[2.4],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:40 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[36],[ProductLabel]:[0101036],[ProductName]:[Contoso 4GB Portable MP3 Player M450 Yellow],[ProductDescription]:[4GB built in memory, USB driver and earphone, play MP3, WMA],[ColorName]:[Yellow],[Size]:[3.5 x 2 x 0.5],[Weight]:[2.9],[WeightUnitMeasureID]:[pounds],
+    
+    4/28/2017 8:11:40 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[37],[ProductLabel]:[0101037],[ProductName]:[Contoso 8GB Clock & Radio MP3 Player X850 Silver],[ProductDescription]:[2.6'' Touch screen, 8GB flash memory, clock and radio, plays AVI/RM/RMVB],[ColorName]:[Silver],[Size]:[3.5 x 1.6 x 0.3],[Weight]:[1.6],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:40 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[38],[ProductLabel]:[0101038],[ProductName]:[Contoso 8GB Clock & Radio MP3 Player X850 Black],[ProductDescription]:[2.6'' Touch screen, 8GB flash memory, clock and radio, plays AVI/RM/RMVB],[ColorName]:[Black],[Size]:[9 x 2 x 8],[Weight]:[2],[WeightUnitMeasureID]:[pounds],
+    
+    4/28/2017 8:11:40 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[39],[ProductLabel]:[0101039],[ProductName]:[Contoso 8GB Clock & Radio MP3 Player X850 Green],[ProductDescription]:[2.6'' Touch screen, 8GB flash memory, clock and radio, plays AVI/RM/RMVB],[ColorName]:[Green],[Size]:[0.3 x 2.4 x 4.1],[Weight]:[6.4],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:40 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[40],[ProductLabel]:[0101040],[ProductName]:[Contoso 8GB Clock & Radio MP3 Player X850 Blue],[ProductDescription]:[2.6'' Touch screen, 8GB flash memory, clock and radio, plays AVI/RM/RMVB],[ColorName]:[Blue],[Size]:[4.1 x 2.4 x 0.4],[Weight]:[5],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:40 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[41],[ProductLabel]:[0101041],[ProductName]:[Contoso 16GB New Generation MP5 Player M1650 Silver],[ProductDescription]:[2.4'' LCD Touch screen, 8GB flash memory, plays music, video, photos and text, share JPEG, BMP, GIF, TIFF],[ColorName]:[Silver],[Size]:[2.4 x 0.3 x 4.1],[Weight]:[8],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:40 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[42],[ProductLabel]:[0101042],[ProductName]:[Contoso 16GB New Generation MP5 Player M1650 White],[ProductDescription]:[2.4'' LCD Touch screen, 8GB flash memory, plays music, video, photos and text, share JPEG, BMP, GIF, TIFF],[ColorName]:[White],[Size]:[12.9 x 61.1 x 108.2],[Weight]:[12],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:40 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[43],[ProductLabel]:[0101043],[ProductName]:[Contoso 16GB New Generation MP5 Player M1650 Black],[ProductDescription]:[2.4'' LCD Touch screen, 8GB flash memory, plays music, video, photos and text, share JPEG, BMP, GIF, TIFF],[ColorName]:[Black],[Size]:[2.2 x 0.6 x 1.4],[Weight]:[14.1],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:40 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[44],[ProductLabel]:[0101044],[ProductName]:[Contoso 16GB New Generation MP5 Player M1650 blue],[ProductDescription]:[2.4'' LCD Touch screen, 8GB flash memory, plays music, video, photos and text, share JPEG, BMP, GIF, TIFF],[ColorName]:[blue],[Size]:[2.2 x 1.8 x 4],[Weight]:[1],[WeightUnitMeasureID]:[pounds],
+    
+    4/28/2017 8:11:40 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[45],[ProductLabel]:[0101045],[ProductName]:[Contoso 16GB New Generation MP5 Player M1650 Pink],[ProductDescription]:[2.4'' LCD Touch screen, 8GB flash memory, plays music, video, photos and text, share JPEG, BMP, GIF, TIFF],[ColorName]:[Pink],[Size]:[4.1 x 2.4 x 0.4],[Weight]:[5],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:40 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[46],[ProductLabel]:[0104001],[ProductName]:[WWI 1GB Pulse Smart pen E50 White],[ProductDescription]:[Record and link audio to be written, listen to recordings, share notes and recording with computer],[ColorName]:[White],[Size]:[6 x 0.5 x 0.5],[Weight]:[1.3],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:41 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[47],[ProductLabel]:[0104002],[ProductName]:[WWI 1GBPulse Smart pen E50 Black],[ProductDescription]:[Record and link audio to be written, listen to recordings, share notes and recording with computer],[ColorName]:[Black],[Size]:[6 x 0.5 x 0.5],[Weight]:[2.2],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:41 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[48],[ProductLabel]:[0104003],[ProductName]:[WWI 1GB Pulse Smart pen E50 Silver],[ProductDescription]:[Record and link audio to be written, listen to recordings, share notes and recording with computer],[ColorName]:[Silver],[Size]:[150X1x15],[Weight]:[30],[WeightUnitMeasureID]:[grams],
+    
+    4/28/2017 8:11:41 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[49],[ProductLabel]:[0104004],[ProductName]:[WWI 2GB Pulse Smart pen M100 White],[ProductDescription]:[Record and link audio to be written, listen to recordings, share notes and recording with computer],[ColorName]:[White],[Size]:[5.1  x 2.4  x 3.9 ],[Weight]:[30],[WeightUnitMeasureID]:[grams],
+    
+    4/28/2017 8:11:41 PM	INFO	Audit for Pipeline Run. Dictionary located in Pipeline Context Source
+    [ProductKey]:[50],[ProductLabel]:[0104005],[ProductName]:[WWI 2GB Pulse Smart pen M100 Black],[ProductDescription]:[Record and link audio to be written, listen to recordings, share notes and recording with computer],[ColorName]:[Black],[Size]:[3.8 x 5.5 x 1.8],[Weight]:[2.2],[WeightUnitMeasureID]:[ounces],
+    
+    4/28/2017 8:11:41 PM	INFO	50 elements were iterated. (pipeline: Read Database Records from Database Query Pipeline, pipeline step: Iterate Data and Run Pipelines Pipeline Step)
+- ID: "9061beea-df25-4b2b-a698-3f5b4e867d18"
+  Hint: Pipelines
+  Type: Treelist
+  Value: "{EC844F5F-E459-484A-9D2B-3D2F6EBAFB1E}"
+- ID: "985ba535-0f3e-4da8-a768-a469026de9db"
+  Hint: RequestedAt
+  Value: 20170428T201136Z
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T034840Z

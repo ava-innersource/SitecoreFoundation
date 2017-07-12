@@ -1,0 +1,14 @@
+﻿---
+ID: "76428909-81c7-4f23-8875-82fd898ff7f9"
+Parent: "570b9fb6-3006-4ce9-b66e-72df64129a0d"
+Template: "ee3c0087-50b0-481e-9ec6-dd746e6a318f"
+Path: /sitecore/templates/Branches/SF/Project/Common/Content Branches/Site Collection/$name/Shared Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150509T213232

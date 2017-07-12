@@ -1,0 +1,12 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+@using SF.Foundation.CommonComponents
+
+@model RenderingModel
+
+@using (Html.ComponentContainer("slick-carousel-Item"))
+{
+    @Html.Sitecore().DynamicPlaceholder("Column1")
+}

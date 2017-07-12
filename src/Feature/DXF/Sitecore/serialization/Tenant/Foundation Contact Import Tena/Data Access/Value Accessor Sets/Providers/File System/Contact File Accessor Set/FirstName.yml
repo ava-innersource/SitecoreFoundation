@@ -1,0 +1,18 @@
+﻿---
+ID: "b07e8de4-9424-435e-aa13-1548c05059a7"
+Parent: "af44736e-3a70-471f-ad70-1087ff72daa0"
+Template: "f36df0c3-0e09-4015-928e-bdca9b5bf2ba"
+Path: /sitecore/system/Data Exchange/Foundation Contact Import Tenant/Data Access/Value Accessor Sets/Providers/File System/Contact File Accessor Set/FirstName
+DB: master
+SharedFields:
+- ID: "9f7f4afa-efb5-4067-a7c8-5f036bdba235"
+  Hint: Key
+  Value: FirstName
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T214730Z

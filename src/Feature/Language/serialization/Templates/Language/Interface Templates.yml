@@ -1,0 +1,18 @@
+﻿---
+ID: "1410d51d-e860-4d4f-817a-33ceb381533e"
+Parent: "fcfd9d50-176b-47df-b55f-f2e71859dd1b"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/SF/Feature/Language/Interface Templates
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170705T012323Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

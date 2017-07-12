@@ -1,0 +1,23 @@
+﻿---
+ID: "6844c038-5b20-429f-8769-a1397e378026"
+Parent: "94931acd-065f-4884-815b-361c986bfd2a"
+Template: "b7a94ed3-ef81-4465-9138-6fb30999f5c7"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Site Configuration/Redirection Rules/http Pattern
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150731T193803Z
+    - ID: "2932b425-5612-49aa-b78d-e5fbc94af327"
+      Hint: Target Expression
+      Value: "http://starterkit82/?r=$1"
+    - ID: "f0b0c641-ced0-4620-af8b-b6c5b88c1af6"
+      Hint: Source Expression
+      Value: "^http://starterkit82/full/(.+).aspx*"
+    - ID: "fba31b90-da93-4080-9036-8be0481115b7"
+      Hint: Type
+      Value: "302 - Temporary"

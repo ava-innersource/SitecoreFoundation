@@ -1,0 +1,14 @@
+﻿---
+ID: "df071231-35fa-4c99-8198-3ecc828971e5"
+Parent: "bb709aa5-2c97-4dc1-8a12-5078ba4473bc"
+Template: "4bb18da0-9911-4607-8a8e-32eaac56ff80"
+Path: /sitecore/system/Data Exchange/Foundation Contact Import Tenant/Data Access/Mappings Applied Actions/Providers
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T214435Z

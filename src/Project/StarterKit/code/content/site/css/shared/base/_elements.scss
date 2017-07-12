@@ -1,0 +1,24 @@
+﻿@import "_colors";
+@import "_fonts";
+
+.body-text {
+	color: $color4;
+}
+
+body {
+	background: url(../../img/site-bg.jpg);
+}
+
+body, p, span, li, a {
+	@extend .body-text;
+	font-family: $primary-font-stack;
+}
+
+h1, h2, h3, h4, h5 {
+	@extend .body-text;
+	font-family: $headings-font-stack;
+}
+
+a {
+   color: $color5;
+}

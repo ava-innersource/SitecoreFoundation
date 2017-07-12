@@ -1,0 +1,21 @@
+﻿---
+ID: "4ff960a8-8750-4405-a113-8a5529df0f7c"
+Parent: "b7678a34-455d-4c1d-99c5-d273453ae6ea"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/SF/Feature/SlickCarousel/Rendering Parameters/SlickCarouselParameters/Carousel - Items To Display/Rows"
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Integer
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 3000
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160618T151701Z

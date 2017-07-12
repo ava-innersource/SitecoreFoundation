@@ -1,0 +1,14 @@
+﻿---
+ID: "c1accf7b-4cc8-40ae-90e5-ec776a770b48"
+Parent: "f0aa3454-361f-4cd2-8857-d726d32d3159"
+Template: "94cafa77-55fd-4f70-9848-ad4b4ee2a48b"
+Path: /sitecore/system/Data Exchange/Foundation Contact Import Tenant/Queues/Queue Processors/Providers/Sitecore/Update Queue Processors/Queue Processor for Marketing Campaigns
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T221336Z

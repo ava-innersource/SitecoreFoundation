@@ -1,0 +1,43 @@
+﻿---
+ID: "87b9072f-202e-4ff1-aa04-631bb339c4d2"
+Parent: "0eae37df-a546-4eb2-a6fa-7054101bf1b3"
+Template: "0eae37df-a546-4eb2-a6fa-7054101bf1b3"
+Path: /sitecore/templates/SF/Feature/LoginSample/LoginFormComponent/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{14F4782A-97E9-4BD3-B2BA-9388E551CCB6}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0dc49d18-7435-4441-a877-2d78ef704908"
+      Hint: FailedLoginMessage
+      Value: Your username or password was not valid.
+    - ID: "1873578d-f6b6-437c-b4f3-cb81786b5631"
+      Hint: UserNamePrompt
+      Value: "User Name:"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140919T101847
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "74524733-1417-4e34-a4eb-356c9b837b48"
+      Hint: SubmitButtonText
+      Value: Submit
+    - ID: "99646fb3-d4fb-4fc8-bcd3-355cbfe25d1b"
+      Hint: PasswordPrompt
+      Value: "Password:"
+    - ID: "c39a6980-e098-4585-a7e0-d3f74f43a718"
+      Hint: RememberMePrompt
+      Value: Remember me on this computer

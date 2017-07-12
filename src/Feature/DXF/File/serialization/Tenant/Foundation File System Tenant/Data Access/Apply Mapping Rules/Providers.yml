@@ -1,0 +1,14 @@
+﻿---
+ID: "52ad00e6-9d58-4f1f-b434-37b7f6a477dd"
+Parent: "a805b6df-9de9-4eaf-950e-1863214ffae1"
+Template: "bb9cc1eb-dba2-49c7-a6d1-ec83b3d2e1e3"
+Path: /sitecore/system/Data Exchange/Foundation File System Tenant/Data Access/Apply Mapping Rules/Providers
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T211935Z

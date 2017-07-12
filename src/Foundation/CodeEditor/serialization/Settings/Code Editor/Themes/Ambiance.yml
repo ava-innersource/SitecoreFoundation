@@ -1,0 +1,18 @@
+﻿---
+ID: "4c6f7736-d125-4e75-9205-80146d42be8c"
+Parent: "4e245f92-0577-409a-9918-6606f15a5fff"
+Template: "eb5692a6-71c0-48bb-82cb-7dc0c70134d5"
+Path: /sitecore/system/Modules/Code Editor/Themes/Ambiance
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20141213T215314
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

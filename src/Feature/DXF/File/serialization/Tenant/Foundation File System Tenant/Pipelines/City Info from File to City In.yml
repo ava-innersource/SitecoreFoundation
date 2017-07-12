@@ -1,0 +1,14 @@
+﻿---
+ID: "bae988be-7b9f-49ec-a6c9-5689f2df7265"
+Parent: "6366c113-2949-415e-8494-20c2ca6e56ae"
+Template: "2dc9c843-b841-483c-bb9b-ae0c9386404c"
+Path: /sitecore/system/Data Exchange/Foundation File System Tenant/Pipelines/City Info from File to City Info Item Sync Pipeline
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T213257Z

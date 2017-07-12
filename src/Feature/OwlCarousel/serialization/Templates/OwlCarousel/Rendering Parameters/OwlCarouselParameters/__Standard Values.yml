@@ -1,0 +1,30 @@
+﻿---
+ID: "73939e62-a438-44d4-aeef-d48f01cf6165"
+Parent: "fea92941-33dd-415f-a466-55b2edb9d9ca"
+Template: "fea92941-33dd-415f-a466-55b2edb9d9ca"
+Path: /sitecore/templates/SF/Feature/OwlCarousel/Rendering Parameters/OwlCarouselParameters/__Standard Values
+DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1ec69da4-2e11-4014-a007-7099d8a6ff44"
+      Hint: Rewind Nav
+      Type: Checkbox
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150512T232405
+    - ID: "3bccdc1b-8161-4d83-8baa-a8a4f818e4b1"
+      Hint: Display Single Item
+      Type: Checkbox
+      Value: 1
+    - ID: "5ffc0025-610c-476f-843b-9e9d7df7c0c8"
+      Hint: Pagination
+      Type: Checkbox
+      Value: 1

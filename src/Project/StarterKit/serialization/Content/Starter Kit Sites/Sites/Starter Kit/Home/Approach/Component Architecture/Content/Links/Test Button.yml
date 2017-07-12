@@ -1,0 +1,18 @@
+﻿---
+ID: "7474cb6a-bdbe-42c8-905d-7eb1b8f787ab"
+Parent: "0f87242a-4f75-4fe0-a77b-5442e35c5110"
+Template: "64b741d1-04f6-4f5d-ad66-e70ff4f62174"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Approach/Component Architecture/Content/Links/Test Button
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150805T164544
+    - ID: "89ae30d4-6d7a-4be6-89e9-5e44244928c4"
+      Hint: Link
+      Value: |
+        <link id="{71B87E08-09C7-4E7D-8A0A-07F2FD2BFF24}" querystring="" text="Click Me" url="/Starter Kit Sites/Sites/Starter Kit/Home" linktype="internal" target="" />

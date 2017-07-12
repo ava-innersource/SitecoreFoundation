@@ -1,0 +1,21 @@
+﻿---
+ID: "238e4444-5e65-4ec1-a8d1-1c5b4096a974"
+Parent: "3bd1c595-73ff-4927-b380-4d625d87e635"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Component Guide/Content/Text/Block Grid Description
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151025T031721
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: Block grids give you a way to evenly split contents of a list within a grid. If you wanted to create a row of five images or paragraphs that need to stay evenly spaced no matter the screen size, the block grid is for you. We have componetized foundation's block grid implementation enabling you to configure how many columns will show on small, medium and large breakpoints.<br><br>

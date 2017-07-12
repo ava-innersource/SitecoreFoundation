@@ -1,0 +1,14 @@
+﻿---
+ID: "49f54235-8c5d-4af2-a1f1-0f63847a54f7"
+Parent: "07786e48-e3ee-407a-9897-f6a479c3562e"
+Template: "85da7eb6-7f14-40b8-ba1d-5029c426b99c"
+Path: /sitecore/system/Data Exchange/Foundation File System Tenant/Data Access/Value Accessor Sets/Providers/File System/City File Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T194932Z

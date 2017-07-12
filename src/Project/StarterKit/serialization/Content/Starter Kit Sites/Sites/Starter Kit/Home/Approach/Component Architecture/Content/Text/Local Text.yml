@@ -1,0 +1,27 @@
+﻿---
+ID: "39b2b53b-5757-4ead-9d31-7718ae594fcc"
+Parent: "a88ad9f9-df06-4721-8bec-677bb7b085ad"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Approach/Component Architecture/Content/Text/Local Text
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150904T075723
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <h1>Component Architecture and Assembly</h1>
+        <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">Traditional Sitecore and CMS development requires a custom template to be built for every type of layout needed in a site. This restricts the type of content that can be easily added to the site and requires developer engagement for every change that wasn't considered when the templates were originally built. This "Page Template Mistake" also makes it more difficult to fully leverage Sitecore as it may not be possible to AB Test or personalize content within hard coded "templates" unless that personalization was considered when the template was built.</p><p style="margin: 0in; font-family: Calibri; font-size: 11pt;"><br></p><p style="margin: 0in; font-family: Calibri; font-size: 11pt;">None of these are issues with component based architecture that leverages a dynamic canvas instead of predefined fixed templates. A library of flexible components can be leveraged to quickly assemble sites, and new requirements can be implemented as new components, which can easily be consumed on other sites leveraging the same framework.&nbsp;</p><p style="margin: 0in; font-family: Calibri; font-size: 11pt;"><br></p><p style="margin: 0in; font-family: Calibri; font-size: 11pt;"><strong style="font-size: 11pt; line-height: 1.6;">Step One:</strong><span style="font-family: Calibri; font-size: 11pt; line-height: 1.6;"> Start with a blank frame</span><br></p>
+        <p style="margin: 0in; font-family: Calibri; font-size: 11pt;"><strong>Step Two:</strong> Using large squares structure out major portions of the page layout. </p>
+        <p style="margin: 0in; font-family: Calibri; font-size: 11pt;"><strong>Step Three:</strong> From the library place components in each layout space to structure the page. </p>
+        <p style="margin: 0in; font-family: Calibri; font-size: 11pt;"><strong>Step Four:</strong> Fill the components with content such as text or images.</p>
+        <br><span style="font-family: Calibri; font-size: 14.6667px; line-height: 23.4667px;">Instead of developers, an assembly team can walk through the four stop process below to create custom websites quickly. Additionally, custom CSS and JavaScript can be added to the site to customize the look and feel of the site to meet a brands specific needs.</span><br>

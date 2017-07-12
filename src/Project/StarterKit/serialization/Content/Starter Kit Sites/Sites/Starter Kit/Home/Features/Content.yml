@@ -1,0 +1,18 @@
+﻿---
+ID: "b96feffb-19e1-4a40-adf0-0cf7d8e5f27e"
+Parent: "b0124b54-c0ea-42f0-9b0a-26e6e02eb52d"
+Template: "6c0b22df-5248-48e8-8a59-85669e61db94"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/Content
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151006T230515

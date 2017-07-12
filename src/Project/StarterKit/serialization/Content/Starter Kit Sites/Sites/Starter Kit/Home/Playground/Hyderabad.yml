@@ -1,0 +1,103 @@
+﻿---
+ID: "c7e5554e-67cf-4161-b0c6-1dc3ff6213cd"
+Parent: "9e4bd2e6-5f1a-4ac7-b038-3a0c67b1d74c"
+Template: "195731e3-8313-4dcb-b910-2d3a465a4625"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Hyderabad
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{D0CAE4A7-71AE-4369-B5E0-77539DB63CC7}"
+              p:before="*"
+              s:ds="{F3EABE27-5B98-40C6-AD01-E481DBC6091E}"
+              s:id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+              s:ph="/Middle Area/Column1_0d790b80-ebae-4e3a-bf70-e2a2821fd8a0/HandlebarTemplates_5f0a2ad4-0310-4da6-9d2d-1d55e24e511e" />
+            <r
+              uid="{E0575E5A-9762-4819-9439-E6B4F5E5EFA7}"
+              p:after="r[@uid='{D0CAE4A7-71AE-4369-B5E0-77539DB63CC7}']"
+              s:ds="{F3EABE27-5B98-40C6-AD01-E481DBC6091E}"
+              s:id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+              s:ph="/Middle Area/Column1_0d790b80-ebae-4e3a-bf70-e2a2821fd8a0/HandlebarTemplates_0aa31dc4-e013-4273-839e-ad79a584a67c" />
+            <r
+              uid="{C1AB23F3-C84C-4B04-88D0-2C5B5A8B7499}"
+              p:after="r[@uid='{E0575E5A-9762-4819-9439-E6B4F5E5EFA7}']"
+              s:ds="{7AA8E2BB-809D-4EC4-BD85-13C90C240716}"
+              s:id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+              s:ph="/Middle Area/Column1_0d790b80-ebae-4e3a-bf70-e2a2821fd8a0/HandlebarTemplates_5bb32ff9-0798-4609-8144-0dcab916d784" />
+            <r
+              uid="{5BB32FF9-0798-4609-8144-0DCAB916D784}"
+              p:after="r[@uid='{C1AB23F3-C84C-4B04-88D0-2C5B5A8B7499}']"
+              s:cnd=""
+              s:ds="{C4619D8F-B08E-4FA9-A89D-1CB0E0B9CD21}"
+              s:id="{E57B3414-A898-4A67-AC20-A1263505F9EC}"
+              s:mvt=""
+              s:par="ID&amp;class&amp;ShowForSmallOnly&amp;ShowForMediumUp&amp;ShowForMediumOnly&amp;ShowForLargeUp&amp;ShowForLargeOnly&amp;ShowForXLargeUp&amp;ShowForXLargeOnly&amp;ShowForXXLargeUp&amp;HideForSmallOnly&amp;HideForMediumUp&amp;HideForMeidumOnly&amp;HideForLargeUp&amp;HideForLargeOnly&amp;HideForXLargeUp&amp;HideForXLargeOnly&amp;HideForXXLargeUp&amp;ShowForLandscape&amp;ShowForPortrait&amp;ShowForTouch&amp;HideForTouch&amp;ShowForPrint&amp;HideForPrint"
+              s:ph="/Middle Area/Column1_0d790b80-ebae-4e3a-bf70-e2a2821fd8a0" />
+            <r
+              uid="{0AA31DC4-E013-4273-839E-AD79A584A67C}"
+              p:after="r[@uid='{5BB32FF9-0798-4609-8144-0DCAB916D784}']"
+              s:ds="{4F18E28E-FEB4-4212-94B2-DDC634B8EA5F}"
+              s:id="{56032716-0747-4474-85A8-4A89952031D0}"
+              s:ph="/Middle Area/Column1_0d790b80-ebae-4e3a-bf70-e2a2821fd8a0" />
+            <r
+              uid="{5F0A2AD4-0310-4DA6-9D2D-1D55E24E511E}"
+              p:after="r[@uid='{0AA31DC4-E013-4273-839E-AD79A584A67C}']"
+              s:ds="{2F077398-903C-451B-86D9-17299BB63B5A}"
+              s:id="{DD1950E7-4FFB-40C0-BC93-73EA2875A5ED}"
+              s:ph="/Middle Area/Column1_0d790b80-ebae-4e3a-bf70-e2a2821fd8a0" />
+            <r
+              uid="{ABFD7512-113C-47B8-AA23-817905AE3E0A}"
+              p:after="r[@uid='{5F0A2AD4-0310-4DA6-9D2D-1D55E24E511E}']"
+              s:cnd=""
+              s:ds="{756F5989-F38E-49BC-845F-6CA86C1D5EA5}"
+              s:id="{50BA9DA4-7B76-4D63-BA37-E5B8B48679FA}"
+              s:mvt=""
+              s:par="Sizing=tiny&amp;Category=warning&amp;Style=round&amp;ID&amp;class&amp;ShowForSmallOnly&amp;ShowForMediumUp&amp;ShowForMediumOnly&amp;ShowForLargeUp&amp;ShowForLargeOnly&amp;ShowForXLargeUp&amp;ShowForXLargeOnly&amp;ShowForXXLargeUp&amp;HideForSmallOnly&amp;HideForMediumUp&amp;HideForMeidumOnly&amp;HideForLargeUp&amp;HideForLargeOnly&amp;HideForXLargeUp&amp;HideForXLargeOnly&amp;HideForXXLargeUp&amp;ShowForLandscape&amp;ShowForPortrait&amp;ShowForTouch&amp;HideForTouch&amp;ShowForPrint&amp;HideForPrint"
+              s:ph="/Middle Area/Column2_5f022ecf-4053-4771-9231-2a19e4260b9e" />
+            <r
+              uid="{F35DF5B8-6278-4DE5-B0B1-62649D8A9DCF}"
+              p:after="r[@uid='{ABFD7512-113C-47B8-AA23-817905AE3E0A}']"
+              s:ds="{9B3D9637-8D95-4B42-8870-161E043001B8}"
+              s:id="{A7540328-E131-4273-808C-C59F49BB9FFF}"
+              s:ph="/Middle Area/Column1_5f022ecf-4053-4771-9231-2a19e4260b9e" />
+            <r
+              uid="{5F022ECF-4053-4771-9231-2A19E4260B9E}"
+              p:after="r[@uid='{F35DF5B8-6278-4DE5-B0B1-62649D8A9DCF}']"
+              s:id="{7CDA055E-37A9-4A23-827C-3CC6B98B8150}"
+              s:ph="Middle Area" />
+            <r
+              uid="{0D790B80-EBAE-4E3A-BF70-E2A2821FD8A0}"
+              p:after="r[@uid='{5F022ECF-4053-4771-9231-2A19E4260B9E}']"
+              s:id="{F6E1983C-3451-45F8-A239-5540AB97DD5B}"
+              s:ph="Middle Area" />
+            <r
+              uid="{9F29D419-958A-4DFE-A2DE-9C56DC0A8591}"
+              s:par="RootItem={71B87E08-09C7-4E7D-8A0A-07F2FD2BFF24}&amp;IncludeRootItem&amp;DisplayNameField&amp;MaxDepth=3&amp;IncludeBackLink&amp;BackLinkText=Back&amp;RightAligned&amp;IncludeParentLinkInSubmenu&amp;ID&amp;class&amp;ShowForSmallOnly&amp;ShowForMediumUp&amp;ShowForMediumOnly&amp;ShowForLargeUp&amp;ShowForLargeOnly&amp;ShowForXLargeUp&amp;ShowForXLargeOnly&amp;ShowForXXLargeUp&amp;HideForSmallOnly&amp;HideForMediumUp&amp;HideForMeidumOnly&amp;HideForLargeUp&amp;HideForLargeOnly&amp;HideForXLargeUp&amp;HideForXLargeOnly&amp;HideForXXLargeUp&amp;ShowForLandscape&amp;ShowForPortrait&amp;ShowForTouch&amp;HideForTouch&amp;ShowForPrint&amp;HideForPrint" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170324T090127Z
+    - ID: "25e2ef68-b6e5-4422-b915-cc8c7d5bb8b0"
+      Hint: GooglePlusName
+      Value: Hyderabad
+    - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
+      Hint: OpenGraphTitle
+      Value: Hyderabad
+    - ID: "bb5d3816-991e-47ec-ba46-bd752f848f4f"
+      Hint: Design
+      Value: "{B0F9E891-4BDB-4CC0-8DA0-675F58A11594}"
+    - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
+      Hint: TwitterTitle
+      Value: Hyderabad

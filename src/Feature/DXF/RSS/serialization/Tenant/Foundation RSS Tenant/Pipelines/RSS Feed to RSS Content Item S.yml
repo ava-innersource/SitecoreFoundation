@@ -1,0 +1,14 @@
+﻿---
+ID: "069c7304-b02d-4df5-921e-dcd6e3126723"
+Parent: "334cabf7-1fd4-4438-8504-06b6e0ba94bd"
+Template: "2dc9c843-b841-483c-bb9b-ae0c9386404c"
+Path: /sitecore/system/Data Exchange/Foundation RSS Tenant/Pipelines/RSS Feed to RSS Content Item Sync Pipeline
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T041835Z

@@ -1,0 +1,14 @@
+﻿---
+ID: "3600baf1-b3e3-4617-ab7d-5ef3df7cf492"
+Parent: "7bb828c9-f215-4761-b626-c5a5a98f8856"
+Template: "cbbecdb2-ca59-48c7-a8cc-f5bd20a6b4eb"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Component Guide/Content/TopBar/Sample Top Bar
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150913T103533

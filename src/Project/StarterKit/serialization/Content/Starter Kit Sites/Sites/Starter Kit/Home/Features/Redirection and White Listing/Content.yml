@@ -1,0 +1,14 @@
+﻿---
+ID: "5bdb4e0d-e270-420e-aece-7ab369ef1810"
+Parent: "bbc63d87-2ea0-4b90-b519-f15085b6857a"
+Template: "6c0b22df-5248-48e8-8a59-85669e61db94"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/Redirection and White Listing/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151006T231309

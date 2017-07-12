@@ -1,0 +1,10 @@
+﻿---
+ID: "4ea21384-c80f-4d64-b2aa-a3adc2b13f4c"
+Parent: "2de4bc4d-ec72-4aea-bef9-39601b01181b"
+Template: "10d7c460-7f24-4e2c-95d3-59cc0bd45741"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Shared Content/Recipes/Coleslaw
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1

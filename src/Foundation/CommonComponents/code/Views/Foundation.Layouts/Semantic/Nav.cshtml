@@ -1,0 +1,10 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+
+@model RenderingModel
+
+<nav @Html.GetContainerTagAttributes("")>
+     @Html.Sitecore().DynamicPlaceholder("Column1")
+</nav>

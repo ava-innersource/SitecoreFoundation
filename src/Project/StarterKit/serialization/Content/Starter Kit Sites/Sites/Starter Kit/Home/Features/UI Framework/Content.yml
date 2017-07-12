@@ -1,0 +1,14 @@
+﻿---
+ID: "bae618fa-9610-4f64-be01-50a4915da9ec"
+Parent: "44d5f6e9-c2f6-4789-985e-63c8225e11e6"
+Template: "6c0b22df-5248-48e8-8a59-85669e61db94"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/UI Framework/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151005T221515

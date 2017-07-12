@@ -1,0 +1,42 @@
+﻿---
+ID: "83757e23-7905-4c0b-a467-01c85dd01ca8"
+Parent: "4e0ed2a1-5613-429a-ace7-d83736391906"
+Template: "01617363-d27a-4ca9-87f4-e57c4a062c7a"
+Path: /sitecore/content/Global/Shared Content/Composites/Categories List
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{C6902DA7-DB4A-4127-87E9-0F7CB049CD5B}"
+          p:before="r[@uid='{25AB6B48-52A6-4E8E-8DD3-80E5EEDC367F}']"
+          s:ds="{42DD10A7-5AFD-4A80-BF57-538018F1D03E}"
+          s:id="{A7540328-E131-4273-808C-C59F49BB9FFF}"
+          s:ph="CompositeContent" />
+        <r
+          uid="{25AB6B48-52A6-4E8E-8DD3-80E5EEDC367F}"
+          p:before="r[@uid='{405F15D8-7888-48AD-970A-25413BC4E400}']"
+          s:ds="{6F5DC355-436E-466E-88F2-3F0D6295B190}"
+          s:id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+          s:ph="/CompositeContent/HandlebarTemplates_405f15d8-7888-48ad-970a-25413bc4e400" />
+        <r
+          uid="{405F15D8-7888-48AD-970A-25413BC4E400}"
+          s:ds="{862377ED-3746-49AB-BA4E-5E3CA03F28FF}"
+          s:id="{56032716-0747-4474-85A8-4A89952031D0}"
+          s:ph="CompositeContent" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160726T135346

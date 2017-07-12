@@ -1,0 +1,22 @@
+﻿---
+ID: "925bff2b-87cf-4860-b1bf-1e81536df09d"
+Parent: "24ccac4b-fe44-440f-8d03-55c68d9daa1e"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/SF/Feature/Social/Interface Templates/_PageTwitterSettings/Twitter Tags
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 2020
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140911T161335
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

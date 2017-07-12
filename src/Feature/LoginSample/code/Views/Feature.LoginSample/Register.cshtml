@@ -1,0 +1,61 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.CommonComponents
+@using SF.Foundation.Structure
+
+@model SF.Feature.LoginSample.RegisterViewModel
+
+@{
+
+    string errorMessage = ViewBag.ErrorMessage;
+}
+
+@using (Html.ComponentContainer("register-form-container"))
+{
+    <div class="row">
+        <div class="large-12 columns">
+
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                 <div class="alert-box alert">
+                    @errorMessage
+                 </div>
+            }
+
+            @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+            {
+                <input type="hidden" name="requestType" value="registerSubmission" />
+                <label for="UserName">@Html.Sitecore().Field("UserNamePrompt")</label>
+                @Html.EditorFor(x => x.UserName)
+
+                <label for="Password">@Html.Sitecore().Field("PasswordPrompt")</label>
+                @Html.PasswordFor(x => x.Password)
+
+                <label for="ConfirmPassword">@Html.Sitecore().Field("ConfirmPasswordPrompt")</label>
+                @Html.PasswordFor(x => x.ConfirmPassword)
+
+                <label for="EmailAddress">@Html.Sitecore().Field("EmailPrompt")</label>
+                @Html.EditorFor(x => x.EmailAddress)
+                
+                <label for="QuestionText">@Html.Sitecore().Field("QuestionPrompt")</label>
+                @Html.DropDownListFor(x => x.QuestionText, new System.Web.Mvc.SelectList(Model.Questions))
+
+                <label for="AnswerText">@Html.Sitecore().Field("AnswerPrompt")</label>
+                @Html.EditorFor(x => x.AnswerText)
+
+            
+               if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+                {
+                    <a href="#" class="button">@Html.Sitecore().Field("SubmitButtonText")</a>
+                }
+                else
+                {
+                    var buttonText = Html.Sitecore().CurrentItem.Fields["SubmitButtonText"].Value;
+                    <input class="button" type="submit" text="@buttonText" />
+                }
+            }
+
+        </div>
+    </div>
+}

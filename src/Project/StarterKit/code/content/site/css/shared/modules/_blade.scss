@@ -1,0 +1,16 @@
+﻿@import "../base/_colors";
+
+.blade {
+	&.blade-light {
+		background-color: $color1;
+		color: $color5;
+	}
+	&.blade-medium {
+		background-color: $color2;
+		color: $color5;
+	}
+	&.blade-dark {
+		background-color: $color5;
+		color: $color1;
+	}
+}

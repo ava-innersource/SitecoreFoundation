@@ -1,0 +1,29 @@
+﻿---
+ID: "c559aa17-221a-4374-a6b6-58b5dde38364"
+Parent: "b012731a-4435-495e-8d4d-5bc60a572473"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/SitecoreProvider/Data Access/Static Value Accessor
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/radio_button_selected.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{5C8862A6-7B47-4354-92F6-11EB080E6D0C}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{C9BA4A0A-A4AE-40A8-BA50-9543D0F05FBA}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170126T210959Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

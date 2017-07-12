@@ -1,0 +1,21 @@
+﻿---
+ID: "f666452f-f913-4e7a-b51f-113da72f22ec"
+Parent: "fa462d33-968c-485c-be42-6081d2e5b031"
+Template: "f36df0c3-0e09-4015-928e-bdca9b5bf2ba"
+Path: /sitecore/system/Data Exchange/Foundation Database Tenant/Data Access/Value Accessor Sets/Providers/Database/Database Accessor Set/Weight Unit Measure ID
+DB: master
+SharedFields:
+- ID: "9f7f4afa-efb5-4067-a7c8-5f036bdba235"
+  Hint: Key
+  Value: WeightUnitMeasureID
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T032007Z

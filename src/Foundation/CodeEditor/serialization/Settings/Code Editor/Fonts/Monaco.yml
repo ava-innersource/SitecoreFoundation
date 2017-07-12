@@ -1,0 +1,18 @@
+﻿---
+ID: "80b4b0d2-165f-4753-baff-5f36e17715ea"
+Parent: "a74ef4c3-936b-4fc5-a49f-aa5812b25ead"
+Template: "b4045e92-ea98-4a4a-b282-a39d1e6d6bdf"
+Path: /sitecore/system/Modules/Code Editor/Fonts/Monaco
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20141213T162119
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

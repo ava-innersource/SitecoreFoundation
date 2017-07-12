@@ -1,0 +1,22 @@
+﻿---
+ID: "37273c7c-4c3a-4540-80cd-da24171869f3"
+Parent: "47acbfa7-d0a0-4f3b-9bd8-d35440662735"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: "/sitecore/content/Global/Shared Content/Templates/KB Topic - Support Emails Template"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160801T212134Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <ul class="support-emails">    <li>{{{SupportEmail}}}</li>    <li>{{{SecondarySupportEmail}}}</li>    <li>{{{TicketSupportEmail}}}</li></ul>

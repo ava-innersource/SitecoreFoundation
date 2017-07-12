@@ -1,0 +1,14 @@
+﻿---
+ID: "60668915-4693-479b-b307-f28c107a6866"
+Parent: "086130c3-b3d8-4080-bbd5-e0abe183fe99"
+Template: "57ab960e-72ea-4ddb-be73-9c994bf1bc24"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Shared Content/HandlebarJsonContainers
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160914T214529Z

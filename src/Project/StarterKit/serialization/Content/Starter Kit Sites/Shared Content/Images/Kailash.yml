@@ -1,0 +1,21 @@
+﻿---
+ID: "552eb9a2-5b60-42d3-8b6f-025bf70b99e4"
+Parent: "abe50ac7-33d8-4368-a565-87686a45e1e6"
+Template: "713398d7-366f-4122-a7c0-8bc9ac235df7"
+Path: /sitecore/content/Starter Kit Sites/Shared Content/Images/Kailash
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150511T223354
+    - ID: "3f587316-405d-4e2e-90af-dfef50b981ca"
+      Hint: Caption
+      Value: Omnichannel
+    - ID: "549ab079-3a2d-4099-a79f-4d4b6342e69d"
+      Hint: Image
+      Value: |
+        <image mediaid="{D6BD261A-7F49-4DAB-B07A-1A5A1E3D4063}" ></image>

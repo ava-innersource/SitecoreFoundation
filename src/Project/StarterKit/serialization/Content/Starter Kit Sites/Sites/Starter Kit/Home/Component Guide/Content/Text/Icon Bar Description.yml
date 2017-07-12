@@ -1,0 +1,21 @@
+﻿---
+ID: "a908b99b-f047-470c-8886-fbe1b3c20fd0"
+Parent: "3bd1c595-73ff-4927-b380-4d625d87e635"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Component Guide/Content/Text/Icon Bar Description
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151025T071531
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: An Icon Bar provides a menu to quickly navigate an app. Use the Icon Bar horizontally or vertically, with the labels below the icons or to the right. This component allows you to configure up to 8 Icons with either custom images or through selecting an available icon from the foundation icon library. Use the smiley toolbar icon in the rendering toolbar to quickly change icons.<br><br>

@@ -1,0 +1,25 @@
+﻿---
+ID: "e2b7f52b-785f-4ca3-a318-b2dabe62b669"
+Parent: "3b5e0d1c-2b6c-4922-bd6b-a295d16e0eab"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Global/Shared Content/Text/Washington
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150606T150910
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <strong>Washington</strong><br>
+        13212 Southeast Eastgate Way<br>
+        Bellevue, WA 98005<br>
+        (425) 641-0080

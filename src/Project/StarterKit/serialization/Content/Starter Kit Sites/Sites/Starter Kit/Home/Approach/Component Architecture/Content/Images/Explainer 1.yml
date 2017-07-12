@@ -1,0 +1,21 @@
+﻿---
+ID: "978cfd01-fc62-4d74-be74-1270bb89b435"
+Parent: "16f88b71-a08c-4212-a451-d50680ce80f3"
+Template: "713398d7-366f-4122-a7c0-8bc9ac235df7"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Approach/Component Architecture/Content/Images/Explainer 1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150913T230253
+    - ID: "3f587316-405d-4e2e-90af-dfef50b981ca"
+      Hint: Caption
+      Value: <br><br><br>
+    - ID: "549ab079-3a2d-4099-a79f-4d4b6342e69d"
+      Hint: Image
+      Value: |
+        <image mediaid="{DF766C39-0200-4A3F-AE9C-B9868AED83B2}" />

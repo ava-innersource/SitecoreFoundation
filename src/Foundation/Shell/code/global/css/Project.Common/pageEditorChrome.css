@@ -1,0 +1,83 @@
+﻿/* Widget Chrome styling */
+
+/* -- default -- */
+
+html.chromeRenderingHighlight *[data-container-title],
+html.chromeRenderingHighlight *[data-widget-title] {
+  border: 3px solid rgba(169, 169, 169, 0.7);
+  padding-top: 1.1rem;
+  position: relative;
+}
+
+html.chromeRenderingHighlight *[data-container-title]::before,
+html.chromeRenderingHighlight *[data-widget-title]::before {
+  color: #fff;
+  content: attr(data-container-title);
+  background-color: rgba(169, 169, 169, 0.7);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.1rem;
+  padding-left: 0.2rem;
+  font-size: 0.8rem;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* -- placeholder -- */
+
+html.chromeRenderingHighlight *[data-container-title] {
+  counter-reset: container;
+}
+
+html.chromeRenderingHighlight *[data-container-title]:nth-child(even) {
+  border-color: rgba(188, 189, 188, 0.7);
+}
+
+html.chromeRenderingHighlight *[data-container-title]:nth-child(even)::before {
+  background-color: rgba(188, 189, 188, 0.7);
+}
+
+/* -- widget -- */
+
+html.chromeRenderingHighlight *[data-widget-title] {
+  counter-increment: container;
+  border-color: rgba(188, 189, 188, 0.7);
+}
+
+html.chromeRenderingHighlight *[data-widget-title]::before {
+  content: "[" counter(container) "] " attr(data-widget-title);
+  background-color: rgba(188, 189, 188, 0.7);
+  padding-left: 0;
+}
+
+html.chromeRenderingHighlight *[data-widget-title]:nth-child(even) {
+  border-color: rgba(116, 118, 120, 0.7);
+}
+
+html.chromeRenderingHighlight *[data-widget-title]:nth-child(even)::before {
+  background-color: rgba(116, 118, 120, 0.7);
+}
+
+html.chromeRenderingHighlight *[data-container-title] .columns:nth-child(even) *[data-widget-title]:nth-child(odd),
+html.chromeRenderingHighlight *[data-container-title] div[class^="col-"]:nth-child(even) *[data-widget-title]:nth-child(odd) {
+  border-color: rgba(116, 118, 120, 0.7);
+}
+
+html.chromeRenderingHighlight *[data-container-title] .columns:nth-child(even) *[data-widget-title]:nth-child(odd)::before,
+html.chromeRenderingHighlight *[data-container-title] div[class^="col-"]:nth-child(even) *[data-widget-title]:nth-child(odd)::before {
+  background-color: rgba(116, 118, 120, 0.7);
+}
+
+html.chromeRenderingHighlight *[data-container-title] .columns:nth-child(even) *[data-widget-title]:nth-child(even),
+html.chromeRenderingHighlight *[data-container-title] div[class^="col-"]:nth-child(even) *[data-widget-title]:nth-child(even) {
+  border-color: rgba(188, 189, 188, 0.7);
+}
+
+html.chromeRenderingHighlight *[data-container-title] .columns:nth-child(even) *[data-widget-title]:nth-child(even)::before,
+html.chromeRenderingHighlight *[data-container-title] div[class^="col-"]:nth-child(even) *[data-widget-title]:nth-child(even)::before {
+  background-color: rgba(188, 189, 188, 0.7);
+}

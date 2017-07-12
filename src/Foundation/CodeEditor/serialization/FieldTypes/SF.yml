@@ -1,0 +1,15 @@
+﻿---
+ID: "f7d7c461-f6c0-466a-b7cf-162dcb033f6a"
+Parent: "76e6d8c7-1f93-4712-872b-da3c96b808f2"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Field types/SF
+DB: core
+BranchID: "30235f43-6242-4107-87ab-5267e34edf0c"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170630T160421Z

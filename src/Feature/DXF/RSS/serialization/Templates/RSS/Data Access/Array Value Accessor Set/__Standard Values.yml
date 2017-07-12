@@ -1,0 +1,19 @@
+﻿---
+ID: "1023b7ea-98d0-4f1d-bbd5-ae10116588b6"
+Parent: "c3ee727d-c971-4756-9aa0-d93aa474b44e"
+Template: "c3ee727d-c971-4756-9aa0-d93aa474b44e"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/RSS/Data Access/Array Value Accessor Set/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{186DA58E-733A-4066-85C4-601535B25AD8}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161110T222553Z

@@ -1,0 +1,22 @@
+﻿---
+ID: "a6be0d5f-84e3-440c-a39c-e5eccc4f8508"
+Parent: "c39b792d-ace7-49bb-8064-8817a08da210"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Global/Shared Content/Templates/Blog Templates/Post Listings/Listing Format 1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160725T114409
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        {{ #if IsPageEditorEditing }}<div>Experience Editor Mode</div>{{ /if }}{{ #each Items }}<div class="blog-post">{{ #if IsPageEditorEditing }}<h3>{{{Title}}} <small>{{Date_ShortDate}}</small></h3>{{else}}<h3><a href="{{ItemUrl}}">{{{Title}}}</a> <small>{{Date_ShortDate}}</small></h3>{{ /if }}<div class="thumbnail">{{{Image}}}</div><div>{{{Summary}}}</div><div class="panel"><small><a href="{{{ Author.ItemUrl }}}">by {{{Author.Name}}}</a><br /><a href="{{{ Category.ItemUrl }}}">Posted In {{{Category.Name}}}</a></small></div></div>{{ /each }}

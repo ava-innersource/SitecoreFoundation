@@ -1,0 +1,14 @@
+﻿---
+ID: "71d76941-df69-4327-81e6-14e088bfee65"
+Parent: "d695853c-b29a-4b97-b030-418b59054dcf"
+Template: "221ad71c-83ff-4039-a0e6-6ddd517b8155"
+Path: /sitecore/system/Data Exchange/Foundation Contact Import Tenant/Data Access/Value Readers
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T214436Z

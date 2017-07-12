@@ -1,0 +1,14 @@
+﻿---
+ID: "d5d8a352-26fe-4f36-8c0b-91eb7dbebb90"
+Parent: "9986b0a4-cbfa-4918-8fe3-c26c0bf261a5"
+Template: "d95aeb3f-3817-4d07-bb87-f139eda70d6e"
+Path: /sitecore/system/Data Exchange/Foundation Contact Import Tenant/Data Access/Value Accessor Sets/Providers/Static Values/Static Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170126T212836Z

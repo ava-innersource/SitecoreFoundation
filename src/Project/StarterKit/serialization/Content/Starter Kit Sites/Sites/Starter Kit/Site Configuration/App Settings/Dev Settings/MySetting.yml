@@ -1,0 +1,20 @@
+﻿---
+ID: "dfe93509-49f5-42ac-9b3b-614d7afaef4c"
+Parent: "12d6e722-1dc8-40b3-8f13-dda38f966706"
+Template: "2d8dce92-5bde-48c6-a17a-6669d8df0461"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Site Configuration/App Settings/Dev Settings/MySetting
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "20f43415-92dd-45f4-b1b6-99a2d0ca8814"
+      Hint: Key
+      Value: MySetting
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170502T180747Z
+    - ID: "49e79aa3-88a4-4a9a-a66e-caa62ba8e5fb"
+      Hint: Value
+      Value: Development

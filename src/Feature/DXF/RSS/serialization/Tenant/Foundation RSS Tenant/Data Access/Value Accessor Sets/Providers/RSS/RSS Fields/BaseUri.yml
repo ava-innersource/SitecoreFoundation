@@ -1,0 +1,18 @@
+﻿---
+ID: "5ee68dda-5493-4e4f-b39a-54aaaf6cfbe1"
+Parent: "1fab7334-6361-4633-b43a-eb13c3afc4f9"
+Template: "186da58e-733a-4066-85c4-601535b25ad8"
+Path: /sitecore/system/Data Exchange/Foundation RSS Tenant/Data Access/Value Accessor Sets/Providers/RSS/RSS Fields/BaseUri
+DB: master
+SharedFields:
+- ID: "7c01d3da-ab83-4269-8d63-4a8929393592"
+  Hint: Property
+  Value: BaseUri
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T040803Z

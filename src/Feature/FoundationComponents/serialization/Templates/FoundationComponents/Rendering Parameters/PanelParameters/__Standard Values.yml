@@ -1,0 +1,14 @@
+﻿---
+ID: "46de5074-3f6e-42d1-b95a-8368ab2631c3"
+Parent: "335a3447-c2f6-4112-b581-d8d78e6e4d1f"
+Template: "335a3447-c2f6-4112-b581-d8d78e6e4d1f"
+Path: /sitecore/templates/SF/Feature/FoundationComponents/Rendering Parameters/PanelParameters/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150512T001921

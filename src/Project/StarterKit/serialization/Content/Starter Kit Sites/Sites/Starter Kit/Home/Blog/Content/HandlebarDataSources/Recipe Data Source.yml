@@ -1,0 +1,17 @@
+﻿---
+ID: "8a8aa4c9-c602-44f5-b20e-fb05d0b332a8"
+Parent: "1f23e20d-1287-4855-92c0-ef19e9c79cae"
+Template: "1c7cbb97-485d-4540-9d41-f3a3f90ed85c"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Blog/Content/HandlebarDataSources/Recipe Data Source
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161020T195214Z
+    - ID: "6ccd6589-ef6b-4e8e-844e-e1819c15d9ba"
+      Hint: Root Folder
+      Value: "{2DE4BC4D-EC72-4AEA-BEF9-39601B01181B}"

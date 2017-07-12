@@ -1,0 +1,21 @@
+﻿---
+ID: "9c8ca56a-81c9-4896-bf3c-d93d5470b532"
+Parent: "a1b12f7d-3594-4f30-b9d2-7e5e8500e39b"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: "/sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Component Guide/Content/Headings/Off Canvas - Sub Header"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150925T133424
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: The Off Canvas component provides an easy way to have a hidden menu that appears on click. This component supports left and right alignment and requires it be the outer most container for all content. In Page Editing mode, the content appears first with navigation below for easier editing, but in preview, it will function properly.

@@ -1,0 +1,14 @@
+﻿---
+ID: "f1e5a693-c342-4f97-a486-dbbabc39d483"
+Parent: "04747e7a-7a74-49d0-b32d-ba1a755d4ec9"
+Template: "bb9cc1eb-dba2-49c7-a6d1-ec83b3d2e1e3"
+Path: /sitecore/system/Data Exchange/Foundation RSS Tenant/Data Access/Apply Mapping Rules/Providers
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161110T212826Z

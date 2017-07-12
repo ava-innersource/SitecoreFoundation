@@ -1,0 +1,14 @@
+﻿---
+ID: "43d4bb6f-4ad8-44ff-b2a2-bd1ff7b12676"
+Parent: "ce70c408-3208-427f-9a89-b68aa1e206a0"
+Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
+Path: /sitecore/layout/Placeholder Settings/SF/Project/FoundationCommon
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170705T112131Z

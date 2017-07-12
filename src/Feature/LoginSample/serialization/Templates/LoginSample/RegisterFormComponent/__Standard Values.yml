@@ -1,0 +1,80 @@
+﻿---
+ID: "0d150325-7141-48f5-af1e-2164924b33f5"
+Parent: "d0090069-72e5-469d-9009-b358ad4a2490"
+Template: "d0090069-72e5-469d-9009-b358ad4a2490"
+Path: /sitecore/templates/SF/Feature/LoginSample/RegisterFormComponent/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{14F4782A-97E9-4BD3-B2BA-9388E551CCB6}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0a8d1227-05fe-4826-85f0-166f7395d859"
+      Hint: Questions
+      Value: |
+        What is the first name of the person you first kissed?
+        What is the last name of the teacher who gave you your first failing grade?
+        What is the name of the place your wedding reception was held?
+        What is the name of the first beach you visited?
+        In what city or town did you meet your spouse/partner?
+        What was the make and model of your first car?
+        What was your maternal grandfather’s first name?
+        In what city or town does your nearest sibling live?
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140919T145807
+    - ID: "2a216f74-aee1-4889-9a33-c0dd2f752649"
+      Hint: DuplicateUserMessage
+      Value: A Username with that name already exists. 
+    - ID: "4568f3e8-d1fb-4a49-827b-58aa7fa55190"
+      Hint: EmailPrompt
+      Value: "Email Address:"
+    - ID: "55d9d248-a46c-4270-9a21-ca8fc72282ba"
+      Hint: UserNamePrompt
+      Value: "User Name:"
+    - ID: "5d34123f-a5cb-49da-8bd6-472d74fb2f95"
+      Hint: GeneralError
+      Value: Unable to create an account. Please try again.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "65a6122e-5221-49ce-b279-1f8abdf8b1b7"
+      Hint: SubmitButtonText
+      Value: Submit
+    - ID: "835db53a-d167-4d77-9fcd-c789dc508acf"
+      Hint: FirstQuestionPrompt
+      Value: Choose a Security Question
+    - ID: "85e9bdce-ac93-4ee3-8ed9-82aeb93d1105"
+      Hint: DuplicateEmailMessage
+      Value: That email address has already been used to create an account.
+    - ID: "8f625ad1-5d6f-4712-a1fb-405b2c0e9b07"
+      Hint: AutoApprove
+      Type: Checkbox
+      Value: 1
+    - ID: "9d2bc379-29b0-4374-babd-43115af715c9"
+      Hint: AnswerPrompt
+      Value: "Security Question Answer:"
+    - ID: "acb1a6ad-e0ff-4cc7-be88-2c5a54a18818"
+      Hint: ConfirmPasswordPrompt
+      Value: "Confirm Password:"
+    - ID: "d25c2838-c117-4cba-a868-35884ca88a14"
+      Hint: QuestionPrompt
+      Value: "Security Question:"
+    - ID: "e05f395c-2ce5-482f-8500-677ff00c70a0"
+      Hint: PasswordPrompt
+      Value: "Password:"
+    - ID: "ff9c2627-93f3-4eba-8c7e-f997ab1bed48"
+      Hint: AutoLogin
+      Type: Checkbox
+      Value: 1

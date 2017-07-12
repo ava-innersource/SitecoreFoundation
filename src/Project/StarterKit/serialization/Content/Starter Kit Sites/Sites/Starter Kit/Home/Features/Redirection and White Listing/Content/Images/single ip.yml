@@ -1,0 +1,21 @@
+﻿---
+ID: "8959d79c-8760-4bcd-a53c-4c7fc4f586d5"
+Parent: "c7989ded-4cd9-4b57-a589-6ca0220702fe"
+Template: "713398d7-366f-4122-a7c0-8bc9ac235df7"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/Redirection and White Listing/Content/Images/single ip
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151026T113713
+    - ID: "3f587316-405d-4e2e-90af-dfef50b981ca"
+      Hint: Caption
+      Value: Single IP
+    - ID: "549ab079-3a2d-4099-a79f-4d4b6342e69d"
+      Hint: Image
+      Value: |
+        <image mediaid="{9783A6B7-B937-4527-815A-E69AEA3B7D5C}" />

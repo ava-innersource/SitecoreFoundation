@@ -1,0 +1,22 @@
+﻿---
+ID: "e067a8e2-700b-4103-a1ae-513254927c6d"
+Parent: "96ab5334-07e5-421f-a0ba-1a2bde156ce3"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Global/Shared Content/Templates/Blog Templates/Post Formats/Post Format 1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160726T120445
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <div class="blog-post"><h1>{{{Title}}} <small>{{Date_ShortDate}}</small></h1><div class="thumbnail">{{{Image}}}</div><div>{{{Summary}}}</div><div>{{{Content}}}</div><div class="panel callout"><ul class="menu simple">    <li><a href="#">Author: {{{Author.Name}}}</a></li></ul></div></div>

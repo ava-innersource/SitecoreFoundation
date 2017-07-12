@@ -1,0 +1,28 @@
+﻿---
+ID: "120ee5ca-359c-4f47-8133-e801f2b84cdb"
+Parent: "d48eff10-2dcc-4d99-8c08-5a6c6b537080"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/SF/Features/FoundationComponents/Navigation/IconBar
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Views/Foundation.Collections/IconBar.cshtml
+- ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
+  Hint: Parameters Template
+  Value: "{E92D3F20-1252-4C45-9792-280D3F42EEDF}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{8519D051-0ADE-4C68-B5C7-35008E1A6827}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140930T132322

@@ -1,0 +1,36 @@
+﻿---
+ID: "3b69b661-0cfd-4784-a69a-3c9714391b4a"
+Parent: "335fd8be-3fd9-4d0f-a04a-e7adb3d2124b"
+Template: "01617363-d27a-4ca9-87f4-e57c4a062c7a"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Shared Content/Composites/Sample Snippet
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{23EC7167-D5C2-4B2D-866C-51D1D37A0C0B}"
+          p:before="r[@uid='{190E85A6-7772-4908-93E1-F5E3482FE3F3}']"
+          s:ds="{5D04EF99-2115-45F0-B9E8-7EC77F124B22}"
+          s:id="{920C22E5-183F-43C1-9BA5-F96695CA6911}"
+          s:ph="CompositeContent" />
+        <r
+          uid="{190E85A6-7772-4908-93E1-F5E3482FE3F3}"
+          s:ds="{0A736C69-D6C0-4156-8B3D-7916898F71DA}"
+          s:id="{A7540328-E131-4273-808C-C59F49BB9FFF}"
+          s:ph="CompositeContent" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151107T234832

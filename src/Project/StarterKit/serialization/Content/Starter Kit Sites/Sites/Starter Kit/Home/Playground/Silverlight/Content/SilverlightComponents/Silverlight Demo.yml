@@ -1,0 +1,31 @@
+﻿---
+ID: "b43639e8-8b30-4b59-a6c3-893a9eb3470b"
+Parent: "d7fe64d4-89f0-4e93-a991-b59a5bb3e76f"
+Template: "45806b23-12fc-4419-b5cc-9bd42223addd"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Silverlight/Content/SilverlightComponents/Silverlight Demo
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170222T213710Z
+    - ID: "44a4c823-5b51-4050-a4b6-6a57e5bd9aa4"
+      Hint: Width
+      Value: 400
+    - ID: "5a91970c-2ba8-4d35-9392-b71f90cf0c99"
+      Hint: Alternate Content
+      Value: |
+        <a href="http://go.microsoft.com/fwlink/?LinkID=149156&amp;v=4.0.60310.0" style="text-decoration: none;"><img src="http://go.microsoft.com/fwlink/?LinkId=161376" alt="Get Microsoft Silverlight" style="border-style: none;"></a>
+    - ID: "6517d540-465f-46b2-9052-7ee6162efaed"
+      Hint: Height
+      Value: 405
+    - ID: "659204f7-9165-4383-8276-85e6bd9f4d16"
+      Hint: Additional Parameters
+      Value: 
+    - ID: "7258d8c4-0118-45f3-bf19-2579fe448b4e"
+      Hint: Source
+      Value: |
+        <link linktype="media" target="" id="{ECFBB7C7-045B-4787-85C3-42924500FDAB}" />

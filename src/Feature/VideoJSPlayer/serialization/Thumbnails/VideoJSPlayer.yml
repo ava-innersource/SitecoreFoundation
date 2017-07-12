@@ -1,0 +1,18 @@
+﻿---
+ID: "7253279d-022f-4654-87b8-48c14de00ba9"
+Parent: "714c72cc-2823-4c0b-91e3-868d179b6ebc"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/SF/Feature/VideoJSPlayer
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170705T153046Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

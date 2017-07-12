@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xamlControls xmlns:html="http://www.sitecore.net/htmlcontrols" xmlns:x="http://www.sitecore.net/xaml">
+  <Sitecore.SharedSource.Controls.CodePage>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"&gt;
+    <x:param name="Title" value="Sitecore" />                                
+    <x:param name="Background" />
+    <x:param name="Overflow" />
+    <x:param name="Icon" value="Applications/32x32/about.png" />
+    <x:param name="Header" value="Dialog" />
+    <x:param name="Text" value="Dialog" />
+    <x:param name="OKButton" value="OK" />
+    <x:param name="CancelButton" value="Cancel" />
+
+<html>
+  <html:Head runat="server">
+    <html:Title runat="server" Text="{Title}" />
+    <meta name="GENERATOR" content="Sitecore" />
+    <meta http-equiv="imagetoolbar" content="no" />           
+    <meta http-equiv="imagetoolbar" content="false" />
+    <Placeholder runat="server" key="Stylesheets"/>
+    <Placeholder runat="server" key="Scripts"/>
+  </html:Head>
+      
+  <HtmlBody runat="server">
+    <x:styleattribute runat="server" name="overflow" value="{Overflow}" />
+
+    <html:Form runat="server">
+      <x:styleattribute runat="server" name="background" value="{Background}" />
+            <GridPanel runat="server" Width="100%" Height="100%" Fixed="true" Background="#e9e9e9">
+        <Border runat="server" >
+          <GridPanel runat="server" Columns="2" Width="100%" Background="white">
+
+            <ThemedImage runat="server" Src="{Icon}" Width="32" Height="32" Margin="4px 8px 4px 8px" GridPanel.VAlign="top"/>
+
+            <Border runat="server" Padding="2px 16px 0px 0px" GridPanel.Width="100%" GridPanel.VAlign="top">
+              <div style="color:black;padding:0px 0px 4px 0px;font:bold 9pt tahoma">
+                <Literal ID="HeaderLiteral" runat="server" Text="{Header}"/>
+              </div>
+              
+              <div style="color:#333333">
+                <Literal ID="TextLiteral" runat="server" Text="{Text}"/>
+              </div>
+            </Border>
+          </GridPanel>
+        </Border>
+
+        <div style="background:#dbdbdb;height:1px" GridPanel.Height="1px">   
+          <img src="/sitecore/images/blank.gif" width="1" height="1" alt="" border="0" />
+        </div>
+
+        <Placeholder runat="server" Key="Toolbar"/>
+
+        <GridPanel runat="server" Width="100%" Height="100%" Class="scDialogContentContainer" GridPanel.VAlign="top" GridPanel.Height="100%">
+            <Placeholder runat="server" GridPanel.VAlign="top" GridPanel.Height="100%"/>
+          </GridPanel>
+
+        <Border runat="server" Padding="4px 16px 0px 16px" GridPanel.Height="32px">
+
+          <div style="float:right;padding:0px 0px 0px 8px;white-space:nowrap;">
+            <Placeholder runat="server" Key="DialogButtons"/>
+          </div>
+
+          <Placeholder runat="server" Key="Buttons"/>
+        </Border>
+
+      </GridPanel>
+                              
+    </html:Form>
+  </HtmlBody>
+</html>
+  </Sitecore.SharedSource.Controls.CodePage>
+</xamlControls>

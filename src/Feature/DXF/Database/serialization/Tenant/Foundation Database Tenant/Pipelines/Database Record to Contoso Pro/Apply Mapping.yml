@@ -1,0 +1,21 @@
+﻿---
+ID: "4bdc8a53-567a-4a39-905e-4470113791de"
+Parent: "79d9aaf7-9881-42a3-8eb1-0a8b2cdbaf89"
+Template: "8e726575-35cf-48a0-b2c9-00c30d16f2d9"
+Path: /sitecore/system/Data Exchange/Foundation Database Tenant/Pipelines/Database Record to Contoso Product Item Sync Pipeline/Apply Mapping
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+- ID: "cb970e4d-aa7c-4ad1-8984-59bf01163d08"
+  Hint: MappingSet
+  Value: "{E3C17357-C661-46FD-A9E3-BEA455D184FF}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T034315Z

@@ -1,0 +1,21 @@
+﻿---
+ID: "2f077398-903c-451b-86d9-17299bb63b5a"
+Parent: "b70a93ce-2230-4985-b26b-d39dd271f498"
+Template: "4d132935-8652-41be-88cd-9eacddecfcce"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Hyderabad/Content/HandlebarDataSources/People query
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170324T095331Z
+    - ID: "b1bce228-8193-4e78-b66f-6d7624990aa0"
+      Hint: Search Root
+      Value: "{7D97E71E-08C9-4E6A-B3CC-BE5279486CF6}"
+    - ID: "cdd11e3b-de1e-484e-93aa-b872db9d4bb2"
+      Hint: Base Template
+      Type: Treelist
+      Value: "{0CE7229B-CCE5-4643-845B-554D846C145D}"

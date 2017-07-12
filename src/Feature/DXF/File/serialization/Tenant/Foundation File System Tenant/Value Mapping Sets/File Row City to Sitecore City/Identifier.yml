@@ -1,0 +1,21 @@
+﻿---
+ID: "d9705ef4-8c84-4f11-8d51-7bc04ffbefb6"
+Parent: "f9553932-bc03-42f8-bf79-60bafba526df"
+Template: "450c8f38-91c9-4896-957b-6f7daf18ccfc"
+Path: /sitecore/system/Data Exchange/Foundation File System Tenant/Value Mapping Sets/File Row City to Sitecore City Item/Identifier
+DB: master
+SharedFields:
+- ID: "95184b45-efef-447c-9089-4f2ec5df26c5"
+  Hint: SourceAccessor
+  Value: "{1E32A7F0-6E48-4B98-943F-9E2EBE0B7B6A}"
+- ID: "ef84b462-7f4a-4f48-b78e-ade192d55e82"
+  Hint: TargetAccessor
+  Value: "{3D9ABB59-0548-42D9-B406-3171D8B405FF}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T213048Z

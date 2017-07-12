@@ -1,0 +1,18 @@
+﻿---
+ID: "660137de-31cd-4228-abb6-145f633bb25f"
+Parent: "d7e8e198-a343-418a-879d-6b877d9bffa5"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/SF/Feature/FoundationComponents/Component Templates
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170702T141910Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

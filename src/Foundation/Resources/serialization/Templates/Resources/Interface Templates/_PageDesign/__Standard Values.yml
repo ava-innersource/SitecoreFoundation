@@ -1,0 +1,18 @@
+﻿---
+ID: "c63829b9-fd05-4367-86ba-512699dbb08d"
+Parent: "b92dcbbe-3da4-4c02-a3b6-d288959e583b"
+Template: "b92dcbbe-3da4-4c02-a3b6-d288959e583b"
+Path: /sitecore/templates/SF/Foundation/Resources/Interface Templates/_PageDesign/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160610T134753
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,18 @@
+﻿---
+ID: "5a5e1685-5ba2-4a9e-b91c-eeb64c60f53b"
+Parent: "51e83919-04b8-4ea4-894a-630315140c29"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/SF/Feature/LoginSample/LogOutComponent/Behavior
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160125T220946
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

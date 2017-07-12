@@ -1,0 +1,21 @@
+﻿---
+ID: "f675980a-78b2-4ba1-afb8-f57245570a58"
+Parent: "3bd1c595-73ff-4927-b380-4d625d87e635"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Component Guide/Content/Text/Off Canvas Description
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151025T070404
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: "Off-canvas menus are positioned outside of the viewport and slide in when activated. &nbsp;This component supports left and right alignment and requires it be the outer most container for all content. In Page Editing mode, the content appears first with navigation below for easier editing, but in preview, it will function properly. Navigation items can be manually configured or a spider component can be used to add menu items that correspond to a page structure defined in Sitecore.<br><br>"

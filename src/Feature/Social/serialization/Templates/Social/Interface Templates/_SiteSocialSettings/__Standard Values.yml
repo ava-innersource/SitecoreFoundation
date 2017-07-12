@@ -1,0 +1,14 @@
+﻿---
+ID: "e91aa33f-1d0a-4c88-aee5-2752fd365ad3"
+Parent: "1acca9ba-9609-4201-91d9-603c7f8ff663"
+Template: "1acca9ba-9609-4201-91d9-603c7f8ff663"
+Path: /sitecore/templates/SF/Feature/Social/Interface Templates/_SiteSocialSettings/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170703T025537Z

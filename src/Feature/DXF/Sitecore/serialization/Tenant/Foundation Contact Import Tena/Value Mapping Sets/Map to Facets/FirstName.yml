@@ -1,0 +1,21 @@
+﻿---
+ID: "5eddbc48-b7db-4eb7-a5fd-549594974d90"
+Parent: "7c9eb72e-87ae-4673-b18c-f29373e0cd3f"
+Template: "450c8f38-91c9-4896-957b-6f7daf18ccfc"
+Path: /sitecore/system/Data Exchange/Foundation Contact Import Tenant/Value Mapping Sets/Map to Facets/FirstName
+DB: master
+SharedFields:
+- ID: "95184b45-efef-447c-9089-4f2ec5df26c5"
+  Hint: SourceAccessor
+  Value: "{B07E8DE4-9424-435E-AA13-1548C05059A7}"
+- ID: "ef84b462-7f4a-4f48-b78e-ade192d55e82"
+  Hint: TargetAccessor
+  Value: "{77A5E7F0-6A44-46A1-BECE-A1093B0A0ACA}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T220545Z

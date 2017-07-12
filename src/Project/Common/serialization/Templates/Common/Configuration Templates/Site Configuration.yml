@@ -1,0 +1,40 @@
+﻿---
+ID: "5b9f4583-bbd8-4b70-a45d-cc752a4fede8"
+Parent: "09b582e7-f957-4231-a06e-1b90acac01be"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/SF/Project/Common/Configuration Templates/Site Configuration
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {6694869E-72F2-408F-9848-90A23C45ECE7}
+    {4B7A43CC-AFC5-4834-BB29-39D197F28AFE}
+    {D6283258-E09C-4785-9A82-C4D221894207}
+    {A11BEA58-AE51-4E9F-A9FC-BFF3E90B1F0A}
+    {182CA25C-5B31-45A4-9424-03B98C0594B4}
+    {40D88EAD-C4BC-4F44-B6FF-4B09DE7DCB58}
+    {09831869-D73D-4EA1-B585-A7AE47D0BCC7}
+    {4D3C897E-2BAC-4A59-9EA7-C8888A28FD2D}
+    {1ACCA9BA-9609-4201-91D9-603C7F8FF663}
+    {FD057F5F-298E-48E9-8C84-5333493ED722}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{4EB242CF-FDEE-4996-B86F-957F05681F57}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140911T112007
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

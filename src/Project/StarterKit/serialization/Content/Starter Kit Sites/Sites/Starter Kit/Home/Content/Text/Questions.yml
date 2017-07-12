@@ -1,0 +1,27 @@
+﻿---
+ID: "38546691-3ec3-483b-9c6a-ee04adb4c5b1"
+Parent: "ebade0ad-7cfd-4193-b7a0-a831e3f87064"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Content/Text/Questions
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150606T223945
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <h4>Questions?</h4>
+        <p>
+        Your site will undoubtedly present its own unique challenges, which is usually part of the fun!  If you want help with anything in this starter kit,
+        or just want a second set of eyes on your approach, we're happy to help!
+        </p>
+        <p>Connect with Us on Yammer: <a href="https://www.yammer.com/avanade.com/#/threads/inGroup?type=in_group&feedId=4719668" target="_blank">Sitecore Development Accelerators Group</a></p>

@@ -1,0 +1,34 @@
+﻿---
+ID: "8829952d-1e35-400f-a568-7889f558d20b"
+Parent: "ccba3ca7-e2e4-4d18-95e7-dc77978e5861"
+Template: "075c4fbd-f54e-4e6d-bd54-d49bda0913d8"
+Path: /sitecore/system/Data Exchange/Foundation Contact Import Tenant/Pipeline Batches/Contacts from File to xDB Pipeline Batch
+DB: master
+SharedFields:
+- ID: "47f8050d-6eee-423f-a9f0-3dc34948c365"
+  Hint: LastRunCompleted
+  Type: Checkbox
+  Value: 1
+- ID: "6a2b2cbb-4338-4814-a8a9-9fecbb90456a"
+  Hint: LastRunFinished
+  Value: 20170203T153020Z
+- ID: "83e6292f-a00e-463d-a1c6-0fc25bc0fbad"
+  Hint: Messages
+  Value: |
+    2/3/2017 3:30:20 PM	INFO	path: c:\ASF\Release\Release_8_2\Source\Foundation\Avanade.SC.Integration\SampleData\ContactsFile\contacts.dat was processed.. (pipeline step: Read Contacts File, endpoint: Contact File Endpoint)
+    2/3/2017 3:30:20 PM	INFO	1 elements were iterated. (pipeline: Read Contacts from File Pipeline, pipeline step: Iterate Data and Run Pipelines Pipeline Step)
+- ID: "9061beea-df25-4b2b-a698-3f5b4e867d18"
+  Hint: Pipelines
+  Type: Treelist
+  Value: "{67601C0D-8A7E-4232-A49F-18CBE016139D}"
+- ID: "985ba535-0f3e-4da8-a768-a469026de9db"
+  Hint: RequestedAt
+  Value: 20170203T153020Z
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T222928Z

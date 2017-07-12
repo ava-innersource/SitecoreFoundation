@@ -1,0 +1,21 @@
+﻿---
+ID: "2be5cc94-9b12-457f-90f8-95c9bff0fbbf"
+Parent: "c5de8e2e-b88a-4332-af5a-f5ca490a662d"
+Template: "6f7375cc-9942-4e30-8c63-95281b69c65f"
+Path: /sitecore/system/Data Exchange/Foundation Database Tenant/Data Access/Value Accessor Sets/Providers/Sitecore/Contoso Product Fields/Color
+DB: master
+SharedFields:
+- ID: "a011c1d5-1c40-4420-8592-d0ce0306e0dd"
+  Hint: Field
+  Value: "{4AD7D372-2C54-411B-83FB-E23E201AFA2D}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T033316Z

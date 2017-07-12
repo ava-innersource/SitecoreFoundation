@@ -1,0 +1,14 @@
+﻿---
+ID: "46540bca-377b-476e-b65c-a876e8aa8feb"
+Parent: "38cd876e-897d-4fc8-b76f-7a4544a32990"
+Template: "4ce6ac7a-56c9-4280-86a5-f3c6998fc447"
+Path: /sitecore/system/Data Exchange/Foundation File System Tenant/Data Access/Value Accessor Sets/Providers/Sitecore
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T212821Z

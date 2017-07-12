@@ -1,0 +1,14 @@
+﻿---
+ID: "cdecc00c-0913-444e-ab86-73fb0d284c51"
+Parent: "d70300b5-36e8-4e87-97a7-8ff472141193"
+Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
+Path: /sitecore/layout/Placeholder Settings/SF/Feature/Handlebars
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170705T111900Z

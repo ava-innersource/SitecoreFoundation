@@ -1,0 +1,22 @@
+﻿---
+ID: "e5ee6ecc-f4be-40dd-997b-34017a1862b1"
+Parent: "3bd1c595-73ff-4927-b380-4d625d87e635"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Component Guide/Content/Text/Grid System Description
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151025T025639
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        Based on Zurb Foundation's flexible 12 column grid system, we have implemented a collection of layout components that leverage a Sitecore dynamic placeholder implementation. This allows you to nest each layout component to create the exact layout you need. Each placeholder component also has a robust &nbsp;set of "Rendering parameters" allowing content authors to easily show or hide the layout on desktop or mobile as well as have the layout "stack" on smaller screens if you don't wish to maintain the same ratio on the smaller device. &nbsp;Each of the standard layout components is configured below:<br><br>

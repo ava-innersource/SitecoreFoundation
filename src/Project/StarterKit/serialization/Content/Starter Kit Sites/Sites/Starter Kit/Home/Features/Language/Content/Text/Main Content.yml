@@ -1,0 +1,25 @@
+﻿---
+ID: "9e5278aa-b47b-4dcf-bdd3-d3e7facf35e5"
+Parent: "c15f7d86-181f-4174-9656-1252c18cf6e9"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/Language/Content/Text/Main Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151006T231546
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <h1>Language and Localization Features</h1>
+        <p>Sitecore has built in support for multilingual sites, however there are a few common scenarios that require customizations. As part of our framework we have implemented two common enhancements.&nbsp;</p>
+        <h2>Language Fallback</h2>
+        <p>As part of localizing a site, a language specific version needs to be added for every item in the site. For items that are configuration driven instead of content driven, this can be tedious and wasteful. Several solutions exist to override this behavior and allow the configurations of a fallback language which will force Sitecore to look for a language version in a default language if no version exists for the specific language. While most marketplace modules take the approach of defining a fall back language for each language, our framework takes the approach of allowing the fallback language to be defined at the site level. This allows each site to define the "fallback language."</p>

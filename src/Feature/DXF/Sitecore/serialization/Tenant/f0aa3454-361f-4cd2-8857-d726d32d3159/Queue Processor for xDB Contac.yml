@@ -1,0 +1,14 @@
+﻿---
+ID: "432fad13-8244-4ba6-81c5-d420fa5b99af"
+Parent: "f0aa3454-361f-4cd2-8857-d726d32d3159"
+Template: "3b6be1ec-c0c5-4f1d-bc00-54e3899cc5ab"
+Path: /sitecore/system/Data Exchange/Foundation Contact Import Tenant/Queues/Queue Processors/Providers/Sitecore/Update Queue Processors/Queue Processor for xDB Contacts
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170124T221337Z

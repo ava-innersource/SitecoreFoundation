@@ -1,0 +1,35 @@
+﻿---
+ID: "e4ccee4f-39b8-41e7-9e7c-b3b2322d5187"
+Parent: "ebade0ad-7cfd-4193-b7a0-a831e3f87064"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Content/Text/Slide 1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150606T224849
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <img alt="" src="/content/site/img/banner1.jpg">
+        <div class="slide-contents">
+        <div class="slide-text">
+        <h1>Component Architecture&nbsp;</h1>
+        <h2>Assemble Pages Using Library of Reusable Components</h2>
+        </div>
+        <div class="arrow-box">
+        <div class="arrow-box-inner">
+        <div class="clearfix">
+        <a href="~/link.aspx?_id=223766CD1ADB486AB8190E51E7E33595&amp;_z=z" class="button button-link text-left" tabindex="-1">Click here for more information</a>&nbsp;&nbsp;<a href="~/link.aspx?_id=223766CD1ADB486AB8190E51E7E33595&amp;_z=z" class="button primary" tabindex="-1">More</a><br>
+        </div>
+        </div>
+        </div>
+        </div>

@@ -1,0 +1,18 @@
+﻿---
+ID: "2ed9c488-3b7a-49df-90b6-f9bf45030c79"
+Parent: "01113c5f-e3b8-48f2-b930-1606e9c66fac"
+Template: "a280aab8-15a0-4646-9d39-c606e81be744"
+Path: /sitecore/content/Global/Pick Lists/Button Categories/warning
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150918T235304
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

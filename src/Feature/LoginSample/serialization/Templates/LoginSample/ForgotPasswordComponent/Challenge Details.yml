@@ -1,0 +1,22 @@
+﻿---
+ID: "6366b615-1a95-499b-8d2e-b0f71c5b4662"
+Parent: "ac07945a-9543-4668-a2da-1626b137e0e8"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/SF/Feature/LoginSample/ForgotPasswordComponent/Challenge Details
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140922T135611
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

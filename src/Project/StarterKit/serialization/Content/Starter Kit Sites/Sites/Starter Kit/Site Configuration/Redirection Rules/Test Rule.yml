@@ -1,0 +1,26 @@
+﻿---
+ID: "32a6824f-6638-4829-8bde-882a97fd0436"
+Parent: "94931acd-065f-4884-815b-361c986bfd2a"
+Template: "1f06bef9-bd5e-44d4-bb1f-b7d08ebbdf57"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Site Configuration/Redirection Rules/Test Rule
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0e4264a6-4da7-42dc-bd55-ec5b48d67129"
+      Hint: Target Item
+      Value: "{71B87E08-09C7-4E7D-8A0A-07F2FD2BFF24}"
+    - ID: "21090378-209e-495f-aeb1-78f05d69b027"
+      Hint: Requested Url
+      Value: "http://starterkit82/setgoal"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150731T140145Z
+    - ID: "97cc0e83-45e7-4460-a9bb-c821f5c593b8"
+      Hint: Type
+      Value: "Vanity - Server Execute"
+    - ID: "e87e62f6-3127-4df6-9ad5-4d43b45d4a5c"
+      Hint: Goal
+      Value: "{308A6EF8-A972-4B07-A6D2-516608D4C085}"

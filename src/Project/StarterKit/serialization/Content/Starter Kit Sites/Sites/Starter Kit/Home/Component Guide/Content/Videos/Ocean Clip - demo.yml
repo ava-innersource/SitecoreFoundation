@@ -1,0 +1,33 @@
+﻿---
+ID: "cd53ae10-5c86-47ef-9518-fa3907d22a64"
+Parent: "7c8c1303-65ec-4be7-9114-a48643b67aba"
+Template: "58bfe90b-200d-4acb-8c2e-78bd9057387d"
+Path: "/sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Component Guide/Content/Videos/Ocean Clip - demo"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "07bde6da-e330-4b92-bbf1-f841e691fa50"
+      Hint: mp4
+      Value: |
+        <link linktype="external" url="http://video-js.zencoder.com/oceans-clip.mp4" anchor="" target="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150927T231618
+    - ID: "6959428c-6ef9-4775-901d-c9fdc6758d5b"
+      Hint: Poster
+      Value: |
+        <link linktype="external" url="http://video-js.zencoder.com/oceans-clip.png" anchor="" target="" />
+    - ID: "73eea08b-bc0d-4951-97fc-f40aa880b071"
+      Hint: ogg
+      Value: |
+        <link linktype="external" url="http://video-js.zencoder.com/oceans-clip.ogv" anchor="" target="" />
+    - ID: "b6d66439-6135-4de6-8ba9-d184ae66d682"
+      Hint: Preload
+      Value: auto
+    - ID: "b844a6ce-888b-4cc4-8569-3db818599d31"
+      Hint: webm
+      Value: |
+        <link linktype="external" url="http://video-js.zencoder.com/oceans-clip.webm" anchor="" target="" />

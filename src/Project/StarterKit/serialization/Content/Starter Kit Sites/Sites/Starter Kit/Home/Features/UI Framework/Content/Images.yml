@@ -1,0 +1,14 @@
+﻿---
+ID: "3c952aca-f5e8-4695-a6c7-186997d9a3df"
+Parent: "bae618fa-9610-4f64-be01-50a4915da9ec"
+Template: "52085dde-d6b5-41ad-ab1a-8d3dc19480a0"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/UI Framework/Content/Images
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151005T221851

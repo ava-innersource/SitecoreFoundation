@@ -1,0 +1,22 @@
+﻿---
+ID: "b26c5eef-2ef2-4f02-95ec-73f2be3f53c5"
+Parent: "fd057f5f-298e-48e9-8c84-5333493ed722"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/SF/Feature/IPWhiteList/Interface Templates/_SiteWhiteListSettings/IP White Listing
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150805T224402
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

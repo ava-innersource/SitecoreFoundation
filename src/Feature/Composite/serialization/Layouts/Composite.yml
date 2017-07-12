@@ -1,0 +1,14 @@
+﻿---
+ID: "c3688b8f-534f-4388-ab98-a3923dbb2df5"
+Parent: "720b4d66-93fd-40d5-9f5c-3023c4e9f1a4"
+Template: "93227c5d-4fef-474d-94c0-f252ec8e8219"
+Path: /sitecore/layout/Layouts/SF/Feature/Composite
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170705T141900Z

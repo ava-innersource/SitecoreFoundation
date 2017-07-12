@@ -1,0 +1,45 @@
+﻿---
+ID: "e19166c9-400f-4328-88d8-d2fb45cd3017"
+Parent: "c3e03478-5ed6-475d-b13e-a3a8beaba83a"
+Template: "195731e3-8313-4dcb-b910-2d3a465a4625"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/About/Road Map
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{2CF7C19A-A72E-4AF1-9DD0-281042DB42E5}"
+          p:before="r[@uid='{1A6E5D22-A4A2-4DAF-AE40-F6CD68AD8FBC}']"
+          s:ds="{23B38252-4655-4A13-B944-6FBF0A8DC258}"
+          s:id="{A7540328-E131-4273-808C-C59F49BB9FFF}"
+          s:ph="/Middle Area/Column1_1a6e5d22-a4a2-4daf-ae40-f6cd68ad8fbc" />
+        <r
+          uid="{1A6E5D22-A4A2-4DAF-AE40-F6CD68AD8FBC}"
+          p:before="r[@uid='{296294FA-AB36-4F1E-B667-CCCDCC2BF215}']"
+          s:id="{F6E1983C-3451-45F8-A239-5540AB97DD5B}"
+          s:ph="Middle Area" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151003T214021
+    - ID: "25e2ef68-b6e5-4422-b915-cc8c7d5bb8b0"
+      Hint: GooglePlusName
+      Value: Road Map
+    - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
+      Hint: OpenGraphTitle
+      Value: Road Map
+    - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
+      Hint: TwitterTitle
+      Value: Road Map

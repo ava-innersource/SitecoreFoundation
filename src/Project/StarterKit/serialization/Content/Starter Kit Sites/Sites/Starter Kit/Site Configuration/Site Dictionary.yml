@@ -1,0 +1,24 @@
+﻿---
+ID: "c9089a3f-61f6-4923-9a0f-6ef3b7ba9566"
+Parent: "fb373191-3fc9-4bb4-8010-ae91eedeaf9e"
+Template: "0a2847e6-9885-450b-b61e-f9e6528480ef"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Site Configuration/Site Dictionary
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Business/32x32/address_book_add.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+- ID: "cd72e892-d8bb-487c-9eb1-6a57c48c72cc"
+  Hint: Fallback Domain
+  Value: "{3E6F0144-6C95-41D8-BF0B-3C408F8DF3CD}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160601T113859

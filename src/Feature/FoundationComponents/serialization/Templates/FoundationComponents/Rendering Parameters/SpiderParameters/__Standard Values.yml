@@ -1,0 +1,32 @@
+﻿---
+ID: "c4678554-53c6-4fe1-9c05-d2ecc0224d78"
+Parent: "a09aec2a-75a7-4cb3-bf30-e53bb2fc4b86"
+Template: "a09aec2a-75a7-4cb3-bf30-e53bb2fc4b86"
+Path: /sitecore/templates/SF/Feature/FoundationComponents/Rendering Parameters/SpiderParameters/__Standard Values
+DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150512T232405
+    - ID: "3ecb649c-5a67-411c-b04b-d0aae96d6291"
+      Hint: MaxDepth
+      Value: 2
+    - ID: "ccd1c22d-b8fa-4c44-9e82-6904e0c65d89"
+      Hint: IncludeRootItem
+      Type: Checkbox
+      Value: 1
+    - ID: "d2a8c59f-b699-416c-8166-bbbbc1e97793"
+      Hint: IncludeBackLink
+      Type: Checkbox
+      Value: 1
+    - ID: "e8ca2bc7-18f2-421f-81f8-4e83825a90bd"
+      Hint: BackLinkText
+      Value: Back

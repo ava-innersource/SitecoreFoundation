@@ -1,0 +1,23 @@
+﻿---
+ID: "55cba321-1aff-4dfa-8555-eb3e34d5fde6"
+Parent: "59aca930-fd37-4b87-88d4-f1d896be7c79"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/Tags/Content/Text/Meta Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151006T222855
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <p>Our framework allows for configuration of common meta tag fields at both the page and site level. At the site level you can configure prefixes and defaults that will cascade to every page on the site. At the page level you can override the default behavior, giving you complete control over each page.</p>
+        <h2>Social Tag Management</h2>

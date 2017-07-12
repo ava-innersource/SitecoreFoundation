@@ -1,0 +1,21 @@
+﻿---
+ID: "9e1e426c-d9a8-4254-ac82-d4fc90e45dd3"
+Parent: "7ebfb763-4925-4b3b-ad66-049a78c9e3df"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/SF/Feature/SiteMap/_PageVideoSiteMapSettings/Video Site Map Details/Currency
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1550
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160721T104431

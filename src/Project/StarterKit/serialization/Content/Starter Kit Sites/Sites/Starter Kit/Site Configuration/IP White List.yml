@@ -1,0 +1,31 @@
+﻿---
+ID: "06905a74-f568-477e-8edb-4e452ff3db88"
+Parent: "fb373191-3fc9-4bb4-8010-ae91eedeaf9e"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Site Configuration/IP White List
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Network/32x32/brickwall_ok.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {C0335418-EFCE-4AB3-B22B-E18BB931CCAF}
+    {5B2C7897-A053-4B7F-A3D7-BAF516FBA747}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 700
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150805T223224
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

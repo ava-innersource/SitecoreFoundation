@@ -1,0 +1,37 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+@using SF.Foundation.CommonComponents
+
+@{
+    //Get Button Rendering Parameter Values
+    string style = Html.GetRenderingParameter("Style");
+    string even = Html.GetRenderingParameter("Even");
+    
+    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+    sb.Append("button-group");
+    if (!string.IsNullOrEmpty(style))
+    {
+        sb.Append(" ").Append(style);
+    }
+    if (!string.IsNullOrEmpty(even))
+    {
+        sb.Append(" even-").Append(even);
+    }
+    if (Html.GetCheckboxRenderingParameterValue("Stack"))
+    {
+        sb.Append(" stack");
+    }
+    if (Html.GetCheckboxRenderingParameterValue("Stack For Small"))
+    {
+        sb.Append(" stack-for-small");
+    }
+    string buttonGroupClasses = sb.ToString();
+}
+
+
+
+<ul @Html.GetContainerTagAttributes(buttonGroupClasses)>
+    @Html.Sitecore().DynamicPlaceholder("ButtonGroup")
+</ul>

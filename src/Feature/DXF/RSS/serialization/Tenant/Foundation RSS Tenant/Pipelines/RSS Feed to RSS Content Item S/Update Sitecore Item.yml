@@ -1,0 +1,21 @@
+﻿---
+ID: "4a409a4c-d442-40d9-8220-d82aed67c028"
+Parent: "069c7304-b02d-4df5-921e-dcd6e3126723"
+Template: "b384fb2d-fbef-4a8e-9572-fa5fb9f75a7d"
+Path: /sitecore/system/Data Exchange/Foundation RSS Tenant/Pipelines/RSS Feed to RSS Content Item Sync Pipeline/Update Sitecore Item
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+- ID: "e8609af1-3e0a-41ae-894d-03dcd99165a7"
+  Hint: EndpointTo
+  Value: "{9460AFB0-C9EF-4BF7-A475-9E9930122DC0}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T042325Z

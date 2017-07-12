@@ -1,0 +1,1 @@
+﻿videojs.options.flash.swf = "/content/video-js.swf";

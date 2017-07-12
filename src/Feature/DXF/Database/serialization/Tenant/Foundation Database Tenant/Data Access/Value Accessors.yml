@@ -1,0 +1,14 @@
+﻿---
+ID: "554c75d9-bca6-4d5e-99de-e687572232ab"
+Parent: "42d3eebd-4a27-4c03-bfce-684570a2babc"
+Template: "3495b196-1151-4a7e-ba6a-53a94b095ca7"
+Path: /sitecore/system/Data Exchange/Foundation Database Tenant/Data Access/Value Accessors
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T023453Z

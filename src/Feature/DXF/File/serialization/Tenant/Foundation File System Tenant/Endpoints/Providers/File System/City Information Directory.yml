@@ -1,0 +1,19 @@
+﻿---
+ID: "4f04b77f-5943-48cc-8a7b-49b4a28fbb2f"
+Parent: "1f4a789f-0f1c-4802-b20d-05d220bb9874"
+Template: "567c60a0-a45c-4508-8332-ce727e80760b"
+Path: /sitecore/system/Data Exchange/Foundation File System Tenant/Endpoints/Providers/File System/City Information Directory
+DB: master
+SharedFields:
+- ID: "90f48c67-f9ba-416a-8c81-3df26cfd6731"
+  Hint: Path
+  Value: |
+    c:\ASF\Release\Release_8_2\Source\Foundation\Avanade.SC.Integration\FileSystem\
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T212035Z

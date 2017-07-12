@@ -1,0 +1,46 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Feature.FoundationComponents
+@using SF.Foundation.CommonComponents
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+
+@{
+    //Get Button Rendering Parameter Values
+    string style = Html.GetRenderingParameter("Style");
+    string size = Html.GetRenderingParameter("Sizing");
+    string category = Html.GetRenderingParameter("Category");    
+    
+    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+    sb.Append("button");
+    if (!string.IsNullOrEmpty(style))
+    {
+        sb.Append(" ").Append(style);
+    }
+    if (!string.IsNullOrEmpty(size))
+    {
+        sb.Append(" ").Append(size);
+    }
+    if (!string.IsNullOrEmpty(category))
+    {
+        sb.Append(" ").Append(category);
+    }
+}
+
+<li @Html.GetContainerTagAttributes("has-form")>
+    <div class="row collapse">
+    <div class="large-8 small-9 columns">
+      @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+      {
+          <div> Textbox Placeholder: @Html.Sitecore().Field("Placeholder Text")</div>
+      }
+      else
+      {  
+        <input type="text" placeholder="@Html.Sitecore().Field("Placeholder Text")">
+      }
+    </div>
+    <div class="large-4 small-3 columns">
+      @Html.Sitecore().Field("Button Link", new { @class= sb.ToString()})
+    </div>
+  </div>
+</li>

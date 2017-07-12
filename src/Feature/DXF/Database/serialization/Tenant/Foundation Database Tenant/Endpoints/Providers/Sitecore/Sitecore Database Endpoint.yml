@@ -1,0 +1,14 @@
+﻿---
+ID: "416cf2a0-07ec-4fd8-b298-02c9cab3a905"
+Parent: "b2c5c992-c405-4cd8-8142-6c8fa137bb5a"
+Template: "b0d8d4f6-3552-486b-b240-4bf3913a837f"
+Path: /sitecore/system/Data Exchange/Foundation Database Tenant/Endpoints/Providers/Sitecore/Sitecore Database Endpoint
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T033040Z

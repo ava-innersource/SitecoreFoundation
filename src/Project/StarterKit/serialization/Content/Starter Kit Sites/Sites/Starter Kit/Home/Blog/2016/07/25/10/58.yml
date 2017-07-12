@@ -1,0 +1,14 @@
+﻿---
+ID: "4a544e16-bffc-4242-b057-85b11331a5f3"
+Parent: "3b417466-2ee4-45d2-a8a7-3cb38d53e3d3"
+Template: "adb6ca4f-03ef-4f47-b9ac-9ce2ba53ff97"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Blog/2016/07/25/10/58
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160725T105801

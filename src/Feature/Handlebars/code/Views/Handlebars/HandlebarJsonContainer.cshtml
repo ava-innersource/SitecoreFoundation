@@ -1,0 +1,28 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+@using SF.Foundation.CommonComponents
+@using SF.Feature.Handlebars
+
+@model RenderingModel
+
+@{
+    Sitecore.Data.Items.Item config = Model.Item;
+    var JsonUrlField = (Sitecore.Data.Fields.LinkField) config.Fields["Url"];
+    string JsonUrl = JsonUrlField.LinkUrl();
+    
+    if (!string.IsNullOrEmpty(JsonUrl))
+    { 
+        HandlebarManager.SetupJsonContainer(JsonUrl);
+    }
+}
+
+@using (Html.ComponentContainer("HandlebarJsonContainer"))
+{
+    if (Sitecore.Context.PageMode.IsExperienceEditorEditing && string.IsNullOrEmpty(JsonUrl))
+    {
+        <div>No Json Url has been configured. Please configure the url for this component.</div>
+    }
+    @Html.Sitecore().DynamicPlaceholder("HandlebarTemplates")
+}

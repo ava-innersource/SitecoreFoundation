@@ -1,0 +1,19 @@
+﻿---
+ID: "315af294-cb06-48c6-b321-6922465f94f1"
+Parent: "102a6c6f-36fa-498e-b269-ed0bc86234a4"
+Template: "102a6c6f-36fa-498e-b269-ed0bc86234a4"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/FileSystem/Folders/File System Endpoints Root/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{567C60A0-A45C-4508-8332-CE727E80760B}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T195855Z

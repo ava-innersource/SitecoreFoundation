@@ -1,0 +1,20 @@
+﻿---
+ID: "5c8814f9-e74a-4ca3-9417-923aba95e0ee"
+Parent: "e6842e72-3e11-4bd7-bfe3-5e9a5e641f6e"
+Template: "584955f8-5b31-4d73-b012-6e1c54aec43b"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Component Guide/Content/Icons/Like
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "12d19fdd-9381-4f11-9a44-d475338894dd"
+      Hint: Icon
+      Value: like
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150912T235913
+    - ID: "e3d8e0ea-e04b-4276-9bac-f5f986acaba9"
+      Hint: Label
+      Value: Like

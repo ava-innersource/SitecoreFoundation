@@ -1,0 +1,14 @@
+﻿---
+ID: "8d559185-1193-46a5-aa39-036746e953b4"
+Parent: "6563d996-91e0-42fa-b9da-4fa184b45812"
+Template: "713398d7-366f-4122-a7c0-8bc9ac235df7"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/Content/Images/multisite
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151117T162642

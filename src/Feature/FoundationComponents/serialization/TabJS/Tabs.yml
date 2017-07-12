@@ -1,0 +1,53 @@
+﻿---
+ID: "a462745a-35a1-4082-b344-039e59a8e2c4"
+Parent: "de374318-9854-497f-8453-befac9f6beb4"
+Template: "722ec325-cc44-4687-adbd-4ea415502f88"
+Path: /sitecore/content/Global/Scripts/Components/Tabs
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150914T022429Z
+    - ID: "27b24da2-007e-4dec-a78e-f6f5b8e165b5"
+      Hint: Notes
+      Value: <p>Since tabs are in separate div then tab Content, we initiate them at run time and injec the tabs into the tab ul.</p>
+    - ID: "4d7740a6-6828-4552-8ba9-a7155dbb067b"
+      Hint: Version
+      Value: 0.01
+    - ID: "a2dda611-f0ad-4ce2-863a-84df4f467b64"
+      Hint: Content
+      Value: |
+        $( document ).ready(function() {
+          $(".tabs-container").each(function(index){
+            var tabContainer = $(this);
+            var tabs = tabContainer.find(".tabs");
+            
+            var tabContentContainer = tabContainer.find(".tabs-content");
+            var tabContent = tabContentContainer.children(".content[role='tabpanel']");
+            
+            tabContent.each(function(index){
+            	var tabTitle = $(this).attr("data-title");
+            	var tabID = $(this).attr("id");
+            	tabs.append('<li class="tab-title" role="presentation"><a href="#' + tabID + '" role="tab" tabindex="0" aria-selected="false" aria-controls="' + tabID + '">' + tabTitle + '</a></li>');
+            });
+            
+            //open the first item
+            if (tabContainer.find(".tabs-content .content.active").length == 0)
+            {
+            	//None are active, lets make first tab active
+            	tabContent.eq(0).addClass("active");
+            }
+            
+          });
+          
+          //reflow tabs
+          $(document).foundation('tab', 'reflow');
+          
+        });
+    - ID: "dda77d50-e0af-4a9a-a7dc-17233d778eb5"
+      Hint: Name
+      Value: Tabs

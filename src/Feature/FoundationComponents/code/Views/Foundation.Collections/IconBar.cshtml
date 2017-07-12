@@ -1,0 +1,28 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+@using SF.Foundation.CommonComponents
+
+@model RenderingModel
+@{
+    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+    sb.Append("icon-bar ");
+    
+    if (Html.GetCheckboxRenderingParameterValue("Vertical"))
+    {
+        sb.Append("vertical ");
+    }
+
+    string containerClass = sb.ToString().Trim();
+
+    string role = string.Empty;
+    if (Html.GetCheckboxRenderingParameterValue("IsNavigation"))
+    {
+        role = @"role=""navigation""";
+    }    
+}
+
+<div @Html.GetContainerTagAttributes(containerClass) @role>
+    @Html.Sitecore().DynamicPlaceholder("IconBarItems")
+</div>

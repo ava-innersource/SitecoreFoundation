@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+  <sitecore>
+    <settings>
+      <!-- First Fallback Language to Try -->
+      <setting name="SF.LanguageStrategy.DefaultLanguage" value="en"/>
+    </settings>
+    <itemManager>
+      <patch:attribute name="defaultProvider">fallback</patch:attribute>
+      <providers>
+        <clear />
+        <add name="fallback" type="SF.Feature.Language.CustomLanguageStrategyFallbackItemProvider, SF.Feature.Language"/>
+      </providers>
+    </itemManager>
+    <!-- Site Fall back (falls back based on Site Config Entry 
+      <itemManager>
+          <patch:attribute name="defaultProvider">fallback</patch:attribute>
+          <providers>
+              <clear />
+              <add name="fallback" type="SF.Feature.Language.LanguageFallbackItemProvider, SF.Feature.Language"/>
+          </providers>
+      </itemManager>
+    -->
+  </sitecore>
+</configuration>

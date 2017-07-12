@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73217127-ADB7-4857-9D29-69EB32F8A21F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Foundation.CodeEditor</RootNamespace>
+    <AssemblyName>Foundation.CodeEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ci|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ci|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'always|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'always|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sitecore.SharedSource.CodeEditor">
+      <HintPath>..\..\..\..\lib\Sitecore.SharedSource.CodeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sitecore\shell\Applications\Content Manager\Dialogs\EditCode\EditCode.js" />
+    <Content Include="sitecore\shell\Applications\Content Manager\Dialogs\EditCode\EditCode.xaml.xml" />
+    <Content Include="sitecore\shell\Applications\Xaml\Controls\CodePage.xaml.xml" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ace.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\emmet-core\emmet.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-beautify.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-chromevox.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-elastic_tabstops_lite.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-emmet.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-error_marker.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-keybinding_menu.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-language_tools.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-linking.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-modelist.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-old_ie.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-searchbox.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-settings_menu.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-spellcheck.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-split.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-static_highlight.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-statusbar.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-textarea.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-themelist.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\ext-whitespace.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\mode-css.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\mode-html.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\mode-javascript.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\mode-json.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\mode-less.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\mode-markdown.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\mode-plain_text.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\mode-powershell.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\mode-scss.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\mode-text.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\mode-xml.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\snippets\css.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\snippets\html.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\snippets\javascript.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\snippets\json.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\snippets\less.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\snippets\markdown.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\snippets\plain_text.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\snippets\powershell.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\snippets\scss.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\snippets\text.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\snippets\xml.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-ambiance.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-chaos.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-chrome.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-clouds.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-clouds_midnight.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-cobalt.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-crimson_editor.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-dawn.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-dreamweaver.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-eclipse.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-github.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-idle_fingers.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-katzenmilch.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-kr_theme.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-kuroir.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-merbivore.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-merbivore_soft.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-monokai.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-mono_industrial.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-pastel_on_dark.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-powershellise.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-solarized_dark.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-solarized_light.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-terminal.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-textmate.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-tomorrow.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-tomorrow_night.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-tomorrow_night_blue.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-tomorrow_night_bright.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-tomorrow_night_eighties.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-twilight.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-vibrant_ink.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\theme-xcode.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\worker-css.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\worker-html.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\worker-javascript.js" />
+    <Content Include="sitecore\shell\Controls\Lib\ace\worker-json.js" />
+    <Content Include="sitecore\shell\Controls\Lib\js-beautify\beautify-css.js" />
+    <Content Include="sitecore\shell\Controls\Lib\js-beautify\beautify-html.js" />
+    <Content Include="sitecore\shell\Controls\Lib\js-beautify\beautify.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="App_Config\Include\Foundation.CodeEditor\Sitecore.SharedSource.CodeEditor.config" />
+    <Content Include="App_Config\Include\Foundation.CodeEditor\Serialization.config" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2368</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2368/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

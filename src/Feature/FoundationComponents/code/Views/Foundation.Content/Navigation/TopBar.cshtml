@@ -1,0 +1,80 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+@using SF.Foundation.CommonComponents
+
+@{
+    string positioning = Html.GetRenderingParameter("Bar Positioning");
+    string stickySetting = Html.GetRenderingParameter("Sticky On");
+    bool clickable = Html.GetRenderingParameter("Clickable") == "1";
+    
+    System.Text.StringBuilder dataOptions = new System.Text.StringBuilder();
+    if (clickable || !string.IsNullOrEmpty(stickySetting))
+    {
+        dataOptions.Append(@" data-options=""");
+    
+        if (!string.IsNullOrEmpty(stickySetting))
+        {   
+            dataOptions.Append(@"sticky_on: [").Append(stickySetting).Append(@"];");
+        }
+        
+        if (clickable)
+        {
+            dataOptions.Append(@"is_hover: false");
+        }
+        
+         dataOptions.Append(@"""");
+    }
+    
+    string divContainerStart = string.Empty;
+    string divContainerEnd = string.Empty;
+    if (!string.IsNullOrEmpty(positioning))
+    {
+        divContainerStart = string.Format(@"<div class=""{0}"">", positioning);
+        divContainerEnd = @"</div>";
+    }        
+    
+}
+
+@Html.Raw(divContainerStart)
+
+<nav @Html.GetContainerTagAttributes("top-bar") data-topbar role="navigation" @Html.Raw(dataOptions.ToString())>
+  <ul class="title-area">
+    <li class="name">
+      @Html.Sitecore().Field("Title")
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>@Html.Sitecore().Field("Menu Title")</span></a></li>
+  </ul>
+
+    @{
+      string supStyles = string.Empty;
+      if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+      {
+          supStyles = "topBarPageEditor";
+      }
+    }
+    <style>
+        .topBarPageEditor {
+            min-width:80px;
+            min-height: 20px;
+            border: 1px solid;
+        }
+    </style>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+      <ul class="right @supStyles">
+          @Html.Sitecore().DynamicPlaceholder("NavLinks1")
+      </ul>
+
+    <!-- Left Nav Section -->
+      <ul class="left  @supStyles">
+          @Html.Sitecore().DynamicPlaceholder("NavLinks2")
+      </ul>
+  </section>
+</nav>
+
+
+
+@Html.Raw(divContainerEnd)

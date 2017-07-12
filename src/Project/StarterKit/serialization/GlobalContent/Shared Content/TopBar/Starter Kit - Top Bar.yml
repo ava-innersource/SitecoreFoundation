@@ -1,0 +1,18 @@
+﻿---
+ID: "93a831b5-1e36-452c-ad1f-764b7d906790"
+Parent: "20686eb9-700c-4c46-bacc-a8bc0a2c3ff8"
+Template: "cbbecdb2-ca59-48c7-a8cc-f5bd20a6b4eb"
+Path: "/sitecore/content/Global/Shared Content/TopBar/Starter Kit - Top Bar"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150603T142322
+    - ID: "ff145146-6bed-41d5-8190-4bc8bc11d2c1"
+      Hint: Title
+      Value: |
+        <h1><a href="/">Sitecore Starter Kit</a></h1>

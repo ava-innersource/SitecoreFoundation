@@ -1,0 +1,20 @@
+﻿---
+ID: "acb6d799-e0c5-4791-a195-b1a69881376f"
+Parent: "890cd826-6e09-48a7-aa28-4b1a47d61b1b"
+Template: "1c7cbb97-485d-4540-9d41-f3a3f90ed85c"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/News Articles/Content/HandlebarDataSources/HandlebarCollectionContainer
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151115T113201
+    - ID: "5db357fa-0dba-4347-b70b-5eb20ae353f6"
+      Hint: Items Per Page
+      Value: 2
+    - ID: "6ccd6589-ef6b-4e8e-844e-e1819c15d9ba"
+      Hint: Root Folder
+      Value: "{01A022FD-3393-49B4-BDFB-6F7018002208}"

@@ -1,0 +1,24 @@
+﻿---
+ID: "3b4a50d3-6605-44ed-8af9-4b1bbeeb067e"
+Parent: "ebade0ad-7cfd-4193-b7a0-a831e3f87064"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Content/Text/Tooling
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150606T224213
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <h4>Manage Scripts and Styles</h4>
+        <p>Bundle, Minify and even Process LESS files without leaving Sitecore. &nbsp;Add Custom Scripts at the Site or Page Level.</p>
+        <p><a href="~/link.aspx?_id=3D7403C090434B3C8E71E02B76845322&amp;_z=z">Learn more</a></p>

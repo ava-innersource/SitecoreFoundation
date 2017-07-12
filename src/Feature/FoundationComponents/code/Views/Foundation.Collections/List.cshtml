@@ -1,0 +1,46 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+@using SF.Foundation.CommonComponents
+
+@model RenderingModel
+@{
+    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+    sb.Append("list");
+
+    
+    bool isOrdered = false;
+    if (Html.GetCheckboxRenderingParameterValue("IsOrdered"))
+    {
+        isOrdered = true;
+    }
+
+    if (Html.GetCheckboxRenderingParameterValue("IsInline"))
+    {
+        sb.Append(@" inline-list");
+        isOrdered = false;
+    }
+    
+    if (Html.GetCheckboxRenderingParameterValue("IsSideNav"))
+    {
+        sb.Append(@" side-nav");
+        isOrdered = false;
+    }
+
+
+    var containerClasses = sb.ToString();
+}
+
+@if (isOrdered)
+{
+<ol @Html.GetContainerTagAttributes(containerClasses)>
+    @Html.Sitecore().DynamicPlaceholder("ListItems")
+</ol>
+}
+else
+{
+<ul @Html.GetContainerTagAttributes(containerClasses)>
+    @Html.Sitecore().DynamicPlaceholder("ListItems")
+</ul>
+}

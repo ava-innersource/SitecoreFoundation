@@ -1,0 +1,16 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+
+@{
+    bool hasCaption = !string.IsNullOrEmpty(Model.Item.Fields["Caption"].Value);
+    
+}
+@using (Html.ComponentContainer("image-component"))
+{
+    @Html.Sitecore().Field("Image")
+    if (@hasCaption || Sitecore.Context.PageMode.IsExperienceEditorEditing)
+    { 
+        <p>@Html.Sitecore().Field("Caption")</p>
+    }
+}

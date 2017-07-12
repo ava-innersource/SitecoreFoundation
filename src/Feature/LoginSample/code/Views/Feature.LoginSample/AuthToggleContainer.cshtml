@@ -1,0 +1,35 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.CommonComponents
+@using SF.Foundation.Structure
+
+@model RenderingModel
+
+@using (Html.ComponentContainer("auth-toggle-container"))
+{
+    <div class="Authenticated">
+        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+        {
+            <div data-alert class="alert-box info radius">
+              Authenticated Container:              
+            </div>
+        }
+        @if (Sitecore.Context.User.IsAuthenticated || Sitecore.Context.PageMode.IsExperienceEditorEditing)
+        {
+            @Html.Sitecore().DynamicPlaceholder("Column1")
+        }
+    </div>
+    <div class="not-authenticated">
+        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+        {
+            <div data-alert class="alert-box info radius">
+                Not Authenticated Container:
+            </div>
+        }
+        @if (!Sitecore.Context.User.IsAuthenticated || Sitecore.Context.PageMode.IsExperienceEditorEditing)
+        { 
+            @Html.Sitecore().DynamicPlaceholder("Column2")
+        }
+    </div>
+}

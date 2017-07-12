@@ -1,0 +1,18 @@
+﻿---
+ID: "e7793c7e-d883-400c-a2d4-414bd6248163"
+Parent: "f0a4bacf-82a7-4e32-ae92-5645e771ff73"
+Template: "f0a4bacf-82a7-4e32-ae92-5645e771ff73"
+Path: /sitecore/templates/SF/Feature/FoundationComponents/Rendering Parameters/TabParameters/__Standard Values
+DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150512T232405

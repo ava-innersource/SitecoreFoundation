@@ -1,0 +1,21 @@
+﻿---
+ID: "6a6dbf62-e6fd-420e-821f-3ed28edbe6cd"
+Parent: "42dc8895-f9f1-4b4e-852c-ae658f417e0b"
+Template: "6f7375cc-9942-4e30-8c63-95281b69c65f"
+Path: /sitecore/system/Data Exchange/Foundation File System Tenant/Data Access/Value Accessor Sets/Providers/Sitecore/City Information Item Fields/Country
+DB: master
+SharedFields:
+- ID: "a011c1d5-1c40-4420-8592-d0ce0306e0dd"
+  Hint: Field
+  Value: "{F180918D-DF01-4AF0-8F24-D1737F899A08}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T212913Z

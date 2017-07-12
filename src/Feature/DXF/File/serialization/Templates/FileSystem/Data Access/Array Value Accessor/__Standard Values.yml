@@ -1,0 +1,18 @@
+﻿---
+ID: "50d4b864-85e4-4f44-87ef-cd5bb25d34ad"
+Parent: "eb32248f-ba1e-430d-a739-fe1a556cd15d"
+Template: "eb32248f-ba1e-430d-a739-fe1a556cd15d"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/FileSystem/Data Access/Array Value Accessor/__Standard Values
+DB: master
+SharedFields:
+- ID: "3c7f78cc-0c5c-4076-80ef-9a49fda5ff96"
+  Hint: ConverterType
+  Value: SF.DXF.Feature.File.ArrayValueAccessorConverter, SF.DXF.Feature.File
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T210727Z

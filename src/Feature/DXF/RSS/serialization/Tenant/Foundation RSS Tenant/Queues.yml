@@ -1,0 +1,14 @@
+﻿---
+ID: "bcbfa760-8430-491b-b391-1ce6bc0d65e2"
+Parent: "7fdc2898-bd61-4968-8e9a-4c39c8d923f4"
+Template: "dde64bb9-5e98-44db-900e-71c15b7924f9"
+Path: /sitecore/system/Data Exchange/Foundation RSS Tenant/Queues
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161110T212827Z

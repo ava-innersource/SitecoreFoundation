@@ -1,0 +1,72 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+@using SF.Foundation.CommonComponents
+
+@model RenderingModel
+
+@{
+    string ID = Html.GetRenderingParameter("ID");
+    string defaultID = ID;
+    if (string.IsNullOrEmpty(ID))
+    {
+        defaultID = string.Format(@"{0}", "r" + RenderingContext.Current.Rendering.UniqueId.ToString("N"));
+    }
+    
+    bool isButton = false;
+    string linkCSS = string.Empty;
+    
+    if (Html.GetCheckboxRenderingParameterValue("IsButton"))
+    {
+        isButton = true;
+
+        string style = Html.GetRenderingParameter("Style");
+        string size = Html.GetRenderingParameter("Sizing");
+        string category = Html.GetRenderingParameter("Category");
+
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+        sb.Append("button");
+        if (!string.IsNullOrEmpty(style))
+        {
+            sb.Append(" ").Append(style);
+        }
+        if (!string.IsNullOrEmpty(size))
+        {
+            sb.Append(" ").Append(size);
+        }
+        if (!string.IsNullOrEmpty(category))
+        {
+            sb.Append(" ").Append(category);
+        }
+
+        linkCSS = sb.ToString();
+    }
+
+    string modalSize = Html.GetRenderingParameter("ModalSize");
+}
+
+@using (Html.ComponentContainer("modal-Dialog"))
+{
+    if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+    <div class="@linkCSS">
+        @Html.Sitecore().Field("DialogLink")
+    </div>
+    <div id="@defaultID" class="page-editor-reveal-modal @modalSize" data-reveal aria-hidden="true" role="dialog">
+      @Html.Sitecore().DynamicPlaceholder("Column1")
+      <a class="close-reveal-modal" aria-label="@Sitecore.Globalization.Translate.TextByDomain("Global Dictionary Domain", "SF.Modal.Close")">&#215;</a>
+    </div>
+}
+else
+{      
+    <a href="#" class="@linkCSS" data-reveal-id="@defaultID">
+        @Html.Sitecore().Field("DialogLink")
+    </a>
+    
+    <div id="@defaultID" class="reveal-modal @modalSize" data-reveal aria-hidden="true" role="dialog">
+      @Html.Sitecore().DynamicPlaceholder("Column1")
+      <a class="close-reveal-modal" aria-label="@Sitecore.Globalization.Translate.TextByDomain("Global Dictionary Domain", "SF.Modal.Close")">&#215;</a>
+    </div>
+}
+}

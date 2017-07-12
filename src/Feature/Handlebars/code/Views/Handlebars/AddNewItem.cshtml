@@ -1,0 +1,25 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+@using SF.Foundation.Structure
+@using SF.Foundation.CommonComponents
+@using SF.Feature.Handlebars
+
+@{
+    //Get Button Rendering Parameter Values
+    string buttonText = Html.GetRenderingParameter("ButtonText");
+    string template = Html.GetRenderingParameter("Template");
+    string parent = Html.GetRenderingParameter("RootFolder");
+    
+}
+
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+    
+    <script src="~/global/scripts/components/AddNewItem.js"></script>
+    
+    using (Html.ComponentContainer("add-new-Item"))
+    {
+        <a href="#" class="button tiny secondary addItemButton" data-template="@template" data-parent="@parent">@buttonText</a>
+    }
+}

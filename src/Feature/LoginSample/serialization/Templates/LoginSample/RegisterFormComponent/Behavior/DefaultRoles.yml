@@ -1,0 +1,21 @@
+﻿---
+ID: "901a0fc9-bb0c-442f-964b-0e9195a1c402"
+Parent: "58d216bd-0d34-4e30-a4e6-44cd7df13c24"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/SF/Feature/LoginSample/RegisterFormComponent/Behavior/DefaultRoles
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Multi-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151229T151928

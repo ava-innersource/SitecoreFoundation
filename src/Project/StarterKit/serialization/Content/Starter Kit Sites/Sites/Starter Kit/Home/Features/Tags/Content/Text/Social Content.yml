@@ -1,0 +1,25 @@
+﻿---
+ID: "ebc5a70b-2e97-48d0-9eaa-daf061f58521"
+Parent: "59aca930-fd37-4b87-88d4-f1d896be7c79"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/Tags/Content/Text/Social Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151006T223816
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        Our framework supports common tags to support Facebook, Twitter and Google Plus sharing. Similar to common meta data, these settings can be configured with defaults at the site level and then tuned and overridden at the page level.&nbsp;<br>
+        <h2>Experience Editor Integration</h2>
+        <p>Since all our components are built for the experience editor, to avoid forcing content authors to use the content editor just to configure a few meta tags, we have made all of these settings easily accessible in a new "Properties" tab in the Experience Editor Ribbon.</p>
+        <p><img height="132" alt="Experience Editor Integration" width="691" src="~/media/70F90ADBF35A4B308CC1D194152BC559.ashx"></p>

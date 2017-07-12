@@ -1,0 +1,28 @@
+﻿---
+ID: "01ca5ca8-a472-4188-a8e5-a71e04dd6b9e"
+Parent: "2f91a960-85c9-4198-ac6a-bd8aaa8c4eb7"
+Template: "2f91a960-85c9-4198-ac6a-bd8aaa8c4eb7"
+Path: /sitecore/templates/SF/Foundation/Resources/Folders/CSS Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Software/32x32/text_code_colored.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {26D57461-25FE-407A-BF86-31DBDB513707}
+    {2F91A960-85C9-4198-AC6A-BD8AAA8C4EB7}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150509T210306
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

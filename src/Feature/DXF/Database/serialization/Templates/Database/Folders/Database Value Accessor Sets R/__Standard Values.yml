@@ -1,0 +1,19 @@
+﻿---
+ID: "f8c66c4f-eba4-4f18-ab13-bc33e0f20227"
+Parent: "80411d8d-9533-4912-97e5-3790fc4387d5"
+Template: "80411d8d-9533-4912-97e5-3790fc4387d5"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/Database/Folders/Database Value Accessor Sets Root/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{85DA7EB6-7F14-40B8-BA1D-5029C426B99C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T022759Z

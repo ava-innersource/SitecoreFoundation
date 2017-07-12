@@ -1,0 +1,40 @@
+﻿---
+ID: "64c92ee8-f235-4f77-afde-efee05f541bf"
+Parent: "73b31582-ae54-4b3b-bb41-8aa29b62b96e"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/UI Framework/Content/Text/More UI Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151005T222120
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <p>The components have been organized into the following categories:</p>
+        <ul>
+            <li><strong>Headings </strong>- H1 - H4 tags.
+            </li>
+            <li><strong>Content </strong>- Content based components like text, images, videos, alerts and more.</li>
+            <li><strong>Layout </strong>- Single - 4 column layouts</li>
+            <li><strong>Semantic </strong>- HTML5 containers like "article", and "aside" to give your content structure more meaning.</li>
+            <li><strong>Collections </strong>- Carousels, Accordion's, Tabs and other Lists driven components.&nbsp;</li>
+            <li><strong>Buttons </strong>- Make good looking buttons that leverage Foundation's icon library easily.</li>
+            <li><strong>Navigation </strong>- Foundation based navigation including Top Bar, Off Canvas, Icon Bars and breadcrumbs.&nbsp;</li>
+            <li><strong>Containers</strong> - Additional Div's, Spans or Foundation containers like Panels and Modal Dialogs.</li>
+        </ul>
+        <p>See the "Components" page to see many of these components in action.&nbsp;</p>
+        <h2>Rendering Parameters</h2>
+        <p>While all the above components were created to support personalization and AB testing out of the box, we additionally made it very easy to customize the behavior and look and feel of the components when they are being used through the implementation of custom rendering parameters. Every single component in the framework supports a standard set of rendering parameters to make it easy to specify a custom HTML ID or CSS class and easily show or hide the component based on responsive design.</p>
+        <p><img height="384" alt="Standard Rendering Parameters" width="400" src="~/media/2D664602F5BE41F18A9478D95CFCC155.ashx?h=384&amp;w=400" style="height: 384px; width: 400px;"></p>
+        <p>Additionally we extended these rendering parameters to the specific capabilities of the component being implemented. For example, the carousel is built using OWL carousel and all of the parameters that impact how the carousel behaves can be modified using these custom rendering parameters.</p>
+        <p><img height="361" alt="Carousel Rendering Parameters" width="400" src="~/media/C202FA2A8021471F8F64C392D99FC676.ashx"></p>
+        <p>Note that a guiding design principle was that style/functional parameters to components be implemented through rendering parameters. All content related fields would be implemented as part of the component template, making sure that content can easily be personalized/tested and allowing the same content to be shown on a different page in a different container with different options.</p>

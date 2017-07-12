@@ -1,0 +1,29 @@
+﻿---
+ID: "7f6c2dc3-1839-46dd-97a6-5821a9ea0a6c"
+Parent: "c81c1506-86e5-4bc5-a6f1-1ddd454d0043"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/About/Contributors/Content/Text/Main Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151006T232621
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <h1>Contributors</h1>
+        <p>Content in Development</p>
+        <ul>
+            <li>DSF</li>
+            <li>NY Bench Project</li><li>XD Starter Kit</li>
+            <li>Big Pharma Project</li>
+            <li>Yammer Group</li>
+        </ul>

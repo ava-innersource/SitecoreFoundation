@@ -1,0 +1,21 @@
+﻿---
+ID: "51f43b2c-d36d-4f99-8730-ef38c006b3d8"
+Parent: "9e104a4c-469a-4687-a001-fb932f3cbc0f"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/SF/Feature/Handlebars/Component Templates/HandlebarQueryContainer/Data Source Details/Field Filters
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Name Value List
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160725T135751
