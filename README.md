@@ -1,18 +1,47 @@
-#Introduction 
-Welcome to Sitecore Foundation, our development accelerator for Sitecore. Used on servaral large projects, this has a collection of common features that will solve many common requirements.
+#Sitecore Foundation
 
-Sitecore Foundation has been completely refactored to leverage Helix Principles. 
+Sitecore Foundation is a Sitecore Framework that follows the Helix modular architecture design principles.
 
-#Getting Started
-TODO: Detailed Envrionment Setup Instructions.
+It provides reusable components and modules that meet many common requirements in Sitecore Projects. As it uses Helix Principles, you can choose to disable modules when customizing the framework for your solution.
 
-#Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Projects Include:
+* Common - Includes Branch Templates for Quickly creating Sites
+* Foundation - Placeholder Settings and Rendering Settings for a Foundation Component Based Site
+* StarterKit - Sample Site Implementation with Details about the Framework
 
-#Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+Features Include:
+* Analytics - Contains Controllers and JS for enabling Client Side Unified Analytics Models
+* Cache - Manage Site Caches Automatically without needing to modify configuration
+* Composite - Create Reusable Components made up of other Components
+* DXF - Data Exchange Framework Providers for Integrating with Databases, Files, RSS Feeds and more
+* Favicon - Serve a custom Favicon per Site
+* Foundation Components - Collection of Zurb Foundation Components for quickly assembling Sites
+* GeoIP - Get Free GeoLocation Data into Sitecore using MaxMind's Free Databases
+* Handlebars - Create Renderings in Sitecore to bind to any data template using Handlebar Syntax
+* IP White List - Control who can view a site based on their IP Address
+* Language - Ensure only valid languages resolve on your sites and see custom Fallback Strategies.
+* Login Sample - Collection of Sample Login Controller Renderings
+* Meta Tags - Manage and Render Common Meta Tags
+* Owl Carousel - Basic Owl Carousel Implementation
+* Parameterized Renderer - Automatically inject placeholders in content using Dictionary Elements
+* PDF - Render Any Page to PDF using Rotiva and wkhtmltopdf
+* Redirection - Manage 301, 302 and Vanity Urls and trigger goals with Redirects
+* Robots - Server Site specific Robots and Humans.txt
+* Site Map - Generate Dynamic xml Sitemaps. Supports Video and Image Site maps.
+* Social - Manage Open Data (Facebook), Twitter Cards and Google Plus Meta Data
+* Video JS Player - Basic Video JS Player Component
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Foundation Modules Include:
+* API - Include Support Classes for registering Web API's and making them Session/Analytics aware
+* Code Editor - Integrate Code Editor Shared Source Field Type into your solution
+* Common Components - Implementation of common HTML components
+* Container - Rendering Parameters Framework to generate configurable component containers
+* Multisite - Configure Custom 404 Not found and error pages per site 
+* Resources - Manage CSS, JS, Less and Sass Files in Sitecore and Sync between files as needed.
+* Search - Common Computed Fields for Search
+* Serialization - Manages Unicorn Integration
+* Shell - UI Enhancements to Sitecore to Make it easier to use.
+* Structure - Information Architecture Extensions to Support Site Collections and Sites
+* Trace Logger - Instrument Code for Performance Sampling.
+
+For more information, please check out the [Sitecore Foundation Wiki](../../wiki)
