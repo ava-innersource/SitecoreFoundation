@@ -44,4 +44,4 @@ Foundation Modules Include:
 * Structure - Information Architecture Extensions to Support Site Collections and Sites
 * Trace Logger - Instrument Code for Performance Sampling.
 
-For more information, please check out the [Sitecore Foundation Wiki](../../wiki)
+For more information, please check out the [Sitecore Foundation Wiki](https://innersource.visualstudio.com/SitecoreReferenceArchitecture/_wiki)
