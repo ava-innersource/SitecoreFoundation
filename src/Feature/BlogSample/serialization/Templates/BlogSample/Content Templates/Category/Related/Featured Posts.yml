@@ -1,0 +1,21 @@
+﻿---
+ID: "1b2a7f7c-653e-4a43-b9ab-b944192c103a"
+Parent: "1bf57ec5-7d68-45ca-bb56-d810a617cff9"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/SF/Feature/BlogSample/Content Templates/Category/Related/Featured Posts
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Treelist
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160725T103440

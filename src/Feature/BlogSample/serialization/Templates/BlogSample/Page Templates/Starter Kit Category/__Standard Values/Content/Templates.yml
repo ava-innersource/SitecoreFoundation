@@ -1,0 +1,14 @@
+﻿---
+ID: "a73ddd70-ae65-4d05-a6a0-2705f6b8dd88"
+Parent: "06284f71-834e-4872-bc4e-795338cb005c"
+Template: "52085dde-d6b5-41ad-ab1a-8d3dc19480a0"
+Path: /sitecore/templates/SF/Feature/BlogSample/Page Templates/Starter Kit Category/__Standard Values/Content/Templates
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160726T155049

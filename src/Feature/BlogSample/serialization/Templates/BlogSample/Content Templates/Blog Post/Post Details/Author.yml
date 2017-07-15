@@ -1,0 +1,28 @@
+﻿---
+ID: "a5b004a9-5608-4bdd-8cdd-9921300c2466"
+Parent: "298b55bd-67b7-4d9d-b68f-89c8573d7a48"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/SF/Feature/BlogSample/Content Templates/Blog Post/Post Details/Author
+DB: master
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "query:./ancestor::*[@@templatename='Site']/Home/Blog/Authors/*"
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Droplink
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "dca13350-3ec5-408a-a190-d8fc9f63dcd1"
+  Hint: Is Displayed in Search Results
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160725T101714
