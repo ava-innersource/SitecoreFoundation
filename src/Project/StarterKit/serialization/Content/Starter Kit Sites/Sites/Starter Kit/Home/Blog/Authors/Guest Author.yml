@@ -18,6 +18,9 @@ Languages:
     - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
       Hint: OpenGraphTitle
       Value: Guest Author
+    - ID: "7fc896d3-7b7b-4764-9dcc-dab7ce457815"
+      Hint: Name
+      Value: Guest Author
     - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
       Hint: TwitterTitle
       Value: Guest Author

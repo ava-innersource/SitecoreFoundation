@@ -17,6 +17,9 @@ Languages:
       Hint: Take Site Offline
       Type: Checkbox
       Value: 0
+    - ID: "0c77a26c-1c00-427f-aa18-bcf83df753e6"
+      Hint: TitlePrefix
+      Value: Sitecore Foundation
     - ID: "144e332d-f429-429e-ab18-4b6d05b2180a"
       Hint: LayoutNotFoundPage
       Value: "{AAF0CD52-D558-4CDD-B999-F90F7F4DD353}"
@@ -52,7 +55,7 @@ Languages:
       Value: "{08FF82CA-1BF9-4AE7-9C0E-32359E50FA94}"
     - ID: "89f9196f-3581-4575-9c2a-042f513f9412"
       Hint: BaseCanoncialUrl
-      Value: "http://StarterKit/"
+      Value: "http://starterkit.dev.local"
     - ID: "9fda9f8b-f1e8-487e-85a3-bdbcbef16a6a"
       Hint: SiteCSS
       Type: Treelist
@@ -61,6 +64,9 @@ Languages:
       Hint: Force WWW
       Type: Checkbox
       Value: 0
+    - ID: "bba037a1-1a20-4470-808c-a672078d1560"
+      Hint: MetaDescPrefix
+      Value: Sitecore Foundation
     - ID: "cec4ebae-c6eb-4b70-afe6-50677e8579d7"
       Hint: Force Https
       Type: Checkbox

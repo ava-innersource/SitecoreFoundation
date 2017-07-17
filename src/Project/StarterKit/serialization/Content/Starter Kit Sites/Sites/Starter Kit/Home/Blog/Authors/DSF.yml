@@ -18,6 +18,19 @@ Languages:
     - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
       Hint: OpenGraphTitle
       Value: DSF
+    - ID: "7cee3611-8947-45c0-b46a-898b78535916"
+      Hint: Short Bio
+      Value: <p>Short Bio for DSF</p>
+    - ID: "7fc896d3-7b7b-4764-9dcc-dab7ce457815"
+      Hint: Name
+      Value: David San Filippo
+    - ID: "9d090133-ccd6-4bae-a8aa-425a8eb9d979"
+      Hint: Profile Content
+      Value: <p>Profile content for DSF</p>
     - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
       Hint: TwitterTitle
       Value: DSF
+    - ID: "f8f02dea-a630-4d29-8904-e29f99926d6f"
+      Hint: Image
+      Value: |
+        <image mediaid="{6CE262E8-509D-4E99-A824-C5489AC79F85}" />

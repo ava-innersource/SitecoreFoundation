@@ -93,11 +93,11 @@ namespace SF.Feature.PDF
                 result.CustomSwitches += " --disable-smart-shrinking";
             }
 
-            string saveLocal = Request.QueryString["sl"];
-            if (!string.IsNullOrEmpty(saveLocal))
-            {
-                result.SaveOnServerPath = @"C:\inetpub\wwwroot\rms\Website\App_Data\tempPDFs";
-            }
+            //string saveLocal = Request.QueryString["sl"];
+            //if (!string.IsNullOrEmpty(saveLocal))
+            //{
+            //    result.SaveOnServerPath = @"C:\inetpub\wwwroot\rms\Website\App_Data\tempPDFs";
+            //}
 
             //var binary = result.BuildPdf(this.ControllerContext);
             // return File(binary, "application/pdf", result.FileName);

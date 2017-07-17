@@ -16,6 +16,9 @@ SharedFields:
   Hint: __Editors
   Type: TreelistEx
   Value: "{59F53BBB-D1F5-4E38-8EBA-0D73109BB59B}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 550
 - ID: "d312103c-b36c-4ca5-864a-c85f9abda503"
   Hint: __Is Bucket
   Type: Checkbox

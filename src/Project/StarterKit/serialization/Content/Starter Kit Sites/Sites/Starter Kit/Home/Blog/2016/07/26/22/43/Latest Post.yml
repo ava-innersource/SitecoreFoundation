@@ -18,6 +18,21 @@ Languages:
     - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
       Hint: OpenGraphTitle
       Value: Latest Post
+    - ID: "907fadd1-0998-4e51-998d-fb8c22a7618a"
+      Hint: Category
+      Value: "{BA98F9C4-E599-4E43-8A58-4B4F5BFC43C7}"
+    - ID: "a5b004a9-5608-4bdd-8cdd-9921300c2466"
+      Hint: Author
+      Value: "{E2944CDC-CA18-4DD6-AA5B-835259D96C9B}"
+    - ID: "b2913698-dc19-4c99-9ab9-0ff1181736bc"
+      Hint: Summary
+      Value: <p>Enter Summary Content Here.�</p>
+    - ID: "df10b494-1f22-46b9-adc9-b5edd92a01a8"
+      Hint: Title
+      Value: Latest Post
+    - ID: "f16f8111-4ee1-40ef-a951-015799a7a587"
+      Hint: Date
+      Value: 20160726T224307
     - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
       Hint: TwitterTitle
       Value: Latest Post

@@ -22,6 +22,21 @@ Languages:
     - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
       Hint: OpenGraphTitle
       Value: Test Post
+    - ID: "907fadd1-0998-4e51-998d-fb8c22a7618a"
+      Hint: Category
+      Value: "{49263816-E65D-45E7-8A31-BCA5378A4A7A}"
+    - ID: "a5b004a9-5608-4bdd-8cdd-9921300c2466"
+      Hint: Author
+      Value: "{216F7138-2D1C-47FA-99CA-C05A10F658BD}"
+    - ID: "b2913698-dc19-4c99-9ab9-0ff1181736bc"
+      Hint: Summary
+      Value: <p>I was added using the Add Button</p>
+    - ID: "df10b494-1f22-46b9-adc9-b5edd92a01a8"
+      Hint: Title
+      Value: Test Post
+    - ID: "f16f8111-4ee1-40ef-a951-015799a7a587"
+      Hint: Date
+      Value: 20160726T000000Z
     - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
       Hint: TwitterTitle
       Value: Test Post

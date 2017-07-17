@@ -15,6 +15,9 @@ Languages:
     - ID: "25e2ef68-b6e5-4422-b915-cc8c7d5bb8b0"
       Hint: GooglePlusName
       Value: Sitecore
+    - ID: "3c313955-2c54-4017-a610-1d24bf747570"
+      Hint: Name
+      Value: Sitecore
     - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
       Hint: OpenGraphTitle
       Value: Sitecore

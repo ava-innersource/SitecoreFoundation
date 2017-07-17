@@ -4,6 +4,10 @@ Parent: "9e4bd2e6-5f1a-4ac7-b038-3a0c67b1d74c"
 Template: "6c0b22df-5248-48e8-8a59-85669e61db94"
 Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Content
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
 Languages:
 - Language: en
   Versions:

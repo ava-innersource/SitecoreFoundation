@@ -209,9 +209,8 @@ namespace SF.Feature.Redirection
                         // Query portion gets in the way of getting the sitecore item.
                         var pathAndQuery = redirectPath.Split(new char[] { '?' }, StringSplitOptions.RemoveEmptyEntries);
                         var path = pathAndQuery[0];
-                        if (LinkManager.Provider != null &&
-                            LinkManager.Provider.GetDefaultUrlOptions() != null &&
-                            LinkManager.Provider.GetDefaultUrlOptions().EncodeNames)
+                        if (LinkManager.GetDefaultUrlOptions() != null &&
+                            LinkManager.GetDefaultUrlOptions().EncodeNames)
                         {
                             path = MainUtil.DecodeName(path);
                         }

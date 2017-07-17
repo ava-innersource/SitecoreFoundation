@@ -19,7 +19,7 @@ namespace SF.Feature.Language
 
         private Sitecore.Globalization.Language originalLanguage;
 
-        public Sitecore.Globalization.Language OriginalLanguage
+        public override Sitecore.Globalization.Language OriginalLanguage
         {
             get
             {

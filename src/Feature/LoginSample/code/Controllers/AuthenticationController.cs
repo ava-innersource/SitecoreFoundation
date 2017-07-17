@@ -17,7 +17,7 @@ namespace SF.Feature.LoginSample.Controllers
         #region Login
 
         [HttpGet]
-        public ActionResult Index()
+        public override ActionResult Index()
         {
             var model = new LoginViewModel();
 
@@ -436,6 +436,7 @@ namespace SF.Feature.LoginSample.Controllers
                     catch (Exception ex)
                     {
                         ViewBag.ErrorMessage = "The answer supplied is incorrect";
+                        Sitecore.Diagnostics.Log.Error("Error in Forgot Password", ex, this);
                         return View(ROOT_VIEW_PATH + "Challenge.cshtml", model);
                     }
 
