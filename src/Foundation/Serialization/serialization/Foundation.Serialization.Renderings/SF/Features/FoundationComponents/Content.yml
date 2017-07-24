@@ -1,0 +1,14 @@
+﻿---
+ID: "93f921a4-12e0-4998-a6f6-c7b201fde429"
+Parent: "2960474d-69d6-4bca-a59a-692bea0b9318"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/SF/Features/FoundationComponents/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170703T180906Z

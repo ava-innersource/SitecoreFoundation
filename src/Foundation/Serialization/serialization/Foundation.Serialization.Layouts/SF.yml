@@ -1,0 +1,18 @@
+﻿---
+ID: "d8fd4d24-7ccb-47a3-b331-17eee7ee95ca"
+Parent: "75cc5ce4-8979-4008-9d3c-806477d57619"
+Template: "93227c5d-4fef-474d-94c0-f252ec8e8219"
+Path: /sitecore/layout/Layouts/SF
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170705T141813Z

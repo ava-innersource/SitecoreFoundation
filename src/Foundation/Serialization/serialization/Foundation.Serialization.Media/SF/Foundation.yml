@@ -1,0 +1,18 @@
+﻿---
+ID: "a9a630dc-c186-49a0-bd93-e21352947d3c"
+Parent: "67bea8a4-1018-479d-b1dd-8ec70dcd36e8"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/SF/Foundation
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170703T174747Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

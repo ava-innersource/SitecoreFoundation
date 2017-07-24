@@ -1,0 +1,31 @@
+﻿---
+ID: "5761cc41-ecfa-4518-9fc5-f247691904a6"
+Parent: "525f5e96-a08b-4381-9045-af9e4972016d"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/SF/Features/FoundationComponents/Buttons/ButtonGroup
+DB: master
+SharedFields:
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: 
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Views/Foundation.Content/Buttons/ButtonGroup.cshtml
+- ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
+  Hint: Parameters Template
+  Value: "{8B5EE303-4CCA-4F87-A9A1-6DA83CDBDD2D}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: 
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{C49B649C-945D-4C49-A233-172B81965815}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140930T132322

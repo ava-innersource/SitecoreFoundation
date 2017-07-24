@@ -1,0 +1,28 @@
+﻿---
+ID: "49866e21-15c0-46d6-9cd6-0bf2060a0f8a"
+Parent: "b750ef6c-e523-467a-98bc-cd9a9c44cd2c"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/SF/Features/FoundationComponents/Layout/Large Right
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Views/Foundation.Layouts/Grid/LargeRight.cshtml
+- ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
+  Hint: Parameters Template
+  Value: "{28A789A5-C78C-4B51-9637-8C6C2E6FDF80}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{387A43B5-8E22-4AA6-BFEF-08FD6474CD13}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140916T171153
