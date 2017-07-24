@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using SF.Foundation.Configuration;
+using Sitecore.DependencyInjection;
+using Sitecore.Abstractions;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace SF.Foundation.Multisite
 {
@@ -16,6 +19,24 @@ namespace SF.Foundation.Multisite
     /// </summary>
     public class MultiSitePageConfigurationPipeline : Sitecore.Pipelines.HttpRequest.ExecuteRequest
     {
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:Sitecore.Pipelines.HttpRequest.ExecuteRequest" /> class.
+        /// </summary>
+        public MultiSitePageConfigurationPipeline()
+      : this(ServiceLocator.ServiceProvider.GetRequiredService<BaseSiteManager>(), ServiceLocator.ServiceProvider.GetRequiredService<BaseItemManager>())
+    {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:Sitecore.Pipelines.HttpRequest.ExecuteRequest" /> class.
+        /// </summary>
+        /// <param name="siteManager">The site manager.</param>
+        /// <param name="itemManager">The item manager.</param>
+        public MultiSitePageConfigurationPipeline(BaseSiteManager siteManager, BaseItemManager itemManager) : base(siteManager, itemManager)
+        {
+           
+        }
 
         protected override void RedirectOnItemNotFound(string url)
         {

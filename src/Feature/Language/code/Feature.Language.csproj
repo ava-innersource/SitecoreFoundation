@@ -161,10 +161,6 @@
       <Project>{9a53b8a9-9d76-45da-8e87-e5af8989a45a}</Project>
       <Name>Foundation.Configuration</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\Multisite\code\Foundation.Multisite.csproj">
-      <Project>{82ce88b3-6f1a-4c57-a0ed-0aeaf86edbee}</Project>
-      <Name>Foundation.Multisite</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
