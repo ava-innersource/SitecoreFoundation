@@ -11,6 +11,7 @@ Projects Include:
 
 Features Include:
 * Analytics - Contains Controllers and JS for enabling Client Side Unified Analytics Models
+* BlogSample - Contains Sample Content Types and Handlebar Templates for Implementing a Blog
 * Cache - Manage Site Caches Automatically without needing to modify configuration
 * Composite - Create Reusable Components made up of other Components
 * DXF - Data Exchange Framework Providers for Integrating with Databases, Files, RSS Feeds and more
