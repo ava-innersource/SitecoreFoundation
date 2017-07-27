@@ -1,8 +1,8 @@
 ﻿---
-ID: "538019d0-a1c1-4689-b328-00b503b000a7"
+ID: "b2dde027-e744-4791-84ec-d788188e466f"
 Parent: "c69831d2-ea93-47ff-98ce-7c994161333a"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/SF/Project/Common/Folder Templates/Site Collection
+Path: /sitecore/templates/SF/Foundation/Structure/Folders/Folder Templates/Site
 DB: master
 SharedFields:
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
@@ -11,7 +11,7 @@ SharedFields:
   Value: "{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}"
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{D268295B-1B0B-45A0-AED2-96CFF28DA023}"
+  Value: "{C270E79C-60CF-4E21-B1E9-F4DB6B58D5E7}"
 Languages:
 - Language: en
   Versions:
@@ -19,7 +19,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20150509T210217
+      Value: 20150509T210253
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

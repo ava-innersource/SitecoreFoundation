@@ -1,7 +1,7 @@
 ﻿---
 ID: "a6be0d5f-84e3-440c-a39c-e5eccc4f8508"
 Parent: "c39b792d-ace7-49bb-8064-8817a08da210"
-Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Template: "aa343bbd-3952-4951-8480-2204508fc3ca"
 Path: /sitecore/content/Global/Shared Content/Templates/Blog Templates/Post Listings/Listing Format 1
 DB: master
 Languages:
@@ -16,7 +16,24 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+    - ID: "74bd07f6-747a-42d3-99e9-44e2ad599365"
       Hint: Content
       Value: |
-        {{ #if IsPageEditorEditing }}<div>Experience Editor Mode</div>{{ /if }}{{ #each Items }}<div class="blog-post">{{ #if IsPageEditorEditing }}<h3>{{{Title}}} <small>{{Date_ShortDate}}</small></h3>{{else}}<h3><a href="{{ItemUrl}}">{{{Title}}}</a> <small>{{Date_ShortDate}}</small></h3>{{ /if }}<div class="thumbnail">{{{Image}}}</div><div>{{{Summary}}}</div><div class="panel"><small><a href="{{{ Author.ItemUrl }}}">by {{{Author.Name}}}</a><br /><a href="{{{ Category.ItemUrl }}}">Posted In {{{Category.Name}}}</a></small></div></div>{{ /each }}
+        {{ #if IsPageEditorEditing }}
+            <div>Experience Editor Mode</div>
+        {{ /if }}
+        {{ #each Items }}
+            <div class="blog-post">
+                {{ #if IsPageEditorEditing }}
+                    <h3>{{{Title}}} <small>{{Date_ShortDate}}</small></h3>
+                {{else}
+                    <h3><a href="{{ItemUrl}}">{{{Title}}}</a> <small>{{Date_ShortDate}}</small></h3>
+                {{ /if }}
+                <div class="thumbnail">{{{Image}}}</div>
+                <div>{{{Summary}}}</div>
+                <div class="panel">
+                    <small><a href="{{{ Author.ItemUrl }}}">by {{{Author.Name}}}</a><br />
+                    <a href="{{{ Category.ItemUrl }}}">Posted In {{{Category.Name}}}</a></small>
+                </div>
+            </div>
+        {{ /each }}

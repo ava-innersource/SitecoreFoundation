@@ -1,8 +1,8 @@
 ﻿---
-ID: "e067a8e2-700b-4103-a1ae-513254927c6d"
-Parent: "96ab5334-07e5-421f-a0ba-1a2bde156ce3"
-Template: "aa343bbd-3952-4951-8480-2204508fc3ca"
-Path: /sitecore/content/Global/Shared Content/Templates/Blog Templates/Post Formats/Post Format 1
+ID: "d8b51aae-86a8-441b-8d98-70108406cac7"
+Parent: "ebaf3ca0-cc01-4a08-9a98-b183a060f51e"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Data Exchange/Providers/SF
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160726T120445
+      Value: 20170705T130354Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

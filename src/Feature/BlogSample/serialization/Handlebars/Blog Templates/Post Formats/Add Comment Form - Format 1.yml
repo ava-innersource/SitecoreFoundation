@@ -1,7 +1,7 @@
 ﻿---
 ID: "0de77a37-55d9-4b56-b766-339a2102bfa3"
 Parent: "96ab5334-07e5-421f-a0ba-1a2bde156ce3"
-Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Template: "aa343bbd-3952-4951-8480-2204508fc3ca"
 Path: "/sitecore/content/Global/Shared Content/Templates/Blog Templates/Post Formats/Add Comment Form - Format 1"
 DB: master
 Languages:
@@ -16,7 +16,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
-      Hint: Content
-      Value: |
-        <form id="commentForm">    <input type="hidden" name="pageID" value="{{ItemId}}">    <fieldset>    <legend>Post a Comment</legend>    <div class="row">    <div class="small-8">    <div class="row">    <div class="small-3 columns">    <label for="name" class="right">Name</label>    </div>    <div class="small-9 columns">    <input type="text" id="name" placeholder="Enter your name">    </div>    </div>    </div>    </div>    <div class="row">    <div class="small-8">    <div class="row">    <div class="small-3 columns">    <label for="email" class="right">Email</label>    </div>    <div class="small-9 columns">    <input type="text" id="email" placeholder="Enter Your Email">    </div>    </div>    </div>    </div>    <div class="row">    <div class="small-8">    <div class="row">    <div class="small-3 columns">    <label for="website" class="right">Website</label>    </div>    <div class="small-9 columns">    <input type="text" id="website" placeholder="Enter your website">    </div>    </div>    </div>    </div>    <div class="row">    <div class="large-12 columns">    <label>    <textarea placeholder="Enter your comment"></textarea>    </label>    </div>    </div>    <div class="row">    <div class="medium-3 medium-push-9 columns">    <button class="submit" type="submit" value="Submit">Submit</button>    </div>    </div>    </fieldset></form>

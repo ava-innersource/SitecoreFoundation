@@ -1,7 +1,7 @@
 ﻿---
 ID: "a005c438-7bc7-42ce-818e-6f8804443f8e"
 Parent: "47acbfa7-d0a0-4f3b-9bd8-d35440662735"
-Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Template: "aa343bbd-3952-4951-8480-2204508fc3ca"
 Path: "/sitecore/content/Global/Shared Content/Templates/KB Articles List - Format 1"
 DB: master
 Languages:
@@ -16,15 +16,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
-      Hint: Content
-      Value: |
-        {{ #if IsPageEditorEditing }}
-        <div>Experience Editor Mode</div>
-        {{ /if }}{{ #each Items }}
-        <div class="kb-article">
-        <div class="kb-article-title"><a href="{{ItemUrl}}">{{{Title}}}</a></div>
-        <div>{{{ Description}}}</div>
-        <hr>
-        </div>
-        {{ /each }}

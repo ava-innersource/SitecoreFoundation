@@ -1,7 +1,7 @@
 ﻿---
 ID: "351ceb8f-8113-458b-86c9-67b761b09e5f"
 Parent: "47acbfa7-d0a0-4f3b-9bd8-d35440662735"
-Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Template: "aa343bbd-3952-4951-8480-2204508fc3ca"
 Path: "/sitecore/content/Global/Shared Content/Templates/KB Article - Topic Link"
 DB: master
 Languages:
@@ -16,7 +16,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
-      Hint: Content
-      Value: |
-        <div class="topic-link"><ul>    <li><a href="{{ Topic.ItemUrl }}">{{{ Topic.Name }}}</a></li></ul></div>

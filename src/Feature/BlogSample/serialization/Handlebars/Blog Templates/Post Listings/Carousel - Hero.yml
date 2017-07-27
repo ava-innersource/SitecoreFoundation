@@ -1,7 +1,7 @@
 ﻿---
 ID: "792e87f8-1bd5-4b73-b6bd-3f5773a57205"
 Parent: "c39b792d-ace7-49bb-8064-8817a08da210"
-Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Template: "aa343bbd-3952-4951-8480-2204508fc3ca"
 Path: "/sitecore/content/Global/Shared Content/Templates/Blog Templates/Post Listings/Carousel - Hero"
 DB: master
 Languages:
@@ -16,25 +16,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
-      Hint: Content
-      Value: |
-        <div class="owl-carousel owl-theme" data-options="{ &quot;singleItem&quot;:true,&quot;autoPlay&quot;:true,&quot;transitionStyle&quot;:&quot;fade&quot;}">
-        {{ #each Items }}
-        <div class="carousel-Item">
-        <div class="row">
-        <div class="large-5  small-5 medium-5 columns">{{{Image}}}</div>
-        <div class="large-7  small-7 medium-7 columns">
-        {{ #if IsPageEditorEditing }}
-        <h3>{{{Title}}} <small>{{Date_ShortDate}}</small></h3>
-        {{else}}
-        <h3><a href="{{ItemUrl}}">{{{Title}}}</a> <small>{{Date_ShortDate}}</small></h3>
-        {{ /if }}
-        <div>{{{Summary}}}</div>
-        <div class="panel"><small><a href="{{{ Author.ItemUrl }}}">by {{{Author.Name}}}</a><br>
-        <a href="{{{ Category.ItemUrl }}}">Posted In {{{Category.Name}}}</a></small></div>
-        </div>
-        </div>
-        </div>
-        {{ /each }}
-        </div>

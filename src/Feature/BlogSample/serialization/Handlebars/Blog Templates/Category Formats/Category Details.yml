@@ -1,7 +1,7 @@
 ﻿---
 ID: "315a0c59-8e53-4d1a-b20c-c83c74e0efe8"
 Parent: "96581238-3a9b-4010-aa69-4d666b9e3b9f"
-Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Template: "aa343bbd-3952-4951-8480-2204508fc3ca"
 Path: /sitecore/content/Global/Shared Content/Templates/Blog Templates/Category Formats/Category Details
 DB: master
 Languages:
@@ -16,7 +16,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
-      Hint: Content
-      Value: |
-        <div class="blog-post"><h1>{{{Name}}} <small><div class="thumbnail">{{{Image}}}</div><div>{{{Description}}}</div></small></h1></div>

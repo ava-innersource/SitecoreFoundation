@@ -1,7 +1,7 @@
 ﻿---
 ID: "afbd9e69-c473-41b5-9fb2-a0f1dac0ef9f"
 Parent: "47acbfa7-d0a0-4f3b-9bd8-d35440662735"
-Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Template: "aa343bbd-3952-4951-8480-2204508fc3ca"
 Path: "/sitecore/content/Global/Shared Content/Templates/KB Topic Template - Format 1"
 DB: master
 Languages:
@@ -16,7 +16,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
-      Hint: Content
-      Value: |
-        <h1>{{{ Name }}}</h1><div class="content">{{{ Content }}}</div>
