@@ -1,16 +1,23 @@
 ﻿---
-ID: "b4045e92-ea98-4a4a-b282-a39d1e6d6bdf"
+ID: "a3433efd-6d7f-457e-94e4-9f7559b5bd06"
 Parent: "48c173d2-0a21-4bec-b052-95230c6d89bc"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Modules/Code Editor/Font
+Path: /sitecore/templates/SF/Foundation/CodeEditor/Item Templates/MediaResource
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: wordprocessing/32x32/style_formatting_b.png
+  Value: Software/32x32/text_code.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 100
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{E5A17A8E-427A-4FB3-A574-56F41A3681D7}"
 Languages:
 - Language: en
   Versions:
@@ -18,7 +25,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20141213T160104
+      Value: 20140328T235522
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

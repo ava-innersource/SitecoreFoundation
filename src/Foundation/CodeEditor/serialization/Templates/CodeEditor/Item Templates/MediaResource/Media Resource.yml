@@ -2,7 +2,7 @@
 ID: "e07f1c72-b8ab-4d38-9e4f-97db7813771c"
 Parent: "a3433efd-6d7f-457e-94e4-9f7559b5bd06"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Modules/Code Editor/MediaResource/Media Resource
+Path: /sitecore/templates/SF/Foundation/CodeEditor/Item Templates/MediaResource/Media Resource
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"

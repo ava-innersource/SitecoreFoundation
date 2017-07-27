@@ -2,7 +2,7 @@
 ID: "28846add-7bb3-432e-9959-01d8b8e858f3"
 Parent: "4e034734-9440-4ab6-8bcd-1c393d8b781e"
 Template: "4e034734-9440-4ab6-8bcd-1c393d8b781e"
-Path: /sitecore/templates/Modules/Code Editor/User Settings/__Standard Values
+Path: /sitecore/templates/SF/Foundation/CodeEditor/Item Templates/User Settings/__Standard Values
 DB: master
 Languages:
 - Language: en

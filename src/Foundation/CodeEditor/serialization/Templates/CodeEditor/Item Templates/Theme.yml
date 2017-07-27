@@ -2,7 +2,7 @@
 ID: "eb5692a6-71c0-48bb-82cb-7dc0c70134d5"
 Parent: "48c173d2-0a21-4bec-b052-95230c6d89bc"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Modules/Code Editor/Theme
+Path: /sitecore/templates/SF/Foundation/CodeEditor/Item Templates/Theme
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

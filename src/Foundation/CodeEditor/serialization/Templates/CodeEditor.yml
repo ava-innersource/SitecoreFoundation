@@ -1,8 +1,8 @@
 ﻿---
-ID: "e5a17a8e-427a-4fb3-a574-56f41a3681d7"
-Parent: "a3433efd-6d7f-457e-94e4-9f7559b5bd06"
-Template: "a3433efd-6d7f-457e-94e4-9f7559b5bd06"
-Path: /sitecore/templates/Modules/Code Editor/MediaResource/__Standard Values
+ID: "51d52f97-eb05-4ecc-9252-f302ef23690d"
+Parent: "268bc4f0-3bad-401c-850d-bc9567c441c3"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/SF/Foundation/CodeEditor
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20140510T202117
+      Value: 20170727T212238Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

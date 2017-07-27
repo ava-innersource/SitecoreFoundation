@@ -1,34 +1,28 @@
 ﻿---
-ID: "7dfdf1d3-c3c0-4575-a371-7273eef1382e"
+ID: "56b06422-984f-4949-8e48-48af01b51e11"
 Parent: "b08b0cba-2ee5-4cb2-9e64-c801c5dc4a41"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Modules/Code Editor/User Settings/Appearance/Theme
+Path: /sitecore/templates/SF/Foundation/CodeEditor/Item Templates/User Settings/Appearance/Height
 DB: master
 SharedFields:
-- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
-  Hint: Source
-  Value: /sitecore/system/Modules/Code Editor/Themes/
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: Droplist
+  Value: Number
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 300
 Languages:
 - Language: en
   Fields:
-  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
-    Hint: Title
-    Value: 
   - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
     Hint: __Long description
-    Value: The specified theme must be included with the module. 
+    Value: The height should be less than the viewable area in the browser; usually in the range of 500 to 650 pixels.
   - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
     Hint: __Short description
-    Value: The theme in the code editor.
+    Value: The modal dialog height of the code editor.
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20141212T163208
+      Value: 20141212T163422
