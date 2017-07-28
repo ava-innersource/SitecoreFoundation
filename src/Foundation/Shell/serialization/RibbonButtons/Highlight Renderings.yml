@@ -1,0 +1,110 @@
+﻿---
+ID: "aa4dd2ef-bb9e-4fa2-b38e-3bceb48d59a5"
+Parent: "3931f8ba-c7f4-4e5b-b67b-84a4394b88bf"
+Template: "abc069d5-3627-4a20-841e-d199b0eb4957"
+Path: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/View/Show/Highlight Renderings
+DB: core
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+- ID: "cc65212f-c5f2-437a-965e-7f0690a82f21"
+  Hint: ID
+  Value: RenderingChromeBarRibbonButton
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          id="{BDE651C9-7988-4950-8E01-EA80106563A2}"
+          par="Click=trigger%3abutton%3acheck&amp;Command=ShowRenderingChrome&amp;RegistryKey=%2fCurrent_User%2fPage+Editor%2fShow%2fRenderingChrome&amp;PageCodeScriptFileName=%2fsitecore+modules%2fRenderingChrome%2fShowRenderingChrome.js&amp;PostponedCall=0"
+          uid="{039B3538-7DCD-48AC-B966-21E1B7D977A8}" />
+      </d>
+    </r>
+- ID: "fa8ffab1-6269-480d-b746-f6bed5a178a2"
+  Hint: Click
+  Value: "webedit:hidecontrol"
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Vis kontroller
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160519T084624Z
+    - ID: "455d570d-77b9-4aa6-b84e-d7dcab7079c0"
+      Hint: Tooltip
+      Value: Få vist eller skjul kontrolhints.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c7a8b822-2b9d-4e1d-9e5f-82326fcbbfc1"
+      Hint: Header
+      Value: Kontroller
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Steuerungen anzeigen
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160519T084756Z
+    - ID: "455d570d-77b9-4aa6-b84e-d7dcab7079c0"
+      Hint: Tooltip
+      Value: Anzeigen oder Verbergen der Control Hits.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c7a8b822-2b9d-4e1d-9e5f-82326fcbbfc1"
+      Hint: Header
+      Value: Controls
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20070313T134548
+    - ID: "455d570d-77b9-4aa6-b84e-d7dcab7079c0"
+      Hint: Tooltip
+      Value: Show or hide rendering chrome
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "c7a8b822-2b9d-4e1d-9e5f-82326fcbbfc1"
+      Hint: Header
+      Value: Highlight Renderings
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: コントロールの表示
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160519T084447Z
+    - ID: "455d570d-77b9-4aa6-b84e-d7dcab7079c0"
+      Hint: Tooltip
+      Value: コントロールのヒントを表示または非表示にします
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c7a8b822-2b9d-4e1d-9e5f-82326fcbbfc1"
+      Hint: Header
+      Value: コントロール

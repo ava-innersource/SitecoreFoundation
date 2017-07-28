@@ -160,6 +160,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TabbedRenderingSelector\TabbedRenderingForm.cs" />
     <Content Include="App_Config\Include\Foundation.Shell\Shell.config" />
+    <Content Include="App_Config\Include\Foundation.Shell\Serialization.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>
