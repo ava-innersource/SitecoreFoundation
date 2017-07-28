@@ -1,0 +1,38 @@
+﻿---
+ID: "46f3b5f4-cde7-448c-a840-49bb68cebb0e"
+Parent: "570a52b6-6755-461a-8052-5b95ef766f74"
+Template: "ec6d62a5-5d00-4329-8958-8ac1ad100ebb"
+Path: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Properties
+DB: core
+SharedFields:
+- ID: "12c1ceb4-f549-472a-97ed-99bff70eb84e"
+  Hint: ID
+  Value: PropertiesStrip
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          id="{2AA9FC5A-9F89-4508-A210-5282E9B58468}"
+          par="Id=Strip1"
+          uid="{29F65ECF-36D4-41C9-8C7F-40819B41A0CF}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151001T205126
+    - ID: "5453dc07-6a17-48ba-8d05-17db90a2e795"
+      Hint: Header
+      Value: Properties
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
