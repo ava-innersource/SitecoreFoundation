@@ -1,0 +1,18 @@
+﻿---
+ID: "76dcdbad-0fe1-4878-a9f1-171c9eee6749"
+Parent: "52c817c5-77b6-476c-b0ef-4fa0e0115a4f"
+Template: "a280aab8-15a0-4646-9d39-c606e81be744"
+Path: /sitecore/content/Global/Pick Lists/Order By/Descending
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160726T222253
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

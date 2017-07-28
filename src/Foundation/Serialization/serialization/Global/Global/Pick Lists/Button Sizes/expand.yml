@@ -1,0 +1,18 @@
+﻿---
+ID: "65f9462e-6206-4062-b415-af3abf2fbbf1"
+Parent: "2b7b646c-604c-4edd-931f-05549eb0d679"
+Template: "a280aab8-15a0-4646-9d39-c606e81be744"
+Path: /sitecore/content/Global/Pick Lists/Button Sizes/expand
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150512T000855
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,22 @@
+﻿---
+ID: "2740387f-de47-40d7-9e20-63250d982a65"
+Parent: "3bbe95c7-4155-446b-938f-ba3eca6714a9"
+Template: "a280aab8-15a0-4646-9d39-c606e81be744"
+Path: /sitecore/content/Global/Pick Lists/Sizes/medium
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 75
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150512T231919
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
