@@ -2,6 +2,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DXF", "DXF", "{d3b629bd-5167-48a0-a573-d6653d96126f}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.DXF", "src\Project\DXF\code\Project.DXF.csproj", "{36d7077c-e016-47b3-8fe4-6e78d9dee483}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlogSample", "BlogSample", "{DA80C2F2-213B-43E3-A3A7-230CDB88E365}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feature.BlogSample", "src\Feature\BlogSample\code\Feature.BlogSample.csproj", "{E55BB1EC-FEE4-4AD6-8395-5BE1F67527F0}"
@@ -194,6 +198,22 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.always|Any CPU.ActiveCfg = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.always|Any CPU.Build.0 = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.always|x64.ActiveCfg = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.always|x64.Build.0 = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.ci|Any CPU.ActiveCfg = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.ci|Any CPU.Build.0 = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.ci|x64.ActiveCfg = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.ci|x64.Build.0 = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.Debug|x64.ActiveCfg = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.Debug|x64.Build.0 = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.Release|x64.ActiveCfg = Release|Any CPU
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483}.Release|x64.Build.0 = Release|Any CPU
 		{E55BB1EC-FEE4-4AD6-8395-5BE1F67527F0}.always|Any CPU.ActiveCfg = always|Any CPU
 		{E55BB1EC-FEE4-4AD6-8395-5BE1F67527F0}.always|Any CPU.Build.0 = always|Any CPU
 		{E55BB1EC-FEE4-4AD6-8395-5BE1F67527F0}.always|x64.ActiveCfg = always|x64
@@ -839,6 +859,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{d3b629bd-5167-48a0-a573-d6653d96126f} = {5D709AC7-1426-4B80-B1F3-079F17EC5856}
+		{36d7077c-e016-47b3-8fe4-6e78d9dee483} = {d3b629bd-5167-48a0-a573-d6653d96126f}
 		{DA80C2F2-213B-43E3-A3A7-230CDB88E365} = {86F6F902-A9B3-408F-8E23-2CCB46AFC036}
 		{E55BB1EC-FEE4-4AD6-8395-5BE1F67527F0} = {DA80C2F2-213B-43E3-A3A7-230CDB88E365}
 		{B2D6E1FC-2CFF-41E0-8B17-5109CE622705} = {BC50975C-41D6-42E4-B31D-4668BF3097A7}
