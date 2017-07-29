@@ -1,0 +1,14 @@
+﻿---
+ID: "de374318-9854-497f-8453-befac9f6beb4"
+Parent: "b529c75e-e2e8-48f0-a93f-2bb849df527a"
+Template: "239f9cf4-e5a0-44e0-b342-0f32cd4c6d8b"
+Path: /sitecore/content/Global/Scripts/Components
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170703T172131Z
