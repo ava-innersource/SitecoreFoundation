@@ -1,13 +1,13 @@
 ﻿---
-ID: "9e99769d-b373-446d-8e86-f6a2563feaf3"
-Parent: "2de4bc4d-ec72-4aea-bef9-39601b01181b"
-Template: "10d7c460-7f24-4e2c-95d3-59cc0bd45741"
-Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Shared Content/Recipes/Turkey
+ID: "b0d19992-5c4c-4552-888b-7cf13bae21e0"
+Parent: "ec300a23-da83-438b-a988-9b325df43b51"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/SF/Project/StarterKit/Content Types
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 0
 Languages:
 - Language: en
   Versions:
@@ -15,7 +15,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20161020T195803Z
+      Value: 20170729T050626Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
