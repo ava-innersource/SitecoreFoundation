@@ -187,9 +187,10 @@
     <Content Include="global\css\Feature\OwlCarousel\owlcarousel.css" />
     <Content Include="global\css\Feature\OwlCarousel\owltheme.css" />
     <Content Include="global\css\Feature\OwlCarousel\owltransitions.css" />
-    <Content Include="global\scripts\Feature\owlcarousel\vendor.js" />
+    <Content Include="global\scripts\Feature\owlcarousel\owlcarousel.js" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="global\scripts\Feature\owlcarousel\OwlCarouselInit.js" />
     <Content Include="Views\Feature.OwlCarousel\Carousel.cshtml" />
     <Content Include="Views\Feature.OwlCarousel\CarouselItem.cshtml" />
     <None Include="Views\web.config" />

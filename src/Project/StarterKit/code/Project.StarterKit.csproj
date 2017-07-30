@@ -194,6 +194,10 @@
     <Content Include="global\css\Project\StarterKit\pages\home.css" />
     <Content Include="global\css\Project\StarterKit\global\shared.css" />
     <Content Include="global\scripts\Project\StarterKit\global\shared.js" />
+    <Content Include="global\scripts\Project\StarterKit\global\starterKit.js" />
+    <Content Include="global\scripts\Project\StarterKit\pages\home.js" />
+    <Content Include="global\scripts\Project\StarterKit\vendor\fastClick.js" />
+    <Content Include="global\scripts\Project\StarterKit\vendor\jquery.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -263,9 +267,9 @@
   <ItemGroup>
     <Folder Include="global\css\Project\StarterKit\components\" />
     <Folder Include="global\css\Project\StarterKit\layouts\" />
+    <Folder Include="global\css\Project\StarterKit\vendor\" />
     <Folder Include="global\scripts\Project\StarterKit\components\" />
     <Folder Include="global\scripts\Project\StarterKit\layouts\" />
-    <Folder Include="global\scripts\Project\StarterKit\pages\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

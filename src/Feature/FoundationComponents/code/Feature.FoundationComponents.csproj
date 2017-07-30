@@ -184,7 +184,7 @@
     <Content Include="Global\CSS\Feature\FoundationComponents\foundationIcons.css" />
     <Content Include="Global\Scripts\Feature\FoundationComponents\Init\IconBar.js" />
     <Content Include="Global\Scripts\Feature\FoundationComponents\Init\Tabs.js" />
-    <Content Include="Global\Scripts\Feature\FoundationComponents\vendor.js" />
+    <Content Include="Global\Scripts\Feature\FoundationComponents\foundation.js" />
     <None Include="packages.config" />
     <Content Include="content\icons\foundation-icons.eot" />
     <Content Include="content\icons\foundation-icons.ttf" />

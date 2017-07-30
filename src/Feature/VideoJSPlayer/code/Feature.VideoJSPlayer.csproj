@@ -179,7 +179,7 @@
     <Content Include="content\video-js.swf" />
     <Content Include="global\css\Feature\VideoJS\videoJS.css" />
     <Content Include="global\scripts\Feature\VideoJS\SWFsrc.js" />
-    <Content Include="global\scripts\Feature\VideoJS\vendor.js" />
+    <Content Include="global\scripts\Feature\VideoJS\videojs.js" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\Feature.VideoJSPlayer\Video.cshtml" />

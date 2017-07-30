@@ -185,7 +185,7 @@
     <Content Include="content\vendor\slick\slick.min.js" />
     <Content Include="global\css\Feature\SlickCarousel\slickcarousel.css" />
     <Content Include="global\css\Feature\SlickCarousel\slickCarouseltheme.css" />
-    <Content Include="global\scripts\Feature\slickcarousel\vendor.js" />
+    <Content Include="global\scripts\Feature\slickcarousel\slickcarousel.js" />
     <None Include="packages.config" />
     <Content Include="content\vendor\slick\fonts\slick.eot" />
     <Content Include="content\vendor\slick\fonts\slick.ttf" />
@@ -193,6 +193,7 @@
     <Content Include="content\vendor\slick\slick-theme.scss" />
     <Content Include="content\vendor\slick\slick.scss" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="global\scripts\Feature\slickcarousel\slickCarouselInit.js" />
     <Content Include="Views\Feature.SlickCarousel\SlickCarousel.cshtml" />
     <Content Include="Views\Feature.SlickCarousel\SlickCarouselItem.cshtml" />
     <None Include="Views\web.config" />
