@@ -1,0 +1,14 @@
+﻿---
+ID: "fc33e030-17ee-4087-9a91-981a9cd841a3"
+Parent: "ea1096a8-3ace-4ccc-9a2b-5a9877e76f54"
+Template: "ec8ccea7-9a59-41f0-8c30-cee686dc644a"
+Path: /sitecore/content/Global/Sass/Feature
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170729T153042Z

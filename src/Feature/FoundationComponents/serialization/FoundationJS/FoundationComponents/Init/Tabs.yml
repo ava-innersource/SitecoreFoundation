@@ -1,8 +1,8 @@
 ﻿---
-ID: "a462745a-35a1-4082-b344-039e59a8e2c4"
-Parent: "de374318-9854-497f-8453-befac9f6beb4"
+ID: "f7534cdb-1350-432e-990e-954e89ca1143"
+Parent: "4c4c58e6-ab60-4524-a158-31d88c044280"
 Template: "722ec325-cc44-4687-adbd-4ea415502f88"
-Path: /sitecore/content/Global/Scripts/Components/Tabs
+Path: /sitecore/content/Global/Scripts/Feature/FoundationComponents/Init/Tabs
 DB: master
 Languages:
 - Language: en
@@ -11,13 +11,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20150914T022429Z
-    - ID: "27b24da2-007e-4dec-a78e-f6f5b8e165b5"
-      Hint: Notes
-      Value: <p>Since tabs are in separate div then tab Content, we initiate them at run time and injec the tabs into the tab ul.</p>
-    - ID: "4d7740a6-6828-4552-8ba9-a7155dbb067b"
-      Hint: Version
-      Value: 0.01
+      Value: 20170730T190614Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
     - ID: "a2dda611-f0ad-4ce2-863a-84df4f467b64"
       Hint: Content
       Value: |
@@ -48,6 +46,3 @@ Languages:
           $(document).foundation('tab', 'reflow');
           
         });
-    - ID: "dda77d50-e0af-4a9a-a7dc-17233d778eb5"
-      Hint: Name
-      Value: Tabs

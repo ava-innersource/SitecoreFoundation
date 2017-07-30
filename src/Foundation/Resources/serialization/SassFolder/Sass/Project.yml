@@ -1,0 +1,14 @@
+﻿---
+ID: "2a23186b-c4eb-4c75-b3e4-265f8686c6c9"
+Parent: "ea1096a8-3ace-4ccc-9a2b-5a9877e76f54"
+Template: "ec8ccea7-9a59-41f0-8c30-cee686dc644a"
+Path: /sitecore/content/Global/Sass/Project
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170729T153034Z

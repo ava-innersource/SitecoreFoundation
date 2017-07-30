@@ -1,0 +1,91 @@
+﻿---
+ID: "58ed695a-8c34-4b8c-a06c-94e5a776725f"
+Parent: "6949e807-3e02-4e86-9a84-014836873173"
+Template: "26d57461-25fe-407a-bf86-31dbdb513707"
+Path: /sitecore/content/Global/CSS/Feature/OwlCarousel/owlcarousel
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170712T210453Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
+    - ID: "6e2eaa5a-9665-4025-b880-89f8b77d631c"
+      Hint: Content
+      Value: |
+        /* 
+         * 	Core Owl Carousel CSS File
+         *	v1.3.3
+         */
+        
+        /* clearfix */
+        .owl-carousel .owl-wrapper:after {
+        	content: ".";
+        	display: block;
+        	clear: both;
+        	visibility: hidden;
+        	line-height: 0;
+        	height: 0;
+        }
+        /* display none until init */
+        .owl-carousel{
+        	display: none;
+        	position: relative;
+        	width: 100%;
+        	-ms-touch-action: pan-y;
+        }
+        .owl-carousel .owl-wrapper{
+        	display: none;
+        	position: relative;
+        	-webkit-transform: translate3d(0px, 0px, 0px);
+        }
+        .owl-carousel .owl-wrapper-outer{
+        	overflow: hidden;
+        	position: relative;
+        	width: 100%;
+        }
+        .owl-carousel .owl-wrapper-outer.autoHeight{
+        	-webkit-transition: height 500ms ease-in-out;
+        	-moz-transition: height 500ms ease-in-out;
+        	-ms-transition: height 500ms ease-in-out;
+        	-o-transition: height 500ms ease-in-out;
+        	transition: height 500ms ease-in-out;
+        }
+        	
+        .owl-carousel .owl-item{
+        	float: left;
+        }
+        .owl-controls .owl-page,
+        .owl-controls .owl-buttons div{
+        	cursor: pointer;
+        }
+        .owl-controls {
+        	-webkit-user-select: none;
+        	-khtml-user-select: none;
+        	-moz-user-select: none;
+        	-ms-user-select: none;
+        	user-select: none;
+        	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        
+        /* mouse grab icon */
+        .grabbing { 
+            cursor:url(\content\owl\grabbing.png) 8 8, move;
+        }
+        
+        /* fix */
+        .owl-carousel  .owl-wrapper,
+        .owl-carousel  .owl-item{
+        	-webkit-backface-visibility: hidden;
+        	-moz-backface-visibility:    hidden;
+        	-ms-backface-visibility:     hidden;
+          -webkit-transform: translate3d(0,0,0);
+          -moz-transform: translate3d(0,0,0);
+          -ms-transform: translate3d(0,0,0);
+        }

@@ -1,8 +1,8 @@
 ﻿---
-ID: "3315be36-99bb-48c9-bfab-6b201fdeab7c"
-Parent: "de374318-9854-497f-8453-befac9f6beb4"
+ID: "95c2ec21-0828-43a5-a809-6fa39108d63a"
+Parent: "4c4c58e6-ab60-4524-a158-31d88c044280"
 Template: "722ec325-cc44-4687-adbd-4ea415502f88"
-Path: /sitecore/content/Global/Scripts/Components/IconBar
+Path: /sitecore/content/Global/Scripts/Feature/FoundationComponents/Init/IconBar
 DB: master
 Languages:
 - Language: en
@@ -11,14 +11,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20150913T040034Z
-    - ID: "27b24da2-007e-4dec-a78e-f6f5b8e165b5"
-      Hint: Notes
+      Value: 20170730T190613Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
       Value: |
-        <p>This script will dynamically count how many icon items are placed in each icon bar and add the appropriate "one-eight up" class to ensure they fit on one page.</p>
-    - ID: "4d7740a6-6828-4552-8ba9-a7155dbb067b"
-      Hint: Version
-      Value: 0.01
+        default\Anonymous
     - ID: "a2dda611-f0ad-4ce2-863a-84df4f467b64"
       Hint: Content
       Value: |
@@ -35,6 +32,3 @@ Languages:
         });
         
         
-    - ID: "dda77d50-e0af-4a9a-a7dc-17233d778eb5"
-      Hint: Name
-      Value: IconBar

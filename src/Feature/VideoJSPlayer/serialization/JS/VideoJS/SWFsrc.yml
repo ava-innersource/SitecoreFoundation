@@ -1,0 +1,22 @@
+﻿---
+ID: "a9aee341-579e-4b48-bc48-d65dbec9328a"
+Parent: "3821e81e-9d92-420c-b371-c4d54b715f94"
+Template: "722ec325-cc44-4687-adbd-4ea415502f88"
+Path: /sitecore/content/Global/Scripts/Feature/VideoJS/SWFsrc
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170730T190613Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
+    - ID: "a2dda611-f0ad-4ce2-863a-84df4f467b64"
+      Hint: Content
+      Value: |
+        videojs.options.flash.swf = "/content/video-js.swf";

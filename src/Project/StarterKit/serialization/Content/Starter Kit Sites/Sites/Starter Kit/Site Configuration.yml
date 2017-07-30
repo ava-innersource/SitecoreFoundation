@@ -41,11 +41,7 @@ Languages:
     - ID: "6e10df11-0de5-491f-8938-c162ae532278"
       Hint: Valid Languages
       Type: Multilist
-      Value: |
-        {AF584191-45C9-4201-8740-5409F4CF8BDD}
-        {CF5DEA0E-8557-4694-8B4F-6548627581DB}
-        {F9564DA2-E9C6-44DA-B63E-D2F3247ACE1F}
-        {26F20063-0099-464F-9F84-936CFB825204}
+      Value: "{AF584191-45C9-4201-8740-5409F4CF8BDD}"
     - ID: "7fb1a8d2-0773-449e-bbf3-1b33e4845ee8"
       Hint: White Listing Enabled
       Type: Checkbox

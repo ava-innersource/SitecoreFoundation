@@ -1,0 +1,14 @@
+﻿---
+ID: "99f74fb8-5d54-465f-903d-f361ce227500"
+Parent: "3eedc3a8-9ba0-4479-830a-8cee1f0d4be5"
+Template: "2f91a960-85c9-4198-ac6a-bd8aaa8c4eb7"
+Path: /sitecore/content/Global/CSS/Project/StarterKit/vendor
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20170729T150606:636369375667837017Z"

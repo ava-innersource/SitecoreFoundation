@@ -1,0 +1,18 @@
+﻿---
+ID: "f6edbaec-4354-4b07-af7d-1863d00a1c6f"
+Parent: "6f9e33f9-5d31-4b51-86a2-3ed25167f499"
+Template: "2f91a960-85c9-4198-ac6a-bd8aaa8c4eb7"
+Path: /sitecore/content/Global/CSS/Feature/VideoJS
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170712T210523Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous

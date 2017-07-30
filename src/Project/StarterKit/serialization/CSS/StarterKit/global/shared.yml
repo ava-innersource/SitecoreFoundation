@@ -1,0 +1,438 @@
+﻿---
+ID: "4e408561-6e96-4d3e-ace7-92936332b05e"
+Parent: "49cd7624-a62f-4a23-9818-539a1dbe2c8b"
+Template: "26d57461-25fe-407a-bf86-31dbdb513707"
+Path: /sitecore/content/Global/CSS/Project/StarterKit/global/shared
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170712T210534Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
+    - ID: "6e2eaa5a-9665-4025-b880-89f8b77d631c"
+      Hint: Content
+      Value: |
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        .body-text, body, p, span, li, a, h1, h2, h3, h4, h5 {
+          color: #004976; }
+        
+        body {
+          background: url(/content/site/img/site-bg.jpg); }
+        
+        body, p, span, li, a {
+          font-family: Lato, Arial, Helvetica, sans-serif; }
+        
+        h1, h2, h3, h4, h5 {
+          font-family: 'Roboto Slab', Arial, Helvetica, sans-serif; }
+        
+        a {
+          color: #35262D; }
+        
+        .cleared:after {
+          clear: both;
+          content: ".";
+          display: block;
+          height: 0;
+          visibility: hidden; }
+        
+        .nowrap {
+          white-space: nowrap; }
+        
+        /* Overrides and extensions to Zurb Foundation */
+        .row {
+          max-width: 1160px; }
+          .row.row-padded-top {
+            padding-top: 20px; }
+        
+        /* 480px */
+        /* 640px */
+        /* 1024px */
+        /* 1440px */
+        /* 1920px */
+        /* 1921px */
+        .arrow-box {
+          border: 10px solid rgba(255, 255, 255, 0.2);
+          background: transparent;
+          -moz-background-clip: padding;
+          -webkit-background-clip: padding;
+          background-clip: padding-box;
+          -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          display: inline-block;
+          position: relative; }
+          .arrow-box:before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 20px solid rgba(255, 255, 255, 0.2);
+            left: 20px;
+            top: -30px; }
+          .arrow-box .arrow-box-inner {
+            padding: 15px;
+            background: white;
+            position: relative; }
+            .arrow-box .arrow-box-inner:before {
+              position: absolute;
+              display: block;
+              content: "";
+              width: 0;
+              height: 0;
+              border-left: 15px solid transparent;
+              border-right: 15px solid transparent;
+              border-bottom: 15px solid white;
+              left: 25px;
+              top: -14px; }
+        
+        .arrow-box-zip-code {
+          display: block; }
+          .arrow-box-zip-code .zip-code {
+            border-radius: 5px;
+            display: block;
+            margin: 0 5px 10px 0;
+            max-width: 100%;
+            padding: 23px; }
+          @media (min-width: 40em) {
+            .arrow-box-zip-code {
+              display: inline-block; }
+              .arrow-box-zip-code .zip-code {
+                display: inline-block;
+                margin-bottom: 0;
+                max-width: 200px; } }
+        
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        .blade.blade-light {
+          background-color: #FFF;
+          color: #35262D; }
+        .blade.blade-medium {
+          background-color: #E8ECED;
+          color: #35262D; }
+        .blade.blade-dark {
+          background-color: #35262D;
+          color: #FFF; }
+        
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        .button {
+          border-radius: 5px; }
+          .button.info {
+            background-color: #00a499; }
+          .button .glyphicon {
+            margin: 6px 10px; }
+          .button.primary {
+            background-color: #00A499;
+            color: #FFF; }
+        
+        .button-link {
+          background-color: transparent;
+          color: #35262D; }
+          .button-link:hover {
+            background-color: transparent;
+            color: #35262D; }
+        
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        /* 480px */
+        /* 640px */
+        /* 1024px */
+        /* 1440px */
+        /* 1920px */
+        /* 1921px */
+        .carousel {
+          margin-left: -0.9375rem;
+          margin-right: -0.9375rem; }
+          .carousel h1, .carousel h2 {
+            color: #FFF;
+            font-size: 1.7em; }
+          .carousel h2 {
+            font-size: 1em; }
+          .carousel .slide {
+            position: relative; }
+          .carousel .slide-contents {
+            background-color: #004976;
+            padding: 0 0.9375rem 1.3em; }
+          .carousel .slide-text {
+            color: #FFF;
+            padding: 10px 0 20px; }
+          .carousel .button-link {
+            line-height: 1.6em;
+            padding: inherit 0; }
+          .carousel .button.primary {
+            background-image: url(/content/site/img/arrow-more.png);
+            background-position: right 49%;
+            background-repeat: no-repeat;
+            margin-bottom: 0;
+            padding: 15px 30px 15px 15px; }
+          .carousel.slick-slider {
+            margin-bottom: 0; }
+          .carousel .slick-prev:before, .carousel .slick-next:before {
+            color: #999; }
+          .carousel .slick-dots {
+            display: none !important; }
+          .carousel .slick-prev, .carousel .slick-next {
+            background-image: url(/content/site/img/carousel-arrows.png);
+            height: 39px;
+            top: 31px;
+            width: 39px; }
+            .carousel .slick-prev:before, .carousel .slick-next:before {
+              content: ""; }
+          .carousel .slick-prev {
+            left: 20px;
+            right: inherit; }
+          .carousel .slick-next {
+            background-position: right 0;
+            left: 70px;
+            right: inherit; }
+          @media (min-width: 40em) {
+            .carousel .button-link {
+              margin: 0 20px 0 0; }
+         }
+          @media (min-width: 64em) {
+            .carousel {
+              margin-left: 0;
+              margin-right: 0; }
+              .carousel h1 {
+                font-size: 2.5em; }
+              .carousel h2 {
+                font-size: 1.5em; }
+              .carousel .slide-contents {
+                background-color: transparent;
+                left: 20px;
+                position: absolute;
+                bottom: 10px; }
+              .carousel .slide-text {
+                max-width: 450px; }
+              .carousel .slick-dots {
+                bottom: 0;
+                display: block !important;
+                height: 35px;
+                right: 20px;
+                text-align: right; }
+                .carousel .slick-dots li button {
+                  background-color: #fff;
+                  border-radius: 10px;
+                  border: 2px solid #fff;
+                  height: 15px;
+                  padding: 0;
+                  width: 15px; }
+                  .carousel .slick-dots li button:before {
+                    content: ""; }
+                .carousel .slick-dots li.slick-active button {
+                  background-color: #00a499; }
+              .carousel .slick-prev, .carousel .slick-next {
+                top: 31px; }
+              .carousel .slick-prev {
+                left: inherit;
+                right: 72px; }
+              .carousel .slick-next {
+                left: inherit;
+                right: 23px; } }
+        
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        #footer {
+          background-color: #00a499;
+          margin-top: 2em;
+          padding: 2em 0; }
+          #footer .logo {
+            max-width: 75%;
+            opacity: 0.5; }
+          #footer .columns {
+            color: #35262D; }
+          #footer .copyright {
+            color: #35262D;
+            display: block;
+            margin-top: 2em; }
+          #footer .social {
+            float: right; }
+            #footer .social li {
+              list-style-type: none;
+              float: left;
+              margin-left: 20px; }
+              #footer .social li:first-child {
+                margin-left: 0; }
+        
+        /* 480px */
+        /* 640px */
+        /* 1024px */
+        /* 1440px */
+        /* 1920px */
+        /* 1921px */
+        #header {
+          background: #fff;
+          border-bottom: 2px solid #E9E5DB;
+          margin-bottom: 0; }
+        
+        @media (min-width: 40em) {
+          #header {
+            margin-bottom: 1.5em; }
+         }
+        
+        .icon-social {
+          background: url(/content/site/img/icons/social.png) no-repeat;
+          display: block;
+          height: 32px;
+          width: 32px; }
+          .icon-social.icon-social-facebook {
+            background-position: -50px 0; }
+          .icon-social.icon-social-twitter {
+            background-position: 0 0; }
+          .icon-social.icon-social-youtube {
+            background-position: -100px 0; }
+          .icon-social.icon-social-google {
+            background-position: -400px 0; }
+        
+        .glyphicon {
+          background: url(/content/site/img/icons/glyphicons.png) no-repeat;
+          display: block;
+          height: 24px;
+          width: 24px; }
+          .glyphicon.glyphicon-calendar {
+            background-position: -1px -549px; }
+          .glyphicon.glyphicon-clipboard {
+            background-position: -1px -5366px; }
+          .glyphicon.glyphicon-search {
+            background-position: -1px -4795px; }
+        
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        .icon-bar {
+          background-color: #00a499;
+          color: #35262D;
+          text-transform: uppercase; }
+          .icon-bar > a:hover {
+            background-color: #004976; }
+        
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        .panel.callout {
+          background-color: #E8ECED; }
+        
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        .sidebar-bordered li {
+          background-color: #E8ECED;
+          border: 1px solid #FFF;
+          border-bottom-width: 0;
+          margin: 0; }
+          .sidebar-bordered li:last-child {
+            border-bottom-width: 1px; }
+          .sidebar-bordered li.heading {
+            background-color: #00a499;
+            color: #FFF;
+            padding: 0.4375rem 0.875rem; }
+        
+        .tag {
+          background: url(/content/site/img/tags/tags.png) no-repeat;
+          height: 28px;
+          width: 15px; }
+        
+        .tag-date {
+          background-position: -1px -1px; }
+        
+        .tag-press {
+          background-position: -1px -30px; }
+        
+        .tags-labeled .tag {
+          float: left;
+          margin-right: 20px;
+          padding: 1px 0 0 20px;
+          width: auto; }
+        
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        /* 480px */
+        /* 640px */
+        /* 1024px */
+        /* 1440px */
+        /* 1920px */
+        /* 1921px */
+        .top-bar, .top-bar .name h1 a, .top-bar-section ul li, .top-bar-section ul li > a, .top-bar-section li:not(.has-form) a:not(.button) {
+          background-color: transparent;
+          color: #35262D;
+          font-family: Lato, Arial, Helvetica, sans-serif; }
+        
+        .top-bar.expanded .title-area {
+          background: #fff; }
+        .top-bar .toggle-topbar.menu-icon a span::after {
+          box-shadow: 0 0 0 1px #000, 0 7px 0 1px #000, 0 14px 0 1px #000; }
+        
+        .top-bar-section li > a {
+          color: #004976 !important;
+          font-size: 14px !important;
+          font-weight: bold !important;
+          padding: 8px 25px !important;
+          text-transform: uppercase !important; }
+        .top-bar-section li .dropdown a {
+          color: #fff !important; }
+        .top-bar-section li.active > a {
+          background-color: #F3F2EE !important;
+          color: #000 !important; }
+        .top-bar-section li:hover > a {
+          background-color: #003250 !important;
+          color: #9ccffd !important; }
+        .top-bar-section li:hover .dropdown a {
+          background-color: #003250 !important;
+          color: #fff !important;
+          font-weight: normal !important;
+          text-transform: none !important; }
+          .top-bar-section li:hover .dropdown a:hover {
+            background-color: #002942 !important;
+            color: #9CCFFD !important; }
+        .top-bar-section .has-dropdown > a:after {
+          top: 1.9rem; }
+        
+        @media (min-width: 40em) {
+          .top-bar {
+            height: 3.7rem; }
+         }
+        
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        #block-grid ul li > img {
+          width: 100%;
+          height: auto; }
+        
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        /* 480px */
+        /* 640px */
+        /* 1024px */
+        /* 1440px */
+        /* 1920px */
+        /* 1921px */
+        #xd-grid {
+          color: #fff;
+          font-size: 12px; }
+          #xd-grid .row {
+            margin: 5px 0; }
+            #xd-grid .row .columns:first-child {
+              background: #ccc; }
+            #xd-grid .row .columns:nth-child(2) {
+              background: #e1e1e1; }
+            #xd-grid .row .columns:last-child {
+              background: #999; }
+        
+        /* https://color.adobe.com/Neutral-Blue-color-theme-22361/edit/?copy=true&base=0&rule=Custom&selected=4&name=Copy%20of%20Neutral%20Blue&mode=rgb&rgbvalues=0.988235,1,0.960784,0.819608,0.858824,0.741176,0.568627,0.666667,0.615686,0.243137,0.376471,0.435294,0.0980392,0.203922,0.254902&swatchOrder=0,1,2,3,4 */
+        #xd-magellan h4 {
+          font-size: 14px;
+          font-weight: bold; }
+        
+        #side-nav .side-nav {
+          background-color: #E8ECED;
+          border: 1px solid #808080; }
+        
+        dl.sub-nav {
+          background-color: #e1e1e1;
+          padding: 10px 10px 10px 0; }
+        
+        .example-orbit img {
+          width: 100%;
+          height: auto; }
+        
+        
+        /*# sourceMappingURL=shared.css.map */

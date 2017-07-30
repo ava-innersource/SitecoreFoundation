@@ -1,0 +1,50 @@
+﻿---
+ID: "113a20b7-d09c-4af8-b667-48b15e7fc3b5"
+Parent: "338f21fd-ec76-4ebd-a8a7-26f811766315"
+Template: "722ec325-cc44-4687-adbd-4ea415502f88"
+Path: /sitecore/content/Global/Scripts/Feature/Handlebars/AddNewItem
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170730T190612Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
+    - ID: "a2dda611-f0ad-4ce2-863a-84df4f467b64"
+      Hint: Content
+      Value: |
+        //add new item
+        document.addEventListener("DOMContentLoaded", function (event) {
+        
+            $(".addItemButton").click(function () {
+                var template = $(this).attr("data-template");
+                var parent = $(this).attr("data-parent");
+                var itemName = prompt("Name:");
+        
+                console.log("template:" + template);
+                console.log("parent:" + parent);
+                console.log("itemName:" + itemName);
+        
+                if (itemName) {
+                    $.post("/sitecore/api/sf/additem",
+                        {
+                            name: itemName,
+                            templateId: template,
+                            parentId: parent
+                        },
+                        function (data) {
+                            //grab and click the save button to force refresh
+                            console.log("success");
+                            document.location.reload(true);
+                            
+                        });
+                }
+            });
+        
+        });

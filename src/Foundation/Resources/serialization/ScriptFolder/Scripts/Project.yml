@@ -1,8 +1,8 @@
 ﻿---
-ID: "de374318-9854-497f-8453-befac9f6beb4"
+ID: "50d2bc75-7fdc-40ef-8cde-8455e38dfefd"
 Parent: "b529c75e-e2e8-48f0-a93f-2bb849df527a"
-Template: "239f9cf4-e5a0-44e0-b342-0f32cd4c6d8b"
-Path: /sitecore/content/Global/Scripts/Components
+Template: "f1c2c653-990b-459a-b627-d6bd8c84d6d0"
+Path: /sitecore/content/Global/Scripts/Project
 DB: master
 Languages:
 - Language: en
@@ -11,4 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170703T172131Z
+      Value: 20170729T153113Z
