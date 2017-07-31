@@ -8,6 +8,7 @@ Projects Include:
 * Common - Includes Branch Templates for Quickly creating Sites
 * Foundation - Placeholder Settings and Rendering Settings for a Foundation Component Based Site
 * StarterKit - Sample Site Implementation with Details about the Framework
+* DXF - Sample Tenants with Test Setup for DXF Projects
 
 Features Include:
 * Analytics - Contains Controllers and JS for enabling Client Side Unified Analytics Models
