@@ -231,7 +231,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\RegisterHandlebarRoutes.cs" />
     <Content Include="Global\Scripts\Feature\Handlebars\AddNewItem.js" />
-    <None Include="App_Config\Include\Feature.Handlebars\Handlebars.config" />
+    <Content Include="App_Config\Include\Feature.Handlebars\Handlebars.config" />
     <None Include="packages.config" />
     <Content Include="App_Config\Include\ZFeature.Routes\HandlebarRoutes.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
