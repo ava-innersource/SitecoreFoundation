@@ -16,7 +16,20 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20161020T195019Z
+    - ID: "38aae451-1047-419d-8b9c-6d65b31d6718"
+      Hint: Image
+      Value: |
+        <image mediaid="{9FB26865-5905-4717-90F2-CAAF839410E4}" />
+    - ID: "451a9552-5200-45e2-828d-9b37fb7c16bc"
+      Hint: Name
+      Value: Ice Cube
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "dda1c3a2-5abc-44b4-8812-5947507f67a9"
+      Hint: Description
+      Value: frozen water
+    - ID: "dea961ec-f4f3-487c-9116-a1906a7822be"
+      Hint: Instructions
+      Value: Test Content

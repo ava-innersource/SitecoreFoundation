@@ -16,3 +16,9 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20160529T030657Z
+    - ID: "915fa630-9ad7-44ac-bcde-9865dc8789e6"
+      Hint: Title
+      Value: Another Test with Std Values set
+    - ID: "9d798cf5-65f9-4632-82ac-44de5ca9f558"
+      Hint: ShortDescription
+      Value: test

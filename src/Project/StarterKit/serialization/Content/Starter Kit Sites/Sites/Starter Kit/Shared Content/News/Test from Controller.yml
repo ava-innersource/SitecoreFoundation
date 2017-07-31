@@ -20,3 +20,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "915fa630-9ad7-44ac-bcde-9865dc8789e6"
+      Hint: Title
+      Value: test 2
+    - ID: "9d798cf5-65f9-4632-82ac-44de5ca9f558"
+      Hint: ShortDescription
+      Value: 
