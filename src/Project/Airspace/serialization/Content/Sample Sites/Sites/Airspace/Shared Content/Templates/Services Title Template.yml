@@ -1,0 +1,23 @@
+﻿---
+ID: "0a2bddb7-693c-461c-b893-7a04f80c0b30"
+Parent: "4f044564-d901-4172-8e0c-fbbe3e8f9380"
+Template: "aa343bbd-3952-4951-8480-2204508fc3ca"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Shared Content/Templates/Services Title Template
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170801T112227Z
+    - ID: "74bd07f6-747a-42d3-99e9-44e2ad599365"
+      Hint: Content
+      Value: |
+        <div class="row">
+                  <div class="section-title">
+                    <h2>{{{Title}}}</h2>
+                    {{{Content}}}
+                  </div>
+                </div>

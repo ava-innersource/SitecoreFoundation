@@ -1,0 +1,18 @@
+﻿---
+ID: "5c64dd1f-c68c-4766-ad1c-7a58ec7bfc4f"
+Parent: "eccfda7f-396b-43b9-85e4-5c1e7665b557"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/SF/Project/Airspace/Content Types/Section/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170801T000821Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

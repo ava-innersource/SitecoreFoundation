@@ -1,0 +1,19 @@
+﻿---
+ID: "02055ba7-6546-4ad6-adfb-922424942c24"
+Parent: "3f38a4ee-b011-48b8-9955-90cc07b9ff4e"
+Template: "b44c1112-8aa2-4bf5-9899-9840665db5bd"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Site Configuration/Redirection Rules
+DB: master
+BranchID: "dfd1b892-04d6-4ef8-9686-749786e4a839"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170731T225800Z

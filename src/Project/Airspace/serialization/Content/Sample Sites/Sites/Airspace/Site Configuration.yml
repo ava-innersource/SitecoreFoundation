@@ -1,0 +1,15 @@
+﻿---
+ID: "3f38a4ee-b011-48b8-9955-90cc07b9ff4e"
+Parent: "d56124ff-a90b-4cf1-b0e9-e4436e41bf9d"
+Template: "5b9f4583-bbd8-4b70-a45d-cc752a4fede8"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Site Configuration
+DB: master
+BranchID: "dfd1b892-04d6-4ef8-9686-749786e4a839"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170731T225800Z

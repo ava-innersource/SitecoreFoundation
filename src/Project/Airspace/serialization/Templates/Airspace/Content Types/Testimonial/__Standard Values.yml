@@ -1,0 +1,32 @@
+﻿---
+ID: "723b57d9-6a31-41dd-af24-ebb9827fbc5f"
+Parent: "e421878f-4193-454b-b589-317ae5a8c09f"
+Template: "e421878f-4193-454b-b589-317ae5a8c09f"
+Path: /sitecore/templates/SF/Project/Airspace/Content Types/Testimonial/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170801T125105Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a56b7386-e972-4482-91fc-cfb7f216e314"
+      Hint: Quote
+      Value: |
+        <p>"This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."</p>
+    - ID: "bcb01b26-ea83-4a82-8a26-4599e9169674"
+      Hint: Title
+      Value: "CEO-Themefisher"
+    - ID: "cc4e6516-b764-4a68-bfe8-bfcfd7a06d34"
+      Hint: Image
+      Value: |
+        <image mediaid="{DCDF3194-D2E3-4E45-AEC1-019E979350E0}" />
+    - ID: "ea1a8deb-94ff-4954-97f4-c54bff070696"
+      Hint: Author
+      Value: Rose Ray

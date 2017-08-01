@@ -1,0 +1,86 @@
+﻿---
+ID: "bb01ac6f-61d4-4b5f-a293-0a9416ff63ef"
+Parent: "323af063-79d5-424e-91d8-720b87b27bcb"
+Template: "323af063-79d5-424e-91d8-720b87b27bcb"
+Path: /sitecore/templates/SF/Project/Airspace/Page Templates/Airspace Content/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{323AF063-79D5-424E-91D8-720B87B27BCB}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{02490174-0861-40C4-893E-223E3D521947}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+            l="{02490174-0861-40C4-893E-223E3D521947}">
+            <r
+              uid="{27BEB1E6-4756-4B63-BEF0-6F4340228307}"
+              ds="{C5CFA97E-0409-4EE7-ABD7-8BEBE8F3D9BB}"
+              id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+              ph="/Airspace Body/HandlebarTemplates_224198e5-30b8-416e-99c9-40cbb48db623" />
+            <r
+              uid="{224198E5-30B8-416E-99C9-40CBB48DB623}"
+              cac="1"
+              ds=""
+              id="{17747DD4-F177-4529-8FBD-CE716E91A9B7}"
+              par="ID&amp;class"
+              ph="Airspace Body"
+              vbd="1"
+              vbp="1" />
+            <r
+              uid="{EDA1C288-F5FA-4049-9570-3E8E0E61EAEE}"
+              ds="{73659297-83CD-4548-8E14-795CC72BE813}"
+              id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+              ph="/Airspace Bottom/HandlebarTemplates_c6a0257d-6b2a-4f00-ac5c-f15a0dad15f5" />
+            <r
+              uid="{C6A0257D-6B2A-4F00-AC5C-F15A0DAD15F5}"
+              ds="{004477F3-8E48-44B2-A280-F2DA9E81406C}"
+              id="{3FADCAF4-7BE9-41C4-A447-543B011B0424}"
+              ph="Airspace Bottom"
+              cac="1"
+              par="ID&amp;class&amp;Location=Bottom"
+              vbd="1"
+              vbp="1" />
+            <r
+              uid="{4F6A04D8-D00B-412B-ABCD-BF3DCC04C67F}"
+              ds="{890B9203-7F16-4D1D-82D9-86F515B08FC5}"
+              id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+              ph="/Airspace Top/HandlebarTemplates_35f47541-d578-4233-b0ee-9275613ca382" />
+            <r
+              uid="{35F47541-D578-4233-B0EE-9275613CA382}"
+              ds="{004477F3-8E48-44B2-A280-F2DA9E81406C}"
+              id="{3FADCAF4-7BE9-41C4-A447-543B011B0424}"
+              ph="Airspace Top"
+              cac="1"
+              par="ID&amp;class&amp;Location=top"
+              vbd="1"
+              vbp="1" />
+          </d>
+        </r>
+    - ID: "0defbf19-abc4-4cbb-9109-81d1e30a35c1"
+      Hint: Navigation Title
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170731T230128Z
+    - ID: "bb5d3816-991e-47ec-ba46-bd752f848f4f"
+      Hint: Design
+      Value: "{AFDCB979-3605-43DF-B8E8-D6F8B60EB4C0}"

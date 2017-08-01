@@ -1,0 +1,118 @@
+﻿---
+ID: "e5d3e950-490f-429f-87a9-e20908da2f4c"
+Parent: "6c9a9774-a1c3-43c1-96b2-7f2364b3f42c"
+Template: "323af063-79d5-424e-91d8-720b87b27bcb"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Home/Work
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{27BEB1E6-4756-4B63-BEF0-6F4340228307}">
+          <p:d />
+        </r>
+        <r
+          uid="{224198E5-30B8-416E-99C9-40CBB48DB623}">
+          <p:d />
+        </r>
+        <r
+          uid="{C6A0257D-6B2A-4F00-AC5C-F15A0DAD15F5}">
+          <p:da
+            name="cac" />
+          <p:da
+            name="par" />
+          <p:da
+            name="vbd" />
+          <p:da
+            name="vbp" />
+        </r>
+        <r
+          uid="{35F47541-D578-4233-B0EE-9275613CA382}">
+          <p:da
+            name="cac" />
+          <p:da
+            name="par" />
+          <p:da
+            name="vbd" />
+          <p:da
+            name="vbp" />
+        </r>
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{27BEB1E6-4756-4B63-BEF0-6F4340228307}"
+              p:before="*"
+              s:ds="{C5CFA97E-0409-4EE7-ABD7-8BEBE8F3D9BB}"
+              s:id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+              s:ph="/Airspace Body/HandlebarTemplates_224198e5-30b8-416e-99c9-40cbb48db623" />
+            <r
+              uid="{224198E5-30B8-416E-99C9-40CBB48DB623}"
+              p:after="r[@uid='{27BEB1E6-4756-4B63-BEF0-6F4340228307}']"
+              s:cac="1"
+              s:ds=""
+              s:id="{17747DD4-F177-4529-8FBD-CE716E91A9B7}"
+              s:par="ID&amp;class"
+              s:ph="Airspace Body"
+              s:vbd="1"
+              s:vbp="1" />
+            <r
+              uid="{C6A0257D-6B2A-4F00-AC5C-F15A0DAD15F5}"
+              s:cac="1"
+              s:par="ID&amp;class&amp;Location=Bottom"
+              s:vbd="1"
+              s:vbp="1" />
+            <r
+              uid="{35F47541-D578-4233-B0EE-9275613CA382}"
+              s:cac="1"
+              s:par="ID&amp;class&amp;Location=top"
+              s:vbd="1"
+              s:vbp="1" />
+          </d>
+        </r>
+    - ID: "0defbf19-abc4-4cbb-9109-81d1e30a35c1"
+      Hint: Navigation Title
+      Value: Work
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170731T230501Z
+    - ID: "25e2ef68-b6e5-4422-b915-cc8c7d5bb8b0"
+      Hint: GooglePlusName
+      Value: Work
+    - ID: "2e57a43e-4702-45cb-89fc-b52cf7bb7632"
+      Hint: Subtitle
+      Value: Don't just take our word for it. Check out some of our latest work.
+    - ID: "5572aff3-4e97-421b-8ee3-834085d1b29f"
+      Hint: OpenGraphTitle
+      Value: Work
+    - ID: "9a3b5d21-1db5-4a55-89c9-984298a03099"
+      Hint: Title
+      Value: Just some of our latest projects.
+    - ID: "ee6d70f8-1490-4c1e-ab55-0a81681543c3"
+      Hint: Content
+      Value: |
+        <p style="margin-bottom: 24px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; padding: 0px; vertical-align: baseline; font-family: Georgia, &quot;Bitstream Charter&quot;, serif; font-size: 16px;">Bacon ipsum dolor amet pork doner boudin andouille ribeye. Porchetta frankfurter andouille, pork belly ham turducken kevin short loin boudin picanha hamburger tail bresaola beef. Ball tip venison tri-tip pancetta, tongue cow capicola ribeye pork belly spare ribs turducken ham. Tenderloin burgdoggen short loin beef ribs ground round leberkas shoulder shank doner ham hock pastrami filet mignon picanha pork chop. Hamburger pork loin meatloaf, cupim kevin ham hock pancetta doner.</p><p style="margin-bottom: 24px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; padding: 0px; vertical-align: baseline; font-family: Georgia, &quot;Bitstream Charter&quot;, serif; font-size: 16px;">Beef ribs shank rump short loin frankfurter beef fatback jowl picanha bresaola. Bresaola turkey short ribs, strip steak pork loin landjaeger sirloin pastrami. Salami bresaola sausage sirloin ball tip kevin venison turkey frankfurter rump tail capicola. Tri-tip tail bresaola boudin pork. Cupim shankle picanha, ham spare ribs pork belly porchetta jerky beef. Ball tip doner cupim hamburger. Picanha pork pork belly cupim, jerky pork chop ham meatloaf.</p><p style="margin-bottom: 24px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; padding: 0px; vertical-align: baseline; font-family: Georgia, &quot;Bitstream Charter&quot;, serif; font-size: 16px;">Biltong ribeye picanha chicken cow, shoulder andouille venison pastrami sausage doner kielbasa swine pork belly capicola. Boudin bresaola brisket pancetta, t-bone jowl pork chop kevin strip steak biltong. Andouille pork frankfurter pig corned beef sirloin. Pork loin pastrami meatball ham shank capicola. Beef ribs pig meatloaf short ribs salami flank beef t-bone shankle.</p><p style="margin-bottom: 24px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; padding: 0px; vertical-align: baseline; font-family: Georgia, &quot;Bitstream Charter&quot;, serif; font-size: 16px;">Tri-tip spare ribs meatball t-bone cupim ham hock. Biltong pork tri-tip, capicola alcatra pork belly cow meatloaf beef ribs andouille meatball. Picanha prosciutto beef ribs ground round short ribs brisket meatloaf sausage landjaeger ham hock alcatra. Doner boudin tenderloin, porchetta salami capicola landjaeger beef meatloaf rump swine. Frankfurter ball tip fatback pig, sausage shank brisket short loin capicola. Picanha alcatra drumstick jerky, pastrami pork loin pork chop andouille ham rump shoulder turducken sausage pork belly corned beef. Ball tip porchetta corned beef, ham spare ribs picanha chicken swine flank shankle strip steak pork loin.</p><p style="margin-bottom: 24px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; padding: 0px; vertical-align: baseline; font-family: Georgia, &quot;Bitstream Charter&quot;, serif; font-size: 16px;">Jerky frankfurter hamburger, pork belly spare ribs rump short ribs flank ribeye ham hock kielbasa. Meatloaf porchetta prosciutto ham leberkas kielbasa salami venison sirloin. Kielbasa landjaeger prosciutto, tenderloin alcatra short ribs ham. Jowl strip steak t-bone, leberkas prosciutto porchetta short ribs cow ham pig shank tri-tip kevin cupim pork.</p><p><br></p>
+    - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
+      Hint: TwitterTitle
+      Value: Work

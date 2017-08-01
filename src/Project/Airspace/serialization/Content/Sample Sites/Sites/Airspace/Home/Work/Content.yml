@@ -1,0 +1,14 @@
+﻿---
+ID: "ff3c2b88-6202-4e41-9d63-96c78c7b9f1d"
+Parent: "e5d3e950-490f-429f-87a9-e20908da2f4c"
+Template: "6c0b22df-5248-48e8-8a59-85669e61db94"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Home/Work/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170801T132926Z

@@ -1,0 +1,31 @@
+﻿---
+ID: "73659297-83cd-4548-8e14-795cc72be813"
+Parent: "4f044564-d901-4172-8e0c-fbbe3e8f9380"
+Template: "aa343bbd-3952-4951-8480-2204508fc3ca"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Shared Content/Templates/Footer Template
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170731T234123Z
+    - ID: "74bd07f6-747a-42d3-99e9-44e2ad599365"
+      Hint: Content
+      Value: |
+        <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="footer-manu">
+                      <ul>
+                        {{ #each Items }}
+                        <li><a href="{{ItemUrl}}">{{NavigationTitle}}</a></li>
+                        {{ /each }}
+                      </ul>
+                    </div>
+                    <p>Copyright &copy; Design by <a href="http://www.themefisher.com">Themefisher</a>. Integrated into Sitecore Using Sitecore Foundation.</p>
+                  </div>
+                </div>
+              </div>

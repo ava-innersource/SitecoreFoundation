@@ -1,0 +1,21 @@
+﻿---
+ID: "10d7c10c-d8a0-4318-9b9f-72ab133db92e"
+Parent: "5c64dd1f-c68c-4766-ad1c-7a58ec7bfc4f"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/SF/Project/Airspace/Content Types/Section/Content/SubTitle
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Rich Text
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170801T000821Z

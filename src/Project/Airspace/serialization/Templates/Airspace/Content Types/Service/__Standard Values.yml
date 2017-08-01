@@ -1,0 +1,24 @@
+﻿---
+ID: "71aeaf46-f87b-4b2d-b48f-cd02fde062a9"
+Parent: "54ecf89e-a6d7-4df8-ae7f-f93b28ebb615"
+Template: "54ecf89e-a6d7-4df8-ae7f-f93b28ebb615"
+Path: /sitecore/templates/SF/Project/Airspace/Content Types/Service/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0079cc73-10c6-427f-b4d5-9c517e493a29"
+      Hint: Description
+      Value: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170801T113040Z
+    - ID: "561b8fda-ab1f-4e71-8077-1c19a6ef3f52"
+      Hint: Name
+      Value: $name
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

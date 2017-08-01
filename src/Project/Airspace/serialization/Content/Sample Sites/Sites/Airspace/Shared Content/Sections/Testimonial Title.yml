@@ -1,0 +1,20 @@
+﻿---
+ID: "5ec5dea6-cc5d-4c66-8224-fef5860abced"
+Parent: "99fd194d-a045-4c8b-8a04-f8823de1c643"
+Template: "eccfda7f-396b-43b9-85e4-5c1e7665b557"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Shared Content/Sections/Testimonial Title
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170801T121458Z
+    - ID: "5779c60a-d843-4dca-89b0-ef1c68252349"
+      Hint: Content
+      Value: <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+    - ID: "bd5bc529-36ae-4f91-a2d6-052f36f7db19"
+      Hint: Title
+      Value: Fun Facts About Us

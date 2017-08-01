@@ -1,0 +1,22 @@
+﻿---
+ID: "4fbb1849-2edf-4385-86ce-6685f1847cef"
+Parent: "3f38a4ee-b011-48b8-9955-90cc07b9ff4e"
+Template: "0a2847e6-9885-450b-b61e-f9e6528480ef"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Site Configuration/Site Dictionary
+DB: master
+BranchID: "dfd1b892-04d6-4ef8-9686-749786e4a839"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Business/32x32/address_book_add.png
+- ID: "cd72e892-d8bb-487c-9eb1-6a57c48c72cc"
+  Hint: Fallback Domain
+  Value: "{3E6F0144-6C95-41D8-BF0B-3C408F8DF3CD}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170731T225801Z

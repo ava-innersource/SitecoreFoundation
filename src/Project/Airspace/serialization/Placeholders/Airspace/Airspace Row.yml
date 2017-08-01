@@ -1,0 +1,25 @@
+﻿---
+ID: "312339f2-5f40-4abc-987a-8126d8cc995e"
+Parent: "6b201a31-93e7-4d27-a695-1f1e3c079c06"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/SF/Project/Airspace/Airspace Row
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: AirspaceRow
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {3FADCAF4-7BE9-41C4-A447-543B011B0424}
+    {17747DD4-F177-4529-8FBD-CE716E91A9B7}
+    {E7C70AE4-C2C3-4310-81D6-5C4B3D4BCCC4}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170731T232234Z

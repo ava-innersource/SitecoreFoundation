@@ -1,0 +1,28 @@
+﻿---
+ID: "6323feb9-7e68-4f0f-9358-354e992a668b"
+Parent: "4f044564-d901-4172-8e0c-fbbe3e8f9380"
+Template: "aa343bbd-3952-4951-8480-2204508fc3ca"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Shared Content/Templates/Feature Template
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170801T001824Z
+    - ID: "74bd07f6-747a-42d3-99e9-44e2ad599365"
+      Hint: Content
+      Value: |
+        <section id="feature">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                  <h2>{{{Title}}}</h2>
+                  {{{Content}}}
+                  <a href="{{CTA_Url}}" class="btn btn-view-works">{{CTA_Text}}</a>
+                </div>
+              </div>
+            </div>
+          </section>

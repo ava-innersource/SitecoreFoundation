@@ -1,0 +1,31 @@
+﻿---
+ID: "2c1c6e37-e1c5-48ad-9ea8-23da9b5ccea4"
+Parent: "99fd194d-a045-4c8b-8a04-f8823de1c643"
+Template: "eccfda7f-396b-43b9-85e4-5c1e7665b557"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Shared Content/Sections/Feature
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "247eed20-df5d-4ceb-8731-fc71faa96fb7"
+      Hint: CTA
+      Value: |
+        <link text="View Works" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{E5D3E950-490F-429F-87A9-E20908DA2F4C}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170801T001242Z
+    - ID: "5779c60a-d843-4dca-89b0-ef1c68252349"
+      Hint: Content
+      Value: |
+        <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "bd5bc529-36ae-4f91-a2d6-052f36f7db19"
+      Hint: Title
+      Value: WE BELIEVE IN GREAT IDEAS

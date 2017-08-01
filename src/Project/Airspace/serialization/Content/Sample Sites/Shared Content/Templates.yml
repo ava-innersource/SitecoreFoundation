@@ -1,0 +1,14 @@
+﻿---
+ID: "c8ca0733-3939-42ef-8339-d66b12bb73b5"
+Parent: "d39469f9-3056-4a20-94c5-09c975ced11f"
+Template: "a53e7d14-49e1-4271-af55-47f65aeec5ca"
+Path: /sitecore/content/Sample Sites/Shared Content/Templates
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170731T233609Z

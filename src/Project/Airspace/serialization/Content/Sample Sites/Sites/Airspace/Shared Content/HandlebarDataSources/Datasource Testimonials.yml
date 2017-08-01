@@ -1,0 +1,17 @@
+﻿---
+ID: "2fbd8406-d491-4aa4-b9d4-74d70eeeea71"
+Parent: "7ebc265d-5139-4c20-8967-2d4c56033238"
+Template: "1c7cbb97-485d-4540-9d41-f3a3f90ed85c"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Shared Content/HandlebarDataSources/Datasource Testimonials
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170801T125858Z
+    - ID: "6ccd6589-ef6b-4e8e-844e-e1819c15d9ba"
+      Hint: Root Folder
+      Value: "{FC909681-733A-44D6-BDB7-DAD7544945BA}"

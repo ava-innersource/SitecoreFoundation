@@ -1,0 +1,17 @@
+﻿---
+ID: "204c886a-2ea7-4df5-9612-f687efe833ce"
+Parent: "6969580b-c901-4076-a978-5dfdc363ac32"
+Template: "f931a8f5-f20f-4380-9c0b-75cff402232c"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Shared Content/Stats/Stat 4
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170801T122427Z
+    - ID: "5f298853-5312-47df-bb66-15d188b1c812"
+      Hint: Icon
+      Value: "ion-ios-timer-outline"

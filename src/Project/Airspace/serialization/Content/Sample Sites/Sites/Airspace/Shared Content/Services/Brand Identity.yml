@@ -1,0 +1,24 @@
+﻿---
+ID: "1edfa786-330b-45fe-b472-d669720e6807"
+Parent: "ae3f64c5-4b77-4846-ba44-3cc053f9bbb1"
+Template: "54ecf89e-a6d7-4df8-ae7f-f93b28ebb615"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Shared Content/Services/Brand Identity
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170801T113537Z
+    - ID: "561b8fda-ab1f-4e71-8077-1c19a6ef3f52"
+      Hint: Name
+      Value: Brand Identity
+    - ID: "caa627c6-3fc1-4fb7-83a2-7d8b18b86950"
+      Hint: Icon
+      Value: "ion-planet"

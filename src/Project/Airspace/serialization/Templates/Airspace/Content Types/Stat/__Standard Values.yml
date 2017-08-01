@@ -1,0 +1,24 @@
+﻿---
+ID: "9d385f51-9e6b-4fd3-9e0b-75593254fd5f"
+Parent: "f931a8f5-f20f-4380-9c0b-75cff402232c"
+Template: "f931a8f5-f20f-4380-9c0b-75cff402232c"
+Path: /sitecore/templates/SF/Project/Airspace/Content Types/Stat/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14feebbe-c94d-45d7-870e-bc982affd19a"
+      Hint: Name
+      Value: Cups Of Coffee
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170801T122157Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "bc0d3e9a-22bf-4319-bdcf-e3aea3773146"
+      Hint: Count
+      Value: 20000

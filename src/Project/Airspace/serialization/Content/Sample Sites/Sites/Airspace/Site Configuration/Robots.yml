@@ -1,0 +1,19 @@
+﻿---
+ID: "ff50826d-880e-4b31-a0b2-e9678434eaf5"
+Parent: "3f38a4ee-b011-48b8-9955-90cc07b9ff4e"
+Template: "1f1b4108-8325-44c2-89fb-ab6746a666b4"
+Path: /sitecore/content/Sample Sites/Sites/Airspace/Site Configuration/Robots
+DB: master
+BranchID: "dfd1b892-04d6-4ef8-9686-749786e4a839"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170731T225801Z

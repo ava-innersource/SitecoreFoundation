@@ -150,6 +150,7 @@
   <ItemGroup>
     <Content Include="Components\ExperienceEditor\FieldEditor\LaunchFieldEditor.js" />
     <Content Include="global\css\Project.Common\pageEditorChrome.css" />
+    <Content Include="sitecore modules\RenderingChrome\ShowRenderingChrome.js" />
     <Content Include="sitecore\shell\Applications\Content Manager\Dialogs\LayoutDetails\LayoutDetails.xml" />
     <Content Include="sitecore\shell\override\SelectRendering.xml" />
   </ItemGroup>

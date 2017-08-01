@@ -150,6 +150,10 @@
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.8.2.170614\lib\NET452\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Mvc.NoReferences.8.2.170614\lib\NET452\Sitecore.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Sitecore.Services.Core, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Services.Core.NoReferences.8.2.170614\lib\NET452\Sitecore.Services.Core.dll</HintPath>
       <Private>False</Private>
@@ -226,6 +230,7 @@
     <Compile Include="Pipeline\HandlebarHelpersPipelineArgs.cs" />
     <Compile Include="Pipeline\RegisterFormatDateHelper.cs" />
     <Compile Include="Pipeline\RegisterIfEqualHelper.cs" />
+    <Compile Include="Pipeline\RegisterPlaceholderHelper.cs" />
     <Compile Include="Pipeline\RegisterJSONHelper.cs" />
     <Compile Include="Pipeline\RegisterLookupElementDateHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

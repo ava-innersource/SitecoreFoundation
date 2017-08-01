@@ -1,0 +1,158 @@
+﻿---
+ID: "ab792c4e-8000-4589-b751-aae6a974f0c0"
+Parent: "c6fcfb5f-1f4b-4c23-b06a-58326c4b31e5"
+Template: "722ec325-cc44-4687-adbd-4ea415502f88"
+Path: "/sitecore/content/Global/Scripts/Project/Airspace/components/google-map-init"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170731T230600Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
+    - ID: "a2dda611-f0ad-4ce2-863a-84df4f467b64"
+      Hint: Content
+      Value: |
+        jQuery(document).ready(function() {
+            "use strict";
+        
+        
+            function b() {
+                var a = {
+                        zoom: 11,
+                        scrollwheel: false,
+                        center: new google.maps.LatLng(40.67, -73.94),
+                        styles: [{
+                            "featureType": "landscape",
+                            "stylers": [
+                                {
+                                    "saturation": -100
+                                },
+                                {
+                                    "lightness": 65
+                                },
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "stylers": [
+                                {
+                                    "saturation": -100
+                                },
+                                {
+                                    "lightness": 51
+                                },
+                                {
+                                    "visibility": "simplified"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "stylers": [
+                                {
+                                    "saturation": -100
+                                },
+                                {
+                                    "visibility": "simplified"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "stylers": [
+                                {
+                                    "saturation": -100
+                                },
+                                {
+                                    "lightness": 30
+                                },
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.local",
+                            "stylers": [
+                                {
+                                    "saturation": -100
+                                },
+                                {
+                                    "lightness": 40
+                                },
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "stylers": [
+                                {
+                                    "saturation": -100
+                                },
+                                {
+                                    "visibility": "simplified"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative.province",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "labels",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                },
+                                {
+                                    "lightness": -25
+                                },
+                                {
+                                    "saturation": -100
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "hue": "#ffff00"
+                                },
+                                {
+                                    "lightness": -25
+                                },
+                                {
+                                    "saturation": -97
+                                }
+                            ]
+                        }]
+                    },
+                    b = document.getElementById("map"),
+                    c = new google.maps.Map(b, a);
+                new google.maps.Marker({
+                    position: new google.maps.LatLng(40.67, -73.94),
+                    map: c,
+                    title: "Snazzy!"
+                })
+            }
+            google.maps.event.addDomListener(window, "load", b);
+        
+        });
