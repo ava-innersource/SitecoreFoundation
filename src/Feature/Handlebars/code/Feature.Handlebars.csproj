@@ -224,6 +224,7 @@
     <Content Include="App_Config\Include\Feature.Handlebars\Serialization.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\DynamicItem.cs" />
     <Compile Include="BLL\HandlebarManager.cs" />
     <Compile Include="Controllers\HandlebarsController.cs" />
     <Compile Include="Pipeline\HandlebarHelper.cs" />

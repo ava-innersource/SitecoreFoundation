@@ -19,7 +19,7 @@ Languages:
       Value: 0
     - ID: "0c77a26c-1c00-427f-aa18-bcf83df753e6"
       Hint: TitlePrefix
-      Value: Sitecore Foundation
+      Value: "Sitecore Foundation - "
     - ID: "144e332d-f429-429e-ab18-4b6d05b2180a"
       Hint: LayoutNotFoundPage
       Value: "{AAF0CD52-D558-4CDD-B999-F90F7F4DD353}"
@@ -35,9 +35,15 @@ Languages:
       Hint: SiteScripts
       Type: Treelist
       Value: 
+    - ID: "4edd3a46-3b3d-4d76-96d4-80e738f7fc44"
+      Hint: LoginPage
+      Value: "{A7D35219-9267-4511-82B5-11B759D92FCA}"
     - ID: "628d81e5-53c2-4da5-ae2d-0e9785af6eb2"
       Hint: Site Offline Page
       Value: "{C3E03478-5ED6-475D-B13E-A3A8BEABA83A}"
+    - ID: "6ade9cec-6cfb-40e7-9992-08a432ef1b0f"
+      Hint: MetaKeywordsSuffix
+      Value: Sitecore Development Accelerator, Sitecore Framework, Foundation, Tools
     - ID: "6e10df11-0de5-491f-8938-c162ae532278"
       Hint: Valid Languages
       Type: Multilist
@@ -51,7 +57,7 @@ Languages:
       Value: "{08FF82CA-1BF9-4AE7-9C0E-32359E50FA94}"
     - ID: "89f9196f-3581-4575-9c2a-042f513f9412"
       Hint: BaseCanoncialUrl
-      Value: "http://starterkit.dev.local"
+      Value: "http://www.sitecorefoundation.com/"
     - ID: "9fda9f8b-f1e8-487e-85a3-bdbcbef16a6a"
       Hint: SiteCSS
       Type: Treelist
@@ -62,7 +68,10 @@ Languages:
       Value: 0
     - ID: "bba037a1-1a20-4470-808c-a672078d1560"
       Hint: MetaDescPrefix
-      Value: Sitecore Foundation
+      Value: 
+    - ID: "c9b3a065-09ef-4295-977f-b570c89e86fb"
+      Hint: MetaDescSuffix
+      Value: ; Part of Sitecore Foundation
     - ID: "cec4ebae-c6eb-4b70-afe6-50677e8579d7"
       Hint: Force Https
       Type: Checkbox

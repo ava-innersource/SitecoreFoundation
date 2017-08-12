@@ -14,11 +14,19 @@ namespace SF.Feature.Handlebars
             pipelineArgs.Helpers.Add(new HandlebarHelperRegistration("json", (writer, context, args) =>
             {
                 object obj = args[0];
-                
+
                 //didn't like how Web Extensions Serializer looked for Expandos (Arrays of key values)
                 //var jString = new JavaScriptSerializer().Serialize(obj);
-                var jString = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
-                writer.Write(jString);
+
+                try
+                {
+                    var jString = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
+                    writer.Write(jString);
+                }
+                catch(Exception ex)
+                {
+                    writer.Write(ex.ToString());
+                }
             }));
         }
     }
