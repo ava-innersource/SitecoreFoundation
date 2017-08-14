@@ -32,7 +32,7 @@ namespace SF.DXF.Feature.SitecoreProvider
             settings.ChildItems = base.GetBoolValue(source, PublishContentItemModel.ChildItems);
             
             settings.Languages = new Sitecore.Collections.LanguageCollection();
-            var languages = base.GetStringValue(source, PublishContentItemModel.Languages).Split(',');
+            var languages = base.GetStringValue(source, PublishContentItemModel.Languages).Split('|');
             Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
             foreach(var lang in languages)
             {
