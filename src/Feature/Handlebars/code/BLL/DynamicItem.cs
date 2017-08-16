@@ -71,6 +71,14 @@ namespace SF.Feature.Handlebars
             }
         }
 
+        public bool HasLayout
+        {
+            get
+            {
+                return Item.HasLayout();
+            }
+        }
+
         public override IEnumerable<string> GetDynamicMemberNames()
         {
             var names = new List<string>();
@@ -131,6 +139,11 @@ namespace SF.Feature.Handlebars
                         return true;
                     }
                     #endregion
+                    if (binderProperty == "Field")
+                    {
+                        result = field;
+                        return true;
+                    }
                     #region Multilist
                     if (Sitecore.Data.Fields.FieldTypeManager.GetField(field) is Sitecore.Data.Fields.MultilistField)
                     {
