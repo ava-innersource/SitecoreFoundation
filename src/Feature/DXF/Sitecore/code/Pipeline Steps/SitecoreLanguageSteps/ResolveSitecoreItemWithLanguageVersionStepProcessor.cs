@@ -20,7 +20,7 @@ namespace SF.DXF.Feature.SitecoreProvider
 
   [RequiredPipelineStepPlugins(new Type[] { typeof(ResolveSitecoreItemSettings) })]
   [RequiredEndpointPlugins(new Type[] { typeof(ItemModelRepositorySettings) })]
-  public class ResolveSitecoreItemStepProcessor : BaseResolveObjectFromRepositoryEndpointStepProcessor<object>
+  public class ResolveSitecoreItemWithLanguageStepProcessor : BaseResolveObjectFromRepositoryEndpointStepProcessor<object>
   {
     protected override object ResolveObject(object identifierValue, Endpoint endpoint, PipelineStep pipelineStep, PipelineContext pipelineContext)
     {

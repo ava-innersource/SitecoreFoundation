@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Foundation.API</RootNamespace>
-    <AssemblyName>Foundation.API</AssemblyName>
+    <RootNamespace>SF.Foundation.API</RootNamespace>
+    <AssemblyName>SF.Foundation.API</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -154,6 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterRoutesBase.cs" />
     <Compile Include="SessionRouteHandler.cs" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />

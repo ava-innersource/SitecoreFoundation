@@ -11,11 +11,14 @@ namespace SF.Foundation.TraceLogger
     {
         private const string contextKey = "TraceLogger";
 
+        private bool logImmediately = false;
+
         #region ASP.Net Context Singleton Pattern
 
         // Note: Constructor is 'protected' 
         protected TraceLogger()
         {
+            bool.TryParse(Sitecore.Configuration.Settings.GetSetting("SF.TraceLogger.LogImmediately"), out logImmediately);
             this.StartTimer();
         }
         private bool used = false;
@@ -25,11 +28,18 @@ namespace SF.Foundation.TraceLogger
             get
             {
                 TraceLogger instance = null;
-                instance = HttpContext.Current.Items[contextKey] as TraceLogger;
-                if (instance == null)
+                if (HttpContext.Current != null)
                 {
-                    instance = new TraceLogger();
-                    HttpContext.Current.Items.Add(contextKey, instance);
+                    instance = HttpContext.Current.Items[contextKey] as TraceLogger;
+                    if (instance == null)
+                    {
+                        instance = new TraceLogger();
+                        HttpContext.Current.Items.Add(contextKey, instance);
+                    }
+                }
+                else
+                {
+                    throw new Exception("HttpContext is null");
                 }
                 return instance;
             }
@@ -81,6 +91,11 @@ namespace SF.Foundation.TraceLogger
             sb.Append("\t");
             sb.Append(message);
             sb.Append("\n");
+
+            if (logImmediately)
+            {
+                Sitecore.Diagnostics.Log.Info(string.Format("{0}\t{1}\t{2}", MilliSecondsSinceStart(), MilliSecondsSinceLast(), message), this);
+            }
         }
 
         public void Flush()

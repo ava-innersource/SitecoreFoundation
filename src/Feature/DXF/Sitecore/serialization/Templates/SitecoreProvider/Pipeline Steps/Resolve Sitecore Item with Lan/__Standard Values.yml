@@ -10,7 +10,7 @@ SharedFields:
   Value: SF.DXF.Feature.SitecoreProvider.ResolveSitecoreItemWithLanguageStepConverter, SF.DXF.Feature.SitecoreProvider
 - ID: "a83a2eb2-bfa1-4d3f-9f17-0cc6c9a91c42"
   Hint: ProcessorType
-  Value: SF.DXF.Feature.SitecoreProvider.ResolveSitecoreItemWithLanguageVersionStepProcessor, SF.DXF.Feature.SitecoreProvider
+  Value: SF.DXF.Feature.SitecoreProvider.ResolveSitecoreItemWithLanguageStepProcessor, SF.DXF.Feature.SitecoreProvider
 Languages:
 - Language: en
   Versions:

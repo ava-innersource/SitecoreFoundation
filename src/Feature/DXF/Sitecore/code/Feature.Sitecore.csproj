@@ -192,6 +192,8 @@
     <Compile Include="Pipeline Steps\EnrollContactInPlan\EnrollContactInEngagementPlanSettings.cs" />
     <Compile Include="Pipeline Steps\EnrollContactInPlan\EnrollContactInEngagementPlanStepConverter.cs" />
     <Compile Include="Pipeline Steps\EnrollContactInPlan\EnrollContactInEngagementPlanStepProcessor.cs" />
+    <Compile Include="Pipeline Steps\IterateAndRunPipelineAsync\IterateAndRunPipelineAsyncStepConverter.cs" />
+    <Compile Include="Pipeline Steps\IterateAndRunPipelineAsync\IterateAndRunPiplineAsyncStepProcessor.cs" />
     <Compile Include="Pipeline Steps\Publish\PublishContentItemModel.cs" />
     <Compile Include="Pipeline Steps\Publish\PublishContentSettings.cs" />
     <Compile Include="Pipeline Steps\Publish\PublishContentStepConverter.cs" />

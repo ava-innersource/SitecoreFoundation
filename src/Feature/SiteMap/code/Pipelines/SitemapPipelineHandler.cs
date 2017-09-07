@@ -52,9 +52,10 @@ namespace SF.Feature.SiteMap
         {
             var siteMapSettings = new PageSitemapSettings(item);
             var hasLayout = item.Visualization.GetLayout(Sitecore.Context.Device) != null;
+            var hasLanguageVersion = HasLanguageVersion(item, Sitecore.Context.Language.Name);
 
             //only render in sitemap if it has layout and is not explicitly not in Sitemap
-            if (hasLayout && !siteMapSettings.OmitFromSitemap)
+            if (hasLayout && !siteMapSettings.OmitFromSitemap && hasLanguageVersion)
             {
                 var itemUrl = Sitecore.Links.LinkManager.GetItemUrl(item);
                 Uri itemUri = new Uri(HttpContext.Current.Request.Url, itemUrl);
@@ -125,6 +126,20 @@ namespace SF.Feature.SiteMap
             {
                 RenderItemInSiteMap(child, site, output);
             }
+        }
+
+        private bool HasLanguageVersion(Item item, string languageName)
+        {
+            var language = item.Languages.FirstOrDefault(l => l.Name == languageName);
+            if (language != null)
+            {
+                var languageSpecificItem = global::Sitecore.Context.Database.GetItem(item.ID, language);
+                if (languageSpecificItem != null && languageSpecificItem.Versions.Count > 0)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

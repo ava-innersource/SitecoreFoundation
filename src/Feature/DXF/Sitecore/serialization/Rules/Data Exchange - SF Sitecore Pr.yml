@@ -34,6 +34,10 @@ SharedFields:
             id="{918FFCF0-F9E1-4DB6-A191-3EFA5A91C583}"
             uid="4874126EB3244C78A0A6FB5EA9EF21CB"
             insertoptionid="{BE97C7CF-F4FF-46B3-A197-279C534F8801}" />
+          <action
+            id="{918FFCF0-F9E1-4DB6-A191-3EFA5A91C583}"
+            uid="1282EEC1A8FA4CB982A337A7B03B382B"
+            insertoptionid="{EE1ED7B7-AECA-435A-BADA-07F4E03683A2}" />
         </actions>
         <conditions>
           <condition
@@ -45,12 +49,7 @@ SharedFields:
       <rule
         uid="{5C907F7A-39A6-4EC2-A82D-F3070C0285C3}"
         name="Value Accessor Sets Providers Root">
-        <actions>
-          <action
-            id="{918FFCF0-F9E1-4DB6-A191-3EFA5A91C583}"
-            uid="9544711CE6404C899285A77F8A34A547"
-            insertoptionid="{55AB3CCD-80ED-485C-9D71-004FADE14BD1}" />
-        </actions>
+        <actions />
         <conditions>
           <and
             uid="47D68A356FB24649B8A9D2DF094C0795">
