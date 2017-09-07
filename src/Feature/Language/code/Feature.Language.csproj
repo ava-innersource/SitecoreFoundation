@@ -151,7 +151,7 @@
     <Compile Include="FallbackProviders\LanguageStub.cs" />
     <Compile Include="Model\LanguageSiteSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="App_Config\Include\Feature.Language\CustomLanguageFallbackStrategies.config.disabled" />
+    <None Include="App_Config\Include\Feature.Language\CustomLanguageFallbackStrategies.config" />
     <Content Include="App_Config\Include\Feature.Language\Language.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />

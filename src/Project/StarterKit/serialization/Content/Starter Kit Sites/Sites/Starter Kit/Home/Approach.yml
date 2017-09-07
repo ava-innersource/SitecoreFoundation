@@ -46,3 +46,20 @@ Languages:
     - ID: "f59d09b6-7c8e-474d-9d99-384f09781490"
       Hint: TwitterTitle
       Value: Approach
+- Language: "es-MX"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170907T020938Z
+    - ID: "2f085078-5a11-485e-8260-68b49bdcdca9"
+      Hint: TitleTag
+      Value: Spanish Version of Approach Page.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "bb5d3816-991e-47ec-ba46-bd752f848f4f"
+      Hint: Design
+      Value: "{4191BD02-7BB3-408C-96AE-0907E3A06F55}"

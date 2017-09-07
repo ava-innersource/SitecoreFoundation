@@ -47,7 +47,9 @@ Languages:
     - ID: "6e10df11-0de5-491f-8938-c162ae532278"
       Hint: Valid Languages
       Type: Multilist
-      Value: "{AF584191-45C9-4201-8740-5409F4CF8BDD}"
+      Value: |
+        {AF584191-45C9-4201-8740-5409F4CF8BDD}
+        {17CB7BAB-B41A-448A-9EEE-08D2233965AB}
     - ID: "7fb1a8d2-0773-449e-bbf3-1b33e4845ee8"
       Hint: White Listing Enabled
       Type: Checkbox
