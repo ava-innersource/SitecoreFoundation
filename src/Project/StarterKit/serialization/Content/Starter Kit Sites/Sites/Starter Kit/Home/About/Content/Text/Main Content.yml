@@ -20,7 +20,8 @@ Languages:
       Hint: Content
       Value: |
         <h1>About</h1>
-        <p>Content in Development</p>
+        <p>Sitecore Foundation was primarily built as a side project by David San Filippo with several other contributors over the years. It has been used as a complete asset on several projects around the world and parts of the framework have been used in even more projects.&nbsp;</p>
+        <p>All development has moved to Github, hosted in Avanade's very own account.</p>
+        <p><a href="github.com/avanade/sitecorefoundation">View it here:</a></p>
         <ul>
-            <li>Block grid with links to child pages</li>
         </ul>

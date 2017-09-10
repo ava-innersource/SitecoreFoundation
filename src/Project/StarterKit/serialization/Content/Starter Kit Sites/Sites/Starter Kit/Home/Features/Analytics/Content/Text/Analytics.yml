@@ -1,0 +1,25 @@
+﻿---
+ID: "e4e63788-85c4-4b73-bfd9-798245877435"
+Parent: "6035e6ab-9863-4c75-a4c4-4cb7fe0158d7"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/Analytics/Content/Text/Analytics
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170910T030733Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <h1>Analytics Features</h1>
+        <p>To better support common analytics requirements, Sitecore Foundation provides a client side analytics API for Sitecore. This allows you to raise not only events and goal, but actual page interactions within Sitecore. By raising interactions you can instrument Single Page Applications to fully support the Path Analyzer.</p>
+        <p>In addition to the client side API we have also created a fully functional Segment.js provider for Sitecore. Segment provides a pub/sub architecture for analytics tagging. Using this api you can tag once and notify multiple analytics providers. It already supports most of the major web based analytics providers including Google Analytics, Web Trends and more. By including a Sitecore plugin, you can notify both Sitecore and any of the providers Segment supports when a client side event is raised. In addition we even built a hook that broadcasts server side Sitecore events through Segment. So you can define your goals in Sitecore and it will automatically broadcast when they are triggered client side.</p>
+        <p>We even implemented tagging javaScript on most of our Foundation based components. Our Video Component automatically notified on play start, 25%, 50%, 75% and completion.</p>

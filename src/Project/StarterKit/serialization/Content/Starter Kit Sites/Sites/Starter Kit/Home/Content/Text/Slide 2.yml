@@ -22,14 +22,14 @@ Languages:
         <img alt="" src="/content/site/img/banner2.jpg">
         <div class="slide-contents">
         <div class="slide-text">
-        <h1>Over 50 Ready to Use Components</h1>
-        <h2>Layout, Content, Buttons, Collections, Navigation & More...</h2>
+        <h1>Helix Modularity</h1>
+        <h2>With over 22 features, 11 foundation projects and 5 project modules, SF was built using Helix Principles </h2>
         </div>
         <div class="arrow-box">
         <div class="arrow-box-inner">
         <div class="clearfix">
-        <a href="~/link.aspx?_id=D4A030DC13274D728E29152585E07BB1&_z=z" class="button button-link text-left">Click here to view the details</a>
-        <a href="~/link.aspx?_id=D4A030DC13274D728E29152585E07BB1&_z=z" class="button primary">More</a>
+        <a href="~/link.aspx?_id=D4A030DC13274D728E29152585E07BB1&amp;_z=z" class="button button-link text-left">Click here to view the details</a>
+        <a href="~/link.aspx?_id=D4A030DC13274D728E29152585E07BB1&amp;_z=z" class="button primary">More</a>
         </div>
         </div>
         </div>

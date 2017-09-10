@@ -19,18 +19,18 @@ Languages:
     - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
       Hint: Content
       Value: |
-        <img alt="" src="/content/site/img/banner3.jpg" />
+        <img alt="" src="/content/site/img/banner3.jpg">
         <div class="slide-contents">
         <div class="slide-text">
-        <h1>More than Just a <br />
+        <h1>More than Just a <br>
         UI Framework</h1>
         <h2>A Powerful Multi Site Configuration Driven Framework.</h2>
         </div>
         <div class="arrow-box arrow-box-zip-code">
         <div class="arrow-box-inner">
         <div class="clearfix">
-        <a href="~/link.aspx?_id=B0124B54C0EA42F09B0A26E6E02EB52D&_z=z" class="button button-link text-left">Click here to view the details</a> 
-        <a href="~/link.aspx?_id=B0124B54C0EA42F09B0A26E6E02EB52D&_z=z" class="button primary">More</a> 
+        <a href="~/link.aspx?_id=B0124B54C0EA42F09B0A26E6E02EB52D&amp;_z=z" class="button button-link text-left">Click here to view the details</a>&nbsp;
+        <a href="~/link.aspx?_id=B0124B54C0EA42F09B0A26E6E02EB52D&amp;_z=z" class="button primary">More</a>&nbsp;
         </div>
         </div>
         </div>

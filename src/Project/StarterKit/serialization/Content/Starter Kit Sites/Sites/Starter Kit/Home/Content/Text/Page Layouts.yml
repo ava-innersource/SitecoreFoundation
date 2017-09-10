@@ -19,8 +19,8 @@ Languages:
     - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
       Hint: Content
       Value: |
-        <h4>Foundation Framework</h4>
-        <p>Fully configurable responsive components ready to support personalization and A/B testing out of the box.</p>
+        <h4>Unified Analytics</h4>
+        <p>Tag once and track everywhere. With client side analytics API's, &nbsp;broadcast events to Sitecore, Google, Web Trends and More.</p>
         <p><a href="~/link.aspx?_id=44D5F6E9C2F64789985E63C8225E11E6&amp;_z=z">Learn more</a></p>
 - Language: "es-MX"
   Versions:

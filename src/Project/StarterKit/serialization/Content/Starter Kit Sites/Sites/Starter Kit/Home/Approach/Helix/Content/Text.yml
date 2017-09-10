@@ -1,0 +1,14 @@
+﻿---
+ID: "b690bf29-8b82-45be-a546-df5c64ebf5df"
+Parent: "0947dbf0-596c-40fc-9a21-8d880e61b419"
+Template: "52085dde-d6b5-41ad-ab1a-8d3dc19480a0"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Approach/Helix/Content/Text
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170910T025338Z

@@ -8,12 +8,7 @@ SharedFields:
 - ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
   Hint: __Tracking
   Type: Tracking
-  Value: |
-    <tracking>
-      <event
-        id="{F5F5B5A3-52A9-490B-8AF1-17A06A2E3C33}"
-        name="Visited About Page" />
-    </tracking>
+  Value: <tracking />
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 600
@@ -46,6 +41,10 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20151004T013919Z

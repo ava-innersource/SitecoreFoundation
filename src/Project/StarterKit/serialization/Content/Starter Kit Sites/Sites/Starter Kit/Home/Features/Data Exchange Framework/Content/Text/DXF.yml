@@ -1,0 +1,34 @@
+﻿---
+ID: "af6627cd-6b6c-4bfe-b214-124239d9e34f"
+Parent: "c99ce35d-4fc8-4311-a89f-985034d970d9"
+Template: "ecba4d31-ac46-4503-b327-03005b8c947f"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Features/Data Exchange Framework/Content/Text/DXF
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170910T025813Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
+      Hint: Content
+      Value: |
+        <h1>Data Exchange Framework</h1>
+        <p>Sitecore's Data Exchange Framework provides an architecture to allow for pushing and pulling data to and from Sitecore. Out of the box, it comes with the connectors into Sitecore, but doesn't offer a lot in providers for other systems. We have developed a number of custom data providers that allow you to easily import data into Sitecore without needing to write any code. These providers include:</p>
+        <ul>
+            <li>Database Provider - Define Connection Strings In EndPoints and configure queries in your pipeline steps to quickly get data into Sitecore.</li>
+            <li>File Provider - Import Data from CSV Files or multiple files with several improvements built on the tutorial provider.</li>
+            <li>RSS Provider - Import Data From RSS feeds.</li>
+        </ul>
+        <p>We have also added additional Sitecore Related Provider and Pipeline Steps include:</p>
+        <ul>
+            <li>Enroll In Engagement Plan Pipeline Step - Enrolls the Contact in an Engagement Plan</li>
+            <li>Iterate and Run Pipelines Async - Will process each step in an Async Task.</li>
+            <li>Publish - Run a Sitecore Publish</li>
+        </ul>

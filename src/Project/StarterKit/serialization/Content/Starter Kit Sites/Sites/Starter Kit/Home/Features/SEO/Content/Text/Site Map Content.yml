@@ -19,17 +19,17 @@ Languages:
     - ID: "c21ff5a7-06c2-4c71-81a4-6a5e84855047"
       Hint: Content
       Value: |
-        Configure the defaults at the site level and override them as needed on every page of your site. Browsing sitemap.xml on any site will dynamically load these settings and render a well formed sitemap xml file which can be submitted directly to search engines.&nbsp;<br>
-        <br>
-        You can even easily access the page Site map settings from the properties tab of the ribbon in the "Experience Editor."<br>
-        <br>
-        <img alt="Experience Editor Integration" src="~/media/70F90ADBF35A4B308CC1D194152BC559.ashx?h=132&amp;w=691&amp;hash=463255202B6C69C2502EC8AA7265D71ED699F6BC" style="height: 132px; width: 691px;"><br>
-        <br>
+        <p>Configure the defaults at the site level and override them as needed on every page of your site. Browsing sitemap.xml on any site will dynamically load these settings and render a well formed sitemap xml file which can be submitted directly to search engines. Our Sitemaps support multiple languages, video and image Sitemap formats.&nbsp;</p>
+        <p>
+        You can even easily access the page Site map settings from the properties tab of the ribbon in the "Experience Editor."<br />
+        <br />
+        <img alt="Experience Editor Integration" src="~/media/70F90ADBF35A4B308CC1D194152BC559.ashx?h=132&amp;w=691&amp;hash=463255202B6C69C2502EC8AA7265D71ED699F6BC" style="height: 132px; width: 691px;" /><br />
+        <br />
+        </p>
         <h2>Robots</h2>
         <p>Another key file is "robots.txt". We have implemented a feature that allows you to manage the content of your robots.txt file directly within Sitecore.&nbsp;</p>
-        <p><img height="291" alt="robots.txt" width="543" src="~/media/56F7B63C43DC4882829FFD54416C11E5.ashx?h=291&amp;w=543" style="height: 291px; width: 543px;"></p>
-        <p><br>
-        </p>
+        <p><img alt="robots.txt" src="~/media/56F7B63C43DC4882829FFD54416C11E5.ashx?h=291&amp;w=543&amp;hash=630A556223ED4BF71A4D99F36A9622B68C15EC06" style="height: 291px; width: 543px;" /></p>
+        <p>&nbsp;</p>
         <h2>Headings and Semantic HTML5 components</h2>
         <p>To allow content authors to optimize on page SEO, we have implemented a number of components that make it easy to configure proper headings and semantic HTML5 markup.</p>
-        <br>
+        <br />
