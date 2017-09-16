@@ -157,9 +157,12 @@
     <Compile Include="DynamicPlaceholder\GetDynamicPlaceholderChromeData.cs" />
     <Compile Include="DynamicPlaceholder\GetPlaceholderChromeDataCachedPerRequest.cs" />
     <Compile Include="DynamicPlaceholder\ItemEventHandler.cs" />
+    <Compile Include="LinkManagerPipeline\LinkManagerArgs.cs" />
+    <Compile Include="LinkManagerPipeline\PipelineLinkProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="App_Config\Include\Foundation.Structure\DataSourceLocation.config" />
     <Content Include="App_Config\Include\Foundation.Structure\DynamicPlaceholders.config" />
+    <Content Include="App_Config\Include\Foundation.Structure\LinkProviderPipeline.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>

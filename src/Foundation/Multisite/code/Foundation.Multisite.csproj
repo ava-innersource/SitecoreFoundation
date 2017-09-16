@@ -216,8 +216,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Foundation.Multisite\Serialization.config" />
+    <Content Include="ErrorHandler.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ErrorHandler.aspx.cs">
+      <DependentUpon>ErrorHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorHandler.aspx.designer.cs">
+      <DependentUpon>ErrorHandler.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Model\MultisitePageSettings.cs" />
     <Compile Include="Model\Templates.cs" />
     <Compile Include="Pipelines\MultiSitePageConfigurationPipeline.cs" />
