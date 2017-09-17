@@ -1,0 +1,25 @@
+﻿---
+ID: "0306f326-d69e-465c-890b-8dc124a3b46b"
+Parent: "784b9825-e479-4135-8e94-684253e135eb"
+Template: "784b9825-e479-4135-8e94-684253e135eb"
+Path: /sitecore/templates/SF/Feature/Analytics/Configuration Templates/ClientSideInteraction/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/document_add.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170314T141616Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "9b5ec872-de66-4629-8419-01d3488fae9a"
+      Hint: Name
+      Value: $name

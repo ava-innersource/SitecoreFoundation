@@ -186,6 +186,7 @@
     <Compile Include="RegisterAnalyticsRoutes.cs" />
     <Content Include="Global\scripts\Feature\Analytics\loadAnalytics.js" />
     <Content Include="Global\scripts\Feature\Analytics\sitecoreAnalytics.js" />
+    <Content Include="App_Config\Include\Feature.Analytics\Serialization.config" />
     <None Include="packages.config" />
     <Content Include="App_Config\Include\ZFeature.Routes\AnalyticsRoutes.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
@@ -203,9 +204,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Config\Include\Feature.Analytics\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\..\Foundation\API\code\Foundation.API.csproj">
       <Project>{34a39bd1-43b3-49e4-aebf-52fbdc3176e7}</Project>
