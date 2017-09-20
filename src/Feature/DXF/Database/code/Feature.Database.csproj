@@ -197,6 +197,7 @@
     <Compile Include="PipelineStep\QueryDatabaseStepProcessor.cs" />
     <Compile Include="PipelineStep\QuerySettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="App_Config\Include\Feature.Database\DatabaseProviders.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>
