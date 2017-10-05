@@ -182,6 +182,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AnalyticsController.cs" />
+    <Compile Include="Models\EventDetails.cs" />
+    <Compile Include="Models\InteractionDetails.cs" />
+    <Compile Include="Models\OutcomeDetails.cs" />
+    <Compile Include="Models\PageDetails.cs" />
+    <Compile Include="Models\PageEventDetails.cs" />
+    <Compile Include="Models\TrackerDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterAnalyticsRoutes.cs" />
     <Content Include="Global\scripts\Feature\Analytics\loadAnalytics.js" />

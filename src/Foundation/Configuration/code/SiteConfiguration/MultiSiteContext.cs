@@ -20,11 +20,9 @@ namespace SF.Foundation.Configuration
 
         public MultiSiteContext(Guid id)
         {
-            Sitecore.Diagnostics.Log.Info("MultiSiteContext: Guid:" + id, this);
-
+            
             var db = Sitecore.Context.Database ?? Sitecore.Data.Database.GetDatabase("master");
 
-            Sitecore.Diagnostics.Log.Info("Current DB Context:" + db.Name, this);
             var dataId = new Sitecore.Data.ID(id);
             var item = db.GetItem(dataId);
             ProccessItem(item);

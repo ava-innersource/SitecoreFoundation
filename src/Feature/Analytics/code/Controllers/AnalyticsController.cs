@@ -13,65 +13,11 @@ using System.Web.Http;
 using Sitecore.Analytics.Outcome.Extensions;
 using Sitecore.Analytics.Tracking;
 using Sitecore.Analytics.Model.Entities;
-using Sitecore.Analytics.Model.Framework;
+using SF.Foundation.API;
 
 namespace SF.Feature.Analytics
 {
-    public class PageEventDetails
-    {
-        public string name { get; set; }
-        public string pageId { get; set; }
-
-        public string data { get; set; }
-
-        public string dataKey { get; set; }
-        public string text { get; set; }
-
-        public string pageEventDefinitionId { get; set; }
-
-    }
-
-    public class InteractionDetails
-    {
-        public string interactionId {get;set;}
-    }
-
-    public class OutcomeDetails
-    {
-        public string definitionId { get; set; }
-        public string monetaryValue { get; set; }
-    }
-
-    public class PageDetails
-    {
-        public string pageId { get; set; }
-    }
-
-    public class TrackerDetails
-    {
-        public TrackerDetails()
-        {
-            this.events = new List<EventDetails>();
-        }
-
-        public string contactId { get; set; }
-
-        public string userName { get; set; }
-        public string name { get; set; }
-
-        public string email { get; set; }
-        
-        public List<EventDetails> events { get; set; }
-    }
-
-    public class EventDetails
-    {
-        public string name { get; set;}
-        public string value { get; set; }
-        public string text { get; set; }
-
-        public string isGoal { get; set; }
-    }
+    
 
     public class AnalyticsController : ServicesApiController
     {
@@ -84,21 +30,17 @@ namespace SF.Feature.Analytics
         [HttpPost]
         public TrackerDetails GetTracker(PageDetails data)
         {
-            if (IsContextInvalid())
+            var Tracker = this.GetTracker(false);
+            if (Tracker == null || !Tracker.IsActive)
             {
-                Tracker.StartTracking();
-                if (IsContextInvalid())
-                {
-                    Tracker.Current.CurrentPage.Cancel();
-                    throw new ArgumentException("Context is invalid");
-                }                
+                throw new ArgumentException("Context is invalid");
             }
 
             var pageId = Guid.Empty;
             Guid.TryParse(data.pageId, out pageId);
 
-            var pageInteraction = Tracker.Current.Interaction.Pages.LastOrDefault(a => a.Item.Id == pageId);
-            var page = pageInteraction != null ? Tracker.Current.Interaction.GetPage(pageInteraction.VisitPageIndex) : Tracker.Current.Interaction.PreviousPage;
+            var pageInteraction = Tracker.Interaction.Pages.LastOrDefault(a => a.Item.Id == pageId);
+            var page = pageInteraction != null ? Tracker.Interaction.GetPage(pageInteraction.VisitPageIndex) : Tracker.Interaction.PreviousPage;
 
             var details = new TrackerDetails();
             foreach (var pageEvent in page.PageEvents)
@@ -111,12 +53,12 @@ namespace SF.Feature.Analytics
                 details.events.Add(eventDetails);
             }
 
-            details.contactId = Tracker.Current.Contact.ContactId.ToString();
-            details.userName = Tracker.Current.Contact.Identifiers.Identifier;
+            details.contactId = Tracker.Contact.ContactId.ToString();
+            details.userName = Tracker.Contact.Identifiers.Identifier;
 
             try
             {
-                Contact contact = Tracker.Current.Contact;
+                Contact contact = Tracker.Contact;
                 IContactPersonalInfo personal = contact.GetFacet<IContactPersonalInfo>("Personal");
                 details.name = string.Format("{0} {1} {2}", personal.FirstName, personal.MiddleName, personal.Surname);
                 
@@ -128,7 +70,7 @@ namespace SF.Feature.Analytics
 
             try
             {
-                Contact contact = Tracker.Current.Contact;
+                Contact contact = Tracker.Contact;
                 IContactEmailAddresses emails = contact.GetFacet<IContactEmailAddresses>("Personal");
                 details.email = emails.Entries[emails.Preferred].SmtpAddress;
             }
@@ -137,7 +79,7 @@ namespace SF.Feature.Analytics
                 Sitecore.Diagnostics.Log.Error("Could not get Preferred Email Address", ex);
             }
 
-            Tracker.Current.CurrentPage.Cancel();
+            Tracker.CurrentPage.Cancel();
 
             return details;
         }
@@ -145,13 +87,10 @@ namespace SF.Feature.Analytics
         [HttpPost]
         public string RegisterInteraction(InteractionDetails data)
         {
-            if (IsContextInvalid())
+            var Tracker = this.GetTracker(false);
+            if (Tracker == null || !Tracker.IsActive)
             {
-                Tracker.StartTracking();
-                if (IsContextInvalid())
-                {
-                    return "Disabled";
-                }
+                return "Disabled";
             }
 
             try
@@ -167,11 +106,11 @@ namespace SF.Feature.Analytics
 
                 Uri intUri = new Uri(System.Web.HttpContext.Current.Request.Url, url);
 
-                Tracker.Current.CurrentPage.Url.Path = intUri.AbsolutePath;
-                Tracker.Current.CurrentPage.Url.QueryString = intUri.Query;
+                Tracker.CurrentPage.Url.Path = intUri.AbsolutePath;
+                Tracker.CurrentPage.Url.QueryString = intUri.Query;
 
                 //Not showing up in path analyzer unless I set the ID
-                Tracker.Current.CurrentPage.SetItemProperties(item.ID.Guid, item.Language.CultureInfo.DisplayName, item.Version.Number);
+                Tracker.CurrentPage.SetItemProperties(item.ID.Guid, item.Language.CultureInfo.DisplayName, item.Version.Number);
             }
             catch (Exception ex)
             {
@@ -184,20 +123,17 @@ namespace SF.Feature.Analytics
         [HttpPost]
         public string RegisterEvent(PageEventDetails data)
         {
-            if (IsContextInvalid())
+            var Tracker = this.GetTracker(false);
+            if (Tracker == null || !Tracker.IsActive)
             {
-                Tracker.StartTracking();
-                if (IsContextInvalid())
-                {
-                    return "Disabled";
-                }
+                return "Disabled";
             }
 
             var pageId = Guid.Empty;
             Guid.TryParse(data.pageId, out pageId);
 
-            var pageInteraction = Tracker.Current.Interaction.Pages.LastOrDefault(a => a.Item.Id == pageId);
-            var page = pageInteraction != null ? Tracker.Current.Interaction.GetPage(pageInteraction.VisitPageIndex) : Tracker.Current.Interaction.PreviousPage;
+            var pageInteraction = Tracker.Interaction.Pages.LastOrDefault(a => a.Item.Id == pageId);
+            var page = pageInteraction != null ? Tracker.Interaction.GetPage(pageInteraction.VisitPageIndex) : Tracker.Interaction.PreviousPage;
 
             var pageEventData = new PageEventData(data.name);
             pageEventData.ItemId = page.Item.Id;
@@ -215,7 +151,7 @@ namespace SF.Feature.Analytics
             page.Register(pageEventData);
 
             //Do not track the API call
-            Tracker.Current.CurrentPage.Cancel();
+            Tracker.CurrentPage.Cancel();
 
             return "OK";
 
@@ -224,10 +160,8 @@ namespace SF.Feature.Analytics
         [HttpGet]
         public string EndSession()
         {
-            if (!IsContextInvalid())
-            {
-                Sitecore.Analytics.Tracker.Current.CurrentPage.Cancel();
-            }
+            var Tracker = this.GetTracker(false);
+
             System.Web.HttpContext.Current.Session.Abandon();
             return "OK";
         }
@@ -235,18 +169,15 @@ namespace SF.Feature.Analytics
         [HttpPost]
         public string RegisterOutcome(OutcomeDetails data)
         {
-            if (IsContextInvalid())
+            var Tracker = this.GetTracker(false);
+            if (Tracker == null || !Tracker.IsActive)
             {
-                Tracker.StartTracking();
-                if (IsContextInvalid())
-                {
-                    return "Disabled";
-                }
+                return "Disabled";
             }
 
             var id = ID.NewID;
-            var interactionId = ID.Parse(Tracker.Current.Interaction.InteractionId);
-            var contactId = ID.Parse(Tracker.Current.Contact.ContactId);
+            var interactionId = ID.Parse(Tracker.Interaction.InteractionId);
+            var contactId = ID.Parse(Tracker.Contact.ContactId);
 
             var definitionId = new ID(data.definitionId);
 
@@ -263,25 +194,12 @@ namespace SF.Feature.Analytics
             var manager = Sitecore.Configuration.Factory.CreateObject("outcome/outcomeManager", true) as OutcomeManager;
             manager.Save(outcome);
 
-            Tracker.Current.RegisterContactOutcome(outcome);
+            Tracker.RegisterContactOutcome(outcome);
 
             return "OK";
         }
 
 
-        //private Sitecore.Analytics.Core.Page GetPage(string pageId)
-        //{
-        //    return Tracker.Current.Interaction.Pages.Last<Sitecore.Analytics.Core.Page>(a=>a.Item.Id == new Guid(pageId));
-        //}
 
-        private bool IsContextInvalid()
-        {
-            return
-                Tracker.Current == null ||
-                Tracker.Current.Session == null ||
-                Tracker.Current.Interaction == null ||
-                !Tracker.IsActive ||
-                !Tracker.Enabled;
-        }
     }
 }

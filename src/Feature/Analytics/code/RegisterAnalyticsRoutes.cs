@@ -4,7 +4,7 @@ using SF.Foundation.API;
 
 namespace SF.Feature.Analytics
 {
-    public class RegisterAnalyticsRoutes
+    public class RegisterAnalyticsRoutes : RegisterRoutesBase
     {
         public void Process(PipelineArgs args)
         {
@@ -14,15 +14,7 @@ namespace SF.Feature.Analytics
 
         protected void Configure(HttpConfiguration configuration)
         {
-            var routes = configuration.Routes;
-            routes.MapHttpRoute("SF.Analytics", "sitecore/api/sf/analytics/{action}", new
-            {
-                controller = "Analytics",
-                action = "index"
-            });
-
-            var route = System.Web.Routing.RouteTable.Routes["SF.Analytics"] as System.Web.Routing.Route;
-            route.RouteHandler = new SessionRouteHandler();
+            MapRouteWithSession(configuration, "SF.Analytics", "sitecore/api/sf/analytics/{action}", "Analytics", "index");
         }
     }
 }
