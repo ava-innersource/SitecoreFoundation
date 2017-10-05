@@ -37,27 +37,36 @@ namespace SF.DXF.Feature.SitecoreProvider
                     IterableDataSettings iterableDataSettings = pipelineContext.GetIterableDataSettings();
                     if (iterableDataSettings == null || iterableDataSettings.Data == null)
                         return;
+
                     int num = 0;
+
                     try
                     {
+                        List<Task> tasks = new List<Task>();
+
                         foreach (object element in iterableDataSettings.Data)
                         {
-                            if (!pipelineContext.PipelineBatchContext.Stopped)
+                            Task task = Task.Factory.StartNew(() =>
                             {
-                                PipelineContext pipelineContext1 = new PipelineContext(pipelineContext.PipelineBatchContext);
-                                SynchronizationSettings synchronizationSettings = this.ResolveSynchronizationSettingsAndSetElement(pipelineStep, pipelineContext, element);
-                                pipelineContext1.Plugins.Add((IPlugin)synchronizationSettings);
-                                ParentPipelineContextSettings pipelineContextSettings = new ParentPipelineContextSettings()
+                                if (!pipelineContext.PipelineBatchContext.Stopped)
                                 {
-                                    ParentPipelineContext = pipelineContext
-                                };
-                                pipelineContext1.Plugins.Add((IPlugin)pipelineContextSettings);
-                                this.ProcessPipelines(pipelineStep, pipelinesSettings.Pipelines, pipelineContext1);
-                                ++num;
-                            }
-                            else
-                                break;
+                                    PipelineContext pipelineContext1 = new PipelineContext(pipelineContext.PipelineBatchContext);
+                                    SynchronizationSettings synchronizationSettings = this.ResolveSynchronizationSettingsAndSetElement(pipelineStep, pipelineContext, element);
+                                    pipelineContext1.Plugins.Add((IPlugin)synchronizationSettings);
+                                    ParentPipelineContextSettings pipelineContextSettings = new ParentPipelineContextSettings()
+                                    {
+                                        ParentPipelineContext = pipelineContext
+                                    };
+                                    pipelineContext1.Plugins.Add((IPlugin)pipelineContextSettings);
+                                    this.ProcessPipelines(pipelineStep, pipelinesSettings.Pipelines, pipelineContext1);
+
+                                }
+                            });
+                            num++;
                         }
+
+                        Task.WaitAll(tasks.ToArray());
+
                         logger.Info("{0} elements were iterated. (pipeline: {1}, pipeline step: {2})", (object)num, (object)pipelineContext.CurrentPipeline.Name, (object)pipelineContext.CurrentPipelineStep.Name, (object)pipelineContext);
                     }
                     catch (Exception ex)
@@ -96,16 +105,12 @@ namespace SF.DXF.Feature.SitecoreProvider
             }
             else
             {
-                List<Task> tasks = new List<Task>();
-
                 List<Pipeline> pipelineList = new List<Pipeline>();
                 foreach (Pipeline subPipeline in (IEnumerable<Pipeline>)subPipelines)
                 {
-                    Task task = Task.Factory.StartNew(() => { RunSubPipelines(pipelineContext, subPipeline); });
-                    tasks.Add(task);
+                   RunSubPipelines(pipelineContext, subPipeline); 
                 }
-
-                Task.WaitAll(tasks.ToArray());
+                
             }
         }
 

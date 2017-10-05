@@ -91,31 +91,49 @@ namespace SF.DXF.Feature.SitecoreProvider
       return ItemModelHelpers.ConvertToItemModel(synchronizationSettings.Source);
     }
 
-    protected virtual ItemModel DoSearch(object value, ResolveSitecoreItemSettings resolveItemSettings, IItemModelRepository repository, ILogger logger, PipelineContext pipelineContext)
-    {
-      SitecoreItemFieldReader valueReader = this.GetValueReader(resolveItemSettings.MatchingFieldValueAccessor) as SitecoreItemFieldReader;
-      if (valueReader == null)
-      {
-        this.Log(new Action<string>(logger.Error), pipelineContext, "The matching field value accessor is not a valid Sitecore item field reader.");
-        return (ItemModel)null;
-      }
-      string str = this.ConvertValueForSearch(value);
-      this.Log(new Action<string>(logger.Debug), pipelineContext, "Value converted for search.", string.Format("field: {0}", (object)valueReader.FieldName), string.Format("original value: {0}", value), string.Format("converted value: {0}", (object)str));
-      this.Log(new Action<string>(logger.Debug), pipelineContext, "Starting search for item.", string.Format("field: {0}", (object)valueReader.FieldName), string.Format("value: {0}", (object)str));
-      IEnumerable<ItemModel> source = repository.Search(new ItemSearchSettings()
-      {
-        SearchFilters = {
-          new SearchFilter()
-          {
-            FieldName = valueReader.FieldName,
-            Value = str
-          }
+        protected virtual ItemModel DoSearch(object value, ResolveSitecoreItemSettings resolveItemSettings, IItemModelRepository repository, ILogger logger, PipelineContext pipelineContext)
+        {
+            SitecoreItemFieldReader valueReader = this.GetValueReader(resolveItemSettings.MatchingFieldValueAccessor) as SitecoreItemFieldReader;
+            if (valueReader == null)
+            {
+                this.Log(new Action<string>(logger.Error), pipelineContext, "The matching field value accessor is not a valid Sitecore item field reader.");
+                return (ItemModel)null;
+            }
+            string str = this.ConvertValueForSearch(value);
+            this.Log(new Action<string>(logger.Debug), pipelineContext, "Value converted for search.", string.Format("field: {0}", (object)valueReader.FieldName), string.Format("original value: {0}", value), string.Format("converted value: {0}", (object)str));
+            this.Log(new Action<string>(logger.Debug), pipelineContext, "Starting search for item.", string.Format("field: {0}", (object)valueReader.FieldName), string.Format("value: {0}", (object)str));
+            IEnumerable<ItemModel> source = repository.Search(new ItemSearchSettings()
+                    {
+                        SearchFilters = {
+                  new SearchFilter()
+                  {
+                    FieldName = valueReader.FieldName,
+                    Value = str
+                  }
+                        }
+                    });
+            if (source == null)
+                return (ItemModel)null;
+
+            //Fixing a bug that Search would return any item with same name, regardless of where it is.
+            foreach (var item in source)
+            {
+                //quick check of Templates
+                if (item.GetTemplateId().Equals(resolveItemSettings.TemplateForNewItem))
+                {
+                    //Could consider also check path is under root folder. 
+                    var db = Sitecore.Data.Database.GetDatabase("master");
+                    var scItem = db.GetItem(new Sitecore.Data.ID(item.GetItemId()));
+                    var parentItem = db.GetItem(new Sitecore.Data.ID(resolveItemSettings.ParentItemIdItem));
+                    if (scItem.Paths.IsDescendantOf(parentItem))
+                    {
+                        return item;
+                    }
+                }
+            }
+
+            return (ItemModel)null;
         }
-      });
-      if (source == null)
-        return (ItemModel)null;
-      return source.FirstOrDefault<ItemModel>();
-    }
 
     protected virtual string ConvertValueForSearch(object value)
     {
@@ -140,29 +158,28 @@ namespace SF.DXF.Feature.SitecoreProvider
       return repository.Get(id, (string)null, 0);
     }
 
-    private string ConvertValueToValidItemName(object value, ILogger logger, PipelineContext pipelineContext)
-    {
-      if (value == null)
-        return (string)null;
-      string str = value.ToString();
-      SitecoreItemUtilities plugin = pipelineContext.GetPlugin<SitecoreItemUtilities>();
-      if (plugin == null)
-      {
-        this.Log(new Action<string>(logger.Error), pipelineContext, "No plugin is specified on the context to determine whether or not the specified value is a valid item name. The original value will be used.", string.Format("missing plugin: {0}", (object)typeof(SitecoreItemUtilities).FullName));
-        return str;
-      }
-      if (plugin.IsItemNameValid == null)
-      {
-        this.Log(new Action<string>(logger.Error), pipelineContext, "No delegate is specified on the plugin that can determine whether or not the specified value is a valid item name. The original value will be used.", string.Format("plugin: {0}", (object)typeof(SitecoreItemUtilities).FullName), string.Format("delegate: {0}", (object)"IsItemNameValid"), string.Format("original value: {0}", (object)str));
-        return str;
-      }
-      if (plugin.IsItemNameValid(str))
-        return str;
-      if (plugin.ProposeValidItemName != null)
-        return plugin.ProposeValidItemName(str);
-      logger.Error("No delegate is specified on the plugin that can propose a valid item name. The original value will be used. (plugin: {0}, delegate: {1}, original value: {2})", (object)typeof(SitecoreItemUtilities).FullName, (object)"ProposeValidItemName", (object)str);
-      return str;
-    }
+        private string ConvertValueToValidItemName(object value, ILogger logger, PipelineContext pipelineContext)
+        {
+            if (value == null)
+                return (string)null;
+            string str = value.ToString();
+            SitecoreItemUtilities plugin = pipelineContext.GetPlugin<SitecoreItemUtilities>();
+            if (plugin == null)
+            {
+                plugin = new SitecoreItemUtilities();
+            }
+            if (plugin.IsItemNameValid == null)
+            {
+               // this.Log(new Action<string>(logger.Error), pipelineContext, "No delegate is specified on the plugin that can determine whether or not the specified value is a valid item name. The original value will be used.", string.Format("plugin: {0}", (object)typeof(SitecoreItemUtilities).FullName), string.Format("delegate: {0}", (object)"IsItemNameValid"), string.Format("original value: {0}", (object)str));
+                return str;
+            }
+            if (plugin.IsItemNameValid(str))
+                return str;
+            if (plugin.ProposeValidItemName != null)
+                return plugin.ProposeValidItemName(str);
+            //logger.Error("No delegate is specified on the plugin that can propose a valid item name. The original value will be used. (plugin: {0}, delegate: {1}, original value: {2})", (object)typeof(SitecoreItemUtilities).FullName, (object)"ProposeValidItemName", (object)str);
+            return str;
+        }
 
     private IValueReader GetValueReader(IValueAccessor config)
     {

@@ -1,0 +1,18 @@
+﻿---
+ID: "55a1c961-c97e-42f9-8289-fa42ad89cad6"
+Parent: "675b1efc-5647-4b6e-ae79-ac1e5ed2957a"
+Template: "64b741d1-04f6-4f5d-ad66-e70ff4f62174"
+Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Demo/Content/Links/Simple Button
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170927T013450Z
+    - ID: "89ae30d4-6d7a-4be6-89e9-5e44244928c4"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="My Button" querystring="" target="" id="{6C9A9774-A1C3-43C1-96B2-7F2364B3F42C}" />

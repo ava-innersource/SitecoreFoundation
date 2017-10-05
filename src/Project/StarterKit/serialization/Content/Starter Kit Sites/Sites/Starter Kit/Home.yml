@@ -267,7 +267,7 @@ Languages:
       Value: Home
     - ID: "76d2825d-e8d5-4b84-aa30-b02e5110af16"
       Hint: CanoncialUrl
-      Value: starterkit.dev.local
+      Value: "http://starterkit.dev.local"
     - ID: "96f5b29c-d4d5-4941-a3fe-5b52244a9a55"
       Hint: PageScripts
       Type: Treelist
