@@ -196,9 +196,9 @@
     <None Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Foundation\CommonComponents\code\Foundation.CommonComponents.csproj">
+    <ProjectReference Include="..\..\..\Foundation\Components\code\Foundation.Components.csproj">
       <Project>{60fdc4ea-b56f-4ec5-ab57-d6c68a523ecc}</Project>
-      <Name>Foundation.CommonComponents</Name>
+      <Name>Foundation.Components</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\Container\code\Foundation.Container.csproj">
       <Project>{fe3681c0-ef3f-406c-b085-8e84b1bc3be7}</Project>

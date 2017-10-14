@@ -1,0 +1,28 @@
+﻿---
+ID: "e886c405-4b35-4679-9c65-d2402e16471d"
+Parent: "0fdeb510-ac8d-4134-8894-149eb53f878b"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/SF/Features/HTMLComponents/Containers/Div
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Views/Foundation.Containers/Div.cshtml
+- ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
+  Hint: Parameters Template
+  Value: "{6AAC0B30-7B0C-4A88-A6C5-85B0B3530778}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{32126B05-8538-49EA-A0DB-266DCD7FFC7D}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140916T171153

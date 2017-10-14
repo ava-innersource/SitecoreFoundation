@@ -38,7 +38,7 @@ namespace SF.Feature.Language
             Item fallback = base.GetItem(itemId, fallbackLanguage, Version.Latest, database);
             if (fallback != null && fallback.Versions.GetVersionNumbers().Length > 0)
             {
-                var stubData = new ItemData(fallback.InnerData.Definition, item.Language, item.Version, fallback.InnerData.Fields);
+                var stubData = new ItemData(fallback.InnerData.Definition, fallback.Language, fallback.Version, fallback.InnerData.Fields);
                 var stub = new LanguageStub(itemId, stubData, database) { OriginalLanguage = item.Language };
                 stub.RuntimeSettings.SaveAll = true;
 
@@ -54,7 +54,7 @@ namespace SF.Feature.Language
 
                 if (fallback != null && fallback.Versions.GetVersionNumbers().Length > 0)
                 {
-                    var stubData = new ItemData(fallback.InnerData.Definition, item.Language, item.Version, fallback.InnerData.Fields);
+                    var stubData = new ItemData(fallback.InnerData.Definition, fallback.Language, fallback.Version, fallback.InnerData.Fields);
                     var stub = new LanguageStub(itemId, stubData, database) { OriginalLanguage = item.Language };
                     stub.RuntimeSettings.SaveAll = true;
 

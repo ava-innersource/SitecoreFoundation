@@ -1,0 +1,43 @@
+﻿---
+ID: "8534a9c1-128b-4b23-b689-a384f69a959c"
+Parent: "45806b23-12fc-4419-b5cc-9bd42223addd"
+Template: "45806b23-12fc-4419-b5cc-9bd42223addd"
+Path: /sitecore/templates/SF/Foundation/Components/Component Templates/SilverlightComponent/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170222T195144Z
+    - ID: "44a4c823-5b51-4050-a4b6-6a57e5bd9aa4"
+      Hint: Width
+      Value: 300
+    - ID: "5a91970c-2ba8-4d35-9392-b71f90cf0c99"
+      Hint: Alternate Content
+      Value: |
+        <a href="http://go.microsoft.com/fwlink/?LinkID=149156&amp;v=4.0.60310.0" style="text-decoration: none;">
+        <img src="http://go.microsoft.com/fwlink/?LinkId=161376" alt="Get Microsoft Silverlight" style="border-style: none;">
+        </a>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "6517d540-465f-46b2-9052-7ee6162efaed"
+      Hint: Height
+      Value: 300
+    - ID: "659204f7-9165-4383-8276-85e6bd9f4d16"
+      Hint: Additional Parameters
+      Value: |
+        <param name="onerror" value="onSilverlightError" />
+        <param name="background" value="white" />
+        <param name="minRuntimeVersion" value="4.0.60310.0" />
+        <param name="autoUpgrade" value="true" />
+    - ID: "de715599-29dc-49f6-9966-7832949f525d"
+      Hint: Type
+      Value: "application/x-silverlight-2"
+    - ID: "e7938ad8-7a06-49f1-8f1e-c484b936ec86"
+      Hint: Data
+      Value: "data:application/x-silverlight-2,"

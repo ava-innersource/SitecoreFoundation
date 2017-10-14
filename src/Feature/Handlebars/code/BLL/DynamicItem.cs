@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
 using System.Web;
-using SF.Foundation.CommonComponents;
+using SF.Foundation.Components;
 
 namespace SF.Feature.Handlebars
 {

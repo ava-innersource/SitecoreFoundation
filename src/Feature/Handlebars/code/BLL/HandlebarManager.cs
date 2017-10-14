@@ -12,7 +12,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Xml;
 using SF.Foundation.TraceLogger;
-using SF.Foundation.CommonComponents;
+using SF.Foundation.Components;
 
 namespace SF.Feature.Handlebars
 {

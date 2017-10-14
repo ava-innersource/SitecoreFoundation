@@ -194,10 +194,6 @@
       <Project>{590821d3-d4c7-4523-8a33-3a1129588cf2}</Project>
       <Name>Feature.Social</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\CommonComponents\code\Foundation.CommonComponents.csproj">
-      <Project>{60fdc4ea-b56f-4ec5-ab57-d6c68a523ecc}</Project>
-      <Name>Foundation.CommonComponents</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\Container\code\Foundation.Container.csproj">
       <Project>{fe3681c0-ef3f-406c-b085-8e84b1bc3be7}</Project>
       <Name>Foundation.Container</Name>

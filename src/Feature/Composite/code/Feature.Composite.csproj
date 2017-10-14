@@ -183,6 +183,10 @@
     <None Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Components\code\Foundation.Components.csproj">
+      <Project>{60fdc4ea-b56f-4ec5-ab57-d6c68a523ecc}</Project>
+      <Name>Foundation.Components</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\Resources\code\Foundation.Resources.csproj">
       <Project>{da7647f0-8b15-4987-b534-c7348b7bd021}</Project>
       <Name>Foundation.Resources</Name>
