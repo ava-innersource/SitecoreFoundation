@@ -21,6 +21,7 @@ Features Include:
 * Foundation Components - Collection of Zurb Foundation Components for quickly assembling Sites
 * GeoIP - Get Free GeoLocation Data into Sitecore using MaxMind's Free Databases
 * Handlebars - Create Renderings in Sitecore to bind to any data template using Handlebar Syntax
+* HTML Components - Rendering implementation of common componets like headings, text, images and containers.
 * IP White List - Control who can view a site based on their IP Address
 * Language - Ensure only valid languages resolve on your sites and see custom Fallback Strategies.
 * Login Sample - Collection of Sample Login Controller Renderings
@@ -37,8 +38,9 @@ Features Include:
 Foundation Modules Include:
 * API - Include Support Classes for registering Web API's and making them Session/Analytics aware
 * Code Editor - Integrate Code Editor Shared Source Field Type into your solution
-* Common Components - Implementation of common HTML components
+* Components - Core Classes and templates related to simple content types and component building
 * Container - Rendering Parameters Framework to generate configurable component containers
+* Facets - Implementation of common facets including User Settings for storage of key value pairs.
 * Multisite - Configure Custom 404 Not found and error pages per site 
 * Resources - Manage CSS, JS, Less and Sass Files in Sitecore and Sync between files as needed.
 * Search - Common Computed Fields for Search
