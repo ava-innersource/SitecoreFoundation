@@ -37,9 +37,19 @@ namespace SF.Foundation.Facets.Facades
                 var settings = Tracker.Current.Contact.GetFacet<IUserSettings>(FacetNames.UserSettings);
                 if (settings != null)
                 {
+                    if (!settings.Entries.Keys.Contains(area))
+                    {
+                        return string.Empty;
+                    }
+
                     var areaSettings = settings.Entries[area];
                     if (areaSettings != null)
                     {
+                        if (!areaSettings.Entries.Keys.Contains(key))
+                        {
+                            return string.Empty;
+                        }
+
                         var setting = areaSettings.Entries[key];
                         if (setting != null)
                         {
