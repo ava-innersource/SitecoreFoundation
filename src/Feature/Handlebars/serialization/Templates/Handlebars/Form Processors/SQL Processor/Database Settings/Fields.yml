@@ -1,0 +1,25 @@
+﻿---
+ID: "08a68a67-6410-4a38-b221-2b5ddf6d2573"
+Parent: "4f51a190-a290-424d-b656-a7e74630479b"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/SF/Feature/Handlebars/Form Processors/SQL Processor/Database Settings/Fields
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Name Value List
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Field Mappings (Name is Form Value, Value is Sql Parameter)
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171016T003517Z

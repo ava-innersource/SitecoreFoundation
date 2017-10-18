@@ -1,7 +1,7 @@
 ﻿using Sitecore.Data.Items;
 using Sitecore.Mvc.Presentation;
 
-namespace SF.Feature.LoginSample
+namespace SF.Foundation.Components
 {
     public static class ControllerExtensions
     {

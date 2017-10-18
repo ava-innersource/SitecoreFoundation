@@ -1,0 +1,18 @@
+﻿---
+ID: "63715596-92a3-4b96-a6f4-7ce6958af819"
+Parent: "046e3f6e-03ce-482e-b127-1c2586615d1a"
+Template: "046e3f6e-03ce-482e-b127-1c2586615d1a"
+Path: /sitecore/templates/SF/Project/StarterKit/Content Types/Questionairre/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171017T174128Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

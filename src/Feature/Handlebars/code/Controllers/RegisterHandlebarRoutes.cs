@@ -5,10 +5,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
+using SF.Foundation.API;
 
 namespace SF.Feature.Handlebars
 {
-    public class RegisterHandlebarRoutes
+    public class RegisterHandlebarRoutes : RegisterRoutesBase
     {
         public void Process(PipelineArgs args)
         {
@@ -16,12 +17,7 @@ namespace SF.Feature.Handlebars
         }
         protected void Configure(HttpConfiguration configuration)
         {
-            var routes = configuration.Routes;
-            routes.MapHttpRoute("SF.HandlebarsAddItem", "sitecore/api/sf/additem", new
-            {
-                controller = "Handlebars",
-                action = "AddItem"
-            });
+            MapRouteWithSession(configuration, "SF.Handlebars.AddItem", "sitecore/api/sf/additem", "HandlebarsAPI", "AddItem");
         }
     }
 }

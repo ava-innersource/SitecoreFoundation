@@ -1,0 +1,20 @@
+﻿---
+ID: "04ada6d0-d465-4421-a9f8-dd88cd0d60ee"
+Parent: "20f4c73d-fe66-428f-ba64-895829ac1300"
+Template: "97be8fd4-cdd6-495c-b697-e293473b5251"
+Path: /sitecore/content/Global/Form Processors/Sample User Settings Processor
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171016T001604Z
+    - ID: "963e5fbb-bb8d-4277-bbf4-7a632a64a8c8"
+      Hint: Settings Area
+      Value: SampleForm
+    - ID: "db4213b2-d1da-4463-bd13-992d1d415843"
+      Hint: Fields
+      Value: question1=Question1&question2=Question2&question3=Question3&question4=Question4

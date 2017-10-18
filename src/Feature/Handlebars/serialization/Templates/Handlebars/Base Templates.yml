@@ -1,0 +1,18 @@
+﻿---
+ID: "890fc18b-3665-442a-a640-8bde8e680ae5"
+Parent: "86bf8be2-603a-4754-b6c9-3f3e80ab0e15"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/SF/Feature/Handlebars/Base Templates
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171016T000529Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

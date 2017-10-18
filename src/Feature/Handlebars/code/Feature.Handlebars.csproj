@@ -227,8 +227,15 @@
     <Compile Include="BLL\DynamicItem.cs" />
     <Compile Include="BLL\HandlebarManager.cs" />
     <Compile Include="Controllers\HandlebarsController.cs" />
+    <Compile Include="Controllers\HandlebarsAPIController.cs" />
+    <Compile Include="FormProccessors\IFormProcessor.cs" />
+    <Compile Include="FormProccessors\SqlFormProcessor.cs" />
+    <Compile Include="FormProccessors\UserSettingsFormProcessor.cs" />
+    <Compile Include="Models\AddItemModel.cs" />
     <Compile Include="Pipeline\HandlebarHelper.cs" />
     <Compile Include="Pipeline\HandlebarHelpersPipelineArgs.cs" />
+    <Compile Include="Pipeline\RegisterUserSettingsHelper.cs" />
+    <Compile Include="Pipeline\RegisterTranslateHelper.cs" />
     <Compile Include="Pipeline\RegisterFormatDateHelper.cs" />
     <Compile Include="Pipeline\RegisterIfEqualHelper.cs" />
     <Compile Include="Pipeline\RegisterPlaceholderHelper.cs" />
@@ -238,9 +245,11 @@
     <Compile Include="Controllers\RegisterHandlebarRoutes.cs" />
     <Content Include="Global\Scripts\Feature\Handlebars\AddNewItem.js" />
     <Content Include="App_Config\Include\Feature.Handlebars\Handlebars.config" />
+    <Content Include="HandlebarTemplate.cshtml" />
     <None Include="packages.config" />
     <Content Include="App_Config\Include\ZFeature.Routes\HandlebarRoutes.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="Views\Handlebars\HandlebarForm.cshtml" />
     <None Include="web.config" />
     <Content Include="Views\Handlebars\HandlebarCollectionContainer.cshtml" />
     <Content Include="Views\Handlebars\HandlebarContainer.cshtml" />
@@ -264,9 +273,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\API\code\Foundation.API.csproj">
+      <Project>{34a39bd1-43b3-49e4-aebf-52fbdc3176e7}</Project>
+      <Name>Foundation.API</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\Components\code\Foundation.Components.csproj">
       <Project>{60fdc4ea-b56f-4ec5-ab57-d6c68a523ecc}</Project>
       <Name>Foundation.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Facets\code\Foundation.Facets.csproj">
+      <Project>{c32f92d7-6fb8-49dc-b43d-2da952394e00}</Project>
+      <Name>Foundation.Facets</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\TraceLogger\code\Foundation.TraceLogger.csproj">
       <Project>{4fd358bf-ba15-4621-aa18-f21c6b523ea9}</Project>

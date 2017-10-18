@@ -1,0 +1,21 @@
+﻿---
+ID: "79c3823b-fbfb-461d-8b61-bea33ea9ed73"
+Parent: "29b3051c-3734-4c19-a20e-46ac442722e9"
+Template: "29b3051c-3734-4c19-a20e-46ac442722e9"
+Path: /sitecore/templates/SF/Project/StarterKit/Handlebar Content Types/Form Content/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "030828d2-2a0e-4468-a0f1-5ea8922540f7"
+      Hint: SubmitButtonText
+      Value: Submit
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171016T035057Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

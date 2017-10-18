@@ -1,0 +1,22 @@
+﻿---
+ID: "1262f469-a399-4c76-8c2e-2e01e0236adc"
+Parent: "4034b0d3-4df0-408f-ad2d-bedc5c8b0449"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/SF/Feature/Handlebars/Component Templates/PostHandlebarTemplates
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: PostHandlebarTemplates
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151113T043924Z

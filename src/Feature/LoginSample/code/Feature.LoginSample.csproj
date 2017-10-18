@@ -112,7 +112,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AuthenticationController.cs" />
-    <Compile Include="Extensions\ControllerExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\ForgottenPasswordViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />

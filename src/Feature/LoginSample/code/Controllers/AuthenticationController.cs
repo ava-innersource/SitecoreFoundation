@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using Sitecore.Mvc.Configuration;
 using Sitecore.Mvc.Controllers;
 using Sitecore.Mvc.Presentation;
-
+using SF.Foundation.Components;
 
 namespace SF.Feature.LoginSample.Controllers
 {
