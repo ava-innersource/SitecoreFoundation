@@ -148,6 +148,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conditions\UserSettingsCondition.cs" />
     <Compile Include="Configuration\UserSettingsConfiguration.cs" />
     <Compile Include="Constants\FacetNames.cs" />
     <Compile Include="Constants\FieldNames.cs" />

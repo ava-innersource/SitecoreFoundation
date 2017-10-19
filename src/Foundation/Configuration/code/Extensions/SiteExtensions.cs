@@ -52,11 +52,14 @@ namespace SF.Foundation.Configuration
                 var db = Sitecore.Context.Database ?? Sitecore.Data.Database.GetDatabase("master");
                 var item = db.GetItem(new Sitecore.Data.ID(siteGuid));
 
-                // New Up Instance and load config item
-                var instance = new T();
-                instance.Load(item);
+                if (item != null)
+                {
+                    // New Up Instance and load config item
+                    var instance = new T();
 
-                return instance;
+                    instance.Load(item);
+                    return instance;
+                }
             }
             return default(T);
         }
