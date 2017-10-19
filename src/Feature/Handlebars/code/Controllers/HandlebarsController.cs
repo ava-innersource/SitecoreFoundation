@@ -32,16 +32,16 @@ namespace SF.Feature.Handlebars
                     var processorItem = Sitecore.Context.Database.GetItem(processor);
                     var processorTypeValue = processorItem.Fields["Type"].Value;
 
-                    Type processorType = Type.GetType(processorTypeValue);
-                    var formProcessor = Activator.CreateInstance(processorType) as IFormProcessor;
-
-                    if (formProcessor != null)
+                    try
                     {
-                        formProcessor.Process(processorItem, modelItem, Request);
+                        
+                        Type processorType = Type.GetType(processorTypeValue);
+                        var formProcessor = Activator.CreateInstance(processorType) as IFormProcessor;
+                        formProcessor.Process(processorItem, modelItem, Request);                        
                     }
-                    else
+                    catch(Exception ex)
                     {
-                        Sitecore.Diagnostics.Log.Error("Could not instatiate type, or type doesn't implement IFormProcessor " + processorTypeValue, this);
+                        Sitecore.Diagnostics.Log.Error("Could not instatiate and invoke type: " + processorTypeValue, ex, this);
                     }
                 }
 
