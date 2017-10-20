@@ -12,6 +12,8 @@ using Sitecore.Mvc.Presentation;
 using Sitecore.Sites;
 using Sitecore.Text;
 using System.IO;
+using SF.Foundation.Components;
+using SF.Foundation.Container;
 
 namespace SF.Feature.Composite
 {
@@ -49,9 +51,12 @@ namespace SF.Feature.Composite
                     //disable the editing of the nested component
                     global::Sitecore.Context.Site.SetDisplayMode(DisplayMode.Preview, DisplayModeDuration.Temporary);
                 }
+                
                 using (PlaceholderContext.Enter(new PlaceholderContext("/")))
                 using (ContextService.Get().Push<PageContext>(pageContext))
                 {
+                    var htmlHelper = new HtmlHelper(new ViewContext(), new ViewPage());
+
                     var stringWriter = new StringWriter();
                     if (oldDisplayMode == DisplayMode.Edit)
                     {
@@ -86,8 +91,39 @@ namespace SF.Feature.Composite
 
                         }
                     }
+                    else
+                    {
+                        var enableAync = htmlHelper.GetCheckboxRenderingParameterValue("Enable Async");
+                        var baseUrl = htmlHelper.GetRenderingParameter("Async Fetch Base Url");
+
+                        var componentClass = enableAync ? "composite async" : "composite";
+                        var tagAttributes = htmlHelper.GetContainerTagAttributes(componentClass);
+
+                        var asyncUrl = renderingContext.Rendering.Item.GetItemUrl();
+                        if (!string.IsNullOrEmpty(baseUrl))
+                        {
+                            asyncUrl = baseUrl + "/" + asyncUrl;
+                        }
+
+                        var asyncAttr = enableAync ? string.Format(@"data-src=""{0}""", asyncUrl) : string.Empty;
+
+                        stringWriter.Write(string.Format(@"<div {0} {1}>", tagAttributes, asyncAttr));
+                    }
+
                     if (hasDataSource)
-                        PipelineService.Get().RunPipeline<RenderPlaceholderArgs>("mvc.renderPlaceholder", new RenderPlaceholderArgs(pageContext.Item["PlaceholderName"] ?? "compositecontent", (TextWriter)stringWriter, new ContentRendering()));
+                    {
+                        var loadAsyncOnly = htmlHelper.GetCheckboxRenderingParameterValue("Load Content Async Only");
+                        if (!loadAsyncOnly || oldDisplayMode == DisplayMode.Edit)
+                        {
+                            PipelineService.Get().RunPipeline<RenderPlaceholderArgs>("mvc.renderPlaceholder", new RenderPlaceholderArgs(pageContext.Item["PlaceholderName"] ?? "compositecontent", (TextWriter)stringWriter, new ContentRendering()));
+                        }
+                    }
+
+                    if (oldDisplayMode != DisplayMode.Edit)
+                    {
+                        stringWriter.Write("</div>");
+                    }
+
                     return Content(stringWriter.ToString());
                 }
             }

@@ -2,7 +2,7 @@
 ID: "75739a6e-00bc-4205-af12-b108c6450a1a"
 Parent: "01617363-d27a-4ca9-87f4-e57c4a062c7a"
 Template: "01617363-d27a-4ca9-87f4-e57c4a062c7a"
-Path: /sitecore/templates/SF/Feature/Composite/CompositeComponent/__Standard Values
+Path: /sitecore/templates/SF/Feature/Composite/Component Templates/CompositeComponent/__Standard Values
 DB: master
 SharedFields:
 - ID: "834d350f-63f8-4fee-8528-2c98f30d8009"

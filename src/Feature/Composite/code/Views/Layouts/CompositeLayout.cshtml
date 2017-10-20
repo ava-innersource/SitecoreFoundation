@@ -2,22 +2,33 @@
 @using Sitecore.Mvc.Presentation
 @using SF.Foundation.Resources
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    @Html.GetHeaderStyles()
+        @Html.GetHeaderStyles()
 
-</head>
-<body>
-    <h1>Composite Component</h1>
-    <div class="viewport">
-        @Html.Sitecore().Placeholder(Sitecore.Context.Item["PlaceholderName"])
-    </div>
+    </head>
+    <body>
+        <h1>Composite Component</h1>
+        <div class="viewport">
 
-    @Html.GetFooterScripts()
-</body>
 
-</html>
+    @Html.Sitecore().Placeholder(Sitecore.Context.Item["PlaceholderName"])
+
+            </div>
+
+            @Html.GetFooterScripts()
+    </body>
+
+    </html>
+
+}
+else
+{
+    @Html.Sitecore().Placeholder(Sitecore.Context.Item["PlaceholderName"])
+}

@@ -1,8 +1,8 @@
 ﻿---
 ID: "01617363-d27a-4ca9-87f4-e57c4a062c7a"
-Parent: "ad0b93b8-0a9c-4ca8-8955-d760343b0590"
+Parent: "07f62c60-6cf9-4c65-ab75-0665d8baa1c3"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/SF/Feature/Composite/CompositeComponent
+Path: /sitecore/templates/SF/Feature/Composite/Component Templates/CompositeComponent
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

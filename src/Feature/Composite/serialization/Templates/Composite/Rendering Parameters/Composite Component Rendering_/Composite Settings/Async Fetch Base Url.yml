@@ -1,0 +1,25 @@
+﻿---
+ID: "e60474e8-e31a-4b1c-832a-30b21de76eb6"
+Parent: "04be8c48-321a-4ec4-8284-5f0d129df19b"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/SF/Feature/Composite/Rendering Parameters/Composite Component Rendering Parameters/Composite Settings/Async Fetch Base Url
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Async Fetch Base Url (Optional Base Url for async loading content. Useful if using a CDN and you want to fetch content from Sitecore Directly)
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171020T000355Z

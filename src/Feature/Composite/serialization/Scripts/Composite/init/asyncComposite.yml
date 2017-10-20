@@ -1,0 +1,36 @@
+﻿---
+ID: "7fcd480a-a5da-4645-9fb0-ed4e165c33ba"
+Parent: "900e3a8c-af84-4f6a-bb38-5a0929eb533d"
+Template: "722ec325-cc44-4687-adbd-4ea415502f88"
+Path: /sitecore/content/Global/Scripts/Feature/Composite/init/asyncComposite
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171020T172559Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
+    - ID: "a2dda611-f0ad-4ce2-863a-84df4f467b64"
+      Hint: Content
+      Value: |
+        $(document).ready(function () {
+        
+          $(".composite.async").each(function (index) {
+            var container = $(this); 
+            var contentUrl = container.attr("data-src");
+        
+            console.log('fetching data from ' + contentUrl);
+        
+            $.get(contentUrl, function (data) {
+              console.log('data obtained, loading into dom');
+              container.html(data);
+            });
+            
+          });
+        });
