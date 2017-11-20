@@ -1,0 +1,18 @@
+﻿---
+ID: "518fcb44-5391-4633-81c6-d56ef2e54101"
+Parent: "a13400b4-f0c2-47ed-8135-a697b7e72293"
+Template: "a13400b4-f0c2-47ed-8135-a697b7e72293"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/RSS/Endpoints/RSS Endpoint/__Standard Values
+DB: master
+SharedFields:
+- ID: "3c7f78cc-0c5c-4076-80ef-9a49fda5ff96"
+  Hint: ConverterType
+  Value: SF.DEF.Feature.RSS.RssEndpointConverter, SF.DEF.Feature.RSS
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161110T210948Z

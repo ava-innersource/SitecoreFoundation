@@ -1,0 +1,21 @@
+﻿---
+ID: "ef67135f-a670-44fb-9710-44c6635400a9"
+Parent: "4d5ca7cb-928d-401d-8f72-e077d0e56135"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/General/Pipeline Steps/Iterate Through Grouped Data And Store Results Pipeline Step/Grouped Data Settings/GroupFieldKey
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171025T233354Z

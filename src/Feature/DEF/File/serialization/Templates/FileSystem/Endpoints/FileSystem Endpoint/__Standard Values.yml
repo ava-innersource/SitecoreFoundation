@@ -1,0 +1,25 @@
+﻿---
+ID: "a5223f65-694c-4790-b273-9c08f21c4a4f"
+Parent: "567c60a0-a45c-4508-8332-ce727e80760b"
+Template: "567c60a0-a45c-4508-8332-ce727e80760b"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/FileSystem/Endpoints/FileSystem Endpoint/__Standard Values
+DB: master
+SharedFields:
+- ID: "24661d6b-1a9f-430c-80da-e43220b69f3e"
+  Hint: ColumnSeparator
+  Value: ,
+- ID: "3c7f78cc-0c5c-4076-80ef-9a49fda5ff96"
+  Hint: ConverterType
+  Value: SF.DEF.Feature.File.FileSystemEndpointConverter, SF.DEF.Feature.File
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b6ec2a9-f985-4eb5-ba0c-63660fe5e91d"
+      Hint: ColumnHeadersInFirstLine
+      Type: Checkbox
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161111T195559Z

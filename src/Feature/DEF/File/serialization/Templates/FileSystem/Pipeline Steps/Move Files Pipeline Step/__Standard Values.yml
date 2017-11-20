@@ -1,0 +1,21 @@
+﻿---
+ID: "7151d829-40cc-447f-968a-a547ea85d66b"
+Parent: "bc8bc387-495d-4beb-b0a5-eeb2b1bc4f0f"
+Template: "bc8bc387-495d-4beb-b0a5-eeb2b1bc4f0f"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/FileSystem/Pipeline Steps/Move Files Pipeline Step/__Standard Values
+DB: master
+SharedFields:
+- ID: "3c7f78cc-0c5c-4076-80ef-9a49fda5ff96"
+  Hint: ConverterType
+  Value: SF.DEF.Feature.File.MoveFilesStepConverter, SF.DEF.Feature.File
+- ID: "a83a2eb2-bfa1-4d3f-9f17-0cc6c9a91c42"
+  Hint: ProcessorType
+  Value: SF.DEF.Feature.File.MoveFilesStepProcessor, SF.DEF.Feature.File
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170705T132418Z

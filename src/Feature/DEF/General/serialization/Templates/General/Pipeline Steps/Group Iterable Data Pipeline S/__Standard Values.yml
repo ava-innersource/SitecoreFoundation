@@ -1,0 +1,25 @@
+﻿---
+ID: "f214ccde-0884-4911-81c5-90972ee9bd06"
+Parent: "acc98669-2c07-462b-b05c-1dfe9f7453ad"
+Template: "acc98669-2c07-462b-b05c-1dfe9f7453ad"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/General/Pipeline Steps/Group Iterable Data Pipeline Step/__Standard Values
+DB: master
+SharedFields:
+- ID: "3c7f78cc-0c5c-4076-80ef-9a49fda5ff96"
+  Hint: ConverterType
+  Value: SF.Feature.DEF.General.GroupIterableDataStepConverter,SF.Feature.DEF.General
+- ID: "a83a2eb2-bfa1-4d3f-9f17-0cc6c9a91c42"
+  Hint: ProcessorType
+  Value: SF.Feature.DEF.General.GroupIterableDataStepProcessor,SF.Feature.DEF.General
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23c6a74e-832b-4e82-b003-0bf3a7265693"
+      Hint: RemoveIterableSettingsPlugin
+      Type: Checkbox
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170125T191519Z

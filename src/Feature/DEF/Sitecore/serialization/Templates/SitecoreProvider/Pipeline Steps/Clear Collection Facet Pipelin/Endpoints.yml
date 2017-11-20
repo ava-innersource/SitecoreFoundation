@@ -1,0 +1,18 @@
+﻿---
+ID: "1f00806b-123b-400c-95d0-26c57c6d3b4b"
+Parent: "c7a26d05-091f-43d8-871f-072ca250b2fc"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Data Exchange/Providers/SF/Feature/SitecoreProvider/Pipeline Steps/Clear Collection Facet Pipeline Step/Endpoints
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170125T191511Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
