@@ -89,10 +89,8 @@ namespace SF.Feature.DEF.Excel
 
         private IEnumerable<Dictionary<string, string>> GetEnumerable(string filePath, string sheetName, bool firstRowHasColumnNames, Sitecore.Services.Core.Diagnostics.ILogger logger)
         {
-            FileInfo objFileInfo = new FileInfo(@"C:\Websites\btod.dev.local\Website\MobileDBExcel\Mobile CoE - BP Device Detail Report.xlsx");
-            //using (var stream = new FileStream(objFileInfo.ToString(), FileMode.Open, FileAccess.Read))
-            //using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
-
+            FileInfo objFileInfo = new FileInfo(filePath);
+            
             var stream = objFileInfo.Exists ? new FileStream(objFileInfo.ToString(), FileMode.Open, FileAccess.Read) : File.Open(filePath, FileMode.Open, FileAccess.Read);
 
             using (stream)
