@@ -1,0 +1,15 @@
+﻿---
+ID: "cd182b59-58bf-492f-b9e3-a97a6ab46f26"
+Parent: "e7cbefe8-9112-4b95-a978-4e470d94c54a"
+Template: "54dae7cd-bfd8-4e69-9679-75f2ae9f9034"
+Path: /sitecore/system/Settings/Rules/Definitions/Elements/SF
+DB: master
+BranchID: "9a72c539-dbf8-4dad-96d3-a298fc04add6"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171019T210800Z

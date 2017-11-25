@@ -18,8 +18,20 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{F916E4DF-EB94-45E0-919E-F8F0180AC372}"
+              uid="{F7AF7B2F-B937-4FA5-8A04-AFB5D25DBADA}"
               p:before="*"
+              s:ds="{476E2673-E5D9-4565-B316-7D6406264FA2}"
+              s:id="{A7540328-E131-4273-808C-C59F49BB9FFF}"
+              s:ph="/Middle Area/Column2_16ed2ff0-044f-47ab-ad8a-518e6e2b3359" />
+            <r
+              uid="{B3763EF9-C386-4500-8D9D-5284D6E66CCC}"
+              p:after="r[@uid='{F7AF7B2F-B937-4FA5-8A04-AFB5D25DBADA}']"
+              s:ds="{370C9091-6E86-4FF8-8210-7138ECA7283C}"
+              s:id="{A7540328-E131-4273-808C-C59F49BB9FFF}"
+              s:ph="/Middle Area/Column1_16ed2ff0-044f-47ab-ad8a-518e6e2b3359" />
+            <r
+              uid="{F916E4DF-EB94-45E0-919E-F8F0180AC372}"
+              p:after="r[@uid='{B3763EF9-C386-4500-8D9D-5284D6E66CCC}']"
               s:ds="{55A1C961-C97E-42F9-8289-FA42AD89CAD6}"
               s:id="{50BA9DA4-7B76-4D63-BA37-E5B8B48679FA}"
               s:par="Sizing=tiny&amp;Category=warning&amp;Style=radius&amp;ID&amp;class&amp;ShowForSmallOnly&amp;ShowForMediumUp&amp;ShowForMediumOnly&amp;ShowForLargeUp&amp;ShowForLargeOnly&amp;ShowForXLargeUp&amp;ShowForXLargeOnly&amp;ShowForXXLargeUp&amp;HideForSmallOnly&amp;HideForMediumUp&amp;HideForMeidumOnly&amp;HideForLargeUp&amp;HideForLargeOnly&amp;HideForXLargeUp&amp;HideForXLargeOnly&amp;HideForXXLargeUp&amp;ShowForLandscape&amp;ShowForPortrait&amp;ShowForTouch&amp;HideForTouch&amp;ShowForPrint&amp;HideForPrint"
@@ -115,8 +127,13 @@ Languages:
               s:id="{0B47CE9E-9128-48B8-BDEB-EAF90C89C731}"
               s:ph="Middle Area" />
             <r
-              uid="{544BAE5B-8FE1-476F-96C5-5AB3F5203982}"
+              uid="{16ED2FF0-044F-47AB-AD8A-518E6E2B3359}"
               p:after="r[@uid='{9097E2AF-3BC4-4F8D-AF04-256A0C830945}']"
+              s:id="{7CDA055E-37A9-4A23-827C-3CC6B98B8150}"
+              s:ph="Middle Area" />
+            <r
+              uid="{544BAE5B-8FE1-476F-96C5-5AB3F5203982}"
+              p:after="r[@uid='{16ED2FF0-044F-47AB-AD8A-518E6E2B3359}']"
               s:id="{F6E1983C-3451-45F8-A239-5540AB97DD5B}"
               s:ph="Middle Area" />
             <r

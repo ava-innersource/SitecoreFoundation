@@ -33,12 +33,16 @@ namespace SF.Feature.Handlebars
 
                 //save current context for later
                 var oldContext = HttpContext.Current.Items["HandlebarDataSource"];
-                
-                
-                PipelineService.Get().RunPipeline<RenderPlaceholderArgs>("mvc.renderPlaceholder", new RenderPlaceholderArgs(placeholderName, writer, Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering));
+                var oldRenderingItem = Sitecore.Mvc.Presentation.RenderingContext.CurrentOrNull.Rendering.Item;
+
+                Sitecore.Mvc.Presentation.RenderingContext.CurrentOrNull.Rendering.Item = Sitecore.Context.Item;
+
+                //Updated to do new content rendering, similar to what the composite component does, as this was setting the context to the template.
+                PipelineService.Get().RunPipeline<RenderPlaceholderArgs>("mvc.renderPlaceholder", new RenderPlaceholderArgs(placeholderName, writer, new ContentRendering()));
 
                 //put it back.
                 HttpContext.Current.Items["HandlebarDataSource"] = oldContext;
+                Sitecore.Mvc.Presentation.RenderingContext.CurrentOrNull.Rendering.Item = oldRenderingItem;
 
                 if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
                 {

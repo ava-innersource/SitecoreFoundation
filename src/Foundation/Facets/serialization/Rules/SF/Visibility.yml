@@ -1,0 +1,19 @@
+﻿---
+ID: "f09d6812-c304-4b5a-9581-36faa948257d"
+Parent: "cd182b59-58bf-492f-b9e3-a97a6ab46f26"
+Template: "aa91a868-02f2-41d3-8b78-1cad91b4dcae"
+Path: /sitecore/system/Settings/Rules/Definitions/Elements/SF/Visibility
+DB: master
+BranchID: "9a72c539-dbf8-4dad-96d3-a298fc04add6"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171019T210801Z

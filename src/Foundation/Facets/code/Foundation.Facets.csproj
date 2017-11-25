@@ -148,6 +148,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conditions\ContactFacetHasValueCondition.cs" />
     <Compile Include="Conditions\UserSettingsCondition.cs" />
     <Compile Include="Configuration\UserSettingsConfiguration.cs" />
     <Compile Include="Constants\FacetNames.cs" />
@@ -162,6 +163,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="packages.config" />
     <Content Include="App_Config\Include\Foundation.Facets\Facets.config" />
+    <Content Include="App_Config\Include\Foundation.Facets\Serialization.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>
   <ItemGroup />
