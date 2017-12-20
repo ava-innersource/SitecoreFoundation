@@ -33,7 +33,7 @@ namespace SF.DEF.Feature.RSS
                 base.GetStringValue(source, RssEndpointItemModel.FeedUrl);
             
             //add the plugin to the endpoint
-            endpoint.Plugins.Add(settings);
+            endpoint.AddPlugin< RssSettings>(settings);
         }
     }
 }

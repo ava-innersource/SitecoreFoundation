@@ -8,21 +8,16 @@ using System.Linq;
 using System.Web;
 using Sitecore.DataExchange.Extensions;
 using System.Text;
+using Sitecore.Services.Core.Diagnostics;
 
 namespace SF.Feature.DEF.Database
 {
     [RequiredPipelineStepPlugins(typeof(AuditDictionarySettings))]
     public class AuditDictionaryStepProcessor : BasePipelineStepProcessor
     {
-        public override void Process(PipelineStep pipelineStep, PipelineContext pipelineContext)
+        protected override void ProcessPipelineStep(PipelineStep pipelineStep, PipelineContext pipelineContext, ILogger logger)
         {
-            var logger = pipelineContext.PipelineBatchContext.Logger;
-            if (!this.CanProcess(pipelineStep, pipelineContext))
-            {
-                logger.Error("Pipeline step processing will abort because the pipeline step cannot be processed. (pipeline step: {0})", (object)pipelineStep.Name);
-                return;
-            }
-
+            
             var settings = pipelineStep.GetPlugin<AuditDictionarySettings>();
             if (settings == null)
             {
@@ -52,5 +47,7 @@ namespace SF.Feature.DEF.Database
 
             logger.Info(sb.ToString());
         }
+
+        
     }
 }

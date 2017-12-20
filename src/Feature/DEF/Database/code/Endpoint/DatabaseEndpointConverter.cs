@@ -37,7 +37,7 @@ namespace SF.Feature.DEF.Database
             
             //
             //add the plugin to the endpoint
-            endpoint.Plugins.Add(settings);
+            endpoint.AddPlugin< DatabaseSettings>(settings);
         }
     }
 }

@@ -3,6 +3,7 @@ using Sitecore.DataExchange.Contexts;
 using Sitecore.DataExchange.Models;
 using Sitecore.DataExchange.Plugins;
 using Sitecore.DataExchange.Processors.PipelineSteps;
+using Sitecore.Services.Core.Diagnostics;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,7 +24,8 @@ namespace SF.DEF.Feature.File
         protected override void ReadData(
             Endpoint endpoint,
             PipelineStep pipelineStep,
-            PipelineContext pipelineContext)
+            PipelineContext pipelineContext,
+            ILogger logger)
         {
             if (endpoint == null)
             {
@@ -37,8 +39,7 @@ namespace SF.DEF.Feature.File
             {
                 throw new ArgumentNullException("pipelineContext");
             }
-            var logger = pipelineContext.PipelineBatchContext.Logger;
-            //
+            
             //get the file path from the plugin on the endpoint
             var settings = endpoint.GetFileSystemSettings();
             if (settings == null)
@@ -71,7 +72,7 @@ namespace SF.DEF.Feature.File
                 settings.Path, pipelineStep.Name, endpoint.Name);
             //
             //add the plugin to the pipeline context
-            pipelineContext.Plugins.Add(dataSettings);
+            pipelineContext.AddPlugin< IterableDataSettings>(dataSettings);
         }
 
         private IEnumerable<Dictionary<string, string>> GetEnumerable(FileSystemSettings settings, Sitecore.Services.Core.Diagnostics.ILogger logger)

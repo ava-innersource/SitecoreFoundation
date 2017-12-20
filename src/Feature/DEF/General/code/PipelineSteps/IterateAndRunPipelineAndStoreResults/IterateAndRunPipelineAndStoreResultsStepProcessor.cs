@@ -18,9 +18,8 @@ namespace SF.Feature.DEF.General
     [RequiredPipelineContextPlugins(new Type[] { typeof(IterableDataSettings) })]
     public class IterateAndRunPipelineAndStoreResultsStepProcessor : BasePipelineStepProcessor
     {
-        public override void Process(PipelineStep pipelineStep, PipelineContext pipelineContext)
+        protected override void ProcessPipelineStep(PipelineStep pipelineStep, PipelineContext pipelineContext, ILogger logger)
         {
-            ILogger logger = pipelineContext.PipelineBatchContext.Logger;
             if (!this.CanProcess(pipelineStep, pipelineContext))
             {
                 logger.Error("Pipeline step processing will abort because the pipeline step cannot be processed. (pipeline step: {0})", (object)pipelineStep.Name);
@@ -54,13 +53,13 @@ namespace SF.Feature.DEF.General
                                 //instatiate Target for filling.
                                 synchronizationSettings.Target = new Dictionary<string, string>();
 
-                                pipelineContext1.Plugins.Add((IPlugin)synchronizationSettings);
+                                pipelineContext1.AddPlugin<SynchronizationSettings>(synchronizationSettings);
                                 ParentPipelineContextSettings pipelineContextSettings = new ParentPipelineContextSettings()
                                 {
                                     ParentPipelineContext = pipelineContext
                                 };
-                                pipelineContext1.Plugins.Add((IPlugin)pipelineContextSettings);
-                                this.ProcessPipelines(pipelineStep, pipelinesSettings.Pipelines, pipelineContext1);
+                                pipelineContext1.AddPlugin<ParentPipelineContextSettings>(pipelineContextSettings);
+                                this.ProcessPipelines(pipelineStep, pipelinesSettings.Pipelines, pipelineContext1, logger);
 
                                 //Now Let's get the results
                                 var record = pipelineContext1.GetPlugin<SynchronizationSettings>().Target as Dictionary<string, string>;
@@ -75,7 +74,7 @@ namespace SF.Feature.DEF.General
                         }
 
                         //Add to the context so we can do something with this collection
-                        pipelineContext.Plugins.Add(childRecordSettings);
+                        pipelineContext.AddPlugin< ChildRecordSettings>(childRecordSettings);
 
                         logger.Info("{0} elements were iterated. (pipeline: {1}, pipeline step: {2})", (object)num, (object)pipelineContext.CurrentPipeline.Name, (object)pipelineContext.CurrentPipelineStep.Name, (object)pipelineContext);
                     }
@@ -93,14 +92,14 @@ namespace SF.Feature.DEF.General
         {
             DataLocationSettings locationSettings = pipelineStep.GetDataLocationSettings();
             SynchronizationSettings synchronizationSettings = new SynchronizationSettings();
-            if (locationSettings.DataLocation == "Pipeline Context Source")
+            if (locationSettings.DataLocation == ItemIDs.PipelineContextStorageLocationParentSource)
                 synchronizationSettings.Source = element;
-            if (locationSettings.DataLocation == "Pipeline Context Target")
+            if (locationSettings.DataLocation == ItemIDs.PipelineContextStorageLocationParentTarget)
                 synchronizationSettings.Target = element;
             return synchronizationSettings;
         }
 
-        protected virtual void ProcessPipelines(PipelineStep pipelineStep, ICollection<Pipeline> subPipelines, PipelineContext pipelineContext)
+        protected virtual void ProcessPipelines(PipelineStep pipelineStep, ICollection<Pipeline> subPipelines, PipelineContext pipelineContext, ILogger logger)
         {
             if (pipelineStep == null)
                 throw new ArgumentNullException("pipelineStep");
@@ -108,7 +107,6 @@ namespace SF.Feature.DEF.General
                 throw new ArgumentNullException("subPipelines");
             if (pipelineContext == null)
                 throw new ArgumentNullException("pipelineContext");
-            ILogger logger = pipelineContext.PipelineBatchContext.Logger;
             if (!subPipelines.Any<Pipeline>())
             {
                 logger.Error("Pipeline step processing will abort because no pipelines are assigned to the pipeline step. (pipeline step: {0})", (object)pipelineStep.Name);
@@ -118,27 +116,22 @@ namespace SF.Feature.DEF.General
                 List<Pipeline> pipelineList = new List<Pipeline>();
                 foreach (Pipeline subPipeline in (IEnumerable<Pipeline>)subPipelines)
                 {
-                   RunSubPipelines(pipelineContext, subPipeline); 
+                   RunSubPipelines(pipelineContext, subPipeline, logger); 
                 }
                 
             }
         }
 
-        private void RunSubPipelines(PipelineContext pipelineContext, Pipeline subPipeline)
+        private void RunSubPipelines(PipelineContext pipelineContext, Pipeline subPipeline, ILogger logger)
         {
-            ILogger logger = pipelineContext.PipelineBatchContext.Logger;
             pipelineContext.CurrentPipeline = subPipeline;
             IPipelineProcessor pipelineProcessor = subPipeline.PipelineProcessor;
 
             if (pipelineProcessor == null)
                 logger.Error("Pipeline will be skipped because it does not have a processor assigned. (pipeline step: {0}, sub-pipeline: {1})", "Iterate and Run Async", (object)subPipeline.Name);
-            else if (!pipelineProcessor.CanProcess(subPipeline, pipelineContext))
-            {
-                logger.Error("Pipeline will be skipped because the processor cannot processes the sub-pipeline. (pipeline step: {0}, sub-pipeline: {1}, sub-pipeline processor: {2})", "Iterate and Run Async", (object)subPipeline.Name, (object)pipelineProcessor.GetType().FullName);
-            }
             else
             {
-                pipelineProcessor.Process(subPipeline, pipelineContext);
+                pipelineProcessor.StartProcessing(subPipeline, pipelineContext, logger);
                 if (pipelineContext.CriticalError)
                 {
                     logger.Error("Sub pipeline processing will not abort since it's done async");                   
@@ -150,11 +143,9 @@ namespace SF.Feature.DEF.General
         {
         }
 
-        public override bool CanProcess(PipelineStep pipelineStep, PipelineContext pipelineContext)
+        public bool CanProcess(PipelineStep pipelineStep, PipelineContext pipelineContext)
         {
-            if (!base.CanProcess(pipelineStep, pipelineContext))
-                return false;
-            if (!string.IsNullOrWhiteSpace(pipelineStep.GetDataLocationSettings().DataLocation))
+            if (pipelineStep.GetDataLocationSettings().DataLocation != null)
                 return true;
             pipelineContext.PipelineBatchContext.Logger.Error("No data location is specified. (plugin: {0}, pipeline step: {1})", (object)typeof(DataLocationSettings), (object)pipelineStep.Name);
             return false;

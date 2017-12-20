@@ -5,24 +5,9 @@ Template: "075c4fbd-f54e-4e6d-bd54-d49bda0913d8"
 Path: /sitecore/system/Data Exchange/Foundation Database Tenant/Pipeline Batches/Data from Database to Contoso Product Pipeline Batch
 DB: master
 SharedFields:
-- ID: "47f8050d-6eee-423f-a9f0-3dc34948c365"
-  Hint: LastRunCompleted
-  Type: Checkbox
-  Value: 0
 - ID: "6a2b2cbb-4338-4814-a8a9-9fecbb90456a"
   Hint: LastRunFinished
   Value: 20170920T015023Z
-- ID: "83e6292f-a00e-463d-a1c6-0fc25bc0fbad"
-  Hint: Messages
-  Value: |
-    9/20/2017 1:50:23 AM	ERROR	Could not get pipeline: registerConnectionProviders (domain: )
-    9/20/2017 1:50:23 AM	ERROR	   at Sitecore.Pipelines.DefaultCorePipelineManager.Run(String pipelineName, PipelineArgs args, String pipelineDomain, Boolean failIfNotExists)
-       at Sitecore.Pipelines.DefaultCorePipelineManager.Run(String pipelineName, PipelineArgs args, String pipelineDomain)
-       at SF.DXF.Feature.Database.DBConnectionFactory.GetConnection(String type, String connectionString) in C:\SitecoreFoundation\src\Feature\DXF\Database\code\PipelineStep\DBConnectionFactory.cs:line 22
-       at SF.DXF.Feature.Database.QueryDatabaseStepProcessor.<GetEnumerable>d__2.MoveNext() in C:\SitecoreFoundation\src\Feature\DXF\Database\code\PipelineStep\QueryDatabaseStepProcessor.cs:line 76
-       at Sitecore.DataExchange.Processors.PipelineSteps.IterateAndRunPipelinesStepProcessor.Process(PipelineStep pipelineStep, PipelineContext pipelineContext)
-    9/20/2017 1:50:23 AM	ERROR	Pipeline step processing will abort because a critical error occurred during processing.
-    9/20/2017 1:50:23 AM	ERROR	Pipeline processing will abort because a critical error occurred during processing. (pipeline batch: Data from Database to Contoso Product Pipeline Batch, pipeline: Read Database Records from Database Query Pipeline, pipeline processor: Sitecore.DataExchange.Processors.Pipelines.PipelineProcessor)
 - ID: "9061beea-df25-4b2b-a698-3f5b4e867d18"
   Hint: Pipelines
   Type: Treelist

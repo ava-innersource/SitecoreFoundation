@@ -32,7 +32,7 @@ namespace SF.DEF.Feature.File
             {
                 settings.EndpointFrom = endpointFrom;
             }
-            pipelineStep.Plugins.Add(settings);
+            pipelineStep.AddPlugin<EndpointSettings>(settings);
         }
     }
 }

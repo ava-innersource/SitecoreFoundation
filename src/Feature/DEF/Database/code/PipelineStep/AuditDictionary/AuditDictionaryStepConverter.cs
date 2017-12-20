@@ -27,7 +27,7 @@ namespace SF.Feature.DEF.Database
             settings.Context =
                 base.GetStringValue(source, AuditDictionaryStepItemModel.Context);
 
-            pipelineStep.Plugins.Add(settings);
+            pipelineStep.AddPlugin< AuditDictionarySettings>(settings);
         }
     }
 }

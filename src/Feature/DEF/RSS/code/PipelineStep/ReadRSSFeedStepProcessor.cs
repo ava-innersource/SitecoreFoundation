@@ -3,6 +3,7 @@ using Sitecore.DataExchange.Contexts;
 using Sitecore.DataExchange.Models;
 using Sitecore.DataExchange.Plugins;
 using Sitecore.DataExchange.Processors.PipelineSteps;
+using Sitecore.Services.Core.Diagnostics;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -24,7 +25,8 @@ namespace SF.DEF.Feature.RSS
         protected override void ReadData(
             Endpoint endpoint,
             PipelineStep pipelineStep,
-            PipelineContext pipelineContext)
+            PipelineContext pipelineContext,
+            ILogger logger)
         {
             if (endpoint == null)
             {
@@ -38,7 +40,6 @@ namespace SF.DEF.Feature.RSS
             {
                 throw new ArgumentNullException("PipelineContext");
             }
-            var logger = pipelineContext.PipelineBatchContext.Logger;
             
             //get the rss feed url from the plugin on the endpoint
             var settings = endpoint.GetRssSettings();
@@ -71,7 +72,7 @@ namespace SF.DEF.Feature.RSS
                      settings.FeedUrl, pipelineStep.Name, endpoint.Name);
                 //
                 //add the plugin to the pipeline context
-                pipelineContext.Plugins.Add(dataSettings);
+                pipelineContext.AddPlugin< IterableDataSettings>(dataSettings);
             }
             catch(Exception ex)
             {

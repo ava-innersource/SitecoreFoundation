@@ -41,7 +41,7 @@ namespace SF.DEF.Feature.File
             settings.AppendTimeStamp =
                base.GetBoolValue(source, MoveFilesStepItemModel.AppendTimeStamp);
 
-            pipelineStep.Plugins.Add(settings);
+            pipelineStep.AddPlugin< MoveFileSettings>(settings);
         }
     }
 }

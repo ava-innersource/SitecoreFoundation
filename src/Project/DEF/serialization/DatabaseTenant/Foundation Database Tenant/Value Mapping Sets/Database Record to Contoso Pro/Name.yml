@@ -7,6 +7,7 @@ DB: master
 SharedFields:
 - ID: "95184b45-efef-447c-9089-4f2ec5df26c5"
   Hint: SourceAccessor
+  Type: Treelist
   Value: "{FF242DDD-149E-4480-BB14-0D0446DE9238}"
 - ID: "ef84b462-7f4a-4f48-b78e-ade192d55e82"
   Hint: TargetAccessor

@@ -37,7 +37,7 @@ namespace SF.DEF.Feature.File
                 base.GetStringValue(source, FileSystemEndpointItemModel.Path);
             //
             //add the plugin to the endpoint
-            endpoint.Plugins.Add(settings);
+            endpoint.AddPlugin< FileSystemSettings>(settings);
         }
     }
 }

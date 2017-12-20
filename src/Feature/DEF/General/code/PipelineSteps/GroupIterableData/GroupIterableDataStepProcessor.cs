@@ -8,22 +8,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+using Sitecore.Services.Core.Diagnostics;
 
 namespace SF.Feature.DEF.General
 {
     [RequiredPipelineStepPlugins(typeof(GroupIterableDataSettings))]
     public class GroupIterableDataStepProcessor : BasePipelineStepProcessor
     {
-        public override void Process(PipelineStep pipelineStep, PipelineContext pipelineContext)
-        {
-            var logger = pipelineContext.PipelineBatchContext.Logger;
-            if (!this.CanProcess(pipelineStep, pipelineContext))
-            {
-                logger.Error("Pipeline step processing will abort because the pipeline step cannot be processed. (pipeline step: {0})", (object)pipelineStep.Name);
-                return;
-            }
-
+        protected override void ProcessPipelineStep(PipelineStep pipelineStep, PipelineContext pipelineContext, ILogger logger)
+        { 
             var settings = pipelineStep.GetPlugin<GroupIterableDataSettings>();
             if (settings == null)
             {
@@ -54,15 +47,14 @@ namespace SF.Feature.DEF.General
                 }
             }
 
-            pipelineContext.Plugins.Add(groupedData);
+            pipelineContext.AddPlugin<GroupedDataSettings>(groupedData);
 
             if (settings.RemoveIterableSettingsPlugin)
             {
                 // This should be checked if another pipeline step is going to add settings.
-                pipelineContext.Plugins.Remove(iterableDataSettings);
+                pipelineContext.RemovePlugin(iterableDataSettings.GetType());
             }
         }
-
-       
+        
     }
 }

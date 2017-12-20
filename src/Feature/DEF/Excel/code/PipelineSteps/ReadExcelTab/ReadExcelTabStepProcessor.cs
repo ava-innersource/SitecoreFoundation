@@ -5,6 +5,7 @@ using Sitecore.DataExchange.Extensions;
 using Sitecore.DataExchange.Models;
 using Sitecore.DataExchange.Plugins;
 using Sitecore.DataExchange.Processors.PipelineSteps;
+using Sitecore.Services.Core.Diagnostics;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -22,7 +23,8 @@ namespace SF.Feature.DEF.Excel
         protected override void ReadData(
             Endpoint endpoint,
             PipelineStep pipelineStep,
-            PipelineContext pipelineContext)
+            PipelineContext pipelineContext,
+            ILogger logger)
         {
             if (endpoint == null)
             {
@@ -36,8 +38,7 @@ namespace SF.Feature.DEF.Excel
             {
                 throw new ArgumentNullException("pipelineContext");
             }
-            var logger = pipelineContext.PipelineBatchContext.Logger;
-            //
+            
             //get the file path from the plugin on the endpoint
             var settings = endpoint.GetExcelSettings();
             if (settings == null)
@@ -78,11 +79,11 @@ namespace SF.Feature.DEF.Excel
                 ////add the data that was read from the file to a plugin
                 var dataSettings = new IterableDataSettings(GetEnumerable(settings.FileLocation, excelSettings.Sheet, excelSettings.FirstRowHasColumnNames, logger));
 
-                pipelineContext.Plugins.Add(dataSettings);
+                pipelineContext.AddPlugin< IterableDataSettings>(dataSettings);
             }
             catch (Exception ex)
             {
-                Sitecore.Diagnostics.Log.Error($"ReadExcelTabStepProcessor: error occurred.pipelineStep: {pipelineStep.Name}, endpoint: {endpoint.Name}", ex);
+                Sitecore.Diagnostics.Log.Error($"ReadExcelTabStepProcessor: error occurred.pipelineStep: {pipelineStep.Name}, endpoint: {endpoint.Name}", ex, this);
                 return;
             }
         }

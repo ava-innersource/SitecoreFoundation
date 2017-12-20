@@ -38,7 +38,7 @@ namespace SF.Feature.DEF.Excel
             settings.FirstRowHasColumnNames =
                 base.GetBoolValue(source, ReadExcelTabStepItemModel.FirstRowHasColumnNames);
 
-            pipelineStep.Plugins.Add(settings);
+            pipelineStep.AddPlugin< ReadExcelTabSettings>(settings);
         }
     }
 }

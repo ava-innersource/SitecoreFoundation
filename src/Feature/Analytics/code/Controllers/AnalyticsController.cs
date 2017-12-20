@@ -1,7 +1,6 @@
 ﻿using Sitecore.Analytics;
 using Sitecore.Analytics.Data;
-using Sitecore.Analytics.Outcome;
-using Sitecore.Analytics.Outcome.Model;
+
 using Sitecore.Data;
 using Sitecore.Services.Infrastructure.Web.Http;
 using System;
@@ -10,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
-using Sitecore.Analytics.Outcome.Extensions;
 using Sitecore.Analytics.Tracking;
 using Sitecore.Analytics.Model.Entities;
 using SF.Foundation.API;
@@ -54,7 +52,7 @@ namespace SF.Feature.Analytics
             }
 
             details.contactId = Tracker.Contact.ContactId.ToString();
-            details.userName = Tracker.Contact.Identifiers.Identifier;
+            details.userName = Tracker.Contact.Identifiers.FirstOrDefault()?.Identifier;
 
             try
             {
@@ -65,7 +63,7 @@ namespace SF.Feature.Analytics
             }
             catch (Exception ex)
             {
-                Sitecore.Diagnostics.Log.Error("Could not get Name", ex);
+                Sitecore.Diagnostics.Log.Error("Could not get Name", ex, this);
             }
 
             try
@@ -76,7 +74,7 @@ namespace SF.Feature.Analytics
             }
             catch (Exception ex)
             {
-                Sitecore.Diagnostics.Log.Error("Could not get Preferred Email Address", ex);
+                Sitecore.Diagnostics.Log.Error("Could not get Preferred Email Address", ex, this);
             }
 
             Tracker.CurrentPage.Cancel();
@@ -166,38 +164,7 @@ namespace SF.Feature.Analytics
             return "OK";
         }
 
-        [HttpPost]
-        public string RegisterOutcome(OutcomeDetails data)
-        {
-            var Tracker = this.GetTracker(false);
-            if (Tracker == null || !Tracker.IsActive)
-            {
-                return "Disabled";
-            }
-
-            var id = ID.NewID;
-            var interactionId = ID.Parse(Tracker.Interaction.InteractionId);
-            var contactId = ID.Parse(Tracker.Contact.ContactId);
-
-            var definitionId = new ID(data.definitionId);
-
-            decimal monetaryValue = 0;
-            decimal.TryParse(data.monetaryValue, out monetaryValue);
-
-            var outcome = new ContactOutcome(id, definitionId, contactId)
-            {
-                DateTime = DateTime.UtcNow.Date,
-                MonetaryValue = monetaryValue,
-                InteractionId = interactionId                 
-            };
-
-            var manager = Sitecore.Configuration.Factory.CreateObject("outcome/outcomeManager", true) as OutcomeManager;
-            manager.Save(outcome);
-
-            Tracker.RegisterContactOutcome(outcome);
-
-            return "OK";
-        }
+       
 
 
 

@@ -23,12 +23,7 @@ namespace SF.Feature.DEF.General
             this.AddDataLocationSettingsPlugin(source, pipelineStep);
         }
 
-        public override PipelineStep Convert(ItemModel source)
-        {
-            this.CanConvert(source);
-            return base.Convert(source) ?? (PipelineStep)null;
-        }
-
+       
         private void AddPipelinesSettingsPlugin(ItemModel source, PipelineStep pipelineStep)
         {
             PipelinesSettings pipelinesSettings = new PipelinesSettings();
@@ -38,15 +33,15 @@ namespace SF.Feature.DEF.General
                 foreach (Pipeline pipeline in models)
                     pipelinesSettings.Pipelines.Add(pipeline);
             }
-            pipelineStep.Plugins.Add((IPlugin)pipelinesSettings);
+            pipelineStep.AddPlugin< PipelinesSettings>(pipelinesSettings);
         }
 
         private void AddDataLocationSettingsPlugin(ItemModel source, PipelineStep pipelineStep)
         {
-            string stringValue = this.GetStringValue(source, "DataLocation");
-            pipelineStep.Plugins.Add((IPlugin)new DataLocationSettings()
+            var location = this.GetGuidValue(source, "DataLocation");
+            pipelineStep.AddPlugin< DataLocationSettings>(new DataLocationSettings()
             {
-                DataLocation = stringValue
+                DataLocation = location
             });
         }
     }

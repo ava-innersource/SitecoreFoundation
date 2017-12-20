@@ -35,7 +35,7 @@ namespace SF.DEF.Feature.SitecoreProvider
             settings.EngagementPlanStateID =
                 base.GetStringValue(source, EnrollContactInEngagementPlanItemModel.EngagementPlanStateID);
 
-            pipelineStep.Plugins.Add(settings);
+            pipelineStep.AddPlugin< EnrollContactInEngagementPlanSettings>(settings);
         }
     }
 }

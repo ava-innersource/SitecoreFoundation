@@ -42,7 +42,7 @@ namespace SF.DEF.Feature.SitecoreProvider
 
             settings.Target = base.GetStringValue(source, PublishContentItemModel.Target);
             
-            pipelineStep.Plugins.Add(settings);
+            pipelineStep.AddPlugin< PublishContentSettings>(settings);
         }
     }
 }

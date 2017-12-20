@@ -5,19 +5,9 @@ Template: "075c4fbd-f54e-4e6d-bd54-d49bda0913d8"
 Path: /sitecore/system/Data Exchange/Foundation File System Tenant/Pipeline Batches/City Info from File to City Info Item Sync Pipeline Batch
 DB: master
 SharedFields:
-- ID: "47f8050d-6eee-423f-a9f0-3dc34948c365"
-  Hint: LastRunCompleted
-  Type: Checkbox
-  Value: 1
 - ID: "6a2b2cbb-4338-4814-a8a9-9fecbb90456a"
   Hint: LastRunFinished
   Value: 20170124T162253Z
-- ID: "83e6292f-a00e-463d-a1c6-0fc25bc0fbad"
-  Hint: Messages
-  Value: |
-    1/24/2017 4:22:50 PM	INFO	path: c:\ASF\Release\Release_8_2\Source\Foundation\Avanade.SC.Integration\FileSystem\ was processed.. (pipeline step: Read Files, endpoint: City Information Directory)
-    1/24/2017 4:22:53 PM	INFO	file: c:\ASF\Release\Release_8_2\Source\Foundation\Avanade.SC.Integration\FileSystem\cities.dat was processed.
-    1/24/2017 4:22:53 PM	INFO	10 elements were iterated. (pipeline: Read City Info from File Pipeline, pipeline step: Iterate Files and Rows and Run Pipeline)
 - ID: "9061beea-df25-4b2b-a698-3f5b4e867d18"
   Hint: Pipelines
   Type: Treelist

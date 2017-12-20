@@ -5,20 +5,9 @@ Template: "075c4fbd-f54e-4e6d-bd54-d49bda0913d8"
 Path: /sitecore/system/Data Exchange/Foundation RSS Tenant/Pipeline Batches/RSS Feed to RSS Content Item Sync Pipeline Batch
 DB: master
 SharedFields:
-- ID: "47f8050d-6eee-423f-a9f0-3dc34948c365"
-  Hint: LastRunCompleted
-  Type: Checkbox
-  Value: 1
 - ID: "6a2b2cbb-4338-4814-a8a9-9fecbb90456a"
   Hint: LastRunFinished
   Value: 20170531T212628Z
-- ID: "83e6292f-a00e-463d-a1c6-0fc25bc0fbad"
-  Hint: Messages
-  Value: |
-    5/31/2017 9:26:26 PM	INFO	http://blog.avanade.com/avanade-insights/feed/ was loaded. (pipeline step: Read RSS Feed, endpoint: Avanade Insights Blog)
-    5/31/2017 9:26:28 PM	INFO	10 elements were iterated. (pipeline: Read RSS Feed Pipeline, pipeline step: Iterate RSS articles and Run Pipeline)
-    5/31/2017 9:26:28 PM	INFO	About to Start Publish
-    5/31/2017 9:26:28 PM	INFO	Publish Started for RSS Content
 - ID: "9061beea-df25-4b2b-a698-3f5b4e867d18"
   Hint: Pipelines
   Type: Treelist

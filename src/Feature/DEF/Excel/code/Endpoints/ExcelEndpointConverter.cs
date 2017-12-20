@@ -35,7 +35,7 @@ namespace SF.Feature.DEF.Excel
             
             //
             //add the plugin to the endpoint
-            endpoint.Plugins.Add(settings);
+            endpoint.AddPlugin< ExcelSettings>(settings);
         }
     }
 }

@@ -34,7 +34,7 @@ namespace SF.Feature.DEF.General
             settings.RemoveIterableSettingsPlugin = 
                 base.GetBoolValue(source, GroupIterableDataItemModel.RemoveIterableSettingsPlugin);
 
-            pipelineStep.Plugins.Add(settings);
+            pipelineStep.AddPlugin< GroupIterableDataSettings>(settings);
         }
     }
 }

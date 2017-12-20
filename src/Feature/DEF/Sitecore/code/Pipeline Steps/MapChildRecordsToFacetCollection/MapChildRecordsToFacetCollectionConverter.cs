@@ -41,7 +41,7 @@ namespace SF.DEF.Feature.SitecoreProvider
             settings.RemoveChildRecordsWhenComplete =
                 base.GetBoolValue(source, MapChildRecordsToFacetCollectionItemModel.RemoveChildRecordsWhenComplete);
 
-            pipelineStep.Plugins.Add(settings);
+            pipelineStep.AddPlugin< MapChildRecordsToFacetCollectionSettings>(settings);
         }
     }
 }

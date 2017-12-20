@@ -6,53 +6,74 @@ using Sitecore.DataExchange.Plugins;
 using Sitecore.DataExchange.Processors.PipelineSteps;
 using Sitecore.DataExchange.Extensions;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Sitecore.Analytics.Automation;
+using Sitecore.Xdb.MarketingAutomation.OperationsClient;
+using Sitecore.Xdb.MarketingAutomation.Core.Requests;
+using Sitecore.Xdb.MarketingAutomation.Core.Results;
+using Sitecore.Services.Core.Diagnostics;
+using Sitecore.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace SF.DEF.Feature.SitecoreProvider
 {
     [RequiredPipelineStepPlugins(typeof(EnrollContactInEngagementPlanSettings))]
     public class EnrollContactInEngagementPlanStepProcessor : BasePipelineStepProcessor
     {
-        public override void Process(PipelineStep pipelineStep, PipelineContext pipelineContext)
+        protected override void ProcessPipelineStep(PipelineStep pipelineStep, PipelineContext pipelineContext, ILogger logger)
         {
-            var logger = pipelineContext.PipelineBatchContext.Logger;
-            if (!this.CanProcess(pipelineStep, pipelineContext))
-            {
-                logger.Error("Pipeline step processing will abort because the pipeline step cannot be processed. (pipeline step: {0})", (object)pipelineStep.Name);
-                return;
-            }
+            var log = pipelineContext.PipelineBatchContext.Logger;
 
             Contact contact = this.GetTargetObjectAsContact(pipelineStep, pipelineContext);
             if (contact == null)
             {
-                logger.Error("Target Item is not a contact. (pipeline step: {0})", (object)pipelineStep.Name);
+                log.Error("Target Item is not a contact. (pipeline step: {0})", (object)pipelineStep.Name);
                 return;
             }
 
             if (contact.ContactId == null || contact.ContactId == Guid.Empty)
             {
-                logger.Error("Contact Id does not Exist. (pipeline step: {0})", (object)pipelineStep.Name);
+                log.Error("Contact Id does not Exist. (pipeline step: {0})", (object)pipelineStep.Name);
                 return;
             }
 
             var settings = pipelineStep.GetPlugin<EnrollContactInEngagementPlanSettings>();
             if (settings == null)
             {
-                logger.Error("Cannot access Engagement Plan Settings. (pipeline step: {0})", (object)pipelineStep.Name);
+                log.Error("Cannot access Engagement Plan Settings. (pipeline step: {0})", (object)pipelineStep.Name);
                 return;
             }
 
-            string state = settings.EngagementPlanStateID;
-            bool wasEnrolled = AutomationContactManager.AddContact(contact.ContactId, new Sitecore.Data.ID(state));
-
-            if (!wasEnrolled)
+            
+            try
             {
-                logger.Warn(@"Contact Was not Enrolled (contact: {0})", contact.ContactId);
+                var planId = Guid.Parse(settings.EngagementPlanStateID);
+
+                var operationsClient = ServiceLocator.ServiceProvider.GetService<IAutomationOperationsClient>();
+                
+                var request = new EnrollmentRequest(contact.ContactId, planId); // Contact ID, Plan ID
+
+                request.Priority = 1; // Optional
+
+                //To do Map Activity and Custom Values
+                //request.ActivityId = Guid.Parse("{C5B87651-EE70-4684-BDD9-0B464B79476D}"); // Optional
+                //request.CustomValues.Add("test", "test"); // Optional
+
+                BatchEnrollmentRequestResult result = operationsClient.EnrollInPlanDirect(new[] { request });
+
+                if (!result.Success)
+                {
+                    log.Warn(@"Contact Was not Enrolled (contact: {0})", contact.ContactId);
+                }
+
             }
+            catch (Exception ex)
+            {
+                log.Error("Error Enrolling Contact in Plan", ex);
+            }
+
+            
         }
+
+        
 
         private Contact GetTargetObjectAsContact(PipelineStep pipelineStep, PipelineContext pipelineContext)
         {

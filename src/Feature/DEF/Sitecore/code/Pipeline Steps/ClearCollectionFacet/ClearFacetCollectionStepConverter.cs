@@ -38,7 +38,7 @@ namespace SF.DEF.Feature.SitecoreProvider
             settings.CollectionMemberName =
                 base.GetStringValue(source, ClearFacetCollectionItemModel.CollectionMemberName);
 
-            pipelineStep.Plugins.Add(settings);
+            pipelineStep.AddPlugin< ClearFacetCollectionSettings>(settings);
         }
     }
 }

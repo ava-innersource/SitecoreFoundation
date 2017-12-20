@@ -35,7 +35,7 @@ namespace SF.Feature.DEF.Database
             settings.Query =
                 base.GetStringValue(source, QueryDatabaseStepItemModel.Query);
 
-            pipelineStep.Plugins.Add(settings);
+            pipelineStep.AddPlugin< QuerySettings>(settings);
         }
     }
 }

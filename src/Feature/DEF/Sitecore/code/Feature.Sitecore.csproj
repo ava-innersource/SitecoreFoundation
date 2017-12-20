@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SF.DEF.Feature.SitecoreProvider</RootNamespace>
     <AssemblyName>SF.DEF.Feature.SitecoreProvider</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -26,6 +26,8 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -118,49 +120,67 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Sitecore.Analytics, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Analytics.NoReferences.8.2.160729\lib\NET452\Sitecore.Analytics.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Microsoft.Extensions.DependencyInjection.1.0.0\lib\netstandard1.1\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics, Version=11.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Analytics.NoReferences.9.0.171002\lib\NET462\Sitecore.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Analytics.Automation, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Analytics.Automation.NoReferences.8.2.160729\lib\NET452\Sitecore.Analytics.Automation.dll</HintPath>
+    <Reference Include="Sitecore.Analytics.Model, Version=11.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Analytics.Model.NoReferences.9.0.171002\lib\NET462\Sitecore.Analytics.Model.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Analytics.Model, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Analytics.Model.NoReferences.8.2.160729\lib\NET452\Sitecore.Analytics.Model.dll</HintPath>
+    <Reference Include="Sitecore.DataExchange, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.DataExchange.NoReferences.2.0.171013\lib\NET462\Sitecore.DataExchange.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.DataExchange, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.DataExchange.NoReferences.1.4.170419\lib\NET452\Sitecore.DataExchange.dll</HintPath>
+    <Reference Include="Sitecore.DataExchange.DataAccess, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.DataExchange.DataAccess.NoReferences.2.0.171013\lib\NET462\Sitecore.DataExchange.DataAccess.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.DataExchange.DataAccess, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.DataExchange.DataAccess.NoReferences.1.3.170210\lib\NET452\Sitecore.DataExchange.DataAccess.dll</HintPath>
+    <Reference Include="Sitecore.DataExchange.Local, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.DataExchange.Local.NoReferences.2.0.171013\lib\NET462\Sitecore.DataExchange.Local.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.DataExchange.Local, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.DataExchange.Local.NoReferences.1.4.170419\lib\NET452\Sitecore.DataExchange.Local.dll</HintPath>
+    <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171002\lib\NET462\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.DataExchange.Providers.Sc, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.DataExchange.Providers.Sc.NoReferences.1.4.170419\lib\NET452\Sitecore.DataExchange.Providers.Sc.dll</HintPath>
+    <Reference Include="Sitecore.Services.Core, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Services.Core.NoReferences.9.0.171002\lib\NET462\Sitecore.Services.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Kernel.NoReferences.8.2.170614\lib\NET452\Sitecore.Kernel.dll</HintPath>
+    <Reference Include="Sitecore.Services.Infrastructure, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Services.Infrastructure.NoReferences.9.0.171002\lib\NET462\Sitecore.Services.Infrastructure.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Services.Core, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Services.Core.NoReferences.8.2.170614\lib\NET452\Sitecore.Services.Core.dll</HintPath>
+    <Reference Include="Sitecore.Services.Infrastructure.Sitecore, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Services.Infrastructure.Sitecore.NoReferences.9.0.171002\lib\NET462\Sitecore.Services.Infrastructure.Sitecore.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Services.Infrastructure, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Services.Infrastructure.NoReferences.8.2.170614\lib\NET452\Sitecore.Services.Infrastructure.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Sitecore.Xdb.MarketingAutomation.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Xdb.MarketingAutomation.Core.NoReferences.9.0.171002\lib\NET462\Sitecore.Xdb.MarketingAutomation.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Services.Infrastructure.Sitecore, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Services.Infrastructure.Sitecore.NoReferences.8.2.170614\lib\NET452\Sitecore.Services.Infrastructure.Sitecore.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Sitecore.Xdb.MarketingAutomation.OperationsClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Xdb.MarketingAutomation.OperationsClient.NoReferences.9.0.171002\lib\NET462\Sitecore.Xdb.MarketingAutomation.OperationsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Linq, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\System.Linq.4.1.0\lib\net463\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\System.Linq.Expressions.4.1.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\System.Reflection.4.1.0\lib\net462\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\System.Runtime.Extensions.4.1.0\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -168,25 +188,19 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature.Sitecore\Serialization.config" Condition=" '$(Configuration)' == 'Debug' " />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\StaticValueAccessorConverter.cs" />
-    <Compile Include="DataAccess\StaticValueItemModel.cs" />
-    <Compile Include="DataAccess\StaticValueReader.cs" />
-    <Compile Include="DataAccess\StaticValueWriter.cs" />
     <Compile Include="Helpers\ItemModelHelpers.cs" />
     <Compile Include="Pipeline Steps\MapChildRecordsToFacetCollection\MapChildRecordsToFacetCollectionItemModel.cs" />
     <Compile Include="Pipeline Steps\MapChildRecordsToFacetCollection\MapChildRecordsToFacetCollectionSettings.cs" />
@@ -204,17 +218,25 @@
     <Compile Include="Pipeline Steps\Publish\PublishContentSettings.cs" />
     <Compile Include="Pipeline Steps\Publish\PublishContentStepConverter.cs" />
     <Compile Include="Pipeline Steps\Publish\PublishContentStepProcessor.cs" />
-    <Compile Include="Pipeline Steps\SitecoreLanguageSteps\ResolveSitecoreItemWithLanguageSettings.cs" />
-    <Compile Include="Pipeline Steps\SitecoreLanguageSteps\ResolveSitecoreItemWithLanguageStepConverter.cs" />
-    <Compile Include="Pipeline Steps\SitecoreLanguageSteps\ResolveSitecoreItemWithLanguageStepItemModel.cs" />
-    <Compile Include="Pipeline Steps\SitecoreLanguageSteps\ResolveSitecoreItemWithLanguageVersionStepProcessor.cs" />
-    <Compile Include="Pipeline Steps\SitecoreLanguageSteps\UpdateSitecoreItemSettings.cs" />
-    <Compile Include="Pipeline Steps\SitecoreLanguageSteps\UpdateSitecoreItemWithLanguageVersionStepConverter.cs" />
-    <Compile Include="Pipeline Steps\SitecoreLanguageSteps\UpdateSitecoreItemWithLanguageVersionStepItemModel.cs" />
-    <Compile Include="Pipeline Steps\SitecoreLanguageSteps\UpdateSitecoreItemWithLanguageVersionStepProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="web.config" />
+    <None Include="web.always.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.ci.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Cloud.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\General\code\Feature.General.csproj">
@@ -266,6 +288,13 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="..\..\..\..\..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\..\..\..\..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\..\..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

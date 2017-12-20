@@ -1,13 +1,13 @@
 module.exports = function () {
-  var instanceRoot = "C:\\websites\\sf.dev.local";
+  var instanceRoot = "C:\\Websites\\Sitecore\\sf9.dev.local";
   var config = {
-    websiteRoot: instanceRoot + "\\Website",
-    sitecoreLibraries: instanceRoot + "\\Website\\bin",
-    licensePath: instanceRoot + "\\Data\\license.xml",
+    websiteRoot: instanceRoot,
+    sitecoreLibraries: instanceRoot + "\\bin",
+    licensePath: instanceRoot + "\\App_Data\\license.xml",
     solutionName: "SitecoreFoundation",
     buildConfiguration: "Debug",
     buildPlatform: "Any CPU",
-    buildToolsVersion: 14.0, //change to 15.0 for VS2017 support
+    buildToolsVersion: 15.0, //change to 15.0 for VS2017 support
     publishPlatform: "AnyCpu",
     runCleanBuilds: false
   };

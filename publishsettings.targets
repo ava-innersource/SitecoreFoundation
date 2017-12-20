@@ -1,6 +1,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <publishUrl>http://sf.dev.local</publishUrl>
+        <publishUrl>http://sf9.dev.local</publishUrl>
         <ExcludeFilesFromDeployment>packages.config</ExcludeFilesFromDeployment>
     </PropertyGroup>
 </Project>

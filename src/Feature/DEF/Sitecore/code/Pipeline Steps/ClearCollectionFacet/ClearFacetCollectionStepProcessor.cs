@@ -8,24 +8,16 @@ using Sitecore.DataExchange.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using Sitecore.Analytics.Automation;
 using Sitecore.Analytics.Model.Framework;
+using Sitecore.Services.Core.Diagnostics;
 
 namespace SF.DEF.Feature.SitecoreProvider
 {
     [RequiredPipelineStepPlugins(typeof(ClearFacetCollectionSettings))]
     public class ClearFacetCollectionStepProcessor : BasePipelineStepProcessor
     {
-        public override void Process(PipelineStep pipelineStep, PipelineContext pipelineContext)
+        protected override void ProcessPipelineStep(PipelineStep pipelineStep, PipelineContext pipelineContext, ILogger logger)
         {
-            var logger = pipelineContext.PipelineBatchContext.Logger;
-            if (!this.CanProcess(pipelineStep, pipelineContext))
-            {
-                logger.Error("Pipeline step processing will abort because the pipeline step cannot be processed. (pipeline step: {0})", (object)pipelineStep.Name);
-                return;
-            }
-
             Contact contact = this.GetTargetObjectAsContact(pipelineStep, pipelineContext);
             if (contact == null)
             {
@@ -73,6 +65,7 @@ namespace SF.DEF.Feature.SitecoreProvider
             logger.Info("Removed {0} elements.", ctnRemoved);
         }
 
+        
         private Contact GetTargetObjectAsContact(PipelineStep pipelineStep, PipelineContext pipelineContext)
         {
             if (!pipelineContext.HasSynchronizationSettings())

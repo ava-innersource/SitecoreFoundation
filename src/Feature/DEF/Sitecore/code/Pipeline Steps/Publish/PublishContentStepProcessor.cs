@@ -1,6 +1,7 @@
 ﻿using Sitecore.DataExchange.Contexts;
 using Sitecore.DataExchange.Models;
 using Sitecore.DataExchange.Processors.PipelineSteps;
+using Sitecore.Services.Core.Diagnostics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +11,8 @@ namespace SF.DEF.Feature.SitecoreProvider
 {
     public class PublishContentStepProcessor : BasePipelineStepProcessor
     {
-        public override void Process(PipelineStep pipelineStep, PipelineContext pipelineContext)
+        protected override void ProcessPipelineStep(PipelineStep pipelineStep, PipelineContext pipelineContext, ILogger logger)
         {
-            var logger = pipelineContext.PipelineBatchContext.Logger;
-
             var settings = pipelineStep.GetPlugin<PublishContentSettings>();
             if (settings == null)
             {

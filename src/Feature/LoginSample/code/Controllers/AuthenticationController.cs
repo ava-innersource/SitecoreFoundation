@@ -64,7 +64,7 @@ namespace SF.Feature.LoginSample.Controllers
                         var redirectUrl = redirectField.GetFriendlyUrl();
 
                         //Track for xDB
-                        Sitecore.Analytics.Tracker.Current.Session.Identify(domainUser);
+                        Sitecore.Analytics.Tracker.Current.Session.IdentifyAs(Sitecore.Context.Site.Name, domainUser);
 
                         
                         if (string.IsNullOrEmpty(redirectUrl))
@@ -261,10 +261,10 @@ namespace SF.Feature.LoginSample.Controllers
                         }
 
                         //regardless, track in xDB
-                        Sitecore.Analytics.Tracker.Current.Session.Identify(domainUser);
+                        Sitecore.Analytics.Tracker.Current.Session.IdentifyAs(Sitecore.Context.Site.Name, domainUser);
 
                         //Sitecore.Analytics.Tracker.CurrentVisit.ContactVisitIndex
-                        
+
 
                         //populate rest of contact
                         var contact = Sitecore.Analytics.Tracker.Current.Session.Contact;
