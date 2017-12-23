@@ -8,27 +8,27 @@ SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 75
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{02C88506-FBF4-4D02-A6A1-E6E7D927C7F9}"
+          p:after="r[@uid='{224198E5-30B8-416E-99C9-40CBB48DB623}']"
+          s:ds="{85A462A3-9D69-4184-8F34-5E1EC549FABF}"
+          s:id="{75A2BE08-AAB7-4069-8B66-7EBDEDC93CF0}"
+          s:ph="/Airspace Body" />
+      </d>
+    </r>
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
-    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
-      Hint: __Final Renderings
-      Type: Layout
-      Value: |
-        <r xmlns:p="p" xmlns:s="s"
-          p:p="1">
-          <d
-            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-            <r
-              uid="{02C88506-FBF4-4D02-A6A1-E6E7D927C7F9}"
-              p:after="r[@uid='{224198E5-30B8-416E-99C9-40CBB48DB623}']"
-              s:ds="{85A462A3-9D69-4184-8F34-5E1EC549FABF}"
-              s:id="{75A2BE08-AAB7-4069-8B66-7EBDEDC93CF0}"
-              s:ph="Airspace Body" />
-          </d>
-        </r>
     - ID: "0defbf19-abc4-4cbb-9109-81d1e30a35c1"
       Hint: Navigation Title
       Value: Support

@@ -4,68 +4,6 @@ Parent: "9e4bd2e6-5f1a-4ac7-b038-3a0c67b1d74c"
 Template: "195731e3-8313-4dcb-b910-2d3a465a4625"
 Path: /sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home/Playground/Json
 DB: master
-SharedFields:
-- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
-  Hint: __Renderings
-  Type: layout
-  Value: |
-    <r xmlns:p="p" xmlns:s="s"
-      p:p="1">
-      <d
-        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-        <r
-          uid="{296294FA-AB36-4F1E-B667-CCCDCC2BF215}"
-          s:ph="/Bottom Area/Column1_108d014e-fe07-4482-8561-2bbe5addd400/Column2_5ee4ec39-1aac-4ee8-b3a0-21b5d32a463c/Column1_{DF9D223E-2B65-41B4-A8C6-E242589EA06E}_0" />
-        <r
-          uid="{221B578E-33D5-4F8E-9464-E5CA0B046B7D}"
-          s:ph="/Bottom Area/Column1_108d014e-fe07-4482-8561-2bbe5addd400/Column2_5ee4ec39-1aac-4ee8-b3a0-21b5d32a463c/Column3_{C98E2864-6E36-474A-A229-E10A52A5259F}_0" />
-        <r
-          uid="{95BC7CEC-9013-4EC6-ACB1-EE15EADA7D34}"
-          s:ph="/Bottom Area/Column1_108d014e-fe07-4482-8561-2bbe5addd400/Column2_5ee4ec39-1aac-4ee8-b3a0-21b5d32a463c/Column2_{C98E2864-6E36-474A-A229-E10A52A5259F}_0" />
-        <r
-          uid="{A025A767-7F1C-4A3D-B7B4-ECD4BD38D7EF}"
-          s:ph="/Bottom Area/Column1_108d014e-fe07-4482-8561-2bbe5addd400/Column2_5ee4ec39-1aac-4ee8-b3a0-21b5d32a463c/Column1_{C98E2864-6E36-474A-A229-E10A52A5259F}_0" />
-        <r
-          uid="{C98E2864-6E36-474A-A229-E10A52A5259F}"
-          s:ph="/Bottom Area/Column1_108d014e-fe07-4482-8561-2bbe5addd400/Column2_{5EE4EC39-1AAC-4EE8-B3A0-21B5D32A463C}_0" />
-        <r
-          uid="{DF9D223E-2B65-41B4-A8C6-E242589EA06E}"
-          s:ph="/Bottom Area/Column1_108d014e-fe07-4482-8561-2bbe5addd400/Column2_{5EE4EC39-1AAC-4EE8-B3A0-21B5D32A463C}_0" />
-        <r
-          uid="{EBE0AEA6-8883-4D5E-B45E-4327BD2386B8}"
-          s:ph="/Bottom Area/Column1_108d014e-fe07-4482-8561-2bbe5addd400/Column1_{5EE4EC39-1AAC-4EE8-B3A0-21B5D32A463C}_0" />
-        <r
-          uid="{5EE4EC39-1AAC-4EE8-B3A0-21B5D32A463C}"
-          s:ph="/Bottom Area/Column1_{108D014E-FE07-4482-8561-2BBE5ADDD400}_0" />
-        <r
-          uid="{739152D4-6E20-47EE-BF7A-C5FAA6130513}"
-          s:ph="/Top Area/Column1_0a24cff5-f783-43e9-8f26-3ab78ea05099/NavLinks2_{397605E6-81FA-4B58-9EF3-3EE94D2F31D7}_0" />
-        <r
-          uid="{9F29D419-958A-4DFE-A2DE-9C56DC0A8591}"
-          s:ph="/Top Area/Column1_0a24cff5-f783-43e9-8f26-3ab78ea05099/NavLinks2_{397605E6-81FA-4B58-9EF3-3EE94D2F31D7}_0" />
-        <r
-          uid="{33014C6F-91E8-416A-BA5F-7970870407B3}"
-          s:ph="/Top Area/Column1_0a24cff5-f783-43e9-8f26-3ab78ea05099/NavLinks2_397605e6-81fa-4b58-9ef3-3ee94d2f31d7/NavLinks1_{1B1DFE9F-89BE-48EE-A01B-4EA43B6EC07E}_0" />
-        <r
-          uid="{8187687F-2A69-432A-91CF-C87DC8D748D3}"
-          s:ph="/Top Area/Column1_0a24cff5-f783-43e9-8f26-3ab78ea05099/NavLinks2_397605e6-81fa-4b58-9ef3-3ee94d2f31d7/NavLinks1_{1B1DFE9F-89BE-48EE-A01B-4EA43B6EC07E}_0" />
-        <r
-          uid="{038445C0-73A0-4ABD-B370-F311AA0D95F4}"
-          s:ph="/Top Area/Column1_0a24cff5-f783-43e9-8f26-3ab78ea05099/NavLinks2_397605e6-81fa-4b58-9ef3-3ee94d2f31d7/NavLinks1_{185EFFF8-BDB4-4323-9628-6C2F993C3F36}_0" />
-        <r
-          uid="{6F680270-1628-45B7-AF04-425F4DB82FDD}"
-          s:ph="/Top Area/Column1_0a24cff5-f783-43e9-8f26-3ab78ea05099/NavLinks2_397605e6-81fa-4b58-9ef3-3ee94d2f31d7/NavLinks1_{185EFFF8-BDB4-4323-9628-6C2F993C3F36}_0" />
-        <r
-          uid="{C5529919-74A4-4890-BE01-852B05E1D23E}"
-          s:ph="/Top Area/Column1_0a24cff5-f783-43e9-8f26-3ab78ea05099/NavLinks2_397605e6-81fa-4b58-9ef3-3ee94d2f31d7/NavLinks1_{185EFFF8-BDB4-4323-9628-6C2F993C3F36}_0" />
-        <r
-          uid="{36E1DB0E-A36D-485B-B168-F828BBE74A2F}"
-          s:ph="/Top Area/Column1_0a24cff5-f783-43e9-8f26-3ab78ea05099/NavLinks2_397605e6-81fa-4b58-9ef3-3ee94d2f31d7/NavLinks1_{185EFFF8-BDB4-4323-9628-6C2F993C3F36}_0" />
-        <r
-          uid="{397605E6-81FA-4B58-9EF3-3EE94D2F31D7}"
-          s:ph="/Top Area/Column1_{0A24CFF5-F783-43E9-8F26-3AB78EA05099}_0" />
-      </d>
-    </r>
 Languages:
 - Language: en
   Versions:
@@ -81,24 +19,21 @@ Languages:
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
               uid="{561F061F-448A-4771-A2F1-EAA997515A80}"
-              p:before="r[@uid='{18D01474-D2AE-4B3E-821A-66C8BE1A4CEF}']"
+              p:before="*"
               s:ds="{C7FC21EF-3F04-4A63-8052-3B10C62EFAA8}"
               s:id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
               s:ph="/Middle Area/Column1_48f3d855-292b-444b-b124-5e25e9fce33e/HandlebarTemplates_18d01474-d2ae-4b3e-821a-66c8be1a4cef" />
             <r
               uid="{18D01474-D2AE-4B3E-821A-66C8BE1A4CEF}"
-              p:before="r[@uid='{48F3D855-292B-444B-B124-5E25E9FCE33E}']"
+              p:after="r[@uid='{561F061F-448A-4771-A2F1-EAA997515A80}']"
               s:ds="{386B01C0-D9A1-4F68-A12F-DD2F5F81269E}"
               s:id="{3390D758-A398-48EB-84C6-05B576D41A45}"
               s:ph="/Middle Area/Column1_48f3d855-292b-444b-b124-5e25e9fce33e" />
             <r
               uid="{48F3D855-292B-444B-B124-5E25E9FCE33E}"
-              p:before="r[@uid='{296294FA-AB36-4F1E-B667-CCCDCC2BF215}']"
+              p:after="r[@uid='{18D01474-D2AE-4B3E-821A-66C8BE1A4CEF}']"
               s:id="{F6E1983C-3451-45F8-A239-5540AB97DD5B}"
               s:ph="Middle Area" />
-            <r
-              uid="{9F29D419-958A-4DFE-A2DE-9C56DC0A8591}"
-              s:par="RootItem={71B87E08-09C7-4E7D-8A0A-07F2FD2BFF24}&amp;IncludeRootItem&amp;DisplayNameField&amp;MaxDepth=3&amp;IncludeBackLink&amp;BackLinkText=Back&amp;RightAligned&amp;IncludeParentLinkInSubmenu&amp;ID&amp;class&amp;ShowForSmallOnly&amp;ShowForMediumUp&amp;ShowForMediumOnly&amp;ShowForLargeUp&amp;ShowForLargeOnly&amp;ShowForXLargeUp&amp;ShowForXLargeOnly&amp;ShowForXXLargeUp&amp;HideForSmallOnly&amp;HideForMediumUp&amp;HideForMeidumOnly&amp;HideForLargeUp&amp;HideForLargeOnly&amp;HideForXLargeUp&amp;HideForXLargeOnly&amp;HideForXXLargeUp&amp;ShowForLandscape&amp;ShowForPortrait&amp;ShowForTouch&amp;HideForTouch&amp;ShowForPrint&amp;HideForPrint" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"

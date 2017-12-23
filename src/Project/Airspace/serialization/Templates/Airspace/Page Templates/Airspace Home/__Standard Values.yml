@@ -16,47 +16,34 @@ SharedFields:
     <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
-        l="{02490174-0861-40C4-893E-223E3D521947}" />
+        l="{02490174-0861-40C4-893E-223E3D521947}">
+        <r
+          ds="{73659297-83CD-4548-8E14-795CC72BE813}"
+          id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+          ph="/Airspace Bottom/HandlebarTemplates-{C6A0257D-6B2A-4F00-AC5C-F15A0DAD15F5}-0"
+          uid="{EDA1C288-F5FA-4049-9570-3E8E0E61EAEE}" />
+        <r
+          ds="{004477F3-8E48-44B2-A280-F2DA9E81406C}"
+          id="{3FADCAF4-7BE9-41C4-A447-543B011B0424}"
+          ph="/Airspace Bottom"
+          uid="{C6A0257D-6B2A-4F00-AC5C-F15A0DAD15F5}" />
+        <r
+          ds="{890B9203-7F16-4D1D-82D9-86F515B08FC5}"
+          id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
+          ph="/Airspace Top/HandlebarTemplates-{35F47541-D578-4233-B0EE-9275613CA382}-0"
+          uid="{4F6A04D8-D00B-412B-ABCD-BF3DCC04C67F}" />
+        <r
+          ds="{004477F3-8E48-44B2-A280-F2DA9E81406C}"
+          id="{3FADCAF4-7BE9-41C4-A447-543B011B0424}"
+          ph="/Airspace Top"
+          uid="{35F47541-D578-4233-B0EE-9275613CA382}" />
+      </d>
     </r>
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
-    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
-      Hint: __Final Renderings
-      Type: Layout
-      Value: |
-        <r xmlns:p="p" xmlns:s="s"
-          p:p="1">
-          <d
-            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-            <r
-              uid="{EDA1C288-F5FA-4049-9570-3E8E0E61EAEE}"
-              p:before="*"
-              s:ds="{73659297-83CD-4548-8E14-795CC72BE813}"
-              s:id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
-              s:ph="/Airspace Bottom/HandlebarTemplates_c6a0257d-6b2a-4f00-ac5c-f15a0dad15f5" />
-            <r
-              uid="{C6A0257D-6B2A-4F00-AC5C-F15A0DAD15F5}"
-              p:after="r[@uid='{EDA1C288-F5FA-4049-9570-3E8E0E61EAEE}']"
-              s:ds="{004477F3-8E48-44B2-A280-F2DA9E81406C}"
-              s:id="{3FADCAF4-7BE9-41C4-A447-543B011B0424}"
-              s:ph="Airspace Bottom" />
-            <r
-              uid="{4F6A04D8-D00B-412B-ABCD-BF3DCC04C67F}"
-              p:after="r[@uid='{C6A0257D-6B2A-4F00-AC5C-F15A0DAD15F5}']"
-              s:ds="{890B9203-7F16-4D1D-82D9-86F515B08FC5}"
-              s:id="{98BAEC29-46E6-4C8E-8A33-C8F519E135AC}"
-              s:ph="/Airspace Top/HandlebarTemplates_35f47541-d578-4233-b0ee-9275613ca382" />
-            <r
-              uid="{35F47541-D578-4233-B0EE-9275613CA382}"
-              p:after="*[1=2]"
-              s:ds="{004477F3-8E48-44B2-A280-F2DA9E81406C}"
-              s:id="{3FADCAF4-7BE9-41C4-A447-543B011B0424}"
-              s:ph="Airspace Top" />
-          </d>
-        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20170731T230128Z

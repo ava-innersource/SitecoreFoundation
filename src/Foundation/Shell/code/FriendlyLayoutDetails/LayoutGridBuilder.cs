@@ -165,89 +165,91 @@ namespace SF.Foundation.Shell
         child.Controls.Add(literal);
     }
 
-    private void BuildRendering(Border border, DeviceDefinition deviceDefinition, RenderingDefinition renderingDefinition, int index, int conditionsCount)
-    {
-        Assert.ArgumentNotNull(border, "border");
-        Assert.ArgumentNotNull(deviceDefinition, "deviceDefinition");
-        Assert.ArgumentNotNull(renderingDefinition, "renderingDefinition");
-        string itemID = renderingDefinition.ItemID;
-        if (itemID != null)
+        private void BuildRendering(Border border, DeviceDefinition deviceDefinition, RenderingDefinition renderingDefinition, int index, int conditionsCount)
         {
-            Item item = Client.ContentDatabase.GetItem(itemID);
-            if (item != null)
+            Assert.ArgumentNotNull(border, "border");
+            Assert.ArgumentNotNull(deviceDefinition, "deviceDefinition");
+            Assert.ArgumentNotNull(renderingDefinition, "renderingDefinition");
+            string itemID = renderingDefinition.ItemID;
+            if (itemID != null)
             {
-                string displayName = item.DisplayName;
-                string icon = item.Appearance.Icon;
-                string str4 = string.Empty;
-                string initialMarkup = Images.GetImage(icon, 0x10, 0x10, "absmiddle", "0px 4px 0px 0px") + displayName;
-                if ((str4.Length > 0) && (str4 != "content"))
+                Item item = Client.ContentDatabase.GetItem(itemID);
+                if (item != null)
                 {
-                    string str7 = initialMarkup;
-                    initialMarkup = str7 + " " + Translate.Text("in") + " " + str4 + ".";
-                }
-                if (conditionsCount > 1)
-                {
-                    initialMarkup = initialMarkup + @"<span class=""{((conditionsCount > 9) ? ""scConditionContainer scLongConditionContainer"" : ""scConditionContainer"")}"">{conditionsCount}</span>";
-                }
-                initialMarkup = RenderLayoutGridRenderingPipeline.Run(renderingDefinition, initialMarkup);
-                Border child = new Border();
-                border.Controls.Add(child);
-                string str6 = StringUtil.GetString(new string[] { this.EditRenderingClick }).Replace("$Device", deviceDefinition.ID).Replace("$Index", index.ToString());
-                if (!string.IsNullOrEmpty(str6))
-                {
-                    child.RollOver = true;
-                    child.Class = "scRollOver";
-                    child.Click = str6;
-                }
-
-                if (!string.IsNullOrEmpty(renderingDefinition.Datasource))
-                {
-                    var ds = Client.ContentDatabase.GetItem(renderingDefinition.Datasource);
-                    if (ds != null)
+                    string displayName = item.DisplayName;
+                    string icon = item.Appearance.Icon;
+                    string str4 = string.Empty;
+                    string initialMarkup = Images.GetImage(icon, 0x10, 0x10, "absmiddle", "0px 4px 0px 0px") + displayName;
+                    if ((str4.Length > 0) && (str4 != "content"))
                     {
-                        initialMarkup += " - " + ds.Name;
+                        string str7 = initialMarkup;
+                        initialMarkup = str7 + " " + Translate.Text("in") + " " + str4 + ".";
                     }
-                }
-                else
-                {
-                    initialMarkup += " - No Data Source";
-                }
-
-                if (!string.IsNullOrEmpty(renderingDefinition.Placeholder))
-                {
-                    var nesting = renderingDefinition.Placeholder.Split('/');
-                    StringBuilder sb = new StringBuilder();
-                    foreach (var nest in nesting)
+                    if (conditionsCount > 1)
                     {
-                        if (nest.IndexOf('_') > -1)
+                        initialMarkup = initialMarkup + @"<span class=""{((conditionsCount > 9) ? ""scConditionContainer scLongConditionContainer"" : ""scConditionContainer"")}"">{conditionsCount}</span>";
+                    }
+                    initialMarkup = RenderLayoutGridRenderingPipeline.Run(renderingDefinition, initialMarkup);
+                    Border child = new Border();
+                    border.Controls.Add(child);
+                    string str6 = StringUtil.GetString(new string[] { this.EditRenderingClick }).Replace("$Device", deviceDefinition.ID).Replace("$Index", index.ToString());
+                    if (!string.IsNullOrEmpty(str6))
+                    {
+                        child.RollOver = true;
+                        child.Class = "scRollOver";
+                        child.Click = str6;
+                    }
+
+                    if (!string.IsNullOrEmpty(renderingDefinition.Datasource))
+                    {
+                        var ds = Client.ContentDatabase.GetItem(renderingDefinition.Datasource);
+                        if (ds != null)
                         {
-                            var keys = nest.Split('_');
-                            sb.Append(keys[0]);
+                            initialMarkup += " - " + ds.Name;
                         }
-                        else 
-                        {
-                            sb.Append(nest);
-                        }
-
-                        sb.Append(" > ");
                     }
-                    var friendlyPlaceholders = sb.ToString();
-                    if (friendlyPlaceholders.IndexOf(" > ") > -1 )
+                    else
                     {
-                        friendlyPlaceholders = friendlyPlaceholders.Substring(0, friendlyPlaceholders.Length - 2);
+                        initialMarkup += " - No Data Source";
                     }
 
-                    initialMarkup += string.Format(@"<br /><span class=""friendlyPlaceholder"">{0}</a>", friendlyPlaceholders);
+                    if (!string.IsNullOrEmpty(renderingDefinition.Placeholder))
+                    {
+                        var nesting = renderingDefinition.Placeholder.Split('/');
+                        StringBuilder sb = new StringBuilder();
+                        foreach (var nest in nesting)
+                        {
+                            //New Placeholder Format
+                            int startRenderingId = nest.IndexOf("-{");
+                            if (startRenderingId > -1)
+                            {
+                                var key = nest.Substring(0, startRenderingId);
+                                sb.Append(key);
+                            }
+                            else
+                            {
+                                sb.Append(nest);
+                            }
+
+                            sb.Append(" > ");
+                        }
+                        var friendlyPlaceholders = sb.ToString();
+                        if (friendlyPlaceholders.IndexOf(" > ") > -1)
+                        {
+                            friendlyPlaceholders = friendlyPlaceholders.Substring(0, friendlyPlaceholders.Length - 2);
+                        }
+
+                        initialMarkup += string.Format(@"<br /><span class=""friendlyPlaceholder"">{0}</a>", friendlyPlaceholders);
 
 
+                    }
+
+
+                    Sitecore.Web.UI.HtmlControls.Literal literal = new Sitecore.Web.UI.HtmlControls.Literal("<div class='scRendering' style='padding:2px;position:relative'>" + initialMarkup + "</div>");
+                    child.Controls.Add(literal);
                 }
-                
-
-                Sitecore.Web.UI.HtmlControls.Literal literal = new Sitecore.Web.UI.HtmlControls.Literal("<div class='scRendering' style='padding:2px;position:relative'>" + initialMarkup + "</div>");
-                child.Controls.Add(literal);
             }
         }
-    }
 
     // Properties
     public string Class
