@@ -1,0 +1,54 @@
+$startPath = "/sitecore/content/Starter Kit Sites/Sites/Starter Kit/Home"
+$placeholderKey = "*"
+
+$item = Get-Item -Path $startPath 
+
+#copy final layout to shared layout
+	$layoutField = New-Object "Sitecore.Data.Fields.LayoutField" -ArgumentList ($item.Fields[[Sitecore.FieldIDs]::LayoutField]);
+    $finalLayoutField = New-Object -TypeName "Sitecore.Data.Fields.LayoutField" -ArgumentList $item.Fields[[Sitecore.FieldIDs]::FinalLayoutField]
+
+    if ($finalLayoutField.Value -eq $null -or $finalLayoutField.Value -eq "") {
+    
+	}
+	else
+	{
+        $finalLayoutDefinition = [Sitecore.Layouts.LayoutDefinition]::Parse($finalLayoutField.Value)
+		$Item."__Renderings" = $finalLayoutDefinition.ToXml();
+        Reset-ItemField -Item $Item -Name "__Final Renderings" -IncludeStandardFields
+	}
+	
+
+Write-Progress -Activity "Upgrading dynamic placeholders for Single Item" `
+    -Status "Getting content items"
+
+    Get-Rendering -Item $item  -Placeholder $placeholderKey | Foreach-Object {
+		# split string if it is nested in placeholders
+		$newPlaceholder = ""
+		$_.Placeholder.Split("/") | ForEach-Object {
+			# Double check that this is an old style dynamic placeholder - should have a lowercase guid at the end of the string
+			$matches = [regex]::Matches($_,'([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})$')
+			if ($matches.Success) {
+				$renderingId = $matches.Groups[0].Value
+				# Replace the old style guid with the new style guid and add the unique number
+				# for this upgrade, that will always be 0
+				Write-Progress -Activity  "Match: [$_]"
+				$newPlaceholder += "/" + $_.Replace($renderingId, "{$($renderingId.ToUpper())}_0")							
+			}
+			else
+			{
+				Write-Progress -Activity  "No Match: [$_]"
+				$newPlaceholder += "/" + $_;
+			}
+		}
+		
+		#Replace Underscores with dashes, as that's the delimeter
+		$newPlaceholder = $newPlaceholder.Replace("_", "-")
+		$newPlaceholder = $newPlaceholder.Replace("///", "/")
+		$newPlaceholder = $newPlaceholder.Replace("//", "/")
+		
+		Write-Progress -Activity  "setting Placeholder to [$newPlaceholder]"
+		$_.Placeholder = $newPlaceholder
+		Set-Rendering -Item $item -Instance $_
+    }
+
+	Write-Progress -Completed -Activity "Done"
