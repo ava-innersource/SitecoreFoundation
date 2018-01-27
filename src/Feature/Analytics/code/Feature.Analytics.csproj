@@ -183,7 +183,7 @@
     <Compile Include="Models\PageEventDetails.cs" />
     <Compile Include="Models\TrackerDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterAnalyticsRoutes.cs" />
+    <Compile Include="Controllers\RegisterAnalyticsRoutes.cs" />
     <Content Include="Global\scripts\Feature\Analytics\loadAnalytics.js" />
     <Content Include="Global\scripts\Feature\Analytics\sitecoreAnalytics.js" />
     <Content Include="App_Config\Include\Feature.Analytics\Serialization.config" />

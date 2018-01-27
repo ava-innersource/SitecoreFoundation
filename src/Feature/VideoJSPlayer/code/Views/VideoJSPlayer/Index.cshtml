@@ -1,0 +1,30 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model SF.Feature.VideoJSPlayer.Models.VideoJSPlayerModel
+
+<div @Html.Sxa().Component("flex-video", Model.Attributes)>
+    <div class="component-content">
+        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing && string.IsNullOrEmpty(Model.Mp4Url) && string.IsNullOrEmpty(Model.WebmUrl) && string.IsNullOrEmpty(Model.OggUrl))
+        {
+            <div>No Video Specified. Please Configure the video component.</div>
+        }
+        <video id="@Model.VideoId" class="@Model.VideoTagCSS" @Model.VideoJSAttributes>
+            @if (!string.IsNullOrEmpty(Model.Mp4Url))
+            {
+                <source src="@Model.Mp4Url" type='video/mp4' />
+            }
+            @if (!string.IsNullOrEmpty(Model.WebmUrl))
+            {
+                <source src="@Model.WebmUrl" type='video/webm' />
+            }
+            @if (!string.IsNullOrEmpty(Model.OggUrl))
+            {
+                <source src="@Model.OggUrl" type='video/ogg' />
+            }
+            <p class="vjs-no-js">@Model.NotSupportedMessage</p>
+        </video>
+    </div>
+</div>
+
+

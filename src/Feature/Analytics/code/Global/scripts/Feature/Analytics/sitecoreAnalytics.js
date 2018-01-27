@@ -4,7 +4,7 @@ SF.SitecoreData = null;
 SF.Analytics = (function () {
     
     endSession = function () {
-        var url = '/sitecore/api/SF/analytics/EndSession';
+        var url = '/api/SF/1.0/analytics/EndSession';
 
         $.ajax({
             url: url,
@@ -18,7 +18,7 @@ SF.Analytics = (function () {
     },
     getSitecoreEvents = function () {
        
-        var url = '/sitecore/api/SF/analytics/GetTracker';
+        var url = '/api/SF/1.0/analytics/GetTracker';
 
         var data = {
             pageId: SF.PageID
@@ -60,7 +60,7 @@ SF.Analytics = (function () {
 
         console.log('picked up track, posting to service');
 
-        var url = '/sitecore/api/SF/analytics/RegisterInteraction';
+        var url = '/api/SF/1.0/analytics/RegisterInteraction';
 
         var data = {
             interactionId: id
@@ -80,7 +80,7 @@ SF.Analytics = (function () {
     },
     trackEvent = function (eventName, eventLabel)
     {
-        var url = '/sitecore/api/SF/analytics/RegisterEvent';
+        var url = '/api/SF/1.0/analytics/RegisterEvent';
 
         var data = {
             name: eventName,
@@ -113,7 +113,7 @@ SF.Analytics = (function () {
                 console.log('picked up track, posting to service');
                 //todo, POST to SF end point
 
-                var url = '/sitecore/api/SF/analytics/RegisterEvent';
+                var url = '/api/SF/1.0/analytics/RegisterEvent';
 
                 var data = {
                     name: event,
