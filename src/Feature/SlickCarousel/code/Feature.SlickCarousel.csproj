@@ -136,6 +136,18 @@
     <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Mvc.NoReferences.9.0.171219\lib\NET462\Sitecore.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.XA.Foundation.IoC">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.IoC.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.MarkupDecorator">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Mvc">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Linq, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\System.Linq.4.1.0\lib\net463\System.Linq.dll</HintPath>
@@ -193,7 +205,15 @@
     <Content Include="App_Config\Include\Feature.SlickCarousel\Serialization.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\SlickCarouselController.cs" />
+    <Compile Include="Models\SlickCarouselItemModel.cs" />
+    <Compile Include="Models\SlickCarouselModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ISlickCarouselItemRepository.cs" />
+    <Compile Include="Repositories\ISlickCarouselRepository.cs" />
+    <Compile Include="Repositories\SlickCarouselItemRepository.cs" />
+    <Compile Include="Repositories\SlickCarouselRepository.cs" />
+    <Compile Include="Repositories\RegisterDependencies.cs" />
     <Content Include="content\vendor\slick\ajax-loader.gif" />
     <Content Include="content\vendor\slick\fonts\slick.svg" />
     <Content Include="content\vendor\slick\slick-theme.css" />
@@ -212,8 +232,8 @@
     <Content Include="content\vendor\slick\slick.scss" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="global\scripts\Feature\slickcarousel\slickCarouselInit.js" />
-    <Content Include="Views\Feature.SlickCarousel\SlickCarousel.cshtml" />
-    <Content Include="Views\Feature.SlickCarousel\SlickCarouselItem.cshtml" />
+    <Content Include="Views\SlickCarousel\Index.cshtml" />
+    <Content Include="Views\SlickCarousel\CarouselItem.cshtml" />
     <None Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -226,6 +246,7 @@
       <Name>Foundation.Structure</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
