@@ -1,0 +1,55 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model SF.Feature.Handlebars.Models.HandlebarCollectionContainerModel
+
+<div @Html.Sxa().Component("handlebar-collection-container", Model.Attributes)>
+    <div class="component-content">
+        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing && Model.NumItems == 0)
+        {
+            <div>No Items Found to bind to.</div>
+        }
+
+        @Html.Sitecore().DynamicPlaceholder("HandlebarTemplates")
+
+        @if (Model.EnablePagination && Model.NumPages > 1)
+        {
+        <ul class="pagination">
+            @if (Model.CurrentPage == 1)
+            {
+                <li class="arrow unavailable"><a href="@(Model.CurrentUrl)@(Model.QueryStringParam)=1">&laquo;</a></li>
+            }
+            else
+            {
+                <li class="arrow unavailable"><a href="@(Model.CurrentUrl)@(Model.QueryStringParam)=@(Model.CurrentPage - 1)">&laquo;</a></li>
+            }
+
+            @for (int pageIndex = 1; pageIndex <= Model.NumPages; pageIndex++)
+            {
+                if (pageIndex == Model.CurrentPage)
+                {
+                    <li class="current"><a href="@(Model.CurrentUrl)@(Model.QueryStringParam)=@pageIndex">@pageIndex</a></li>
+                }
+                else
+                {
+                    <li><a href="@(Model.CurrentUrl)@(Model.QueryStringParam)=@pageIndex">@pageIndex</a></li>
+                }
+
+            }
+
+            @if (Model.CurrentPage == Model.NumPages)
+            {
+                <li class="arrow unavailable"><a href="@(Model.CurrentUrl)@(Model.QueryStringParam)=@Model.NumPages">&raquo;</a></li>
+            }
+            else
+            {
+                <li class="arrow"><a href="@(Model.CurrentUrl)@(Model.QueryStringParam)=@Model.CurrentPage + 1">&raquo;</a></li>
+            }
+        </ul>
+        }
+    </div>
+</div>
+
+

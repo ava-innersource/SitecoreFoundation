@@ -13,7 +13,6 @@ using Sitecore.Sites;
 using Sitecore.Text;
 using System.IO;
 using SF.Foundation.Components;
-using SF.Foundation.Container;
 
 namespace SF.Feature.Composite
 {
@@ -93,11 +92,11 @@ namespace SF.Feature.Composite
                     }
                     else
                     {
-                        var enableAync = htmlHelper.GetCheckboxRenderingParameterValue("Enable Async");
+                        var enableAync = true; // htmlHelper.GetCheckboxRenderingParameterValue("Enable Async");
                         var baseUrl = htmlHelper.GetRenderingParameter("Async Fetch Base Url");
 
                         var componentClass = enableAync ? "composite async" : "composite";
-                        var tagAttributes = htmlHelper.GetContainerTagAttributes(componentClass);
+                        var tagAttributes = string.Empty; // htmlHelper.GetContainerTagAttributes(componentClass);
 
                         var asyncUrl = renderingContext.Rendering.Item.GetItemUrl();
                         if (!string.IsNullOrEmpty(baseUrl))
@@ -112,7 +111,7 @@ namespace SF.Feature.Composite
 
                     if (hasDataSource)
                     {
-                        var loadAsyncOnly = htmlHelper.GetCheckboxRenderingParameterValue("Load Content Async Only");
+                        var loadAsyncOnly = true; // htmlHelper.GetCheckboxRenderingParameterValue("Load Content Async Only");
                         if (!loadAsyncOnly || oldDisplayMode == DisplayMode.Edit)
                         {
                             PipelineService.Get().RunPipeline<RenderPlaceholderArgs>("mvc.renderPlaceholder", new RenderPlaceholderArgs(pageContext.Item["PlaceholderName"] ?? "compositecontent", (TextWriter)stringWriter, new ContentRendering()));

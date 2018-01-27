@@ -1,0 +1,16 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model SF.Feature.Handlebars.Models.HandlebarJsonContainerModel
+
+<div @Html.Sxa().Component("handlebar-json-container", Model.Attributes)>
+    <div class="component-content">
+
+        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing && string.IsNullOrEmpty(Model.JsonUrl))
+        {
+            <div>No Json Url has been configured. Please configure the url for this component.</div>
+        }
+
+        @Html.Sitecore().DynamicPlaceholder("HandlebarTemplates")
+    </div>
+</div>

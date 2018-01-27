@@ -125,12 +125,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171002\lib\NET462\Sitecore.Kernel.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Mvc.NoReferences.9.0.171002\lib\NET462\Sitecore.Mvc.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\packages\Sitecore.Mvc.NoReferences.9.0.171219\lib\NET462\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Runtime.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -194,10 +192,6 @@
     <ProjectReference Include="..\..\..\Foundation\Components\code\Foundation.Components.csproj">
       <Project>{60fdc4ea-b56f-4ec5-ab57-d6c68a523ecc}</Project>
       <Name>Foundation.Components</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\Container\code\Foundation.Container.csproj">
-      <Project>{fe3681c0-ef3f-406c-b085-8e84b1bc3be7}</Project>
-      <Name>Foundation.Container</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

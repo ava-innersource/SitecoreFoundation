@@ -1,0 +1,13 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model SF.Feature.Handlebars.Models.AddNewItemModel
+
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+    <div @Html.Sxa().Component("add-new-item", Model.Attributes)>
+        <div class="component-content">
+            <a href="#" class="button tiny secondary addItemButton" data-template="@Model.Template" data-parent="@Model.Parent">@Model.ButtonText</a>
+        </div>
+    </div>
+}
