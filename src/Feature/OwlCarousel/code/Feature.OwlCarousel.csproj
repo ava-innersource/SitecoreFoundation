@@ -136,6 +136,18 @@
     <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Mvc.NoReferences.9.0.171219\lib\NET462\Sitecore.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.XA.Foundation.IoC">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.IoC.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.MarkupDecorator">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Mvc">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Linq, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\System.Linq.4.1.0\lib\net463\System.Linq.dll</HintPath>
@@ -193,7 +205,15 @@
     <Content Include="App_Config\Include\Feature.OwlCarousel\Serialization.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\OwlCarouselController.cs" />
+    <Compile Include="Models\OwlCarouselItemModel.cs" />
+    <Compile Include="Models\OwlCarouselModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IOwlCarouselItemRepository.cs" />
+    <Compile Include="Repositories\OwlCarouselItemRepository.cs" />
+    <Compile Include="Repositories\OwlCarouselRepository.cs" />
+    <Compile Include="Repositories\IOwlCarouselRepository.cs" />
+    <Compile Include="Repositories\RegisterDependencies.cs" />
     <Content Include="content\owl\AjaxLoader.gif" />
     <Content Include="content\owl\carousel.init.js" />
     <Content Include="content\owl\grabbing.png" />
@@ -206,11 +226,12 @@
     <Content Include="global\css\Feature\OwlCarousel\owltheme.css" />
     <Content Include="global\css\Feature\OwlCarousel\owltransitions.css" />
     <Content Include="global\scripts\Feature\owlcarousel\owlcarousel.js" />
+    <Content Include="App_Config\Include\Feature.OwlCarousel\OwlCarousel.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="global\scripts\Feature\owlcarousel\OwlCarouselInit.js" />
-    <Content Include="Views\Feature.OwlCarousel\Carousel.cshtml" />
-    <Content Include="Views\Feature.OwlCarousel\CarouselItem.cshtml" />
+    <Content Include="Views\OwlCarousel\Index.cshtml" />
+    <Content Include="Views\OwlCarousel\CarouselItem.cshtml" />
     <None Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>

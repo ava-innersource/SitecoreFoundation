@@ -1,0 +1,17 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model SF.Feature.OwlCarousel.Models.OwlCarouselModel
+
+<div @Html.Sxa().Component("owl-carousel", Model.Attributes)>
+    <div class="component-content">
+        <div class="@Model.ContainerClass" data-options='@Model.DataOptions'>
+            @Html.Sitecore().DynamicPlaceholder("OwlCarouselItems")
+        </div>
+    </div>
+</div>
+
+        
+
+        
+
