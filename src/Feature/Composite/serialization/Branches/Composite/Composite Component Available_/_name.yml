@@ -1,0 +1,14 @@
+﻿---
+ID: "80b44066-f531-4ad0-8f93-e09fc43836fe"
+Parent: "4c5ff745-82e5-4c91-9a99-22d7db2c7149"
+Template: "27d6d60c-c00d-4d1d-9099-7d95f80da654"
+Path: /sitecore/templates/Branches/Feature/SF/Composite/Composite Component Available Renderings/$name
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180129T033455Z

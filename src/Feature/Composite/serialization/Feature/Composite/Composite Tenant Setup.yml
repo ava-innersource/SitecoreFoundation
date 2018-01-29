@@ -1,0 +1,17 @@
+﻿---
+ID: "0b2ede64-7f23-46d9-986f-0e47a94e4ea7"
+Parent: "2520ba70-e223-47ae-95fe-4e2ee2984ed4"
+Template: "141df88e-7156-4d2e-a004-c8c1a7c51e9d"
+Path: /sitecore/system/Settings/Feature/SF/Composite/Composite Tenant Setup
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180127T161707Z
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: Composite

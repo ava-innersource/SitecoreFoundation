@@ -1,0 +1,18 @@
+﻿---
+ID: "568e5af9-7ba0-4eec-972b-ab9a9dc01b64"
+Parent: "fb8cd89c-5492-4432-bbbf-4c86028d9c6e"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Feature/SF/Owl Carousel/Available Renderings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180129T031028Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

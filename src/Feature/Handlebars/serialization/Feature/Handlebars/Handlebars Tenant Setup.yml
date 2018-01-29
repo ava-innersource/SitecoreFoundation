@@ -1,0 +1,17 @@
+﻿---
+ID: "4db7644b-786c-40b4-9ad6-9d1b6c0e500a"
+Parent: "7e14571b-68b7-4e78-99bc-2849ece8b7da"
+Template: "141df88e-7156-4d2e-a004-c8c1a7c51e9d"
+Path: /sitecore/system/Settings/Feature/SF/Handlebars/Handlebars Tenant Setup
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180126T155814Z
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: Handlebars

@@ -1,0 +1,31 @@
+﻿---
+ID: "ff320622-b331-4158-8dfc-a9608c9d39d6"
+Parent: "b406cb8f-0d52-4215-bf0c-be8c67cf3a4c"
+Template: "b406cb8f-0d52-4215-bf0c-be8c67cf3a4c"
+Path: /sitecore/templates/Feature/SF/Handlebars/Available Renderings/Handlebar Available Renderings/__Standard Values
+DB: master
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Type: TreelistEx
+  Value: |
+    {17747DD4-F177-4529-8FBD-CE716E91A9B7}
+    {3FADCAF4-7BE9-41C4-A447-543B011B0424}
+    {E7C70AE4-C2C3-4310-81D6-5C4B3D4BCCC4}
+    {9C2C38AE-B2BC-4F76-8C41-67B8E93334F3}
+    {6DDF1525-8D30-484D-A015-8CEEAC675F35}
+    {1A4508E5-F4D7-4E2D-92D0-22CBC6616228}
+    {0C6C5664-1A57-47DF-9F2A-1ADC167B5185}
+    {DB5B436A-0557-4053-96FF-67E39B310ADA}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180129T030913Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

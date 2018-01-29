@@ -1,0 +1,17 @@
+﻿---
+ID: "13c7d09e-87da-4a1a-a414-95af10214d04"
+Parent: "2520ba70-e223-47ae-95fe-4e2ee2984ed4"
+Template: "292ccfcd-7790-4692-856b-76014b8038e7"
+Path: /sitecore/system/Settings/Feature/SF/Composite/Composite Site Setup
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180127T161707Z
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: Composite

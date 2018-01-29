@@ -1,0 +1,17 @@
+﻿---
+ID: "8df0bada-a693-40f6-a67b-129325d90012"
+Parent: "698602bf-7172-439d-802c-31ec3b79d358"
+Template: "292ccfcd-7790-4692-856b-76014b8038e7"
+Path: /sitecore/system/Settings/Feature/SF/Video JS/Video JS Site Setup
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180127T161848Z
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: Video JS

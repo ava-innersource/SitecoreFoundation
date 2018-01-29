@@ -1,0 +1,14 @@
+﻿---
+ID: "63bd5d59-1f69-406b-a873-af1991d28c8d"
+Parent: "b1dbab01-b9cb-4737-ba21-d8743ac4dcdf"
+Template: "85adbf5b-e836-4932-a333-fe0f9fa1ed1e"
+Path: /sitecore/templates/Branches/Feature/SF/Video JS
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180127T161847Z

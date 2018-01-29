@@ -1,0 +1,14 @@
+﻿---
+ID: "ecc1d3d4-9f01-4b53-8e41-d847c911e0fc"
+Parent: "e6bac0fd-e428-4521-80dc-7cb892d54baf"
+Template: "1ebd58c7-eb45-4bba-a919-b551e6f0c9ac"
+Path: /sitecore/templates/Branches/Feature/SF/Slick Carousel/Slick Carousel Available Renderings/$name
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180129T033532Z

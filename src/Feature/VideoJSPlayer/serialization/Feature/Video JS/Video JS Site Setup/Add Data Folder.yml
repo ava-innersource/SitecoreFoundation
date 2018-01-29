@@ -1,0 +1,30 @@
+﻿---
+ID: "ca87e407-4c94-46cb-977a-ac51bd0953ed"
+Parent: "8df0bada-a693-40f6-a67b-129325d90012"
+Template: "ea8a3f26-9ccd-443a-95f5-71b868a94bd0"
+Path: /sitecore/system/Settings/Feature/SF/Video JS/Video JS Site Setup/Add Data Folder
+DB: master
+SharedFields:
+- ID: "4795a7c6-08a9-4248-86c3-d460062c3a22"
+  Hint: Location
+  Type: Treelist
+  Value: "{15497C63-5946-49F4-B0A2-FE50A600CFAC}"
+- ID: "7868e6bc-525c-4fce-ab8a-77da3e09b171"
+  Hint: Name
+  Value: Video JS Videos
+- ID: "e62c28f0-9d3b-46e2-8bec-a5e120542499"
+  Hint: Template
+  Type: Treelist
+  Value: "{8FB0E76E-0B70-4A87-B78B-7ADF2A067A22}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180129T005752Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

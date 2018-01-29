@@ -1,0 +1,22 @@
+﻿---
+ID: "80b54171-1806-4e08-ba44-5fc4a41c513f"
+Parent: "7e14571b-68b7-4e78-99bc-2849ece8b7da"
+Template: "292ccfcd-7790-4692-856b-76014b8038e7"
+Path: /sitecore/system/Settings/Feature/SF/Handlebars/Handlebars Site Setup
+DB: master
+SharedFields:
+- ID: "11488836-d40f-40d4-beb4-1d31da7b1470"
+  Hint: IncludeByDefault
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180126T155814Z
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: Handlebars

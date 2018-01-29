@@ -1,0 +1,26 @@
+﻿---
+ID: "34437488-db3b-4ad5-84a1-f2669729b808"
+Parent: "568e5af9-7ba0-4eec-972b-ab9a9dc01b64"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/SF/Owl Carousel/Available Renderings/Owl Carousel Available Renderings
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{76DA0A8D-FC7E-42B2-AF1E-205B49E43F98}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{F9F848E2-A726-4F26-97F7-DBFF4478CAB3}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180129T031058Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

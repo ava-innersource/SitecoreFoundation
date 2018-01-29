@@ -1,0 +1,23 @@
+﻿---
+ID: "9f9e4ade-5d53-4bd2-a198-610f8239cc7a"
+Parent: "1ebd58c7-eb45-4bba-a919-b551e6f0c9ac"
+Template: "1ebd58c7-eb45-4bba-a919-b551e6f0c9ac"
+Path: /sitecore/templates/Feature/SF/Slick Carousel/Available Renderings/Slick Carousel Available Renderings/__Standard Values
+DB: master
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Type: TreelistEx
+  Value: "{67430B9D-B5DF-4B48-8926-8A9A4107263D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180129T031210Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

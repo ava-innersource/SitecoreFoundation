@@ -1,0 +1,17 @@
+﻿---
+ID: "6a78231a-5184-460c-bcb7-7dec116c095b"
+Parent: "311d3d08-70bb-4498-837f-0db5af42f9cc"
+Template: "292ccfcd-7790-4692-856b-76014b8038e7"
+Path: /sitecore/system/Settings/Feature/SF/Slick Carousel/Slick Carousel Site Setup
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180127T161813Z
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: Slick Carousel

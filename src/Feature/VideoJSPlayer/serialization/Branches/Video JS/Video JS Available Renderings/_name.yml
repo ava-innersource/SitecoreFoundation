@@ -1,0 +1,14 @@
+﻿---
+ID: "1e0e8dd2-da09-43e4-8fcf-a4566cdc1b0b"
+Parent: "79011489-492b-44cf-a131-74b199e0ac90"
+Template: "3cffc955-60b8-497e-96d7-85ef2b76feac"
+Path: /sitecore/templates/Branches/Feature/SF/Video JS/Video JS Available Renderings/$name
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180129T033545Z

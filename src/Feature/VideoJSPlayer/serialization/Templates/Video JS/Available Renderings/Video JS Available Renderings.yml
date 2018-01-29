@@ -1,0 +1,26 @@
+﻿---
+ID: "3cffc955-60b8-497e-96d7-85ef2b76feac"
+Parent: "8a74af68-3d15-47d9-b361-eecf11b59387"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/SF/Video JS/Available Renderings/Video JS Available Renderings
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{76DA0A8D-FC7E-42B2-AF1E-205B49E43F98}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{628A58FA-2AF8-45B0-A478-0D7649A0F341}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180129T031312Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
