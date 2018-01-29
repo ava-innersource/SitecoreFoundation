@@ -1,0 +1,14 @@
+﻿---
+ID: "5c686927-fbe6-4d4c-aabb-f0bb2cd81438"
+Parent: "a6e17a73-7f15-4dca-aa55-18237cec3910"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Feature/SF/Owl Carousel
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180127T161743Z

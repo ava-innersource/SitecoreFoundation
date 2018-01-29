@@ -1,0 +1,25 @@
+﻿---
+ID: "c70aa84d-6599-40f9-a186-9635a350e748"
+Parent: "a7aecb32-8a5d-41ae-a87f-3081e344669f"
+Template: "a7aecb32-8a5d-41ae-a87f-3081e344669f"
+Path: /sitecore/templates/Feature/SF/Handlebars/Folder Templates/Handlebar Collections Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {1C7CBB97-485D-4540-9D41-F3A3F90ED85C}
+    {A7AECB32-8A5D-41AE-A87F-3081E344669F}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T091628
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

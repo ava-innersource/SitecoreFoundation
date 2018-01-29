@@ -1,13 +1,9 @@
 ﻿---
-ID: "dc63523c-1b60-429b-b05b-71e721a2ba3f"
-Parent: "0e9dfd17-9161-4f67-87cc-782ccc483f80"
+ID: "3906cce5-7e51-4818-a797-06ea10353bf0"
+Parent: "a6e17a73-7f15-4dca-aa55-18237cec3910"
 Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
-Path: /sitecore/layout/Renderings/SF/Features/Composite
+Path: /sitecore/layout/Renderings/Feature/SF/Composite
 DB: master
-SharedFields:
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 100
 Languages:
 - Language: en
   Versions:
@@ -15,4 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170701T172931Z
+      Value: 20180127T161707Z

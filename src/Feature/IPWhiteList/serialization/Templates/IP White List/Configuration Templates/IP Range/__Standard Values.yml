@@ -1,0 +1,28 @@
+﻿---
+ID: "c34f437c-f812-4653-90b1-e676f4307c0b"
+Parent: "5b2c7897-a053-4b7f-a3d7-baf516fba747"
+Template: "5b2c7897-a053-4b7f-a3d7-baf516fba747"
+Path: /sitecore/templates/Feature/SF/IP White List/Configuration Templates/IP Range/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Network/32x32/id_cards.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150805T223414
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "674d0682-a43a-481b-a889-878e6c7474a5"
+      Hint: Start IP
+      Value: 0.0.0.0
+    - ID: "c1da16e3-871f-4cb5-896b-899046e985bd"
+      Hint: End IP
+      Value: 255.255.255.255

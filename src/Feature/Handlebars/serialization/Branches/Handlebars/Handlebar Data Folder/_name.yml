@@ -1,0 +1,14 @@
+﻿---
+ID: "5fb015c3-568d-4827-a80e-01fb43d480d8"
+Parent: "24c84b4a-1232-4a61-b4f6-497c8111971c"
+Template: "f89edeeb-bce2-4773-990f-b1d1039c940f"
+Path: /sitecore/templates/Branches/Feature/SF/Handlebars/Handlebar Data Folder/$name
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180127T152601Z

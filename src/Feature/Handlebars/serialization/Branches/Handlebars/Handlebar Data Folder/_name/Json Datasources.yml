@@ -1,0 +1,18 @@
+﻿---
+ID: "a83bea71-1725-4017-bae4-83a21efd95ab"
+Parent: "5fb015c3-568d-4827-a80e-01fb43d480d8"
+Template: "3366d2cc-dd28-46a4-8332-d6c294e31715"
+Path: /sitecore/templates/Branches/Feature/SF/Handlebars/Handlebar Data Folder/$name/Json Datasources
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180127T152916Z

@@ -1,0 +1,14 @@
+﻿---
+ID: "711b1741-3632-432a-860a-bc26e38613e4"
+Parent: "a7701b46-524a-454c-ad32-ce706ed0c347"
+Template: "a7701b46-524a-454c-ad32-ce706ed0c347"
+Path: /sitecore/templates/Feature/SF/Handlebars/Rendering Parameters/HandlebarRenderingParameters/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120619T150759

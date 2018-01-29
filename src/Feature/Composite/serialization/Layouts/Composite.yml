@@ -1,8 +1,8 @@
 ﻿---
-ID: "c3688b8f-534f-4388-ab98-a3923dbb2df5"
-Parent: "720b4d66-93fd-40d5-9f5c-3023c4e9f1a4"
+ID: "b77fecd8-c0af-47a9-8727-43c32156e64c"
+Parent: "62dabee7-a39b-47fe-83ed-61a96b6efad4"
 Template: "93227c5d-4fef-474d-94c0-f252ec8e8219"
-Path: /sitecore/layout/Layouts/SF/Feature/Composite
+Path: /sitecore/layout/Layouts/Feature/SF/Composite
 DB: master
 Languages:
 - Language: en
@@ -11,4 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170705T141900Z
+      Value: 20180127T161708Z

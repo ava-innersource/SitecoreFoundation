@@ -1,8 +1,8 @@
 ﻿---
 ID: "d21d5483-19c1-46c2-a196-88d16b084f2e"
-Parent: "5ba7d665-a13f-46da-a00e-482e43c42286"
+Parent: "54575f54-3cdb-4aaf-8a7a-522174953836"
 Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
-Path: /sitecore/media library/SF/Feature/Handlebars/moustache
+Path: /sitecore/media library/Feature/SF/Handlebars/moustache
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

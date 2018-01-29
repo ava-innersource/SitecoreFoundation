@@ -1,0 +1,36 @@
+﻿---
+ID: "7bd81e36-a6d3-4df0-9b4e-c7bce98ee0bc"
+Parent: "bc41c489-7c89-43b0-b1b7-3eeda7f02af6"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/SF/Composite/Page Structure/Composite component
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: software/32x32/elements_selection.png
+- ID: "13f89250-ad6b-4548-882e-118a12c18094"
+  Hint: Parameters Template
+  Value: "{A02BD404-6169-46ED-8226-41BEF6C04E8B}"
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Feature/SF/Composite/Component Templates/CompositeComponent
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "query:$site/*[@@name='Home']/*[@@templatename='Composites Folder']|query:$sharedSites/*[@@name='Home']/*[@@templatename='Composites Folder']"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 125
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: CompositeComponent
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: SF.Feature.Composite.Controllers.CompositeComponentController,SF.Feature.Composite
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151020T122718Z

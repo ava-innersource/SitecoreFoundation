@@ -1,0 +1,18 @@
+﻿---
+ID: "738cb868-03c5-4086-a318-448f84c5ddfe"
+Parent: "c0335418-efce-4ab3-b22b-e18bb931ccaf"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/SF/IP White List/Configuration Templates/Single IP/IP Settings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150805T223546
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

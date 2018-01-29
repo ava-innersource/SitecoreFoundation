@@ -1,0 +1,31 @@
+﻿---
+ID: "8c89a9ab-f936-4072-9cfc-77e4c0216316"
+Parent: "32354df8-f502-4a3c-a9d0-5faf041d1c89"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/SF/Owl Carousel/Composites/Owl Carousel Item
+DB: master
+SharedFields:
+- ID: "13f89250-ad6b-4548-882e-118a12c18094"
+  Hint: Parameters Template
+  Value: "{90515C98-D22D-4991-9526-54B937E463C6}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{2EEFA26C-B1ED-46C5-8A05-16DC19D726D3}" />
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: CarouselItem
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: SF.Feature.OwlCarousel.Controllers.OwlCarouselController,SF.Feature.OwlCarousel
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140930T172322Z

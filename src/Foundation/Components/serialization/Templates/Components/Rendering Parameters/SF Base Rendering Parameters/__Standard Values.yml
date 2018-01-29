@@ -1,0 +1,14 @@
+﻿---
+ID: "085bc073-9b38-4cca-8c6f-4fc7521b3714"
+Parent: "90515c98-d22d-4991-9526-54b937e463c6"
+Template: "90515c98-d22d-4991-9526-54b937e463c6"
+Path: /sitecore/templates/Foundation/SF/Components/Rendering Parameters/SF Base Rendering Parameters/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120619T150759

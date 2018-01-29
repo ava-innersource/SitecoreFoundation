@@ -1,8 +1,8 @@
 ﻿---
 ID: "a7e07d60-8012-468f-9cd7-efe4adf8287a"
-Parent: "c3688b8f-534f-4388-ab98-a3923dbb2df5"
+Parent: "b77fecd8-c0af-47a9-8727-43c32156e64c"
 Template: "3a45a723-64ee-4919-9d41-02fd40fd1466"
-Path: /sitecore/layout/Layouts/SF/Feature/Composite/CompositeLayout
+Path: /sitecore/layout/Layouts/Feature/SF/Composite/CompositeLayout
 DB: master
 BranchID: "3f0e643c-3b9a-4e3f-961a-75057ba3c4e8"
 SharedFields:

@@ -1,0 +1,18 @@
+﻿---
+ID: "2df2558d-0416-4fb4-9096-c9888967f6ba"
+Parent: "58bfe90b-200d-4acb-8c2e-78bd9057387d"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/SF/Video JS/Component Templates/Video JS Player Settings/Video Source
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150926T224210
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

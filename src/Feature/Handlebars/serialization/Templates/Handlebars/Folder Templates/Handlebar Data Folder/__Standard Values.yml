@@ -1,0 +1,29 @@
+﻿---
+ID: "0b309cb9-1913-4a07-84bf-d9f152a3bee5"
+Parent: "f89edeeb-bce2-4773-990f-b1d1039c940f"
+Template: "f89edeeb-bce2-4773-990f-b1d1039c940f"
+Path: /sitecore/templates/Feature/SF/Handlebars/Folder Templates/Handlebar Data Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {67C618BE-6FE8-4156-A677-1109485F6300}
+    {A7AECB32-8A5D-41AE-A87F-3081E344669F}
+    {9C122042-49AA-41C1-8320-4BFA2B97FA5A}
+    {7A71C555-C114-4DC3-A0A1-F5D84D1BAA8D}
+    {832F10A7-D293-4E14-A0BE-7F0469CF8EAC}
+    {3366D2CC-DD28-46A4-8332-D6C294E31715}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T091628
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

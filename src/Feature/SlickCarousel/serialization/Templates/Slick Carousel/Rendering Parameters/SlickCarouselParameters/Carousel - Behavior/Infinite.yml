@@ -1,0 +1,21 @@
+﻿---
+ID: "9067c36e-d952-497c-b473-8a5d5f65a411"
+Parent: "ab4a26ba-267c-43e0-9c49-cec2c51f33e5"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Feature/SF/Slick Carousel/Rendering Parameters/SlickCarouselParameters/Carousel - Behavior/Infinite"
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Checkbox
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 900
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160618T135202Z

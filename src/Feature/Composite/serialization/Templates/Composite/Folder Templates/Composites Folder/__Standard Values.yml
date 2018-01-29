@@ -1,0 +1,25 @@
+﻿---
+ID: "92dd1822-7ffd-4608-981f-b2a1f01624d8"
+Parent: "53e17986-ea6e-45f8-9d51-0a7e65924cfd"
+Template: "53e17986-ea6e-45f8-9d51-0a7e65924cfd"
+Path: /sitecore/templates/Feature/SF/Composite/Folder Templates/Composites Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {01617363-D27A-4CA9-87F4-E57C4A062C7A}
+    {53E17986-EA6E-45F8-9D51-0A7E65924CFD}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T091628
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

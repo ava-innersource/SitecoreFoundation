@@ -1,0 +1,22 @@
+﻿---
+ID: "f5a786a1-4227-4f6c-9a22-82032cf35a3f"
+Parent: "887a247a-7161-4ec6-a4e0-429571464cad"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Feature/SF/Slick Carousel/SlickCarouselItems
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: OwlCarouselItems
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{8C89A9AB-F936-4072-9CFC-77E4C0216316}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180127T135853Z

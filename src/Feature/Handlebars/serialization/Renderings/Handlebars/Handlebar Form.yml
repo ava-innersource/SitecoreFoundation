@@ -1,0 +1,34 @@
+﻿---
+ID: "9c2c38ae-b2bc-4f76-8c41-67b8e93334f3"
+Parent: "f2d4b30b-494b-4f14-9f30-530d82736b74"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/SF/Handlebars/Handlebar Form
+DB: master
+SharedFields:
+- ID: "13f89250-ad6b-4548-882e-118a12c18094"
+  Hint: Parameters Template
+  Value: "{A7701B46-524A-454C-AD32-CE706ED0C347}"
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Feature/SF/Handlebars/Component Templates/HandlebarForm
+- ID: "a2f5d9df-8cba-4a1d-99eb-51acb94cb057"
+  Hint: Page Editor Buttons
+  Type: Treelist
+  Value: "{1788C4BA-EA0C-4671-94E6-F2D91D89E4A7}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Handlebar Data Folder']/*[@@templatename='Handlebar Forms Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Handlebar Data Folder']//*[@@templatename='Handlebar Forms Folder']"
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: Index
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: SF.Feature.Handlebars.Controllers.HandlebarsFormController, SF.Feature.Handlebars
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171016T005559Z

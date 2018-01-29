@@ -13,19 +13,37 @@ using Sitecore.Sites;
 using Sitecore.Text;
 using System.IO;
 using SF.Foundation.Components;
+using Sitecore.XA.Foundation.Mvc.Controllers;
+using SF.Feature.Composite.Repositories;
+using SF.Feature.Composite.Models;
 
-namespace SF.Feature.Composite
+namespace SF.Feature.Composite.Controllers
 {
-    public class CompositeComponentController : Controller
+    public class CompositeComponentController : StandardController
     {
+
+        protected readonly ICompositeComponentRepository CompositeComponentRepository;
+
+        public CompositeComponentController(ICompositeComponentRepository repository)
+        {
+            this.CompositeComponentRepository = repository;
+        }
+
+        protected override object GetModel()
+        {
+            return CompositeComponentRepository.GetModel();
+        }
+
         public ActionResult EditLayout()
         {
-            var pageContext = PageContext.CurrentOrNull;
+            var model = GetModel() as CompositeComponentModel;
+
+            var pageContext = this.PageContext.Current;
             Assert.IsNotNull(pageContext, "Page context is required");
             var stringWriter = new StringWriter();
             stringWriter.Write("<html><head></head><body>");
             PipelineService.Get().RunPipeline<RenderPlaceholderArgs>("mvc.renderPlaceholder",
-                new RenderPlaceholderArgs(pageContext.Item["PlaceholderName"] ?? "compositecontent", (TextWriter)stringWriter, new ContentRendering()));
+                new RenderPlaceholderArgs(model.Item["PlaceholderName"] ?? "compositecontent", (TextWriter)stringWriter, new ContentRendering()));
             stringWriter.Write("</body></html>");
             return Content(stringWriter.ToString());
         }
@@ -33,6 +51,8 @@ namespace SF.Feature.Composite
         // GET: Snippet
         public ActionResult CompositeComponent()
         {
+            var model = GetModel() as CompositeComponentModel;
+
             var renderingContext = RenderingContext.CurrentOrNull;
             if (renderingContext == null)
                 throw new ApplicationException("Could not find current rendering context, aborting");
@@ -123,7 +143,9 @@ namespace SF.Feature.Composite
                         stringWriter.Write("</div>");
                     }
 
-                    return Content(stringWriter.ToString());
+                    model.ComponentContent = stringWriter.ToString();
+
+                    return View(model);
                 }
             }
             finally

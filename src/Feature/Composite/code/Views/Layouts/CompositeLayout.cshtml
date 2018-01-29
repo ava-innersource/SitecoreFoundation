@@ -1,34 +1,47 @@
+@using System.Web.Mvc.Html
 @using Sitecore.Mvc
-@using Sitecore.Mvc.Presentation
-@using SF.Foundation.Resources
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Grid.Extensions
+@using Sitecore.XA.Foundation.Theming.Bundler
+
+@model Sitecore.Mvc.Presentation.RenderingModel
 
 @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
 {
+    AssetLinks assetLinks = AssetLinksGenerator.GenerateLinks(new ThemesProvider());
     <!DOCTYPE html>
-    <html lang="en">
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <html class="no-js" lang="@Model.Item.Language.Name">
+    <!--<![endif]-->
     <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-
-        @Html.GetHeaderStyles()
-
+        @foreach (string style in assetLinks.Styles)
+        {
+            @Html.Raw(style)
+        }
     </head>
-    <body>
-        <h1>Composite Component</h1>
-        <div class="viewport">
-
-
-    @Html.Sitecore().Placeholder(Sitecore.Context.Item["PlaceholderName"])
-
+    <body @Html.Sxa().Body().Decorate()>
+        <div><strong>This is a composite component, which can be used for donuthole caching. Anything you place in here will be loaded from the server as a separate call after page load.</strong></div>
+        <div class="@Html.Sxa().GridPlaceholderClasses("main")">
+            <div class="row">
+                @Html.Sitecore().Placeholder(Sitecore.Context.Item["PlaceholderName"])
             </div>
+        </div>
 
-            @Html.GetFooterScripts()
+        @foreach (string script in assetLinks.Scripts)
+        {
+            @Html.Raw(script)
+        }
+        <!-- /#wrapper -->
     </body>
-
-    </html>
+</html>
 
 }
 else
 {
-    @Html.Sitecore().Placeholder(Sitecore.Context.Item["PlaceholderName"])
+@Html.Sitecore().Placeholder(Sitecore.Context.Item["PlaceholderName"])
 }

@@ -1,0 +1,48 @@
+﻿---
+ID: "e7c70ae4-c2c3-4310-81d6-5c4b3d4bccc4"
+Parent: "f2d4b30b-494b-4f14-9f30-530d82736b74"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/SF/Handlebars/HandlebarQueryContainer
+DB: master
+SharedFields:
+- ID: "13f89250-ad6b-4548-882e-118a12c18094"
+  Hint: Parameters Template
+  Value: "{6AAC0B30-7B0C-4A88-A6C5-85B0B3530778}"
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Feature/SF/Handlebars/Component Templates/HandlebarQueryContainer
+- ID: "94069f66-609c-48b0-8281-521c30fb269d"
+  Hint: Open Properties after Add
+  Value: 
+- ID: "a2f5d9df-8cba-4a1d-99eb-51acb94cb057"
+  Hint: Page Editor Buttons
+  Type: Treelist
+  Value: "{2B0965A5-C75C-4A01-B358-5FDEB1DB9569}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Handlebar Data Folder']/*[@@templatename='Handlebar Queries Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Handlebar Data Folder']//*[@@templatename='Handlebar Queries Folder']"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{D21D5483-19C1-46C2-A196-88D16B084F2E}" />
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: Index
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: SF.Feature.Handlebars.Controllers.HandlebarQueryContainerController, SF.Feature.Handlebars
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Query Container
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140916T211153Z

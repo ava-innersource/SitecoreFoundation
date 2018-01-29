@@ -1,0 +1,22 @@
+﻿---
+ID: "cffd12de-e91d-4a4a-bfa9-d9808108a5cb"
+Parent: "1c7cbb97-485d-4540-9d41-f3a3f90ed85c"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/SF/Handlebars/Component Templates/HandlebarCollectionContainer/Pagination Details
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151113T134818
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

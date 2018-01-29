@@ -1,0 +1,32 @@
+﻿---
+ID: "a13c9171-a38c-4697-a7ee-1af465129fa8"
+Parent: "58bfe90b-200d-4acb-8c2e-78bd9057387d"
+Template: "58bfe90b-200d-4acb-8c2e-78bd9057387d"
+Path: /sitecore/templates/Feature/SF/Video JS/Component Templates/Video JS Player Settings/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150927T222337
+    - ID: "4bb7b4cf-39c8-4818-9d36-506fd2e38712"
+      Hint: NotSupportedMessage
+      Value: |
+        To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "6210ebd4-53d9-48a1-8feb-11bd55e0bdb7"
+      Hint: Width
+      Value: 0
+    - ID: "8aac6dbc-a796-4694-8a0e-c6945b97c213"
+      Hint: CenterBigPlayButton
+      Type: Checkbox
+      Value: 1
+    - ID: "a24014fb-a18c-4444-ade5-57a774f9456e"
+      Hint: Height
+      Value: 0

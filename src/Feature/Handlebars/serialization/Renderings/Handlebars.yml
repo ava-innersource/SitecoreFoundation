@@ -1,13 +1,9 @@
 ﻿---
-ID: "1b4f53d4-9b87-443a-a462-4f594fdc7968"
-Parent: "0e9dfd17-9161-4f67-87cc-782ccc483f80"
-Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
-Path: /sitecore/layout/Renderings/SF/Features/Handlebars
+ID: "f2d4b30b-494b-4f14-9f30-530d82736b74"
+Parent: "a6e17a73-7f15-4dca-aa55-18237cec3910"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Feature/SF/Handlebars
 DB: master
-SharedFields:
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 350
 Languages:
 - Language: en
   Versions:
@@ -15,8 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20151113T143058
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
+      Value: 20180126T155815Z

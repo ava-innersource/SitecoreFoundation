@@ -1,0 +1,18 @@
+﻿---
+ID: "d3696c9c-ad63-411c-bae4-f526af985d68"
+Parent: "5fb015c3-568d-4827-a80e-01fb43d480d8"
+Template: "7a71c555-c114-4dc3-a0a1-f5d84d1baa8d"
+Path: /sitecore/templates/Branches/Feature/SF/Handlebars/Handlebar Data Folder/$name/Forms
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180127T152656Z
