@@ -1,0 +1,17 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using SF.Feature.Handlebars
+
+@model SF.Feature.Handlebars.Models.HandlebarVariantModel
+
+<div @Html.Sxa().Component("handlebar-variant", Model.Attributes)>
+    <div class="component-content">
+        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing && !Model.HasTemplateContent)
+        {
+            <div>Current Handlebars Template is empty. Please configure it.</div>
+        }
+        @Html.GetTemplatedContent(Model.HandlebarTemplateItem)
+    </div>
+</div>
+
+      

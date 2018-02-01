@@ -13,7 +13,6 @@ namespace SF.Feature.SlickCarousel.Repositories
         {
             var model = new SlickCarouselModel();
             FillBaseProperties(model);
-
             
             return model;
         }

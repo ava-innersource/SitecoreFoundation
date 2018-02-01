@@ -1,8 +1,8 @@
 ﻿---
-ID: "04be8c48-321a-4ec4-8284-5f0d129df19b"
-Parent: "a02bd404-6169-46ed-8226-41bef6c04e8b"
+ID: "c446e0ac-0fbe-40e9-899d-75391ace7c3f"
+Parent: "de3bdc29-7319-4a3a-b3bc-83a174311a5d"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/SF/Composite/Rendering Parameters/Composite Component Rendering Parameters/Composite Settings
+Path: /sitecore/templates/Feature/SF/Handlebars/Rendering Variant/Handlebar Template/VariantDetails
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171020T000355Z
+      Value: 20180201T134631Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

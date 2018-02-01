@@ -146,6 +146,32 @@ namespace SF.Feature.Handlebars
             }
         }
 
+        public static IHtmlString GetTemplatedContent(Item handlebarTemplate, Item templateData)
+        {
+            //field from variant is named Template
+            var template = GetCompiledTemplate(handlebarTemplate, "Template");
+
+            if (templateData != null)
+            {
+                //Wrap with Dynamic Object
+                var itemAsObj = getItemAsObject(templateData, 0, MAX_LEVEL);
+
+                string output = string.Empty;
+                try
+                {
+                    output = template(itemAsObj);                    
+                }
+                catch (Exception ex)
+                {
+                    output = string.Format("Template Error: {0}", ex);
+                }
+
+                return new MvcHtmlString(output);
+            }
+
+            return new MvcHtmlString("<p>No Data Exists to Bind</p>");
+        }
+
         public static IHtmlString GetTemplatedContent(this HtmlHelper helper, Item handlebarTemplate)
         {
             TraceLogger.Current.Write("Call to HandlebarManager.GetTempaltedContent");
@@ -165,7 +191,7 @@ namespace SF.Feature.Handlebars
                 {
                     output = string.Format("Template Error: {0}", ex);
                 }
-                
+
                 return new MvcHtmlString(output);
             }
 
@@ -174,7 +200,7 @@ namespace SF.Feature.Handlebars
 
         private static object lockObject = new object();
 
-        private static Func<object, string> GetCompiledTemplate(Item handlebarTemplate)
+        private static Func<object, string> GetCompiledTemplate(Item handlebarTemplate, string templateField = "Content")
         {
             bool bypassHttpCache = Sitecore.Context.PageMode.IsPreview ||
                     Sitecore.Context.PageMode.IsExperienceEditor ||
@@ -206,7 +232,7 @@ namespace SF.Feature.Handlebars
                 {
                     TraceLogger.Current.Write("Template not in Cache, Getting Template");
                     updateCache = true;
-                    var templateContent = handlebarTemplate.Fields["Content"].Value;
+                    var templateContent = handlebarTemplate.Fields[templateField].Value;
 
                     if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
                     {

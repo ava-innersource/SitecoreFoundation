@@ -170,8 +170,14 @@
     <Reference Include="Sitecore.XA.Foundation.Mvc">
       <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.XA.Foundation.RenderingVariants">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.RenderingVariants.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions">
       <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Variants.Abstractions">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.Variants.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Linq, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -249,6 +255,8 @@
   <ItemGroup>
     <Compile Include="BLL\DynamicItem.cs" />
     <Compile Include="BLL\HandlebarManager.cs" />
+    <Compile Include="Constants\Fields.cs" />
+    <Compile Include="Constants\Templates.cs" />
     <Compile Include="Controllers\AddNewItemController.cs" />
     <Compile Include="Controllers\HandlebarJsonContainerController.cs" />
     <Compile Include="Controllers\HandlebarFacetContainerController.cs" />
@@ -298,12 +306,16 @@
     <Compile Include="Repositories\IHandlebarTemplateRepository.cs" />
     <Compile Include="Repositories\IHandlebarContainerRepository.cs" />
     <Compile Include="Repositories\RegisterDependencies.cs" />
+    <Compile Include="Variants\HandlebarVariantTemplate.cs" />
+    <Compile Include="Variants\ParseHandlebarTemplate.cs" />
+    <Compile Include="Variants\RenderHandlebarTemplate.cs" />
     <Content Include="Global\Scripts\Feature\Handlebars\AddNewItem.js" />
     <Content Include="App_Config\Include\Feature.Handlebars\Handlebars.config" />
     <None Include="packages.config" />
     <Content Include="App_Config\Include\ZFeature.Routes\HandlebarRoutes.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\HandlebarForm\Index.cshtml" />
+    <Content Include="Views\HandlebarVariant\Index.cshtml" />
     <None Include="web.config" />
     <Content Include="Views\HandlebarCollectionContainer\Index.cshtml" />
     <Content Include="Views\HandlebarContainer\Index.cshtml" />

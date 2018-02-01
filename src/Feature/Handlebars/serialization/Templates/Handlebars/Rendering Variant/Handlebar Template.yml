@@ -1,23 +1,23 @@
 ﻿---
-ID: "53e17986-ea6e-45f8-9d51-0a7e65924cfd"
-Parent: "962b47db-d31a-4bdf-84ae-2d2e242854ea"
+ID: "de3bdc29-7319-4a3a-b3bc-83a174311a5d"
+Parent: "eef973ce-07d7-4d38-b30a-859e9078dc5f"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Feature/SF/Composite/Folder Templates/Composites Folder
+Path: /sitecore/templates/Feature/SF/Handlebars/Rendering Variant/Handlebar Template
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: Office/32x32/folder_document.png
+  Value: Apps/32x32/Windows Table.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
-  Value: "{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}"
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 200
+  Value: |
+    {6B1A7B9D-2F58-419D-92B7-3401A61E6F9C}
+    {EB94D770-9923-4A66-9C54-420566368FB2}
+    {74E42A46-5955-4990-BDA5-695F42A8A94D}
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{92DD1822-7FFD-4608-981F-B2A1F01624D8}"
+  Value: "{2AB1F5F2-E98A-4476-83C4-063C4A7826A9}"
 Languages:
 - Language: en
   Versions:
@@ -25,7 +25,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20120620T202219Z
+      Value: 20180201T134141Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
