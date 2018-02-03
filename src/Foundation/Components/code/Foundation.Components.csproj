@@ -119,6 +119,13 @@
     <None Include="packages.config" />
     <Content Include="App_Config\Include\Foundation.CommonComponents\ThemeSupport.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Configuration\code\Foundation.Configuration.csproj">

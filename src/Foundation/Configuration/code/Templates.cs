@@ -6,24 +6,28 @@ using Sitecore.Data;
 
 namespace SF.Foundation.Configuration
 {
-  public struct Templates
-
-  {
-
-    public struct SiteSetting
+    public struct Templates
 
     {
+        public struct SiteSettingsRootFolder
+        {
+            public static readonly ID ID = new ID("{4ABA36D7-A67F-4A1E-8866-67A42B6FEC00}");
+        }
 
-      public static readonly ID ID = new ID("{2D8DCE92-5BDE-48C6-A17A-6669D8DF0461}");
+        public struct SiteSetting
 
-      public struct Fields
+        {
 
-      {
+            public static readonly ID ID = new ID("{2D8DCE92-5BDE-48C6-A17A-6669D8DF0461}");
 
-        public static readonly ID Key = new ID("{20F43415-92DD-45F4-B1B6-99A2D0CA8814}");
-        public static readonly ID Value = new ID("{49E79AA3-88A4-4A9A-A66E-CAA62BA8E5FB}");
+            public struct Fields
 
-      }
+            {
+
+                public static readonly ID Key = new ID("{20F43415-92DD-45F4-B1B6-99A2D0CA8814}");
+                public static readonly ID Value = new ID("{49E79AA3-88A4-4A9A-A66E-CAA62BA8E5FB}");
+
+            }
+        }
     }
-  }
 }

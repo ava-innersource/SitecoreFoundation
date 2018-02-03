@@ -2,7 +2,7 @@
 ID: "20f43415-92dd-45f4-b1b6-99a2d0ca8814"
 Parent: "05b2e3d3-e79b-4cd4-b220-bfe5b1373506"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Foundation/SF/Configuration/SiteSetting/Site Setting Details/Key
+Path: /sitecore/templates/Foundation/SF/Configuration/Configuration Templates/SiteSetting/Site Setting Details/Key
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"

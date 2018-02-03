@@ -2,7 +2,7 @@
 ID: "05b2e3d3-e79b-4cd4-b220-bfe5b1373506"
 Parent: "2d8dce92-5bde-48c6-a17a-6669d8df0461"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Foundation/SF/Configuration/SiteSetting/Site Setting Details
+Path: /sitecore/templates/Foundation/SF/Configuration/Configuration Templates/SiteSetting/Site Setting Details
 DB: master
 Languages:
 - Language: en

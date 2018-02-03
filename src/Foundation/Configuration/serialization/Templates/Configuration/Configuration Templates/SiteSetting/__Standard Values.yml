@@ -2,7 +2,7 @@
 ID: "13207cd7-37e6-4b3d-9158-9847ff3357fc"
 Parent: "2d8dce92-5bde-48c6-a17a-6669d8df0461"
 Template: "2d8dce92-5bde-48c6-a17a-6669d8df0461"
-Path: /sitecore/templates/Foundation/SF/Configuration/SiteSetting/__Standard Values
+Path: /sitecore/templates/Foundation/SF/Configuration/Configuration Templates/SiteSetting/__Standard Values
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

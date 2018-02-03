@@ -153,6 +153,19 @@
     <Content Include="App_Config\Include\Foundation.Search\Search.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="web.config" />
+    <None Include="web.always.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.ci.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Configuration\code\Foundation.Configuration.csproj">

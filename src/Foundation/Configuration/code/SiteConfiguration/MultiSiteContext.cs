@@ -1,11 +1,13 @@
 ﻿using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.DependencyInjection;
+using Sitecore.XA.Foundation.Multisite;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+using Sitecore;
+using Sitecore.XA.Foundation.SitecoreExtensions.Extensions;
+using Sitecore.Globalization;
 
 namespace SF.Foundation.Configuration
 {
@@ -17,75 +19,39 @@ namespace SF.Foundation.Configuration
         #region constructors
         public Item ConfigItem { get; set; }
         private const string SiteConfigRootKey = "Foundation.ConfigRoot";
+        private const string DefaultContextLanguage = "en";
 
-        public MultiSiteContext(Guid id)
+        public MultiSiteContext()
         {
-            
-            var db = Sitecore.Context.Database ?? Sitecore.Data.Database.GetDatabase("master");
-
-            var dataId = new Sitecore.Data.ID(id);
-            var item = db.GetItem(dataId);
-            ProccessItem(item);
+            SetConfigItem();
         }
 
-        public MultiSiteContext(string path)
+        private void SetConfigItem()
         {
-            Sitecore.Diagnostics.Log.Info("MultiSiteContext: path:" + path, this);
-
-            var db = Sitecore.Context.Database ?? Sitecore.Data.Database.GetDatabase("master");
-
-            Sitecore.Diagnostics.Log.Info("Current DB Context:" + db.Name, this);
-
-            var item = db.GetItem(path);
-            ProccessItem(item);
-        }
-
-        public MultiSiteContext(Item item)
-        {
-            ProccessItem(item);
-        }
-
-        private void ProccessItem(Item item)
-        {
-            var db = Sitecore.Context.Database ?? Sitecore.Data.Database.GetDatabase("master");
-
-            if (Sitecore.Diagnostics.Log.IsDebugEnabled)
-            {
-                if (item != null && item.Fields != null)
-                {
-                    StringBuilder sb = new StringBuilder();
-
-                    for (int i = 0; i < item.Fields.Count; i++)
-                    {
-                        sb.Append(string.Format("Item name: {0}, Field name: {1}, Field key: {2}, Field ID: {3}\n", item.Name, item.Fields[i].Name, item.Fields[i].Key, item.Fields[i].ID.Guid.ToString()));
-                    }
-
-                    if (sb.Length > 0)
-                    {
-                        Sitecore.Diagnostics.Log.Debug("Item fields\n" + sb.ToString(), this);
-                    }
-                }
-            }
-
-            ConfigItem = item;
-
-            if (item != null)
-            {
-                this.SiteId = item.ID.Guid;
-            }
-
             //Override Config Item if Site has it set as a context property
             var contextSite = SiteExtensions.GetContextSite();
             string configRootId = contextSite.Properties[SiteConfigRootKey];
+
             if (!string.IsNullOrWhiteSpace(configRootId))
             {
+                var db = Sitecore.Context.Database ?? Sitecore.Data.Database.GetDatabase("master");
                 var configRoot = db.GetItem(new ID(configRootId));
                 if (configRoot != null)
                 {
                     ConfigItem = configRoot;
+                    return;
                 }
             }
-            
+
+            var settingsItem = ServiceLocator.ServiceProvider.GetService<IMultisiteContext>().GetSettingsItem(Context.Database.GetItem(Context.Site.StartPath));
+            if (settingsItem != null)
+            {
+                var rootFolder = settingsItem.FirstChildInheritingFrom(Templates.SiteSettingsRootFolder.ID);
+                if (rootFolder != null)
+                {
+                    ConfigItem = rootFolder;
+                }
+            }
         }
 
 
@@ -98,10 +64,14 @@ namespace SF.Foundation.Configuration
         {
             get
             {
-                Item item = this.ConfigItem.Axes.SelectSingleItem("descendant-or-self::*[@key='" + key + "']");
-                if (item != null && item.HasField(Templates.SiteSetting.Fields.Value))
+                using (new LanguageSwitcher(DefaultContextLanguage))
                 {
-                    return item.Fields[Templates.SiteSetting.Fields.Value].Value;
+                    //TODO: move to Lucene Query.
+                    Item item = this.ConfigItem.Axes.SelectSingleItem("descendant-or-self::*[@key='" + key + "']");
+                    if (item != null && item.HasField(Templates.SiteSetting.Fields.Value))
+                    {
+                        return item.Fields[Templates.SiteSetting.Fields.Value].Value;
+                    }
                 }
                 return null;
             }

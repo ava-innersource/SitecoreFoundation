@@ -21,17 +21,7 @@ namespace SF.Foundation.Configuration
     {
       try
       {
-        //actual site is not right in page editor.
-        var contextSite = GetContextSite();
-
-        string siteConfiguration = contextSite.Properties[SiteConfigurationKey] != null ? contextSite.Properties[SiteConfigurationKey] : contextSite.Properties[SiteConfigurationKeyMS];
-        Guid siteGuid = Guid.Empty;
-        if (Guid.TryParse(siteConfiguration, out siteGuid))
-        {
-          return new MultiSiteContext(siteGuid);
-        }
-        return new MultiSiteContext(siteConfiguration);
-
+        return new MultiSiteContext();
       }
       catch (Exception)
       {
