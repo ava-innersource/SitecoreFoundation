@@ -2,7 +2,7 @@
 ID: "a5ea6e85-6e0b-4366-a432-d119ab3c6b38"
 Parent: "b26c5eef-2ef2-4f02-95ec-73f2be3f53c5"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/SF/IP White List/Interface Templates/_SiteWhiteListSettings/IP White Listing/Restricted Access Page
+Path: /sitecore/templates/Feature/SF/IP White List/Folder Templates/White List Settings Root/IP White Listing/Restricted Access Page
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"

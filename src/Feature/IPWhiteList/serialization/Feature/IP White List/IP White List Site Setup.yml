@@ -1,0 +1,17 @@
+﻿---
+ID: "491f15f0-661d-4073-ad4b-6ea0f2ca644a"
+Parent: "d3c0f246-47c2-443b-aa33-a95504116633"
+Template: "292ccfcd-7790-4692-856b-76014b8038e7"
+Path: /sitecore/system/Settings/Feature/SF/IP White List/IP White List Site Setup
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180127T161939Z
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: IP White List

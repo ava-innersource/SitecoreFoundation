@@ -145,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EventHandlers\AllSitesCacheClearer.cs" />
+    <Compile Include="EventHandlers\ClearResourceCacheOnPublish.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="App_Config\Include\Foundation.Cache\CacheCleaner.config" />
     <None Include="packages.config" />

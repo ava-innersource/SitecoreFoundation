@@ -1,0 +1,26 @@
+﻿---
+ID: "f9a04423-54f2-4f9f-b654-ed83cb01cad9"
+Parent: "ce5c0280-f79f-4a93-b514-d34d86e61e66"
+Template: "ce5c0280-f79f-4a93-b514-d34d86e61e66"
+Path: /sitecore/templates/Feature/SF/IP White List/Folder Templates/White Listing Settings Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {CE5C0280-F79F-4A93-B514-D34D86E61E66}
+    {C0335418-EFCE-4AB3-B22B-E18BB931CCAF}
+    {5B2C7897-A053-4B7F-A3D7-BAF516FBA747}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180203T181222Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

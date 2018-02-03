@@ -9,18 +9,18 @@ using SF.Foundation.Configuration;
 
 namespace SF.Feature.IPWhiteList
 {
-    public class IPWhiteListSiteSettings : ISiteSettings
+    public class WhiteListSettings : ISiteSettings
     {
         public Item ConfigItem { get; set; }
 
         public Guid SiteConfigurationId { get; set; }
 
-        public IPWhiteListSiteSettings()
+        public WhiteListSettings()
         {
 
         }
 
-        public IPWhiteListSiteSettings(Guid id)
+        public WhiteListSettings(Guid id)
         {
             Sitecore.Diagnostics.Log.Info("IPWhiteListSiteSettings: Guid:" + id, this);
 
@@ -32,7 +32,7 @@ namespace SF.Feature.IPWhiteList
             Load(item);
         }
 
-        public IPWhiteListSiteSettings(string path)
+        public WhiteListSettings(string path)
         {
             Sitecore.Diagnostics.Log.Info("IPWhiteListSiteSettings: path:" + path, this);
 
@@ -44,7 +44,7 @@ namespace SF.Feature.IPWhiteList
             Load(item);
         }
 
-        public IPWhiteListSiteSettings(Item item)
+        public WhiteListSettings(Item item)
         {
             Load(item);
         }

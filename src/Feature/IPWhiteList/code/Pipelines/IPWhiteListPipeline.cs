@@ -10,6 +10,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using SF.Foundation.Configuration;
+using Sitecore.DependencyInjection;
+using Sitecore.XA.Foundation.Multisite;
+using Microsoft.Extensions.DependencyInjection;
+using Sitecore.XA.Foundation.SitecoreExtensions.Extensions;
 
 namespace SF.Feature.IPWhiteList
 {
@@ -19,20 +23,31 @@ namespace SF.Feature.IPWhiteList
 
         public override void Process(HttpRequestArgs args)
         {
-            var site = Sitecore.Context.Site.GetSiteSettings<IPWhiteListSiteSettings>();
-            if (site == null)
+            var settingsItem = ServiceLocator.ServiceProvider.GetService<IMultisiteContext>().GetSettingsItem(Context.Database.GetItem(Context.Site.StartPath));
+            if (settingsItem == null)
             {
                 return;
             }
 
-            if (site.WhiteListingEnabled && (Context.Item == null || !Context.Item.ID.Guid.Equals(site.RestrictedAccessPageId)))
+            var whiteListingSettingsItem = settingsItem.FirstChildInheritingFrom(Templates.SiteWhiteListSettings.ID);
+            if (whiteListingSettingsItem == null)
             {
+                return;
+            }
 
+            var whiteListingSettings = new WhiteListSettings(whiteListingSettingsItem);
+            if (whiteListingSettings == null)
+            {
+                return;
+            }
+
+            if (whiteListingSettings.WhiteListingEnabled && (Context.Item == null || !Context.Item.ID.Guid.Equals(whiteListingSettings.RestrictedAccessPageId)))
+            {
                 IPAddress clientIP = null;
-                if (IPAddress.TryParse(args.Context.Request.UserHostAddress, out clientIP))
+                if (IPAddress.TryParse(HttpContext.Current.Request.UserHostAddress, out clientIP))
                 {
                     var globalFolder = Context.Database.GetItem(new Sitecore.Data.ID(GlobalRulesFolderID));
-                    var siteFolder = Context.Database.GetItem(new Sitecore.Data.ID(site.SiteConfigurationId)).Children.Where(a => a.DisplayName == "IP White List").FirstOrDefault(); ;
+                    var siteFolder = whiteListingSettingsItem;
 
                     foreach (var ip in GetIPs(globalFolder, "GlobalWhiteListedIPs"))
                     {
@@ -52,7 +67,7 @@ namespace SF.Feature.IPWhiteList
 
                     if (siteFolder != null)
                     {
-                        foreach (var ip in GetIPs(siteFolder, site.SiteConfigurationId + "WhiteListedIPs"))
+                        foreach (var ip in GetIPs(siteFolder, whiteListingSettings.SiteConfigurationId + "WhiteListedIPs"))
                         {
                             if (clientIP.Equals(ip))
                             {
@@ -60,7 +75,7 @@ namespace SF.Feature.IPWhiteList
                             }
                         }
 
-                        foreach (var range in GetRanges(siteFolder, site.SiteConfigurationId + "WhiteListedRanges"))
+                        foreach (var range in GetRanges(siteFolder, whiteListingSettings.SiteConfigurationId + "WhiteListedRanges"))
                         {
                             if (range.IsInRange(clientIP))
                             {
@@ -69,20 +84,26 @@ namespace SF.Feature.IPWhiteList
                         }
                     }
 
+                    var sharedSettingsItem = ServiceLocator.ServiceProvider.GetService<IMultisiteContext>().GetSharedSitesSettingsItem(Context.Database.GetItem(Context.Site.StartPath));
+                    if (sharedSettingsItem != null)
+                    {
+
+                    }
+
                     //We're not White Listed, try custom page with 302 redirect
                     try
                     {
-                        var restricedPageUrl = LinkManager.GetItemUrl(Context.Database.GetItem(new Sitecore.Data.ID(site.RestrictedAccessPageId)));
-                        args.Context.Response.Status = "302 Moved Temporarily";
-                        args.Context.Response.StatusCode = (int)System.Net.HttpStatusCode.Moved;
-                        args.Context.Response.AddHeader("Location", restricedPageUrl);
-                        args.Context.Response.End();
+                        var restricedPageUrl = LinkManager.GetItemUrl(Context.Database.GetItem(new Sitecore.Data.ID(whiteListingSettings.RestrictedAccessPageId)));
+                        HttpContext.Current.Response.Status = "302 Moved Temporarily";
+                        HttpContext.Current.Response.StatusCode = (int)System.Net.HttpStatusCode.Moved;
+                        HttpContext.Current.Response.AddHeader("Location", restricedPageUrl);
+                        HttpContext.Current.Response.End();
                     }
                     catch
                     {
                         //use default IIS 403 instead
-                        args.Context.Response.StatusCode = (int)System.Net.HttpStatusCode.Forbidden;
-                        args.Context.Response.End();
+                        HttpContext.Current.Response.StatusCode = (int)System.Net.HttpStatusCode.Forbidden;
+                        HttpContext.Current.Response.End();
                     }
                 }
             }

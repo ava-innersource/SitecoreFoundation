@@ -2,13 +2,19 @@
 ID: "fd057f5f-298e-48e9-8c84-5333493ed722"
 Parent: "762c6996-ffb1-442a-bb82-2a5b9c4c0c1d"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Feature/SF/IP White List/Interface Templates/_SiteWhiteListSettings
+Path: /sitecore/templates/Feature/SF/IP White List/Folder Templates/White List Settings Root
 DB: master
 SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Network/32x32/lock.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
   Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{9D836DFD-4D86-4DD9-BCAD-0BD3C554A656}"
 Languages:
 - Language: en
   Versions:
