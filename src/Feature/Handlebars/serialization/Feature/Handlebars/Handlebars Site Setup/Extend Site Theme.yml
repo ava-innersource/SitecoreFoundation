@@ -1,0 +1,23 @@
+﻿---
+ID: "4f63ff22-d149-4453-92cc-47e35ca992aa"
+Parent: "80b54171-1806-4e08-ba44-5fc4a41c513f"
+Template: "621318ac-63e9-48b1-b5a9-5bcf31d0e41a"
+Path: /sitecore/system/Settings/Feature/SF/Handlebars/Handlebars Site Setup/Extend Site Theme
+DB: master
+SharedFields:
+- ID: "6cddc859-d797-4c2f-a95a-bb168b4ad966"
+  Hint: Arguments
+  Type: Treelist
+  Value: "{99A4E139-91F3-449A-B62E-E7298BA0F53E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T144008Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,23 @@
+﻿---
+ID: "bcfdb77f-5af6-465c-a6ae-fdebdad0f7c6"
+Parent: "de4173d1-9a65-4b8f-915d-da90a9f3d709"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Extension Themes/Owl Carousel/images
+DB: master
+BranchID: "ffd203c6-cb3e-4a27-9c05-4a9aeb121810"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{7C46C839-B90E-411E-B657-00C661AD4C81}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180203T231722Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,23 @@
+﻿---
+ID: "00e4a547-7121-4fb3-96b2-65a89f517566"
+Parent: "8ec677d2-eb1a-4009-b200-3cc70cac9cb4"
+Template: "621318ac-63e9-48b1-b5a9-5bcf31d0e41a"
+Path: /sitecore/system/Settings/Feature/SF/Owl Carousel/Owl Carousel Site Setup/Attach Owl Carousel Theme
+DB: master
+SharedFields:
+- ID: "6cddc859-d797-4c2f-a95a-bb168b4ad966"
+  Hint: Arguments
+  Type: Treelist
+  Value: "{DE4173D1-9A65-4B8F-915D-DA90A9F3D709}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T141108Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

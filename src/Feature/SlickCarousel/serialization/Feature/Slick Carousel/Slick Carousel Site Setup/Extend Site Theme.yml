@@ -1,0 +1,23 @@
+﻿---
+ID: "d426fc57-776c-46a5-b827-3be614a99634"
+Parent: "6a78231a-5184-460c-bcb7-7dec116c095b"
+Template: "621318ac-63e9-48b1-b5a9-5bcf31d0e41a"
+Path: /sitecore/system/Settings/Feature/SF/Slick Carousel/Slick Carousel Site Setup/Extend Site Theme
+DB: master
+SharedFields:
+- ID: "6cddc859-d797-4c2f-a95a-bb168b4ad966"
+  Hint: Arguments
+  Type: Treelist
+  Value: "{42B71C8A-2410-4130-981D-0D80050C086A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T144030Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
