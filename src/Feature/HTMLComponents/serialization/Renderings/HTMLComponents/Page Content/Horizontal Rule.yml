@@ -1,0 +1,24 @@
+﻿---
+ID: "bb17500d-c288-4fd1-bfcb-1999eb4d67e4"
+Parent: "e03aec15-8790-454c-85c9-959f8a82eaf5"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/SF/HTMLComponents/Page Content/Horizontal Rule
+DB: master
+SharedFields:
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: Index
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: SF.Feature.HTMLComponents.Areas.SitecoreFoundation.Controllers.HorizontalRuleController,SF.Feature.HTMLComponents
+- ID: "fc5c3451-dfde-4778-9901-5d0b1da1e212"
+  Hint: Area
+  Value: SitecoreFoundation
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T205817Z

@@ -23,7 +23,13 @@ namespace SF.Feature.IPWhiteList
 
         public override void Process(HttpRequestArgs args)
         {
-            var settingsItem = ServiceLocator.ServiceProvider.GetService<IMultisiteContext>().GetSettingsItem(Context.Database.GetItem(Context.Site.StartPath));
+            var multiSiteContext = ServiceLocator.ServiceProvider.GetService<IMultisiteContext>();
+            if (multiSiteContext == null || Context.Site == null || string.IsNullOrEmpty(Context.Site.StartPath))
+            {
+                return;
+            }
+
+            var settingsItem = multiSiteContext.GetSettingsItem(Context.Database.GetItem(Context.Site.StartPath));
             if (settingsItem == null)
             {
                 return;

@@ -187,6 +187,7 @@
     <Content Include="Global\scripts\Feature\Analytics\loadAnalytics.js" />
     <Content Include="Global\scripts\Feature\Analytics\sitecoreAnalytics.js" />
     <Content Include="App_Config\Include\Feature.Analytics\Serialization.config" />
+    <Content Include="Scripts\analytics.min.js" />
     <None Include="packages.config" />
     <Content Include="App_Config\Include\ZFeature.Routes\AnalyticsRoutes.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />

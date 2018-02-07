@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{60FDC4EA-B56F-4EC5-AB57-D6C68A523ECC}</ProjectGuid>
+    <ProjectGuid>{95C2A25F-DCF3-43CD-AD43-151AE6909691}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SF.Foundation.Components</RootNamespace>
-    <AssemblyName>SF.Foundation.Components</AssemblyName>
+    <RootNamespace>SF.Feature.HTMLComponents</RootNamespace>
+    <AssemblyName>SF.Feature.HTMLComponents</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -22,12 +22,80 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
     <TargetFrameworkProfile />
     <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ci|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ci|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'always|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'always|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -67,20 +135,11 @@
     <Reference Include="Sitecore.XA.Foundation.IoC">
       <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.IoC.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.XA.Foundation.MarkupDecorator">
-      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.XA.Foundation.Mvc">
       <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.XA.Foundation.RenderingVariants">
-      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.RenderingVariants.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions">
       <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.XA.Foundation.Variants.Abstractions">
-      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.Variants.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Linq, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -136,43 +195,38 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation.CommonComponents\Serialization.config" />
+    <Content Include="App_Config\Include\Feature.HTMLComponents\Serialization.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\GenericVariantController.cs" />
-    <Compile Include="Extensions\ControllerExtensions.cs" />
-    <Compile Include="Extensions\HtmlHelpers.cs" />
-    <Compile Include="Extensions\IParametersExtensions.cs" />
-    <Compile Include="Extensions\ItemExtensions.cs" />
-    <Compile Include="Models\GenericVariantModel.cs" />
-    <Compile Include="Repositories\GenericVariantRepository.cs" />
-    <Compile Include="Repositories\IGenericVariantRepository.cs" />
-    <Compile Include="Repositories\RegisterDependencies.cs" />
-    <Compile Include="ThemeSupport\GetSiteViewRenderer.cs" />
+    <Compile Include="Areas\SitecoreFoundation\SitecoreFoundationAreaRegistration.cs" />
+    <Compile Include="Areas\SitecoreFoundation\Controllers\HorizontalRuleController.cs" />
+    <Compile Include="Areas\SitecoreFoundation\Models\HorizontalRuleModel.cs" />
+    <Compile Include="Areas\SitecoreFoundation\Repositories\HorizontalRuleRepository.cs" />
+    <Compile Include="Areas\SitecoreFoundation\Repositories\IHorizontalRuleRepository.cs" />
+    <Compile Include="Areas\SitecoreFoundation\Repositories\RegisterDependencies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThemeSupport\SiteViewRenderer.cs" />
-    <Content Include="App_Config\Include\Foundation.CommonComponents\CommonComponents.config" />
-    <None Include="packages.config" />
-    <Content Include="App_Config\Include\Foundation.CommonComponents\ThemeSupport.config" />
+    <Content Include="packages.config" />
+    <Content Include="App_Config\Include\Feature.HTMLComponents\HTMLComponents.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <Content Include="Views\GenericVariant\Index.cshtml" />
-    <None Include="Views\web.config" />
-    <None Include="web.config" />
-    <None Include="web.Debug.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
-    <None Include="web.Release.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
+    <Content Include="Areas\SitecoreFoundation\Views\Foundation.Containers\Div.cshtml" />
+    <Content Include="Areas\SitecoreFoundation\Views\Foundation.Containers\Span.cshtml" />
+    <Content Include="Areas\SitecoreFoundation\Views\HorizontalRule\Index.cshtml" />
+    <Content Include="Areas\SitecoreFoundation\Views\Foundation.Content\Simple\Iframe.cshtml" />
+    <Content Include="Areas\SitecoreFoundation\Views\Foundation.Content\Simple\Silverlight.cshtml" />
+    <Content Include="Areas\SitecoreFoundation\Views\Foundation.Layouts\Semantic\Article.cshtml" />
+    <Content Include="Areas\SitecoreFoundation\Views\Foundation.Layouts\Semantic\Aside.cshtml" />
+    <Content Include="Areas\SitecoreFoundation\Views\Foundation.Layouts\Semantic\Footer.cshtml" />
+    <Content Include="Areas\SitecoreFoundation\Views\Foundation.Layouts\Semantic\Header.cshtml" />
+    <Content Include="Areas\SitecoreFoundation\Views\Foundation.Layouts\Semantic\Nav.cshtml" />
+    <Content Include="Areas\SitecoreFoundation\Views\Foundation.Layouts\Semantic\Section.cshtml" />
+    <None Include="Areas\SitecoreFoundation\Views\web.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Configuration\code\Foundation.Configuration.csproj">
-      <Project>{9a53b8a9-9d76-45da-8e87-e5af8989a45a}</Project>
-      <Name>Foundation.Configuration</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Structure\code\Foundation.Structure.csproj">
-      <Project>{ff2486f3-4021-42d9-bc56-c4fac23ba0d0}</Project>
-      <Name>Foundation.Structure</Name>
+    <ProjectReference Include="..\..\..\Foundation\Components\code\Foundation.Components.csproj">
+      <Project>{60fdc4ea-b56f-4ec5-ab57-d6c68a523ecc}</Project>
+      <Name>Foundation.Components</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

@@ -1,0 +1,10 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model SF.Feature.HTMLComponents.Areas.SitecoreFoundation.Models.HorizontalRuleModel
+
+<div @Html.Sxa().Component("horizontal-rule", Model.Attributes)>
+    <div class="component-content">
+        <hr/>
+    </div>
+</div>

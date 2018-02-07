@@ -1,0 +1,47 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using SF.Foundation.Container
+
+@{    
+    Sitecore.Data.Fields.LinkField sourceField = (Sitecore.Data.Fields.LinkField) Model.Item.Fields["Source"];
+
+    string sourceUrl = sourceField.GetFriendlyUrl();
+    
+    string width = Model.Item.Fields["Width"].Value;
+    string height = Model.Item.Fields["Height"].Value;
+    string data = Model.Item.Fields["Data"].Value;
+    string type = Model.Item.Fields["Type"].Value;
+    string parameters = Model.Item.Fields["Additional Parameters"].Value;
+    string altContent = Model.Item.Fields["Alternate Content"].Value;
+    
+    bool isFlex = ((Sitecore.Data.Fields.CheckboxField)Model.Item.Fields["Is Flex Video"]).Checked;
+    
+    var containerClass = "silverlight-component";
+    if (isFlex)
+    {
+        containerClass += " flex-video";
+    }
+}
+
+@using (Html.ComponentContainer(containerClass))
+{
+    if (Sitecore.Context.PageMode.IsExperienceEditorEditing && string.IsNullOrEmpty(sourceUrl))
+    {
+        <div>No Silverlight Source Specified. Please Configure the Silverlight component.</div>
+    }
+    else
+    { 
+        <object width="@width" height="@height"
+                data="@data"
+                type="@type">
+            <param name="source" value="@sourceUrl" />
+            @parameters
+            <div class="sl-alt-content">
+                @Html.Sitecore().Field("Alternate Content")
+            </div>
+        </object>
+        <iframe id="_sl_historyFrame"
+            style='visibility:hidden;height:0px;width:0px;border:0px'></iframe>
+    }
+
+}

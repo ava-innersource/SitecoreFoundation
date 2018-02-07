@@ -1,0 +1,16 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Fields
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Variants.Abstractions.Fields
+
+@model SF.Foundation.Components.Models.GenericVariantModel
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? Model.ContainerClass, Model.Attributes)>
+    <div class="component-content">
+            @foreach (BaseVariantField variantField in Model.VariantFields)
+            {
+                @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams)
+            }
+    </div>
+</div>
