@@ -1,8 +1,8 @@
 ﻿---
-ID: "aecacf14-28ea-4b67-9d59-a09f70b43aa7"
-Parent: "6b85fe1a-5e12-4d54-b129-bc08766f4e7f"
-Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
-Path: /sitecore/templates/SF/Foundation/Components/Component Templates
+ID: "a6c309f5-548c-4b28-a24c-dd1b7c7494e0"
+Parent: "31c85853-d86d-46b0-a418-86df28f7294f"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Settings/Foundation/SF
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170702T200625Z
+      Value: 20180126T155410Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
