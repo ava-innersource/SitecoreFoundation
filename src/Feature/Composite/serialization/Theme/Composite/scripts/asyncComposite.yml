@@ -1,0 +1,31 @@
+﻿---
+ID: "caae8b0d-907a-449e-ba68-a25d0b2b8348"
+Parent: "ef593639-1ba6-4f18-b746-40edd1630a2a"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: /sitecore/media library/Base Themes/Composite/scripts/asyncComposite
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/CAAE8B0D907A449EBA68A25D0B2B8348.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "1d4b27bd-6d64-435a-bdec-fab782a84b28"
+  Value: 77u/JChkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24gKCkgew0KDQogICQoIi5jb21wb3NpdGUuYXN5bmMiKS5lYWNoKGZ1bmN0aW9uIChpbmRleCkgew0KICAgIHZhciBjb250YWluZXIgPSAkKHRoaXMpOyANCiAgICB2YXIgY29udGVudFVybCA9IGNvbnRhaW5lci5hdHRyKCJkYXRhLXNyYyIpOw0KDQogICAgY29uc29sZS5sb2coJ2ZldGNoaW5nIGRhdGEgZnJvbSAnICsgY29udGVudFVybCk7DQoNCiAgICAkLmdldChjb250ZW50VXJsLCBmdW5jdGlvbiAoZGF0YSkgew0KICAgICAgY29uc29sZS5sb2coJ2RhdGEgb2J0YWluZWQsIGxvYWRpbmcgaW50byBkb20nKTsNCiAgICAgIGNvbnRhaW5lci5odG1sKGRhdGEpOw0KICAgIH0pOw0KICAgIA0KICB9KTsNCn0pOw==
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 376
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/x-javascript"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: js
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T141944Z

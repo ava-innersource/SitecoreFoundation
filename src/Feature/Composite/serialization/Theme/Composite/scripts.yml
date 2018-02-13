@@ -1,0 +1,23 @@
+﻿---
+ID: "ef593639-1ba6-4f18-b746-40edd1630a2a"
+Parent: "66db5fd3-e594-48d2-8340-bc0a1a9f1157"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Base Themes/Composite/scripts
+DB: master
+BranchID: "ffd203c6-cb3e-4a27-9c05-4a9aeb121810"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{A0E5B7EA-9665-4F17-A867-2B535728EBF7}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T141916Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

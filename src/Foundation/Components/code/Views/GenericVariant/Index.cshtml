@@ -10,7 +10,7 @@
     <div class="component-content">
             @foreach (BaseVariantField variantField in Model.VariantFields)
             {
-                @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams)
+                @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
             }
     </div>
 </div>

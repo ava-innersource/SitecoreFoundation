@@ -112,7 +112,7 @@ namespace SF.Feature.Handlebars
             TraceLogger.Current.Write("Call to SetupContainer for Item " + item != null ? item.ID.ToString() : string.Empty );
             TraceLogger.Current.Write("Converting Item to Object for Binding");
 
-            var itemAsObj = getItemAsObject(item, 0,  MAX_LEVEL);
+            var itemAsObj = getItemAsObject(item);
 
             TraceLogger.Current.Write("Item processed, storing in context.");
 
@@ -146,20 +146,24 @@ namespace SF.Feature.Handlebars
             }
         }
 
-        public static IHtmlString GetTemplatedContent(Item handlebarTemplate, Item templateData)
+        public static IHtmlString GetTemplatedContent(Item handlebarTemplate, Item templateData, object model = null)
+        {
+            var itemAsObj = getItemAsObject(templateData, model);
+            return GetTemplatedContent(handlebarTemplate, itemAsObj);
+        }
+
+        public static IHtmlString GetTemplatedContent(Item handlebarTemplate, object targetData)
         {
             //field from variant is named Template
             var template = GetCompiledTemplate(handlebarTemplate, "Template");
 
-            if (templateData != null)
+            if (targetData != null)
             {
                 //Wrap with Dynamic Object
-                var itemAsObj = getItemAsObject(templateData, 0, MAX_LEVEL);
-
                 string output = string.Empty;
                 try
                 {
-                    output = template(itemAsObj);                    
+                    output = template(targetData);
                 }
                 catch (Exception ex)
                 {
@@ -270,16 +274,23 @@ namespace SF.Feature.Handlebars
             
             foreach (var childItem in items)
             {
-                children.Add(getItemAsObject(childItem, 0, MAX_LEVEL));
+                children.Add(getItemAsObject(childItem));
             }
             myDynamicItem.Add("Items", children);
             return myDynamicItem;
         }
 
-        private static object getItemAsObject(Item item, int currentLevel, int maxLevel)
+        private static object getItemAsObject(Item item, object model = null)
         {
-            TraceLogger.Current.Write("Getting Item as Object Item [" + item != null ? item.ID.ToString() : string.Empty + "] Current Level:[" + currentLevel + "] Max Level:[" + maxLevel + "]");
-            return new DynamicItem(item);
+            TraceLogger.Current.Write("Getting Item as Object Item");
+
+            var myItem = new DynamicItem(item);
+            if (model != null)
+            {
+                myItem.Model = model;
+            }
+
+            return myItem;
         }
 
 

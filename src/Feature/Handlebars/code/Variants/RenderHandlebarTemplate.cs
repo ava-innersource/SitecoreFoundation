@@ -41,8 +41,8 @@ namespace SF.Feature.Handlebars.Variants
                 HtmlGenericControl htmlGenericControl = new HtmlGenericControl((string.IsNullOrWhiteSpace(variantField.Tag) ? "div" : variantField.Tag));
                 this.AddClass(htmlGenericControl, variantField.CssClass);
                 this.AddWrapperDataAttributes(variantField, args, htmlGenericControl);
-
-                var content = HandlebarManager.GetTemplatedContent(variantField.TemplateItem, args.Item);
+                
+                var content = HandlebarManager.GetTemplatedContent(variantField.TemplateItem, args.Item, args.Model);
 
                 htmlGenericControl.InnerHtml = content.ToHtmlString();
 

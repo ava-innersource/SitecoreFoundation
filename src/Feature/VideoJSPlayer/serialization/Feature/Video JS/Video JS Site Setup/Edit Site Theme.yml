@@ -1,0 +1,23 @@
+﻿---
+ID: "5bf622f2-07fd-4628-9219-b3200654a5c3"
+Parent: "8df0bada-a693-40f6-a67b-129325d90012"
+Template: "5ae7ee87-fbeb-4648-818f-9b17e13b4c89"
+Path: /sitecore/system/Settings/Feature/SF/Video JS/Video JS Site Setup/Edit Site Theme
+DB: master
+SharedFields:
+- ID: "4d4c227e-a1b5-46ac-82f9-d6f25dfed8aa"
+  Hint: Arguments
+  Type: Treelist
+  Value: "{C6E305AF-DD60-489A-ADD6-6FD57390BBD1}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180213T133838Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

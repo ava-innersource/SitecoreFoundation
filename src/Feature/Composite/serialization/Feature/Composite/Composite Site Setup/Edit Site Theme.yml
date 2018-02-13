@@ -1,0 +1,23 @@
+﻿---
+ID: "82fabdb0-1eec-4bf2-8a1a-b9db900d772f"
+Parent: "13c7d09e-87da-4a1a-a414-95af10214d04"
+Template: "5ae7ee87-fbeb-4648-818f-9b17e13b4c89"
+Path: /sitecore/system/Settings/Feature/SF/Composite/Composite Site Setup/Edit Site Theme
+DB: master
+SharedFields:
+- ID: "4d4c227e-a1b5-46ac-82f9-d6f25dfed8aa"
+  Hint: Arguments
+  Type: Treelist
+  Value: "{66DB5FD3-E594-48D2-8340-BC0A1A9F1157}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180213T133620Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

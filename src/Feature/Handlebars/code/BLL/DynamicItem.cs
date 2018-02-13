@@ -14,6 +14,8 @@ namespace SF.Feature.Handlebars
     {
         public Item Item { get; set; }
 
+        public object Model { get; set; }
+
         public DynamicItem(Item item)
         {
             Item = item;
