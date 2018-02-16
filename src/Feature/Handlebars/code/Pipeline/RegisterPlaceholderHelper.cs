@@ -18,12 +18,14 @@ namespace SF.Feature.Handlebars
             pipelineArgs.Helpers.Add(new HandlebarHelperRegistration("placeholder", (writer, context, args) =>
             {
                 var placeholderName = args[0].ToString();
+                var placeholderIndex = args.Length > 1 ? args[1].ToString() : "0";
+                placeholderIndex = string.IsNullOrEmpty(placeholderIndex) ? "0" : placeholderIndex;
 
                 Guid currentRenderingId = RenderingContext.Current.Rendering.UniqueId;
 
                 if (currentRenderingId != Guid.Empty)
                 {
-                    placeholderName = String.Format("{0}_{1}", placeholderName, currentRenderingId);
+                    placeholderName = String.Format("{0}-{1}-{2}", placeholderName, currentRenderingId.ToString("B"), placeholderIndex);
                 }
 
                 if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
