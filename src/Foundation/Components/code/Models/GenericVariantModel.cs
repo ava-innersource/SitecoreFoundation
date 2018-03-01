@@ -9,5 +9,6 @@ namespace SF.Foundation.Components.Models
     public class GenericVariantModel : VariantsRenderingModel
     {
         public string ContainerClass { get; set; }
+        public bool StickyAnchorLinkModule { get; set; }
     }
 }

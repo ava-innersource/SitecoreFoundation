@@ -438,3 +438,77 @@ gulp.task("Auto-Publish-Assemblies", function () {
     })
   );
 });
+
+
+
+gulp.task("Auto-Publish-Templates", function () {
+    var root = "./src";
+    var roots = [root + "/**/templates", "!" + root + "/**/obj/**/templates"];
+    var files = "/**/*.cshtml";
+    var destination = config.websiteRoot + "\\templates";
+    return gulp.src(roots, { base: root }).pipe(
+        foreach(function (stream, rootFolder) {
+            gulp.watch(rootFolder.path + files, function (event) {
+                if (event.type === "changed") {
+                    console.log("publish this file " + event.path);
+                    gulp.src(event.path, { base: rootFolder.path }).pipe(gulp.dest(destination));
+                }
+                console.log("published " + event.path);
+            });
+            return stream;
+        })
+    );
+});
+
+gulp.task("Auto-Publish-MediaLibrary", function () {
+    var root = "./src";
+    var roots = [root + "/**/mediaLibrary", "!" + root + "/**/obj/**/mediaLibrary"];
+    var files = "/**/*.*";
+    var destination = config.websiteRoot + "\\mediaLibrary";
+    return gulp.src(roots, { base: root }).pipe(
+        foreach(function (stream, rootFolder) {
+            gulp.watch(rootFolder.path + files, function (event) {
+                if (event.type === "changed") {
+                    console.log("publish this file " + event.path);
+                    gulp.src(event.path, { base: rootFolder.path }).pipe(gulp.dest(destination));
+                }
+                console.log("published " + event.path);
+            });
+            return stream;
+        })
+    );
+});
+
+gulp.task("Publish-Templates", function () {
+    var root = "./src";
+    var roots = [root + "/**/templates", "!" + root + "/**/obj/**/templates"];
+    var files = "/**/*.*";
+    var destination = config.websiteRoot + "\\templates";
+    return gulp.src(roots, { base: root }).pipe(
+        foreach(function (stream, file) {
+            console.log("Copying Templates " + file.path);
+            gulp.src(file.path + files, { base: file.path })
+                .pipe(newer(destination))
+                .pipe(debug({ title: "Copying " }))
+                .pipe(gulp.dest(destination));
+            return stream;
+        })
+    );
+});
+
+gulp.task("Publish-Media-Library-Folder-Files", function () {
+    var root = "./src";
+    var roots = [root + "/**/mediaLibrary", "!" + root + "/**/obj/**/mediaLibrary"];
+    var files = "/**/*.*";
+    var destination = config.websiteRoot + "\\mediaLibrary";
+    return gulp.src(roots, { base: root }).pipe(
+        foreach(function (stream, file) {
+            console.log("Copying Media Library Folder Files " + file.path);
+            gulp.src(file.path + files, { base: file.path })
+                .pipe(newer(destination))
+                .pipe(debug({ title: "Copying " }))
+                .pipe(gulp.dest(destination));
+            return stream;
+        })
+    );
+});

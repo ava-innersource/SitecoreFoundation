@@ -1,0 +1,13 @@
+﻿
+@{
+    //TODO : check for template as well as field. 
+    //CurrentItem.TemplateID["{9B183B5A-55A0-40F8-B487-CD3D3B0C027F}"];
+
+    if (@Html.Sitecore().Field("AnchorTitle") != null)
+    {
+        var title = Html.Sitecore().Field("AnchorTitle").ToString();
+        var titleWithDashes = title.Replace(" ", "-");
+        <a href="#" name="@titleWithDashes" data-title="@title" data-container="sticky-anchor-module"></a>
+    }
+
+}

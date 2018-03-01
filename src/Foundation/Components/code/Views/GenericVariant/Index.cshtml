@@ -8,9 +8,14 @@
 
 <div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? Model.ContainerClass, Model.Attributes)>
     <div class="component-content">
-            @foreach (BaseVariantField variantField in Model.VariantFields)
+
+        @{
+            Html.RenderPartial("~/Views/Shared/StickyAnchorLinkModuleCheck.cshtml");
+        }
+
+        @foreach (BaseVariantField variantField in Model.VariantFields)
             {
-                @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
-            }
+            @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
+        }
     </div>
 </div>
