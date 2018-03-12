@@ -13,10 +13,12 @@ using System.Web;
 using Sitecore.Pipelines;
 using Sitecore.XA.Feature.CreativeExchange.Pipelines.Import.Import;
 using System.Reflection;
+using System.Net.Http;
+using System.Net;
 
 namespace SF.Foundation.Resources
 {
-    
+
 
     public class CreativeExchangeController : ServicesApiController
     {
@@ -78,15 +80,20 @@ namespace SF.Foundation.Resources
 
                     return sb.ToString();
                 }
-            
+
+            }
+            catch (HttpResponseException)
+            {
+                throw;
             }
             catch (Exception ex)
             {
-                return ex.ToString();
+
+                throw new HttpResponseException(Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex));
             }
         }
 
-        
+
 
 
 
