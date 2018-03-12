@@ -89,6 +89,7 @@ namespace SF.Foundation.Resources
             catch (Exception ex)
             {
 
+                Sitecore.Diagnostics.Log.Error("Error Importing Creative Exchange", ex, this);
                 throw new HttpResponseException(Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex));
             }
         }
