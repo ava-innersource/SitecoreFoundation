@@ -32,6 +32,7 @@ namespace SF.Foundation.Resources
                 //var coreDb = Sitecore.Data.Database.GetDatabase("core");
                 //switch to master?
                 using (new Sitecore.Data.DatabaseSwitcher(db))
+                using (new Sitecore.SecurityModel.SecurityDisabler())
                 {
                     var item = db.GetItem(new Sitecore.Data.ID(homePageId));
 
