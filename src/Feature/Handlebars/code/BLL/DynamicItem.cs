@@ -65,6 +65,14 @@ namespace SF.Feature.Handlebars
             }
         }
 
+        public DynamicItem ContextItem
+        {
+            get
+            {
+                return new DynamicItem(Sitecore.Context.Item);
+            }
+        }
+
         public int Children_Count
         {
             get
