@@ -1,0 +1,95 @@
+﻿@using SF.Feature.Doc.Helpers
+
+@model IEnumerable<Type>
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm-12">
+
+        <h2><a name="DotNetClasses">Dot Net Classes</a></h2>
+        <br /><br />
+        @foreach (var type in Model)
+        {
+            string inheritsFrom = string.Empty;
+            if (type.BaseType != null)
+            {
+                if (type.BaseType.IsGenericType)
+                {
+                    inheritsFrom = "inherits from " + type.BaseType.Name.Substring(0, type.BaseType.Name.Length-2) + "<" + type.BaseType.GetGenericArguments()[0].Name + ">";
+                }
+                else
+                {
+                    inheritsFrom = "inherits from " + type.BaseType;
+                }
+            }
+
+            <h3>@type.Name @inheritsFrom</h3>
+            var typeSummary = XDocHelper.GetSummary(type);
+            if (!string.IsNullOrEmpty(typeSummary))
+            {
+                <br /><br />
+                <h4>Summary</h4>
+                <p>@typeSummary</p>
+            }
+
+            <br /><br />
+
+
+            var properties = type.GetProperties(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.DeclaredOnly);
+            if (properties.Count() > 0)
+            {
+                        <h4>Methods</h4>
+                        <br /><br />
+                        <ul>
+                        @foreach (var prop in properties)
+                        {
+                            var propSummary = XDocHelper.GetSummary(prop.PropertyType);
+                            <li>
+                                @prop.Name <br />
+                                @if (!string.IsNullOrEmpty(propSummary))
+                                {
+                                    @propSummary <br />
+                                }
+                                Type: @prop.PropertyType.Name <br />                            
+                            </li>
+                        }
+                        </ul>
+                        <br /><br />
+            }
+
+            <br /><br />
+
+            var methods = type.GetMethods(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.DeclaredOnly).Where(m=>!m.IsSpecialName).ToList();
+            if (methods.Count() > 0)
+            {
+                        <h4>Methods</h4>
+                        <br /><br />
+                        <ul>
+                        @foreach (var method in methods)
+                        {
+                            var methodSummary = XDocHelper.GetSummary(method);
+                            var parameters = method.GetParameters();
+                            <li>
+                                @method.Name <br />
+                                @if (!string.IsNullOrEmpty(methodSummary))
+                                {
+                                    @methodSummary <br />
+                                }
+                                Returns @method.ReturnType.Name <br />
+                                @if (parameters.Count() > 0)
+                                {
+                                    <b>Arguments:</b><br />
+                                    foreach(var arg in parameters)
+                                    {
+                                        @(arg.GetType().Name) <span> - </span> @(arg.Name) <br />
+                                    }
+                                }
+                            </li>
+                        }
+                        </ul>
+                        <br /><br />
+            }
+        }
+        </div>
+    </div>
+</div>

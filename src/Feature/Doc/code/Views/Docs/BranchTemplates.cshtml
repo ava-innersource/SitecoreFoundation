@@ -1,0 +1,56 @@
+﻿@using SF.Feature.Doc.Extensions
+
+@model List<Sitecore.Data.Items.BranchItem>
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm-12">
+
+        <h2><a name="BranchTemplates">Branch Templates</a></h2>
+        <br /><br />
+        @foreach (var template in Model)
+        {
+            <h3>@template.Name</h3>
+            if(!string.IsNullOrEmpty(template.InnerItem.Fields["__Long Description"].Value))
+            {
+                <br /><br />
+                <h4>Description</h4>
+                <p>@template.InnerItem.Fields["__Long Description"].Value</p>
+            }
+            
+            <br /><br />
+            <h4>Details</h4>
+
+            <table class="table table-striped">
+                <tr>
+                    <th>Path</th>
+                    <td>@template.InnerItem.Paths.FullPath</td>
+                </tr>
+                <tr>
+                    <th>Template Type:</th>
+                    <td>
+                        @template.InnerItem.Children.First().TemplateName
+                    </td>
+                </tr>
+                <tr>
+                    <th>Child Items:</th>
+                    <td>
+                        @{
+                            foreach (var result in template.InnerItem.Children.First().GetBranchChildrenDetails())
+                            {
+                                <div>@result</div>
+                            }
+                        }
+                    </td>
+                </tr>
+            </table>
+
+            <br /><br />
+            
+                
+            
+        }
+
+        </div>
+    </div>
+</div>

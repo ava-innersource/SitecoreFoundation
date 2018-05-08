@@ -1,0 +1,27 @@
+﻿---
+ID: "01830843-d84c-4f73-b0da-b0be3dc026e3"
+Parent: "80df7b11-d40e-4291-ae51-f5c4de097d06"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/SF/Doc/Document Renderer
+DB: master
+SharedFields:
+- ID: "13f89250-ad6b-4548-882e-118a12c18094"
+  Hint: Parameters Template
+  Value: "{90515C98-D22D-4991-9526-54B937E463C6}"
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: 
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: Index
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: SF.Feature.Doc.Controllers.DocController, SF.Feature.Doc
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180505T201735Z

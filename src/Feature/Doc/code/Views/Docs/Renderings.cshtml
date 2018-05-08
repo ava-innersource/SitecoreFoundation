@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Sitecore.Data.Items.Item>
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm-12">
+
+        <h2><a name="Renderings">Renderings</a></h2>
+        <br /><br />
+        @foreach (var rendering in Model)
+        {
+            <h3>@rendering.Name</h3>
+            if (!string.IsNullOrEmpty(rendering.Fields["Description"].Value))
+            {
+                <br /><br />
+                <h4>Description</h4>
+                <p>@rendering.Fields["Description"].Value</p>
+            }
+
+            <br /><br />
+            <h4>Details</h4>
+
+            <table class="table table-striped">
+                <tr>
+                    <th>Path</th>
+                    <td>@rendering.Paths.FullPath</td>
+                </tr>
+                <tr>
+                    <th>Controller:</th>
+                    <td>
+                        @rendering.Fields["Controller"].Value
+                    </td>
+                </tr>
+                <tr>
+                    <th>Controller Action:</th>
+                    <td>
+                        @rendering.Fields["Controller Action"].Value
+                    </td>
+                </tr>
+                <tr>
+                    <th>Parameters Template:</th>
+                    <td>
+                        @{ 
+                            var pLink = (Sitecore.Data.Fields.InternalLinkField) rendering.Fields["Parameters Template"];
+                            if (pLink != null && pLink.TargetItem != null)
+                            {
+                                <span>@pLink.TargetItem.Name</span>
+                            }
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <th>Data Source Location:</th>
+                    <td>
+                        @rendering.Fields["Datasource Location"].Value
+                    </td>
+                </tr>
+                <tr>
+                    <th>Data Source Template:</th>
+                    <td>
+                        @{ 
+                            var linkField = (Sitecore.Data.Fields.InternalLinkField)rendering.Fields["Datasource Template"];
+                            var tempName = "";
+                            var tempLocation = "";
+                            if (linkField != null && !linkField.TargetID.IsNull)
+                            {
+                                tempName = linkField.TargetItem.Name;
+                                tempLocation = linkField.TargetItem.Paths.FullPath;
+                            }
+                        }
+                        @if (!string.IsNullOrEmpty(tempName))
+                        {
+                              <span>@tempName (@tempLocation)</span>
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <th>Custom Experience buttons:</th>
+                    <td>
+                        @{ 
+                            var buttonsField = (Sitecore.Data.Fields.MultilistField)rendering.Fields["Page Editor Buttons"];
+                            if (buttonsField != null)
+                            {
+                                var buttons = buttonsField.GetItems();
+                                foreach(var button in buttons)
+                                {
+                                    <span>@button.Name (@button.Fields["Tooltip"].Value)</span> <br />
+                                    if (button.Fields["Fields"] != null && !string.IsNullOrEmpty(button.Fields["Fields"].Value))
+                                    {
+                                        <span><b>Edits:</b> @button.Fields["Fields"].Value</span> <br />
+                                    }
+                                }
+                            }
+                        }
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <br /><br />
+
+                            }
+        </div>
+    </div>
+</div>

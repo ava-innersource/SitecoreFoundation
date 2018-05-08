@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Sitecore.Data.Items.Item>
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm-12">
+
+        <h2><a name="PageDesigns">Page Designs</a></h2>
+        <br /><br />
+        @foreach (var pageDesign in Model)
+        {
+            <h3>@pageDesign.Name</h3>
+            if (!string.IsNullOrEmpty(pageDesign.Fields["__Long Description"].Value))
+            {
+                <br /><br />
+                <h4>Description</h4>
+                <p>@pageDesign.Fields["__Long Description"].Value</p>
+            }
+
+            <br /><br />
+
+            var partialField = (Sitecore.Data.Fields.MultilistField)pageDesign.Fields["PartialDesigns"];
+            var partials = partialField.GetItems();
+            if (partials.Count() > 0)
+            {
+                        <h4>Partials</h4>
+                        <br /><br />
+                        <ul>
+                        @foreach (var partial in partials)
+                        {
+                            <li>@partial.Name</li>
+                        }
+                        </ul>
+                        <br /><br />
+            }
+        }
+        </div>
+    </div>
+</div>

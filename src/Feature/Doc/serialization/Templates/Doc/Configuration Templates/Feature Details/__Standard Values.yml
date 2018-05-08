@@ -1,0 +1,68 @@
+﻿---
+ID: "d07ac03d-c4e1-4744-98df-49b2b045d379"
+Parent: "31dab901-a1b5-4efe-86cd-f79db157cda5"
+Template: "31dab901-a1b5-4efe-86cd-f79db157cda5"
+Path: /sitecore/templates/Feature/SF/Doc/Configuration Templates/Feature Details/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{CC6B1109-55C8-46BE-8BEC-575D9921D438}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{4176E740-974D-4EFD-A6B2-ADEB82F1808B}"
+              s:id="{01830843-D84C-4F73-B0DA-B0BE3DC026E3}"
+              s:par=""
+              s:ph="main" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180505T151146Z
+    - ID: "30dfe5b2-76f8-4610-83ef-856132c3e0a5"
+      Hint: Helix Details
+      Value: |
+        <p>Component Templates will be part of Feature XXX in Module Group YYYY.</p>
+        <p>&lt;&lt;Elaborate on Collaborators if applicable (Foundational Module Repos, etc)&gt;&gt;&gt;</p>
+    - ID: "3486c57d-f014-4d29-bed5-ee36ee3d92cb"
+      Hint: Document Title
+      Value: Module Name
+    - ID: "38dbe58e-59f2-4b29-8936-7428b1d5848d"
+      Hint: Revisions
+      Value: Iniital Version=Author%20Name%20%2F%20%28Date%29
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "837d7267-5430-4214-9271-009ff0ab9234"
+      Hint: Document Sub Title
+      Value: Technical Design Document
+    - ID: "908b1441-087f-4965-a705-43a6740e4ce3"
+      Hint: Document Creation Date
+      Value: $date
+    - ID: "91c3ee4e-3990-4705-a506-8a28e84b5bad"
+      Hint: Introduction
+      Value: This document details the technical design of module XXX.
+    - ID: "97648ca5-f91d-4de7-a054-839860671f68"
+      Hint: Design Overview
+      Value: |
+        <p>This will be implemented as a SxA Rendering that will be available in the toolbox feature XXX. </p>
+        <p>&lt;&lt;Give Overview of implementation Approach&gt;&gt;</p>

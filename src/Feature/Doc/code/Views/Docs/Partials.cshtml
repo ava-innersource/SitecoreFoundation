@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Sitecore.Data.Items.Item>
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm-12">
+
+        <h2><a name="Partials">Partials</a></h2>
+        <br /><br />
+        @foreach (var partial in Model)
+        {
+            <h3>@partial.Name</h3>
+            if (!string.IsNullOrEmpty(partial.Fields["__Long Description"].Value))
+            {
+                <br /><br />
+                <h4>Description</h4>
+                <p>@partial.Fields["__Long Description"].Value</p>
+            }
+
+            <br /><br />
+
+            var renderings = partial.Visualization.GetRenderings(Sitecore.Context.Device, false);
+            if (renderings.Count() > 0)
+            {
+                        <h4>Renderings</h4>
+                        <br /><br />
+                        <ul>
+                        @foreach (var rendering in renderings)
+                        {
+                            var placeholder = rendering.Placeholder;
+                            placeholder = placeholder.IndexOf("-") > -1 ? placeholder.Split('-')[0] : placeholder;
+                            <li>@rendering.RenderingItem.Name - @placeholder</li>
+                        }
+                        </ul>
+                        <br /><br />
+            }
+        }
+        </div>
+    </div>
+</div>

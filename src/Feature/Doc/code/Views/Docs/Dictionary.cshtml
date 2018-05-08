@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Sitecore.Data.Items.Item>
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm-12">
+
+        <h2><a name="DictionaryEntries">Dictionary Entries</a></h2>
+        <br /><br />
+        @foreach (var entry in Model)
+        {
+            <h3>@entry.Name</h3>
+            if (!string.IsNullOrEmpty(entry.Fields["__Long Description"].Value))
+            {
+                <br /><br />
+                <h4>Description</h4>
+                <p>@entry.Fields["__Long Description"].Value</p>
+            }
+
+            <br /><br />
+            <table class="table table-striped">
+                <tr>
+                    <th>Key:</th>
+                    <td>
+                        @entry.Fields["Key"].Value
+                    </td>
+                </tr>
+                                <tr>
+                    <th>Phrase:</th>
+                    <td>
+                        @entry.Fields["Phrase"].Value
+                    </td>
+                </tr>
+            </table>
+            
+            <br /><br />
+
+                            }
+        </div>
+    </div>
+</div>

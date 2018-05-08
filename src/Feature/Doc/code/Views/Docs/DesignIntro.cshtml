@@ -1,0 +1,12 @@
+﻿@model Sitecore.Data.Items.Item
+
+<div class="container" style="min-height:400px">
+    <div class="row">
+        <div class="col-sm">
+            <h1><a name="DesignOverview">Design Overview</a></h1>
+            <p>
+                @Html.Raw(Model.Fields["Design Overview"].Value)
+            </p>   
+         </div>
+    </div>
+</div>

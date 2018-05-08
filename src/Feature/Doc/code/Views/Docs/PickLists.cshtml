@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Sitecore.Data.Items.Item>
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm-12">
+
+        <h2><a name="PickLists">Pick Lists</a></h2>
+        <br /><br />
+        @foreach (var pickList in Model)
+        {
+            <h3>@pickList.Name</h3>
+            if (!string.IsNullOrEmpty(pickList.Fields["__Long Description"].Value))
+            {
+                <br /><br />
+                <h4>Description</h4>
+                <p>@pickList.Fields["__Long Description"].Value</p>
+            }
+
+            <br /><br />
+            <h4>Options:</h4>
+            <ul>
+                @foreach(Sitecore.Data.Items.Item child in pickList.Children)
+                {
+                    <li>@child.Name</li>
+                }
+            </ul>
+            
+            <br /><br />
+
+                            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Sitecore.Data.Items.Item>
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm-12">
+
+        <h2><a name="Placeholders">Placeholders</a></h2>
+        <br /><br />
+        @foreach (var placeholder in Model)
+        {
+            <h3>@placeholder.Name</h3>
+            if (!string.IsNullOrEmpty(placeholder.Fields["__Long Description"].Value))
+            {
+                <br /><br />
+                <h4>Description</h4>
+                <p>@placeholder.Fields["__Long Description"].Value</p>
+            }
+
+            <br /><br />
+            <table class="table table-striped">
+                <tr>
+                    <th>Placeholder Key:</th>
+                    <td>
+                        @placeholder.Fields["Placeholder Key"].Value
+                    </td>
+                </tr>
+            </table>
+            <h4>Allowed Controls:</h4>
+            <ul>
+                @{ 
+                    var controlsField = (Sitecore.Data.Fields.MultilistField) placeholder.Fields["Allowed Controls"];
+                    var controls = controlsField.GetItems();
+                    foreach(var control in controls)
+                    {
+                        <li>@control.Name</li>
+                    }
+                }
+            </ul>
+            
+            <br /><br />
+
+                            }
+        </div>
+    </div>
+</div>

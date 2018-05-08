@@ -10,6 +10,12 @@ using System.Web.Mvc;
 
 namespace SF.Feature.OwlCarousel.Controllers
 {
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    /// <summary>   A controller for handling owl carousels. </summary>
+    ///
+    /// <remarks>   David San Filippo, 5/7/2018. </remarks>
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+
     public class OwlCarouselController : StandardController
     {
         protected readonly IOwlCarouselRepository CarouselRepository;
@@ -26,10 +32,26 @@ namespace SF.Feature.OwlCarousel.Controllers
             return CarouselRepository.GetModel();
         }
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Gets carousel item model. </summary>
+        ///
+        /// <remarks>   David San Filippo, 5/7/2018. </remarks>
+        ///
+        /// <returns>   The carousel item model. </returns>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public OwlCarouselItemModel GetCarouselItemModel()
         {
             return CarouselItemRepository.GetModel() as OwlCarouselItemModel;
         }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Carousel item. </summary>
+        ///
+        /// <remarks>   David San Filippo, 5/7/2018. </remarks>
+        ///
+        /// <returns>   A response stream to send to the CarouselItem View. </returns>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
 
         public ActionResult CarouselItem()
         {

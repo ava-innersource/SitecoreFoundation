@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Sitecore.Data.Items.Item>
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm-12">
+
+        <h2><a name="AvailableRenderings">Available Renderings</a></h2>
+        <br /><br />
+        @foreach (var availableRenderings in Model)
+        {
+            <h3>@availableRenderings.Name</h3>
+            if (!string.IsNullOrEmpty(availableRenderings.Fields["__Long Description"].Value))
+            {
+                <br /><br />
+                <h4>Description</h4>
+                <p>@availableRenderings.Fields["__Long Description"].Value</p>
+            }
+
+            <br /><br />
+
+            var renderingsField = (Sitecore.Data.Fields.MultilistField)availableRenderings.Fields["Renderings"];
+            var renderings = renderingsField.GetItems();
+            if (renderings.Count() > 0)
+            {
+                        <h4>Renderings</h4>
+                        <br /><br />
+                        <ul>
+                        @foreach (var rendering in renderings)
+                        {
+                            <li>@rendering.Name</li>
+                        }
+                        </ul>
+                        <br /><br />
+            }
+        }
+        </div>
+    </div>
+</div>

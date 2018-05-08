@@ -1,0 +1,28 @@
+﻿@model List<SF.Feature.Doc.Model.Section>
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm">
+            <br /><br />
+            <h1>Table of Contents</h1>
+            <br /><br />
+            <table class="table table-striped">
+            @{ 
+                int counter = 0;
+                foreach(var docSection in Model)
+                {
+                    if (docSection.IncludeInTOC)
+                    { 
+                    counter++;
+                        <tr>
+                            <td>@counter</td>
+                            <td>.................................................</td>
+                            <td><a href="#@docSection.Name.Replace(" ", "")">@docSection.Name</a></td>
+                        </tr>
+                    }
+                }
+            }
+            </table>
+         </div>
+    </div>
+</div>

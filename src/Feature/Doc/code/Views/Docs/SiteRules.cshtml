@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Sitecore.Data.Items.Item>
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm-12">
+
+        <h2><a name="SiteBoostrappingRules">Site Boostrapping Rules</a></h2>
+        <br /><br />
+        <ul>
+        @foreach (var rule in Model)
+        {
+            <li>@rule.Name
+            @if (!string.IsNullOrEmpty(rule.Fields["__Long Description"].Value))
+            {
+                <br />@rule.Fields["__Long Description"].Value
+            }
+            </li>
+        }
+        </ul>
+        </div>
+    </div>
+</div>

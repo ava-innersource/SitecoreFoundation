@@ -1,0 +1,21 @@
+﻿---
+ID: "652b5608-ba66-413d-82bc-4e46e92798c6"
+Parent: "33f4437d-2451-4d44-aa19-03dcb1e63cd7"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/SF/Doc/Configuration Templates/Feature Details/Feature Details/Dot Net Classes
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Multi-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180505T151106Z

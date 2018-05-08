@@ -1,0 +1,23 @@
+﻿@model Sitecore.Data.Items.Item
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm">
+            <br /><br />
+            <h1>Revisions</h1>
+            <br /><br />
+            <table class="table table-striped">
+            @{ 
+                var revisionsField = (Sitecore.Data.Fields.NameValueListField)Model.Fields["Revisions"];
+                foreach(var revisionKey in revisionsField.NameValues.AllKeys)
+                {
+                    <tr>
+                        <td>@revisionKey</td>
+                        <td>@HttpUtility.UrlDecode(revisionsField.NameValues[revisionKey])</td>
+                    </tr>
+                }
+            }
+            </table>
+         </div>
+    </div>
+</div>

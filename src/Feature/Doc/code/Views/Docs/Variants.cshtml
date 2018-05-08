@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Sitecore.Data.Items.Item>
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm-12">
+
+        <h2><a name="Variants">Variants</a></h2>
+        <br /><br />
+        @foreach (var variant in Model)
+        {
+            <h3>@variant.Name</h3>
+            if (!string.IsNullOrEmpty(variant.Fields["__Long Description"].Value))
+            {
+                <br /><br />
+                <h4>Description</h4>
+                <p>@variant.Fields["__Long Description"].Value</p>
+            }
+
+            <br /><br />
+
+            if (variant.Children.Count() > 0)
+            {
+                        <h4>Variants</h4>
+                        <br /><br />
+                        <ul>
+                        @foreach (Sitecore.Data.Items.Item variantChild in variant.Children)
+                        {
+                            <li>@variantChild.Name</li>
+                        }
+                        </ul>
+                        <br /><br />
+            }
+        }
+        </div>
+    </div>
+</div>

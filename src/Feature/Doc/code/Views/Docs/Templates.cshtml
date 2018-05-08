@@ -1,0 +1,141 @@
+﻿@model List<Sitecore.Data.Items.TemplateItem>
+
+<div class="container" style="page-break-after:always; min-height:400px;">
+    <div class="row">
+        <div class="col-sm-12">
+
+        <h2><a name="Templates">Templates</a></h2>
+        <br /><br />
+        @foreach (var template in Model)
+        {
+            <h3>@template.Name</h3>
+            if(!string.IsNullOrEmpty(template.InnerItem.Fields["__Long Description"].Value))
+            {
+                <br /><br />
+                <h4>Description</h4>
+                <p>@template.InnerItem.Fields["__Long Description"].Value</p>
+            }
+            
+            <br /><br />
+            <h4>Details</h4>
+
+            <table class="table table-striped">
+                <tr>
+                    <th>Path</th>
+                    <td>@template.InnerItem.Paths.FullPath</td>
+                </tr>
+                <tr>
+                    <th>Base Templates:</th>
+                    <td>
+                        @foreach (var baseTemplate in template.BaseTemplates)
+                        {
+                            <span>@baseTemplate.Name</span> <br />
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <th>Insert Options:</th>
+                    <td>
+                        @{
+                            var optionField = (Sitecore.Data.Fields.MultilistField)template.StandardValues.Fields["__Masters"];
+                            var options = optionField.GetItems();
+                            foreach (var option in options)
+                            {
+                                <span>@option.Name</span> <br />
+                            }
+                        }
+                    </td>
+                </tr>
+            </table>
+
+            <br /><br />
+            if(template.GetSections().Count() > 0)
+            { 
+                <h4>Fields</h4>
+                <br /><br />
+                <table class="table table-bordered">
+
+                @foreach(var tempSection in template.GetSections())
+                {
+                    <tr>
+                        <th colspan="6"><b>Section Name:</b> @tempSection.Name</th>
+                    </tr>
+                    <tr>
+                        <th>Field Name / Title</th>
+                        <th>Field Type</th>
+                        <th>Data Source</th>
+                        <th>Shared</th>
+                        <th>Character Limit</th>
+                        <th>Validation Rules</th>
+                    </tr>
+                    
+                    foreach (var field in tempSection.GetFields())
+                    {
+                        <tr>
+                            <td>
+                                @field.Name
+                                @if (!string.IsNullOrEmpty(field.Title))
+                                {
+                                    <span>( @field.Title )</span>
+                                }
+                            </td>
+                            <td>@field.Type</td>
+                            <td>@field.Source</td>
+                            <td>@(field.Shared ? "Checked" : "")</td>
+                            <td>@field.InnerItem.Fields["__Skin"].Value</td>
+                            <td>
+                                @{
+                                    var valRules = (Sitecore.Data.Fields.MultilistField)field.InnerItem.Fields[new Sitecore.Data.ID("{337E20E1-999A-4EEA-85AD-B58A03AE75CC}")];
+                                    var valItems = valRules.GetItems();
+                                    foreach (var valItem in valItems)
+                                    {
+                                        <span>@valItem.Name</span> <br />
+                                    }
+                                }
+                            </td>
+                        </tr>
+                        if (template.StandardValues != null && !string.IsNullOrEmpty(template.StandardValues.Fields[field.ID].Value))
+                        { 
+                            <tr>
+                                <td colspan="6">
+                                    <b>Default:</b><br />
+                                    @template.StandardValues.Fields[field.ID].Value
+                                </td>
+                            </tr>
+                        }
+                        if (!string.IsNullOrEmpty(field.InnerItem.Fields["__Short Description"].Value) || !string.IsNullOrEmpty(field.InnerItem.Fields["__Long Description"].Value))
+                        { 
+                            <tr>
+                                <td colspan="6">
+                                    <b>Help Text:</b><br />
+                                    @field.InnerItem.Fields["__Short Description"].Value <br />  
+                                    @field.InnerItem.Fields["__Long Description"].Value
+                                </td>
+                            </tr>
+                        }
+                    }
+                
+                 } 
+                </table>
+                }
+                <br /><br />
+
+                var renderings = template.StandardValues.Visualization.GetRenderings(Sitecore.Context.Device, false);
+                if (renderings.Count() > 0)
+                {
+                    <h4>Default Layout Renderings</h4>
+                    <br /><br />
+                    <ul>
+                    @foreach(var rendering in renderings)
+                    {
+                        <li>@rendering.RenderingItem.Name - @rendering.Placeholder</li>
+                    }
+                    </ul>
+                    <br /><br />
+                }
+                
+        }
+
+        </div>
+    </div>
+</div>
