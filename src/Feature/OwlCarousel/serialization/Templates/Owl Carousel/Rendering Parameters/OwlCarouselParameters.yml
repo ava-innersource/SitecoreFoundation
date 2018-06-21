@@ -17,6 +17,10 @@ SharedFields:
   Value: "{73939E62-A438-44D4-AEEF-D48F01CF6165}"
 Languages:
 - Language: en
+  Fields:
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: Rendering Parameters allow you to set options for how the carousel will behave.
   Versions:
   - Version: 1
     Fields:

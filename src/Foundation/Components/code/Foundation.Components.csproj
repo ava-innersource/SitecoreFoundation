@@ -70,6 +70,9 @@
       <HintPath>..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Sitecore.ExperienceEditor, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.ExperienceEditor.NoReferences.9.0.171219\lib\NET462\Sitecore.ExperienceEditor.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -81,6 +84,9 @@
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.MarkupDecorator">
       <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Multisite">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.Multisite.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.Mvc">
       <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.Mvc.dll</HintPath>
@@ -151,6 +157,7 @@
     <Content Include="App_Config\Include\Foundation.CommonComponents\Serialization.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\AddItemToDataFolderCommand.cs" />
     <Compile Include="Controllers\GenericVariantController.cs" />
     <Compile Include="Controllers\GlassVariantController.cs" />
     <Compile Include="Controllers\GlassStandardController.cs" />

@@ -280,6 +280,9 @@
     <Compile Include="Models\HandlebarContainerModel.cs" />
     <Compile Include="Pipeline\HandlebarHelper.cs" />
     <Compile Include="Pipeline\HandlebarHelpersPipelineArgs.cs" />
+    <Compile Include="Pipeline\RegisterEditFrameHelper.cs" />
+    <Compile Include="Pipeline\RegisterFieldRenderHelper.cs" />
+    <Compile Include="Pipeline\RegisterIfNotEqualHelper.cs" />
     <Compile Include="Pipeline\RegisterUserSettingsHelper.cs" />
     <Compile Include="Pipeline\RegisterTranslateHelper.cs" />
     <Compile Include="Pipeline\RegisterFormatDateHelper.cs" />

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace SF.Feature.Handlebars
 {
-    public class RegisterIfEqualHelper
+    public class RegisterIfNotEqualHelper
     {
         public void Process(HandlebarHelpersPipelineArgs pipelineArgs)
         {
-            pipelineArgs.Helpers.Add(new HandlebarHelperRegistration("ifEqual", (writer, options, context, args) =>
+            pipelineArgs.Helpers.Add(new HandlebarHelperRegistration("ifNotEqual", (writer, options, context, args) =>
             {
-                if (args[0] == args[1] || args[0].Equals(args[1]))
+                if (args[0] != args[1] && !args[0].Equals(args[1]))
                  {
                      options.Template(writer, (object)context);
                  }
