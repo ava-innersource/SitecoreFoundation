@@ -158,6 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\AddItemToDataFolderCommand.cs" />
+    <Compile Include="Constants\Fields.cs" />
     <Compile Include="Constants\Templates.cs" />
     <Compile Include="Controllers\GenericVariantController.cs" />
     <Compile Include="Controllers\GlassVariantController.cs" />
@@ -178,6 +179,9 @@
     <Compile Include="ThemeSupport\GetSiteViewRenderer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeSupport\SiteViewRenderer.cs" />
+    <Compile Include="Variants\ParseViewRenderingTemplate.cs" />
+    <Compile Include="Variants\RenderViewRenderingTemplate.cs" />
+    <Compile Include="Variants\ViewRenderingTemplate.cs" />
     <Content Include="App_Config\Include\Foundation.CommonComponents\CommonComponents.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
@@ -186,6 +190,7 @@
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\GenericVariant\Index.cshtml" />
     <Content Include="Views\Shared\StickyAnchorLinkModuleCheck.cshtml" />
+    <Content Include="Views\SampleVariantViews\Sample.cshtml" />
     <None Include="Views\web.config" />
     <None Include="web.config" />
     <None Include="web.Debug.config">

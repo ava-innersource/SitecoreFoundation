@@ -1,0 +1,57 @@
+﻿---
+ID: "988b259e-da71-469f-8c67-61a4fb4818b6"
+Parent: "ff0bc016-2d01-4f55-a020-ef6fc2fe7559"
+Template: "664e5035-eb8c-4ba1-9731-a098fcc9127a"
+Path: /sitecore/system/Settings/Rules/Insert Options/Rules/Add View Rendering Field to Variant Definition
+DB: master
+SharedFields:
+- ID: "fa307b86-da2a-44bd-887d-e2057cdb4948"
+  Hint: Rule
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{5EF4DC4A-9808-4E2C-9F16-5F8103C63D7B}">
+        <conditions>
+          <or
+            uid="DF990433FBD54603A812610CDF89B21E">
+            <or
+              uid="DA913BA0E52E48CE8040DB328F9E12EC">
+              <condition
+                id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+                uid="50231BAFC3A8492799A926B5297A83CD"
+                templateid="{FB3E3034-33F8-4CE8-BE98-DD05010F4C22}" />
+              <condition
+                id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
+                uid="89C83DB7C6634070A12C407EF1F4F36E"
+                templateid="{6B1A7B9D-2F58-419D-92B7-3401A61E6F9C}" />
+            </or>
+            <condition
+              id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
+              uid="392A1DA41C084E61AA739D5E3290DA47"
+              templateid="{EB94D770-9923-4A66-9C54-420566368FB2}" />
+          </or>
+        </conditions>
+        <actions>
+          <action
+            id="{918FFCF0-F9E1-4DB6-A191-3EFA5A91C583}"
+            uid="109FBC6D1A914C13AB310EECB00533EF"
+            insertoptionid="{69DBA5A6-8F69-4970-B0A0-3F46450F40F5}" />
+        </actions>
+      </rule>
+    </ruleset>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T134842Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "9e0287d9-af90-41ad-8d36-332375e194d6"
+      Hint: Name
+      Value: Add View Rendering Insert option

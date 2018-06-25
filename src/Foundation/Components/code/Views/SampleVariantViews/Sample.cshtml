@@ -1,0 +1,9 @@
+﻿@model Sitecore.Data.Items.Item
+
+<p>I am in a cshtml view</p>
+
+<p>The name of the item is @Model.Name</p>
+
+<p>Text:</p>
+<div>@Html.Sitecore().Field("PromoText", Model)</div>
+<p>Link: @Html.Sitecore().Field("PromoLink", Model)</p>
