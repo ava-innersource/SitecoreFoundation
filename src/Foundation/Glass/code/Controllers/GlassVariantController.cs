@@ -3,8 +3,8 @@ using Glass.Mapper.Sc;
 using Glass.Mapper.Sc.IoC;
 using Glass.Mapper.Sc.Web;
 using Glass.Mapper.Sc.Web.Mvc;
-using SF.Foundation.Components.Models;
-using SF.Foundation.Components.Repositories;
+using SF.Foundation.GlassBootstrap.Models;
+using SF.Foundation.GlassBootstrap.Repositories;
 using Sitecore.Data.Items;
 using Sitecore.XA.Foundation.Mvc.Controllers;
 using Sitecore.XA.Foundation.RenderingVariants.Controllers;
@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace SF.Foundation.Components.Controllers
+namespace SF.Foundation.GlassBootstrap.Controllers
 {
     public class GlassVariantController<T> : GlassVariantController where T : class
     {

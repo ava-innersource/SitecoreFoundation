@@ -1,0 +1,17 @@
+﻿*** Do not generate C# files in this project. These templates are for linking only. ****
+
+Use these t4 Templates to create glass models. These templates extend the standard templates in two ways:
+
+- Gives you properties for Template Name, Template Id and All the Field Id's of each property.
+- Creates Generic View or Handlebar template as comments in the Model File. Can use to quickly scaffold components. Feel free to eactend.
+
+Add these templates to your TDS projects as linked files, so you can make changes in one place:
+
+From: https://www.teamdevelopmentforsitecore.com/Blog/share-t4-template-files-tds-projects
+
+This works exactly the same as other linked file types in Visual Studio (Share code with Add as Link). 
+The steps to add a linked template are the following:
+Right-click on the Code Generation Templates folder in the solution explorer.
+Choose “Add Existing Item”
+Browse to the files in another TDS project
+On the add dialog, there is a little down arrow next to the “Add” button. Click that and select “Add as link”

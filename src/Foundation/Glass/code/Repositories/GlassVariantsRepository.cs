@@ -1,6 +1,6 @@
 ﻿using Glass.Mapper.Sc;
 using Glass.Mapper.Sc.IoC;
-using SF.Foundation.Components.Models;
+using SF.Foundation.GlassBootstrap.Models;
 using Sitecore.XA.Foundation.Mvc.Repositories.Base;
 using Sitecore.XA.Foundation.RenderingVariants.Repositories;
 using System;
@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace SF.Foundation.Components.Repositories
+namespace SF.Foundation.GlassBootstrap.Repositories
 {
     public class GlassVariantsRepository<T> : VariantsRepository where T : class
     {
