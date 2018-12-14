@@ -8,7 +8,6 @@ Projects Include:
 * Common - Includes Branch Templates for Quickly creating Sites
 * Foundation - Placeholder Settings and Rendering Settings for a Foundation Component Based Site
 * StarterKit - Sample Site Implementation with Details about the Framework
-* DXF - Sample Tenants with Test Setup for DXF Projects
 * Airspace - Sample Digital Marketing Site based on Bootstrap and Handlebar Templates
 
 Features Include:
@@ -16,7 +15,6 @@ Features Include:
 * BlogSample - Contains Sample Content Types and Handlebar Templates for Implementing a Blog
 * Cache - Manage Site Caches Automatically without needing to modify configuration
 * Composite - Create Reusable Components made up of other Components
-* DXF - Data Exchange Framework Providers for Integrating with Databases, Files, RSS Feeds and more
 * Favicon - Serve a custom Favicon per Site
 * Foundation Components - Collection of Zurb Foundation Components for quickly assembling Sites
 * GeoIP - Get Free GeoLocation Data into Sitecore using MaxMind's Free Databases
