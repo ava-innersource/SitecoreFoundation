@@ -1,4 +1,5 @@
-#Sitecore Foundation
+# Sitecore Foundation
+[![RETIRED Ava InnerSource](https://img.shields.io/badge/Retired-Ava--InnerSource-%23DC4600?labelColor=%23e5e5e5)](https://avanade.github.io/maturity-model/)
 
 Sitecore Foundation is a Sitecore Framework that follows the Helix modular architecture design principles.
 
